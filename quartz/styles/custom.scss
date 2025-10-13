@@ -7,11 +7,14 @@ html {
 }
 
 body {
+  .explorer .explorer-content ul.explorer-ul li a  {
+    cursor: pointer;
+  }
   a {
     cursor: pointer;
   }
 
-  a.external-link {
+  a.external {
     cursor: pointer !important;
   }
 
