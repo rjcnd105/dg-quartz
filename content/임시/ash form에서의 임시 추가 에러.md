@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025.03.17 월 오후 15:27","modified":"2025.04.08 화 오전 9:47","tags":["e","r","r","o","r","e","l","i","x","i","r","a","s","h","f","o","r","m"],"cssclasses":""}
+{"publish":true,"created":"2025.03.17 월 오후 15:27","modified":"2025.04.08 화 오전 9:47","published":"2025-10-13T14:07:27.066+09:00","tags":"error, elixir, ash, form","cssclasses":"","createdAt":"2025.03.17 월 오후 15:27","modifiedAt":"2025.04.08 화 오전 9:47"}
 ---
 
 

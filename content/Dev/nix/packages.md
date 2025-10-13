@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2024.11.14 목 오후 17:29","modified":"2024.11.20 수 오후 17:30","tags":["nix","nix_flake"],"cssclasses":""}
+{"publish":true,"created":"2024.11.14 목 오후 17:29","modified":"2024.11.20 수 오후 17:30","published":"2025-10-13T14:07:27.075+09:00","tags":["nix","nix_flake"],"cssclasses":"","createdAt":"2024.11.14 목 오후 17:29","modifiedAt":"2024.11.20 수 오후 17:30"}
 ---
 
 

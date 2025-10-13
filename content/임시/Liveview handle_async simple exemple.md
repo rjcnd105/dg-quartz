@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025.04.04 금 오후 17:40","modified":"2025.04.08 화 오전 9:46","tags":["p","h","o","e","n","i","x","h","a","n","d","l","e","_","a","s","y","n","c","h","e","e","x","l","i","v","e","v","i","e","w"],"cssclasses":""}
+{"publish":true,"created":"2025.04.04 금 오후 17:40","modified":"2025.04.08 화 오전 9:46","published":"2025-10-13T14:07:27.078+09:00","tags":"phoenix, handle_async, heex, liveview","cssclasses":"","createdAt":"2025.04.04 금 오후 17:40","modifiedAt":"2025.04.08 화 오전 9:46"}
 ---
 
 
