@@ -44,17 +44,17 @@ body {
   //   color: black;
   //  }
 
-  .tag+.tag {
+    .tag-link+.tag-link {
     margin-left: 4px;
   }
 
   [data-ui="tags"] {
-    .tag {
+    .tag-link {
       all: inherit;
       cursor: pointer;
     }
 
-    :first-of-type(.tag) {
+        :first-of-type(.tag-link) {
       margin-left: 0;
     }
   }
