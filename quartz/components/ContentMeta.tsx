@@ -29,12 +29,19 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
     if (text) {
       const segments: (string | JSX.Element)[] = []
 
-      if (fileData.dates) {
-        if (fileData.dates.created) {
-          segments.push(<span>Created: <Date date={fileData.dates.created} locale={cfg.locale} /></span>)
+      console.log("---------------ContentMetadata----------------")
+      console.log("fileData", fileData)
+      console.log("options", options)
+      console.log("cfg", cfg)
+      console.log("displayClass", displayClass)
+      console.log("text", text)
+
+      if (fileData.frontmatter) {
+        if (fileData.frontmatter.created) {
+          segments.push(<span>Created: {fileData.frontmatter.created}</span>)
         }
-        if (fileData.dates.modified) {
-          segments.push(<span>Modified: <Date date={fileData.dates.modified} locale={cfg.locale} /></span>)
+        if (fileData.frontmatter.modified) {
+          segments.push(<span>Modified: {fileData.frontmatter.modified}</span>)
         }
         // segments.push(<Date date={getDate(cfg, fileData)!} locale={cfg.locale} />)
       }

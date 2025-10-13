@@ -23,7 +23,7 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.ArticleTitle(),
     Component.ContentMeta({
-      showReadingTime: false,
+      showReadingTime: false
     }),
     Component.TagList(),
   ],
