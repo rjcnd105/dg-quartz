@@ -7,24 +7,28 @@ html {
 }
 
 body {
-  a
-    {
-      cursor: pointer;
-    }
+  a {
+    cursor: pointer;
+  }
 
-    .tag-link+.tag-link {
+  .tag-link+.tag-link {
     margin-left: 4px;
   }
 
   [data-ui="tags"] {
     .tag-link {
-      all: inherit;
+      color: inherit;
       cursor: pointer;
-      display: inline-block !important;
+      display: inline !important;
+      border: none;
+      padding: 4px 8px;
+
+      &:before {
+        color: inherit !important;
+      }
     }
 
-        :first-of-type(.tag-link)
-        {
+    :first-of-type(.tag-link) {
       margin-left: 0;
     }
   }
@@ -40,8 +44,7 @@ body {
     opacity: 0.9;
   }
 
-.page_tag-hidden .tags
-{
-  display: none !important;
-}
+  .page_tag-hidden .tags {
+    display: none !important;
+  }
 }
