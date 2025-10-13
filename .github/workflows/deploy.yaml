@@ -6,7 +6,7 @@ on:
       - v4
 
 env:
-  THEME_NAME: space
+  THEME_NAME: tokyo-night-storm
 
 permissions:
   contents: read
