@@ -24,11 +24,11 @@ jobs:
       - uses: actions/checkout@v5
         with:
           fetch-depth: 0 # Fetch all history for git info
-      - uses: oven-sh/setup-bun@v2
+      - uses: actions/setup-node@v5
         with:
-          bun-version: latest
+          node-version: 24
       - name: Install Dependencies
-        run: bun install
+        run: npm ci
       - name: Fetch Quartz Theme
         run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- $THEME_NAME
       - name: Build Quartz
