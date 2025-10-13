@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-02-09T10:58:44.299+09:00","modified":"2025-10-13T12:57:16.590+09:00","cssclasses":""}
+{"publish":true,"created":"2025-02-09T10:58:44.299+09:00","modified":"2025-10-13T14:07:27.071+09:00","cssclasses":""}
 ---
 
 
@@ -62,7 +62,7 @@ end
 
 ```elixir
 # 1. `mix ecto.gen.migration add_not_null_constraint_to_rooms_name`
-# 2. 추가된 priv/repo/migrations 내에 해당 파일을 아래와 같이 수정 
+# 2. 추가된 priv/repo/migrations 내에 해당 파일을 아래와 같이 수정
 defmodule Dutchpay.Repo.Migrations.AddNotNullConstraintToRoomsName do
   use Ecto.Migration
 
@@ -75,7 +75,7 @@ end
 
 # 3. 스키마에 validate_required 제약 사항 추가
 defmodule Dutchpay.Chat.Room.Schema do
-  ...  
+  ...
   # 제약 조건 추가
   def changeset(room, attrs) do
     room

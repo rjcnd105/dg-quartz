@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2024-04-01T18:10:20.115+09:00","modified":"2025-10-13T12:57:16.554+09:00","tags":["elixir","zed","pkgx","erlang","lexical-lsp","next-ls"],"cssclasses":""}
+{"publish":true,"created":"2024-04-01T18:10:20.115+09:00","modified":"2025-10-13T14:07:27.072+09:00","tags":["elixir","zed","pkgx","erlang","lexical-lsp","next-ls"],"cssclasses":""}
 ---
 
 
@@ -32,9 +32,9 @@ asdf list-all erlang
 asdf list-all elixir
 
 asdf install erlang 27.0.1
-asdf install elixir 1.17.2-otp-27	
+asdf install elixir 1.17.2-otp-27
 
-asdf global erlang 27.0.1  
+asdf global erlang 27.0.1
 asdf global elixir 1.17.2-otp-27
 ```
 

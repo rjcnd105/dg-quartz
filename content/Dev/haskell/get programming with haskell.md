@@ -1,12 +1,12 @@
 ---
-{"publish":true,"created":"2024-02-18T16:55:39.000+09:00","modified":"2025-10-13T12:57:16.670+09:00","tags":["haskell","study"],"cssclasses":""}
+{"publish":true,"created":"2024-02-18T16:55:39.000+09:00","modified":"2025-10-13T14:07:27.078+09:00","tags":["haskell","study"],"cssclasses":""}
 ---
 
 source
 [Get Programming with Haskell](https://www.manning.com/books/get-programming-with-haskell?ar=true&lpse=A)
 
 기존 학습 내역
-[[Dev/haskell/haskell in action]] 
+[[Dev/haskell/haskell in action]]
 ***
 
 ### chapter 2
@@ -137,10 +137,10 @@ ifEvenDouble = ifEven (\x -> x * 2)
 
 Lists
 
-List는 함수형 프로그래밍에서 가장 중요한 단일 데이터 구조입니다. 
+List는 함수형 프로그래밍에서 가장 중요한 단일 데이터 구조입니다.
 
-주요 이유 중 하나는 목록이 본질적으로 재귀적이라는 것입니다. 
-목록은 빈 목록이거나 뒤에 다른 목록이 오는 요소입니다. 
+주요 이유 중 하나는 목록이 본질적으로 재귀적이라는 것입니다.
+목록은 빈 목록이거나 뒤에 다른 목록이 오는 요소입니다.
 목록을 분해하고 작성하는 것은 함수형 프로그래밍의 많은 기술을 위한 기본 도구입니다.
 
 Data.List를 보면 전부 볼 수 있다.
@@ -241,7 +241,7 @@ GHCi> zip ['a' .. 'f'] [1 .. ]
 [('a',1),('b',2),('c',3),('d',4),('e',5),('f',6)]
 
 -- cycle
--- 주어진 List를 무한 순환 List로 만듦 
+-- 주어진 List를 무한 순환 List로 만듦
 ghci> take 5 (cycle [1, 3])
 [1,3,1,3,1]
 
@@ -266,7 +266,7 @@ repeat' n = cycle [n]
 subseq start end list = (take (end - start) (drop start list))
 
 -- Q6.3
-inFirstHalf word list = elem word halfList 
+inFirstHalf word list = elem word halfList
 	where halfList = take (div (length list) 2) list
 ```
 
@@ -400,8 +400,8 @@ reverse' (x:[]) = [x]
 reverse' (x:xs) = (reverse' xs) ++ [x]
 
 -- Q8.2
-fibonacci = fibonacci' [0, 1] 
-fibonacci' list = fibonacci' (list ++ [x1 + x2]) 
+fibonacci = fibonacci' [0, 1]
+fibonacci' list = fibonacci' (list ++ [x1 + x2])
     where (x1:x2:xs) = reverse list
 
 -- 왜 안됌??
@@ -489,18 +489,18 @@ GHCi> foldr (-) 0 [1,2,3,4] -- foldr1 (-) [1,2,3,4,0]
 -- step1: 4 - 0
 -- step2: 3 - 4
 -- step3: 2 -(-1)
--- step4: 1 - 3 
+-- step4: 1 - 3
 
 foldl (/) 64 [4,2]
-8.0 -- (64 / 4) / 2 
+8.0 -- (64 / 4) / 2
 foldr (/) 64 [4,2]
 128.0 -- 64 / (2 / 4)
 
 -- Q9.1
 -- Use filter and length to re-create the elem function.
 :{
-myElem list el = if (length $ filter (\x -> x == el) list) > 0 
-  then True 
+myElem list el = if (length $ filter (\x -> x == el) list) > 0
+  then True
   else False
 :}
 
@@ -523,7 +523,7 @@ hamonic n = foldl1 (+) $ map (1/) [1 .. n]
 -- 다른 사람 대답들
 
 hamonic' 1 = 1
-hamonic' n = (1/n) + hamonic' (n-1) 
+hamonic' n = (1/n) + hamonic' (n-1)
 ```
 
 ### chapter 10
@@ -555,7 +555,7 @@ getOz myCup
 그렇다면 상태변화는 어떻게 할까??
 
 ```haskell
-drink aCup ozDrank = if ozDiff >= 0 
+drink aCup ozDrank = if ozDiff >= 0
     then cup ozDiff
     else cup 0
     where ozDiff = getOz aCup - ozDrank
@@ -640,9 +640,9 @@ threeRoundFight 작성
 두 대의 로봇이 3라운드 동안 싸워 승자를 돌려주는 기능입니다.
 
 ```haskell
-battle firstRobot secondRobot = if getHp attackedRobot > 0 
+battle firstRobot secondRobot = if getHp attackedRobot > 0
   then [(firstRobot, attackedRobot)] ++ battle attackedRobot firstRobot
-  else [(firstRobot, attackedRobot)] 
+  else [(firstRobot, attackedRobot)]
     where attackedRobot = fight firstRobot secondRobot
 
 threeRoundFight = take 6 battle fastRobot slowRobot
@@ -715,12 +715,12 @@ streetAddress = (123,"Happy St.")
 ```haskell
 half :: Int -> Double
 -- error!
--- half n = n/2  
+-- half n = n/2
 half n = fromInteger n / 2
 half 5
 -> 2.5
 
--- Q1. div 함수를 이용해 정수 나누기 2를 하는 halve 함수를 만들어라 
+-- Q1. div 함수를 이용해 정수 나누기 2를 하는 halve 함수를 만들어라
 halve :: Int -> Int
 halve = (`div` 2)
 ```
@@ -777,8 +777,8 @@ f2 :: a -> b
 
 ### chapter 12
 
-**유형 동의어(*type synonym)** 
-→* [Char] 을 String처럼 부르는 것을 말한다. (타입스크립트에서 type aliase) 
+**유형 동의어(*type synonym)**
+→* [Char] 을 String처럼 부르는 것을 말한다. (타입스크립트에서 type aliase)
 
 ```haskell
 -- **type synonym**
@@ -850,22 +850,22 @@ canDonateTo (BloodType B _) (BloodType B _) = True
 -- 위의 패턴이 아닌 나머지는 기부 불가능
 canDonateTo _ _ = False --otherwise
 
-ghci> canDonateTo (BloodType A Pos) (BloodType AB Pos) 
+ghci> canDonateTo (BloodType A Pos) (BloodType AB Pos)
 True
-ghci> canDonateTo (BloodType AB Pos) (BloodType A Pos) 
+ghci> canDonateTo (BloodType AB Pos) (BloodType A Pos)
 False
 ```
 
 ![[env/첨부파일/Untitled 3.png|600]]
 
 
-Name 유형 만들기 
+Name 유형 만들기
 
 ```haskell
 type FirstName = String
 type LastName = String
 type MiddleName = String
-data Name = Name FirstName LastName 
+data Name = Name FirstName LastName
   | NameWithMiddle FirstName MiddleName LastName
 
 showName :: Name -> String
@@ -913,7 +913,7 @@ Q
 -- 패턴 매칭 어떻게 하는지 몰라....
 
 -- Q12.2
--- 최종 환자 유형을 사용하는 patientSummary 함수를 구현하십시오. 
+-- 최종 환자 유형을 사용하는 patientSummary 함수를 구현하십시오.
 -- Patient-Summary는 다음과 같은 문자열을 출력해야 합니다.
 {-
   **************
@@ -929,7 +929,7 @@ showSex Male = "Male"
 showSex Female = "Female"
 
 patientSummary :: Patient -> String
-patientSummary patient =  "**************\n" ++ 
+patientSummary patient =  "**************\n" ++
   "Patient Name: " ++ showName (name patient) ++ "\n" ++
   "Sex: " ++ showSex (sex patient) ++ "\n" ++
   "Age: " ++ show (age patient) ++ "\n" ++
@@ -986,14 +986,14 @@ addThenDouble :: Num a => a -> a -> a
 addThenDouble x y = (x + y)*2
 ```
 
-예제 `(Num a, Ord a) => a -> (t -> t) -> t -> t` 에서의 ⇒ 는 
+예제 `(Num a, Ord a) => a -> (t -> t) -> t -> t` 에서의 ⇒ 는
 
 - 왼쪽은 타입 클래스 제약 조건이 있고
 - 오른쪽은 실제 유형이 있다.
 
 즉 a 유형에 대한 Num, Ord 인스턴스가 구현이 되어있어야 한다.
 
-instance는 implements Interface라고 보면 된다. 
+instance는 implements Interface라고 보면 된다.
 
 ```haskell
 instance Num Double -- Defined in ‘GHC.Float’
@@ -1003,7 +1003,7 @@ instance Num Integer -- Defined in ‘GHC.Num’
 instance Num Word -- Defined in ‘GHC.Num’
 ```
 
-에서 `instance Num Double` 는 
+에서 `instance Num Double` 는
 
 **“Double은 이 타입클래스의 인스턴스이므로 이 타입클래스의 메소드를 사용할 수 있다”** 라고 보면 된다.
 
@@ -1053,7 +1053,7 @@ data Icecream = Chocolate | Vanilla deriving (Show, Eq, Ord)
 
 -- 원래 하스켈이 데이터 생성자를 출력하는 방법을 모른다는 것을 알아두어라!
 ghci> Chocolate
-Chocolate 
+Chocolate
 ghci> Chocolate /= Vanilla
 True
 -- 데이터 생성자 순서가 뒤에 있는게 더 크다.
@@ -1068,7 +1068,7 @@ implement type class
 deriving으로 구현하면 하스켈에서 지정된 방식으로 구현이 되므로, 직접 구현을 해보자.
 
 ```haskell
--- 이걸 Show를 
+-- 이걸 Show를
 data SixSidedDie = S1 | S2 | S3 | S4 | S5 | S6
 
 instance Show SixSidedDie where
@@ -1116,9 +1116,9 @@ hackage에서 찾아보면 된다.
 
 라고 나와있는데 둘 중  하나만 정의하면 나머지는 정의된다는 의미이다.
 
-Ord implement 
+Ord implement
 
-[Ord](https://hackage.haskell.org/package/base-4.17.0.0/docs/Prelude.html#t:Ord) 
+[Ord](https://hackage.haskell.org/package/base-4.17.0.0/docs/Prelude.html#t:Ord)
 
 **Minimal complete definition**
 
@@ -1192,7 +1192,7 @@ instance Ord Name where
 
 instance Show Name where
    show (Name (f,l)) = l ++ " " ++ f
-	
+
 
 person1 :: Name
 person2 :: Name
@@ -1204,7 +1204,7 @@ person2 = Name ("Eugene","Thacker")
 person3 = Name ("Friedrich","Nietzsche")
 people = [person1, person2, person3]
 
--- -- ghci에선 기본적으로 show 메서드를 사용 
+-- -- ghci에선 기본적으로 show 메서드를 사용
 -- ghci> person1
 -- Cioran Emil
 
@@ -1231,7 +1231,7 @@ instance Eq MyNumber where
    (==) num1 num2 = (fromEnum num1) == (fromEnum num2)
 
 -- fromEnum은 Enum의 인덱스를 리턴한다. One은 0, Two는 1
-instance Ord MyNumber where 
+instance Ord MyNumber where
    (<=) num1 num2 = (fromEnum num1) <= (fromEnum num2)
 
 -- Q14.2
@@ -1254,9 +1254,3 @@ instance Dice FiveDice where
 ```tsx
 
 ```
-
-
-
-
-
-

@@ -1,10 +1,10 @@
 ---
-{"publish":true,"created":"2024-11-19T14:33:44.716+09:00","modified":"2025-10-13T12:57:16.742+09:00","tags":["nix","flake","direnv","nix_develop","nix_profile","nix_flake"],"cssclasses":""}
+{"publish":true,"created":"2024-11-19T14:33:44.716+09:00","modified":"2025-10-13T14:07:27.078+09:00","tags":["nix","flake","direnv","nix_develop","nix_profile","nix_flake"],"cssclasses":""}
 ---
 
 
 ### nix profile (구 nix-env)
-시스템 global 환경 설정 프로필이라고 생각하면 된다. 
+시스템 global 환경 설정 프로필이라고 생각하면 된다.
 마치 git처럼 히스토리 관리가 된다.
 프로필 변경(like branch checkout)은 작업들은 수동으로 처리해줘야 하는 불편함이 있다..
 
@@ -15,7 +15,7 @@ nix profile install [package]
 
 # example
 # nix profile install github:peterldowns/nix-search-cli --refresh
-# nix-search 
+# nix-search
 
 # 설치된 nix package 리스트
 nix profile list
@@ -31,8 +31,8 @@ nix profile history
 #### template
 https://github.com/the-nix-way/dev-templates/blob/main/flake.nix#L141 의 경우에 방법은 아래와 같다. (전부 결과는 같음)
 ```sh
-# github에서 
-nix flake new --template github:the-nix-way/dev-templates#elixir my-elixir 
+# github에서
+nix flake new --template github:the-nix-way/dev-templates#elixir my-elixir
 nix flake init --template github:the-nix-way/dev-templates#elixir
 nix flake init --template github:the-nix-way/dev-templates?dir=elixir
 
@@ -42,7 +42,7 @@ nix flake init --template "https://flakehub.com/f/the-nix-way/dev-templates/*#el
 
 
 #### with direnv
-구성된 것을 그대로 덮어서 사용하는 경우에 편하다. 
+구성된 것을 그대로 덮어서 사용하는 경우에 편하다.
 
 `touch .envrc`
 

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2024-11-08T17:43:51.122+09:00","modified":"2025-10-13T12:57:16.567+09:00","tags":["erlang","elixir","data_structure","ets"],"cssclasses":""}
+{"publish":true,"created":"2024-11-08T17:43:51.122+09:00","modified":"2025-10-13T14:07:27.049+09:00","tags":["erlang","elixir","data_structure","ets"],"cssclasses":""}
 ---
 
 
@@ -51,13 +51,13 @@ sets.to_list는 순서를 보장하지 않지만, ordsets.to_list는 순서가 �
 
 ```elixir
 iex(1) > set = :ordsets.new()
-# [] 
+# []
 iex(2) > set = :ordsets.add_element("Jane Smith", set)
 # ["Jane Smith"]
 iex(3) > set = :ordsets.add_element("Alex Koutmos", set)
 # ["Alex Koutmos", "Jane Smith"]
 iex(4) > set = :ordsets.add_element("Alex Koutmos", set)
-# ["Alex Koutmos", "Jane Smith"] 
+# ["Alex Koutmos", "Jane Smith"]
 iex(5) > :ordsets.to_list(set)
 # ["Alex Koutmos", "Jane Smith"]
 ```
@@ -71,7 +71,7 @@ https://www.erlang.org/doc/apps/stdlib/gb_sets.html
 
 ```elixir
 ex(1) > set = :gb_sets.new()
-# {0, nil} 
+# {0, nil}
 iex(2) > set = :gb_sets.add_element(42, set)
 # {1, {42, nil, nil}}
 iex(3) > set = :gb_sets.add_element(2, set)
@@ -89,7 +89,7 @@ iex(6) > :gb_sets.to_list(set) ③
 https://www.erlang.org/doc/apps/stdlib/array.html
 
 ```elixir
-iex(1) > array = :array.new() 
+iex(1) > array = :array.new()
 # {:array, 0, 10, :undefined, 10}
 iex(2) > array = :array.set(0, "Alex Koutmos", array) ②
 # {:array, 1, 10, :undefined,
@@ -160,8 +160,8 @@ term이란 elixir, erlang에서 사용하는 데이터 조각이다.
 ```elixir
 ex(1) > my_data = %{name: "John Smith", age: 42, favorite_lang: :elixir}
 # %{age: 42, favorite_lang: :elixir, name: "John Smith"}
-iex(2) > base_64_serialized = my_data 
-		|> :erlang.term_to_binary() 
+iex(2) > base_64_serialized = my_data
+		|> :erlang.term_to_binary()
 		|> Base.encode64()
 # "g3QAAAADZAADYWdlYSpkAA1mYXZvcml0ZV9sYW5nZAAGZWxpeGlyZAAEbmFtZW0AAAAKSm9obiBTbWl0aA=="
 iex(3) > base_64_serialized |> Base.decode64!() |> :erlang.binary_to_term([:safe])
@@ -173,8 +173,8 @@ iex(3) > base_64_serialized |> Base.decode64!() |> :erlang.binary_to_term([:safe
 해시를 빠르게 생성할 수 있으므로 파일의 변경을 추적하는 상황에서 유용하다.
 
 ```elixir
-iex(1) > "./elixir_patterns.pdf" 
-		|> File.read!() 
+iex(1) > "./elixir_patterns.pdf"
+		|> File.read!()
 		|> :erlang.md5()
 # <<168, 142, 134, 106, 203, 208, 151, 185, 200, 125, 31, 103, 26, 184, 157, 110>>
 ```
@@ -254,13 +254,13 @@ charge_card --> welcome_email
 ```
 
 ```elixir
-# acyclic(비순환) 
-iex(1) > my_workflow = :digraph.new([:acyclic]) 
+# acyclic(비순환)
+iex(1) > my_workflow = :digraph.new([:acyclic])
 # {
-# 	:digraph, 
+# 	:digraph,
 #		#Reference<0.1888117864.2375680005.579>,
 # 	#Reference<0.1888117864.2375680005.580>,
-# 	#Reference<0.1888117864.2375680005.581>, 
+# 	#Reference<0.1888117864.2375680005.581>,
 # 	false
 # }
 
@@ -299,9 +299,9 @@ iex(13) > :digraph.sink_vertices(my_workflow) ③
 # [:welcome_email]
 iex(14) > :digraph_utils.is_acyclic(my_workflow) ④
 # true
-iex(15) > my_workflow 
+iex(15) > my_workflow
 ...(15) > 	|> :digraph_utils.topsort()
-...(15) > 	|> Enum.each(fn vertex -> 
+...(15) > 	|> Enum.each(fn vertex ->
 ...(15) >				{_vertex, work_function} = :digraph.vertex(my_workflow, vertex)
 ...(15) > 			work_function.()
 ...(15) > 	end)

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-04-04T17:44:43.618+09:00","modified":"2025-10-13T12:57:18.101+09:00","tags":["l","i","v","e","v","i","e","w"],"cssclasses":""}
+{"publish":true,"created":"2025-04-04T17:44:43.618+09:00","modified":"2025-10-13T14:07:27.060+09:00","tags":["l","i","v","e","v","i","e","w"],"cssclasses":""}
 ---
 
 
@@ -46,7 +46,7 @@ socket
 	to: "#room-name-change-modal",
 	attr: "phx-hide"
  })
-          
+
 ```
 
 assets의 app.ts에 아래 이벤트 추가

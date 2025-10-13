@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2024-05-21T15:31:53.278+09:00","modified":"2025-10-13T12:57:17.002+09:00","tags":["c","s","s"],"cssclasses":""}
+{"publish":true,"created":"2024-05-21T15:31:53.278+09:00","modified":"2025-10-13T14:07:27.044+09:00","tags":["c","s","s"],"cssclasses":""}
 ---
 
 
@@ -35,10 +35,10 @@ li > div { grid-template-rows: 1fr; transition: grid-template-rows .3s; }
 #### 리퀴드 글래스 css 지원시 적용
 
 ```css
-@supports (-apple-visual-effect: -apple-system-glass-material) { 
-	.toolbar { 
-		background: transparent; 
-		-apple-visual-effect: -apple-system-glass-material; 
+@supports (-apple-visual-effect: -apple-system-glass-material) {
+	.toolbar {
+		background: transparent;
+		-apple-visual-effect: -apple-system-glass-material;
 	}
 }
 
@@ -50,10 +50,10 @@ https://x.com/jh3yy/status/1977517175285154015
 
 ```css
 .layout:has(:popover-open) {
-	grid-template-columns: var(--sidebar-width) 1fr; 
-} 
-aside:popover-open { 
-	translate: 0 var(--ctrl); 
-	height: var(--extend); 
+	grid-template-columns: var(--sidebar-width) 1fr;
+}
+aside:popover-open {
+	translate: 0 var(--ctrl);
+	height: var(--extend);
 }
 ```

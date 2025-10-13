@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2024-11-08T17:26:25.454+09:00","modified":"2025-10-13T12:57:16.545+09:00","tags":["e","l","i","x","i","r"],"cssclasses":""}
+{"publish":true,"created":"2024-11-08T17:26:25.454+09:00","modified":"2025-10-13T14:07:27.081+09:00","tags":["e","l","i","x","i","r"],"cssclasses":""}
 ---
 
 
@@ -33,11 +33,11 @@ Geometry.rectangle_area3D(4, 3, -7) |> abs() |> IO.puts()
 
 ```elixir
 defmodule Calculator do
-  # 아래와 같이 오버라이드를 하고 위임할 수 있음  
+  # 아래와 같이 오버라이드를 하고 위임할 수 있음
   # def add(a), do: add(a, 0)
   # def add(a, b), do: a + b
 
-  # 디폴트 값 지정 
+  # 디폴트 값 지정
   def add(a, b \\ 0), do: a + b
 end
 
@@ -182,7 +182,7 @@ not :an_atom_other_than_true_or_false
 ```elixir
 person = {"Bob", 25}
 
-# 튜플에서 요소를 추출하려면 Kernel.elem을 사용할 수 있다. 
+# 튜플에서 요소를 추출하려면 Kernel.elem을 사용할 수 있다.
 # Kernal 모듈은 auto import 되므로 바로 사용 가능.
 age = elem(person, 1)
 
@@ -203,7 +203,7 @@ List.keyfind([a: 1, b: 2], 2, 1)
 ```
 
 ```elixir
-# 수정된 튜플은 항상 이전 버전의 얕은 복사본입니다. 
+# 수정된 튜플은 항상 이전 버전의 얕은 복사본입니다.
 [a, b, c] = [~c"a", ~c"b", ~c"c"]
 b2 = ~c"b2"
 a_tuple = {a, b, c}
@@ -267,7 +267,7 @@ List.flatten([1, [[2], 3]])
 List.first([1, 2, 3])
 # 3
 List.last([1, 2, 3])
-# with default, 7 
+# with default, 7
 List.last([], 7)
 
 # replace
@@ -321,13 +321,13 @@ Map.get(squares, 4, :not_found)
 Map.fetch(squares, 2)
 # :error
 Map.fetch(squares, 4)
-# 값이 없는 경우 예외 발생 시키고자 할때 !를 써줌 
-# Map.fetch!(squares, 4) 
+# 값이 없는 경우 예외 발생 시키고자 할때 !를 써줌
+# Map.fetch!(squares, 4)
 
 ## 값 추가
 # Map.put(squares, 4, 16) # %{1 => 1, 2 => 4, 3 => 9, 4 => 16}
 
-## 다음과 같이 map을 사용하여 데이터를 관리하는 것은 엘릭서에서 자주 사용되는 패턴임. 특히 데이터가 동적인 경우! 
+## 다음과 같이 map을 사용하여 데이터를 관리하는 것은 엘릭서에서 자주 사용되는 패턴임. 특히 데이터가 동적인 경우!
 # 키가 원자인 경우 다음과 같이 짧게 만들 수 있음
 bob = %{name: "Bob", age: 25, works_at: "Initech"}
 
@@ -370,15 +370,15 @@ str = "Embedded expression: #{3 + 0.14}"
 
 # "\r \n \" \\" 이스케이프 사용 가능
 
-# 줄로 끝날 필요 없음 (linebreak는 \n으로 들어감) 
-str = " 
+# 줄로 끝날 필요 없음 (linebreak는 \n으로 들어감)
+str = "
 This is
 a multiline string
 "
 
 # "\nThis is\na multiline string\n"
 
-# heredocs 표현 
+# heredocs 표현
 str = """
 Heredoc must end on its own line ""
 ㅎㅎㅎ
@@ -389,7 +389,7 @@ Heredoc must end on its own line ""
 # sigils 표현 - 다음과 같이 따옴표 없이 ~s를 넣어 사용 가능. 따옴표를 포함하려는 경우 유용
 str = ~s("Do... or do not. There is no try." -Master Yoda)
 
-# ~S 대문자 사용시 보간이나 이스케이프를 처리하지 않는다 
+# ~S 대문자 사용시 보간이나 이스케이프를 처리하지 않는다
 # "Not interpolated \\n value: \#{3 + 0.14}"
 str = ~S(Not interpolated \n value: #{3 + 0.14})
 ```
@@ -483,7 +483,7 @@ lambda = &(&1 * &2 + &3)
 lambda.(2, 3, 4)
 
 ## closure
-# 변수가 외부 범위에 속하더라도 참조를 보유함. 선언 시점에서 캡쳐함. 
+# 변수가 외부 범위에 속하더라도 참조를 보유함. 선언 시점에서 캡쳐함.
 # 그래서 아래 코드에서 5가 가비지 콜렉션이 되지 않음.
 outside_var = 5
 lambda = fn -> IO.puts(outside_var) end
@@ -527,13 +527,13 @@ days[:tuesday]
 
 # 키워드 목록은 클라이언트가 임의 개수의 선택적 인수를 전달할 수 있도록 하는 데 가장 유용하다.
 # 이 패턴은 너무 자주 발생하기 때문에 Elixir에서는 마지막 인수가 키워드 목록인 경우 대괄호를 생략할 수 있다.
-# also IO.inspect([100, 200, 300], [width: 3, limit: 1]) 
+# also IO.inspect([100, 200, 300], [width: 3, limit: 1])
 IO.inspect([100, 200, 300], width: 3, limit: 1)
 # [100, ...]
 
-# 키워드 대신 Map을 사용하는 것이 더 나은지 궁금할 수 있다. 
-# 키워드 목록에는 동일한 키에 대한 여러 값이 포함될 수 있다. 
-# 또한 키워드 목록 요소의 순서를 제어할 수 있습니다. 이는 Map에서는 ​​불가능한 일이다. 
+# 키워드 대신 Map을 사용하는 것이 더 나은지 궁금할 수 있다.
+# 키워드 목록에는 동일한 키에 대한 여러 값이 포함될 수 있다.
+# 또한 키워드 목록 요소의 순서를 제어할 수 있습니다. 이는 Map에서는 ​​불가능한 일이다.
 
 ## MapSet
 # javascript의 set과 같다고 보면 됨. 열거 순서를 보장하지 않음
@@ -541,10 +541,10 @@ days = MapSet.new([:monday, :tuesday, :wednesday])
 MapSet.new([:monday, :tuesday, :wednesday])
 
 MapSet.member?(days, :monday)
-# true     
+# true
 
 MapSet.member?(days, :noday)
-# false     
+# false
 
 days = MapSet.put(days, :thursday)
 MapSet.new([:monday, :tuesday, :wednesday, :thursday])
@@ -674,7 +674,7 @@ IO.puts(hour)
 # 에러 발생!
 # {a, a, a} = {127, 0, 127}
 
-## 변수와 일치시키기 (^) 
+## 변수와 일치시키기 (^)
 expected_name = "Bob"
 {^expected_name, _} = {"Bob", 25}
 # 에러 발생
@@ -860,7 +860,7 @@ defmodule UserExtraction do
     unless a >= b, do: a, else: b
   end
 
-  ## cond 
+  ## cond
   # if-else-if 패턴과도 같은 맥락으로 사용
   def call_status(call) do
     cond do
@@ -1174,8 +1174,8 @@ Map.to_list(one_half) # [__struct__: Fraction, a: 1, b: 2] <br>
 https://hexdocs.pm/elixir/Kernel.html#defstruct/1
 
 ```elixir
-# 만약에 프로그램에서 분수만을 처리한다고 했을때 문제가 생길 여지가 많음. 
-# 이런 경우 작은 추상화를 하는게 좋음 
+# 만약에 프로그램에서 분수만을 처리한다고 했을때 문제가 생길 여지가 많음.
+# 이런 경우 작은 추상화를 하는게 좋음
 
 defmodule Fraction do
   defstruct a: nil, b: nil
@@ -1293,7 +1293,7 @@ defmodule TodoList_proto3 do
     end
   end
 
-  # 연습과제2 - 항목 삭제 
+  # 연습과제2 - 항목 삭제
   @spec delete_entry(t(), integer()) :: t()
   def delete_entry(todo_list, entry_id) do
     case Map.fetch(todo_list.entries, entry_id) do
@@ -1325,7 +1325,7 @@ todo_list =
 
 inspect(todo_list)
 
-## 업데이트 도우미 매크로 
+## 업데이트 도우미 매크로
 # 재귀적으로 변경 후 상위 단에 상위 요소를 불변적으로 업데이트한다.
 # @see https://hexdocs.pm/elixir/Access.html
 # Kernel Module의 put_in, get_in, update_in, get_and_update_in
