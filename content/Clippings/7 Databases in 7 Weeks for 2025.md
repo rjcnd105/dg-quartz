@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"7 Databases in 7 Weeks for 2025","description":"7 databases to explore in 2025.","created":"2024.12.06 금 오후 12:58","modified":"2025.01.31 금 오후 14:25","tags":["clippings"],"cssclasses":""}
+{"publish":"\"true\"","title":"7 Databases in 7 Weeks for 2025","description":"7 databases to explore in 2025.","created":"2024-12-06","modified":"2025.01.31 금 오후 14:25","published":null,"tags":["clippings"],"cssclasses":"","source":"https://matt.blwt.io/post/7-databases-in-7-weeks-for-2025/","author":["[[Matt Blewitt]]"],"createdAt":"2024.12.06 금 오후 12:58","modifiedAt":"2025.01.31 금 오후 14:25"}
 ---
 
 

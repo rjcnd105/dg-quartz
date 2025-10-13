@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025.03.19 수 오후 17:01","modified":"2025.03.19 수 오후 17:12","tags":["e","l","i","x","i","r","d","e","b","u","g","e","t","s"],"cssclasses":""}
+{"publish":true,"created":"2025.03.19 수 오후 17:01","modified":"2025.03.19 수 오후 17:12","published":"2025-10-13T14:07:27.064+09:00","tags":"elixir, debug, ets","cssclasses":"","createdAt":"2025.03.19 수 오후 17:01","modifiedAt":"2025.03.19 수 오후 17:12"}
 ---
 
 

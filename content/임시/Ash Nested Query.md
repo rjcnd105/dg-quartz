@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025.04.05 토 오후 17:54","modified":"2025.04.08 화 오전 9:45","tags":["a","s","h","q","u","e","r","y"],"cssclasses":""}
+{"publish":true,"created":"2025.04.05 토 오후 17:54","modified":"2025.04.08 화 오전 9:45","published":"2025-10-13T14:07:27.075+09:00","tags":"ash, query","cssclasses":"","createdAt":"2025.04.05 토 오후 17:54","modifiedAt":"2025.04.08 화 오전 9:45"}
 ---
 
 

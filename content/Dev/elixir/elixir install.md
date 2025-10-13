@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2024.04.01 월 오후 18:10","modified":"2025.04.08 화 오전 10:18","tags":["elixir","zed","pkgx","erlang","lexical-lsp","next-ls"],"cssclasses":""}
+{"publish":true,"created":"2024.04.01 월 오후 18:10","modified":"2025.04.08 화 오전 10:18","published":"2025-10-13T14:07:27.072+09:00","tags":["elixir","zed","pkgx","erlang","lexical-lsp","next-ls"],"cssclasses":"","createdAt":"2024.04.01 월 오후 18:10","modifiedAt":"2025.04.08 화 오전 10:18"}
 ---
 
 

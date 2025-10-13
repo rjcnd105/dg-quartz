@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025.10.02 목 오후 17:41","modified":"2025.10.02 목 오후 17:43","cssclasses":""}
+{"publish":true,"created":"2025.10.02 목 오후 17:41","modified":"2025.10.02 목 오후 17:43","published":"2025-10-13T14:07:27.078+09:00","cssclasses":"","createdAt":"2025.10.02 목 오후 17:41","modifiedAt":"2025.10.02 목 오후 17:43"}
 ---
 
 

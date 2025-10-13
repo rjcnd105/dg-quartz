@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2024.03.29 금 오전 0:00","modified":"2025.10.13 월 오후 14:34","cssclasses":""}
+{"publish":true,"created":"2024.03.29 금 오전 0:00","modified":"2025.10.13 월 오후 14:34","published":"2025-10-13T14:34:44.009+09:00","cssclasses":"","createdAt":"2024.03.29 금 오전 0:00","modifiedAt":"2025.10.13 월 오후 14:34"}
 ---
 
 
@@ -8,6 +8,7 @@
 
 ## 최근 업데이트순 (modified date)
 
+- [[pockets\|pockets]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#참조, #아티클, #개발</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`` | 2025.10.13 PM 2:43 </span>
 - [[Philosophia/Contents/의식 성장이란 진짜로 무엇인가\|의식 성장이란 진짜로 무엇인가]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#의식, #유튜브</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Philosophia/Contents` | 2025.10.13 PM 2:07 </span>
 - [[Dev/elixir/Elixir study\|Elixir study]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#elixir</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev/elixir` | 2025.10.13 PM 2:07 </span>
 - [[Philosophia/my/write/꿈\|꿈]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#꿈, #생각</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Philosophia/my/write` | 2025.10.13 PM 2:07 </span>
@@ -47,7 +48,6 @@
 - [[임시/정적 컴파일을 활용한 아이콘 렌더링\|정적 컴파일을 활용한 아이콘 렌더링]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#elixir, #icon, #live_view, #static</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`임시` | 2025.10.13 PM 2:07 </span>
 - [[Study_etc/영양제/영양제-스택\|영양제-스택]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'></span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Study_etc/영양제` | 2025.10.13 PM 2:07 </span>
 - [[Study_etc/수학 공식\|수학 공식]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'></span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Study_etc` | 2025.10.13 PM 2:07 </span>
-- [[pockets\|pockets]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#참조, #아티클, #개발</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`` | 2025.10.13 PM 2:07 </span>
 - [[Study_etc/영양제/Saffran\|Saffran]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#nootropic</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Study_etc/영양제` | 2025.10.13 PM 2:07 </span>
 - [[Dev/typescript/Module Augmentation와 Interface Merge를 활용한 bottom - up 식 구현\|Module Augmentation와 Interface Merge를 활용한 bottom - up 식 구현]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#typescript</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev/typescript` | 2025.10.13 PM 2:07 </span>
 - [[임시/ash form에서의 임시 추가 에러\|ash form에서의 임시 추가 에러]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#error, #elixir, #ash, #form</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`임시` | 2025.10.13 PM 2:07 </span>
@@ -164,7 +164,7 @@
 - [[Philosophia/Books/complete/지루함의 심리학\|지루함의 심리학]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'></span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Philosophia/Books/complete` | 2025.10.13 PM 2:07 </span>
 - [[Philosophia/Books/complete/여사제 타프티\|여사제 타프티]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'></span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Philosophia/Books/complete` | 2025.10.13 PM 2:07 </span>
 - [[Dev/haskell/haskell in action\|haskell in action]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#haskell, #ghcup, #study</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev/haskell` | 2025.10.13 PM 12:57 </span>
-- [[pockets\|pockets]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#참조, #아티클, #개발</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`` | 2025.10.13 PM 2:07 </span>
+- [[pockets\|pockets]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#참조, #아티클, #개발</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`` | 2025.10.13 PM 2:43 </span>
 - [[Dev/rust/Rust in Action and The Rust Programming Language\|Rust in Action and The Rust Programming Language]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#rust, #book, #study</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev/rust` | 2025.10.13 PM 2:07 </span>
 - [[Study_etc/Zettelkasten\|Zettelkasten]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'></span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Study_etc` | 2025.10.13 PM 2:07 </span>
 - [[Philosophia/Books/reading/프로그래머의 뇌\|프로그래머의 뇌]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#책, #개발, #인지</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Philosophia/Books/reading` | 2025.10.13 PM 2:07 </span>

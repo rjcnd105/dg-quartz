@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2024.07.19 금 오후 15:58","modified":"2025.01.14 화 오후 12:41","tags":["shell","bash"],"cssclasses":""}
+{"publish":true,"created":"2024.07.19 금 오후 15:58","modified":"2025.01.14 화 오후 12:41","published":"2025-10-13T14:07:27.076+09:00","tags":["shell","bash"],"cssclasses":"","createdAt":"2024.07.19 금 오후 15:58","modifiedAt":"2025.01.14 화 오후 12:41"}
 ---
 
 

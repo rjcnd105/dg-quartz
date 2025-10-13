@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025.04.04 금 오후 17:44","modified":"2025.04.08 화 오전 9:46","tags":["l","i","v","e","v","i","e","w"],"cssclasses":""}
+{"publish":true,"created":"2025.04.04 금 오후 17:44","modified":"2025.04.08 화 오전 9:46","published":"2025-10-13T14:07:27.060+09:00","tags":"liveview","cssclasses":"","createdAt":"2025.04.04 금 오후 17:44","modifiedAt":"2025.04.08 화 오전 9:46"}
 ---
 
 

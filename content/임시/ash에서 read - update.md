@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025.04.03 목 오후 19:04","modified":"2025.04.08 화 오전 9:48","tags":["a","s","h","l","i","v","e","v","i","e","w","f","o","r","m","c","o","d","e","_","i","n","t","e","r","f","a","c","e"],"cssclasses":""}
+{"publish":true,"created":"2025.04.03 목 오후 19:04","modified":"2025.04.08 화 오전 9:48","published":"2025-10-13T14:07:27.072+09:00","tags":"ash, liveview, form, code_interface","cssclasses":"","createdAt":"2025.04.03 목 오후 19:04","modifiedAt":"2025.04.08 화 오전 9:48"}
 ---
 
 
