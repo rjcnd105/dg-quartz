@@ -16,7 +16,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "ko-KR",
-    // baseUrl: "quartz.hjs.xyz",
+    baseUrl: "rjcnd105.github.io/dg-quartz",
     ignorePatterns: ["private", "templates", ".obsidian", "trash"],
     defaultDateType: "modified",
     theme: {
