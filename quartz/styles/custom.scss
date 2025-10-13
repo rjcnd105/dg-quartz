@@ -11,6 +11,17 @@ body {
     cursor: pointer;
   }
 
+  a.external-link {
+    cursor: pointer !important;
+  }
+
+  hr {
+    border-top-width: 1px;
+    height: 0;
+  }
+
+
+
   .tag-link+.tag-link {
     margin-left: 4px;
   }
