@@ -7,20 +7,6 @@ html {
 
 }
 
-
-:root {
-  [saved-theme=light] {
-    --lightningcss-light: var(--light);
-    --lightningcss-dark: var(--dark);
-  }
-
-  [saved-theme=dark] {
-    --lightningcss-light: var(--dark);
-    --lightningcss-dark: var(--light);
-  }
-}
-
-
 body {
   .explorer .explorer-content ul.explorer-ul li a  {
     cursor: pointer;
@@ -101,7 +87,26 @@ body {
       fill: var(--dark);
     }
   }
+  .page-title {
+    font-size: 1.6rem;
+  }
+  .search>.search-button>p {
+    font-size: 0.8rem;
+  }
+  .breadcrumb-element p {
+    font-size: 0.6rem;
+    color: var(--darkgray);
+  }
 
+  div.graph {
+    --quartz-graph-line: var(--light);
+    --quartz-graph-node: var(--gray);
+    --quartz-graph-node-attachment: var(--highlight);
+    --quartz-graph-node-focused: var(--secondary);
+    --quartz-graph-node-tag: var(--tertiary);
+    --quartz-graph-node-unresolved: var(--lightgray);
+    --quartz-graph-text: var(--dark);
+  }
 }
 
 
