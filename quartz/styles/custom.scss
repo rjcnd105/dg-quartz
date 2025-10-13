@@ -1,5 +1,5 @@
 @use "base";
-@use "themes";
+@use "themes"
 
 // put your custom CSS here!
 
@@ -61,5 +61,14 @@ body {
 
   .page_tag-hidden .tags {
     display: none !important;
+  }
+}
+
+
+[data-slug="index"] {
+  .page-header {
+    .tags, .content-meta {
+      display: none !important;
+    }
   }
 }
