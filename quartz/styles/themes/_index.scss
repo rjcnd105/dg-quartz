@@ -1,37 +1,125 @@
 @use "../variables.scss" as *;
 
 :root {
-  color-scheme: dark;
+  color-scheme: light dark;
   font-size: 16px;
-
 }
 
-.darkmode {
-  display: none;
+:root:root {
+  --light: #d4d4d4 !important;
+  --gray: #5c5c5c !important;
+  --darkgray: #5c5c5c !important;
+  --highlight: #e0ac00 !important;
+  --secondary: #8a5cf5 !important;
+  --tertiary: #08b94e !important;
+  --lightgray: #b2b2b2 !important;
+  --dark: #333 !important;
+
+  --code-background: #fbfbfb !important;
+  --code-comment: #b2b2b2 !important;
+  --code-function: #e0ac00 !important;
+  --code-important: #ec7500 !important;
+  --code-keyword: #d53984 !important;
+  --code-normal: #333 !important;
+  --code-operator: #e93147 !important;
+  --code-property: #00bfbc !important;
+  --code-punctuation: #5c5c5c !important;
+  --code-string: #08b94e !important;
+  --code-tag: #e93147 !important;
+  --code-value: #7852ee !important;
+}
+:root:root[saved-theme="dark"] {
+  --light: #3f3f3f !important;
+  --gray: #b3b3b3 !important;
+  --darkgray: #b3b3b3 !important;
+  --highlight: #e0de71 !important;
+  --secondary: #a68af9 !important;
+  --tertiary: #44cf6e !important;
+  --lightgray: #b2b2b2 !important;
+  --dark: #dddddd !important;
+
+  --code-background: #1e2022 !important;
+  --code-comment: #b2b2b2 !important;
+  --code-function: #e0de71 !important;
+  --code-important: #e9973f !important;
+  --code-keyword: #fa99cd !important;
+  --code-normal: #dddddd !important;
+  --code-operator: #fb464c !important;
+  --code-property: #53dfdd !important;
+  --code-punctuation: #b3b3b3 !important;
+  --code-string: #44cf6e !important;
+  --code-tag: #fb464c !important;
+  --code-value: #a882ff !important;
 }
 
 html {
-  color-scheme: only dark;
-  .callout[data-callout] {
-    mix-blend-mode: lighten;
+  &[saved-theme="light"] {
+    color-scheme: light;
+    .callout[data-callout] {
+      mix-blend-mode: darken;
+    }
+  }
+  &[saved-theme="dark"] {
+    color-scheme: dark;
+    .callout[data-callout] {
+      mix-blend-mode: lighten;
+    }
   }
 }
 
-/* thai */
 @font-face {
-  font-family: "Bai Jamjuree";
+  font-family: "Avenir";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/baijamjuree/v11/LDI1apSCOBt_aeQQ7ftydoa8SsLLubg58xGL.woff2)
+  src:
+    local("Avenir"),
+    url("https://fonts.cdnfonts.com/s/71748/avenir_roman_12.woff")
+      format("woff");
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2)
     format("woff2");
-  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 /* vietnamese */
 @font-face {
-  font-family: "Bai Jamjuree";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/baijamjuree/v11/LDI1apSCOBt_aeQQ7ftydoa8UcLLubg58xGL.woff2)
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2)
     format("woff2");
   unicode-range:
     U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
@@ -40,10 +128,10 @@ html {
 }
 /* latin-ext */
 @font-face {
-  font-family: "Bai Jamjuree";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/baijamjuree/v11/LDI1apSCOBt_aeQQ7ftydoa8UMLLubg58xGL.woff2)
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2)
     format("woff2");
   unicode-range:
     U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
@@ -52,10 +140,10 @@ html {
 }
 /* latin */
 @font-face {
-  font-family: "Bai Jamjuree";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/baijamjuree/v11/LDI1apSCOBt_aeQQ7ftydoa8XsLLubg58w.woff2)
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2)
     format("woff2");
   unicode-range:
     U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
@@ -64,29 +152,48 @@ html {
 }
 /* cyrillic-ext */
 @font-face {
-  font-family: "Unbounded";
+  font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/unbounded/v8/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6xjx44fNgdyOV0c1bY8p.woff2)
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2)
     format("woff2");
   unicode-range:
     U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 /* cyrillic */
 @font-face {
-  font-family: "Unbounded";
+  font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/unbounded/v8/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6xjx447NgdyOV0c1bY8p.woff2)
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2)
     format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
-/* vietnamese */
+/* greek-ext */
 @font-face {
-  font-family: "Unbounded";
+  font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/unbounded/v8/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6xjx44XNgdyOV0c1bY8p.woff2)
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2)
     format("woff2");
   unicode-range:
     U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
@@ -95,10 +202,10 @@ html {
 }
 /* latin-ext */
 @font-face {
-  font-family: "Unbounded";
+  font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/unbounded/v8/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6xjx44TNgdyOV0c1bY8p.woff2)
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2)
     format("woff2");
   unicode-range:
     U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
@@ -107,10 +214,10 @@ html {
 }
 /* latin */
 @font-face {
-  font-family: "Unbounded";
+  font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/unbounded/v8/Yq6F-LOTXCb04q32xlpat-6uR42XTqtG6xjx44rNgdyOV0c1bQ.woff2)
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2)
     format("woff2");
   unicode-range:
     U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
@@ -120,8 +227,8 @@ html {
 
 body {
   &[data-slug] {
-    background: rgb(24, 29, 39);
-    color: rgb(216, 215, 223);
+    background: light-dark(rgb(251, 251, 251), rgb(30, 32, 34)) !important;
+    color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
   }
 
   .callout {
@@ -135,17 +242,17 @@ body {
 
   .callout .callout-title {
     border-radius: 0px;
-    color: rgb(2, 122, 255);
+    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
     gap: 4px;
     padding: 0px;
   }
 
   .callout .callout-title .callout-icon {
-    color: rgb(2, 122, 255);
+    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
   }
 
   .callout .callout-title > .callout-title-inner > p {
-    color: rgb(2, 122, 255);
+    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
     font-weight: 400;
   }
 
@@ -156,8 +263,11 @@ body {
 
   .callout[data-callout="abstract"] {
     --callout-color: 83, 223, 221;
-    background-color: rgba(83, 223, 221, 0.1);
-    border-color: rgba(83, 223, 221, 0.25);
+    background-color: light-dark(
+      rgba(0, 191, 188, 0.1),
+      rgba(83, 223, 221, 0.1)
+    );
+    border-color: light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
@@ -167,18 +277,18 @@ body {
 
   .callout[data-callout="abstract"] .callout-title {
     border-radius: 0px;
-    color: rgb(83, 223, 221);
+    color: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="abstract"] .callout-title .callout-icon {
-    color: rgb(83, 223, 221);
-    background-color: rgb(83, 223, 221);
+    color: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
+    background-color: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
-    color: rgb(83, 223, 221);
+    color: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
     font-weight: 400;
   }
 
@@ -189,8 +299,11 @@ body {
 
   .callout[data-callout="bug"] {
     --callout-color: 251, 70, 76;
-    background-color: rgba(251, 70, 76, 0.1);
-    border-color: rgba(251, 70, 76, 0.25);
+    background-color: light-dark(
+      rgba(233, 49, 71, 0.1),
+      rgba(251, 70, 76, 0.1)
+    );
+    border-color: light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
@@ -200,18 +313,18 @@ body {
 
   .callout[data-callout="bug"] .callout-title {
     border-radius: 0px;
-    color: rgb(251, 70, 76);
+    color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="bug"] .callout-title .callout-icon {
-    color: rgb(251, 70, 76);
-    background-color: rgb(251, 70, 76);
+    color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
+    background-color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
-    color: rgb(251, 70, 76);
+    color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
     font-weight: 400;
   }
 
@@ -222,8 +335,11 @@ body {
 
   .callout[data-callout="danger"] {
     --callout-color: 251, 70, 76;
-    background-color: rgba(251, 70, 76, 0.1);
-    border-color: rgba(251, 70, 76, 0.25);
+    background-color: light-dark(
+      rgba(233, 49, 71, 0.1),
+      rgba(251, 70, 76, 0.1)
+    );
+    border-color: light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
@@ -233,18 +349,18 @@ body {
 
   .callout[data-callout="danger"] .callout-title {
     border-radius: 0px;
-    color: rgb(251, 70, 76);
+    color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="danger"] .callout-title .callout-icon {
-    color: rgb(251, 70, 76);
-    background-color: rgb(251, 70, 76);
+    color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
+    background-color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
-    color: rgb(251, 70, 76);
+    color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
     font-weight: 400;
   }
 
@@ -255,8 +371,14 @@ body {
 
   .callout[data-callout="example"] {
     --callout-color: 168, 130, 255;
-    background-color: rgba(168, 130, 255, 0.1);
-    border-color: rgba(168, 130, 255, 0.25);
+    background-color: light-dark(
+      rgba(120, 82, 238, 0.1),
+      rgba(168, 130, 255, 0.1)
+    );
+    border-color: light-dark(
+      rgba(120, 82, 238, 0.25),
+      rgba(168, 130, 255, 0.25)
+    );
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
@@ -266,18 +388,18 @@ body {
 
   .callout[data-callout="example"] .callout-title {
     border-radius: 0px;
-    color: rgb(168, 130, 255);
+    color: light-dark(rgb(120, 82, 238), rgb(168, 130, 255));
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="example"] .callout-title .callout-icon {
-    color: rgb(168, 130, 255);
-    background-color: rgb(168, 130, 255);
+    color: light-dark(rgb(120, 82, 238), rgb(168, 130, 255));
+    background-color: light-dark(rgb(120, 82, 238), rgb(168, 130, 255));
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
-    color: rgb(168, 130, 255);
+    color: light-dark(rgb(120, 82, 238), rgb(168, 130, 255));
     font-weight: 400;
   }
 
@@ -288,8 +410,11 @@ body {
 
   .callout[data-callout="failure"] {
     --callout-color: 251, 70, 76;
-    background-color: rgba(251, 70, 76, 0.1);
-    border-color: rgba(251, 70, 76, 0.25);
+    background-color: light-dark(
+      rgba(233, 49, 71, 0.1),
+      rgba(251, 70, 76, 0.1)
+    );
+    border-color: light-dark(rgba(233, 49, 71, 0.25), rgba(251, 70, 76, 0.25));
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
@@ -299,18 +424,18 @@ body {
 
   .callout[data-callout="failure"] .callout-title {
     border-radius: 0px;
-    color: rgb(251, 70, 76);
+    color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="failure"] .callout-title .callout-icon {
-    color: rgb(251, 70, 76);
-    background-color: rgb(251, 70, 76);
+    color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
+    background-color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
-    color: rgb(251, 70, 76);
+    color: light-dark(rgb(233, 49, 71), rgb(251, 70, 76));
     font-weight: 400;
   }
 
@@ -321,8 +446,11 @@ body {
 
   .callout[data-callout="info"] {
     --callout-color: 2, 122, 255;
-    background-color: rgba(2, 122, 255, 0.1);
-    border-color: rgba(2, 122, 255, 0.25);
+    background-color: light-dark(
+      rgba(8, 109, 221, 0.1),
+      rgba(2, 122, 255, 0.1)
+    );
+    border-color: light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
@@ -332,18 +460,18 @@ body {
 
   .callout[data-callout="info"] .callout-title {
     border-radius: 0px;
-    color: rgb(2, 122, 255);
+    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="info"] .callout-title .callout-icon {
-    color: rgb(2, 122, 255);
-    background-color: rgb(2, 122, 255);
+    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    background-color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
-    color: rgb(2, 122, 255);
+    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
     font-weight: 400;
   }
 
@@ -354,8 +482,11 @@ body {
 
   .callout[data-callout="note"] {
     --callout-color: 2, 122, 255;
-    background-color: rgba(2, 122, 255, 0.1);
-    border-color: rgba(2, 122, 255, 0.25);
+    background-color: light-dark(
+      rgba(8, 109, 221, 0.1),
+      rgba(2, 122, 255, 0.1)
+    );
+    border-color: light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
@@ -365,18 +496,18 @@ body {
 
   .callout[data-callout="note"] .callout-title {
     border-radius: 0px;
-    color: rgb(2, 122, 255);
+    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="note"] .callout-title .callout-icon {
-    color: rgb(2, 122, 255);
-    background-color: rgb(2, 122, 255);
+    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    background-color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
-    color: rgb(2, 122, 255);
+    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
     font-weight: 400;
   }
 
@@ -387,8 +518,11 @@ body {
 
   .callout[data-callout="question"] {
     --callout-color: 233, 151, 63;
-    background-color: rgba(233, 151, 63, 0.1);
-    border-color: rgba(233, 151, 63, 0.25);
+    background-color: light-dark(
+      rgba(236, 117, 0, 0.1),
+      rgba(233, 151, 63, 0.1)
+    );
+    border-color: light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
@@ -398,18 +532,18 @@ body {
 
   .callout[data-callout="question"] .callout-title {
     border-radius: 0px;
-    color: rgb(233, 151, 63);
+    color: light-dark(rgb(236, 117, 0), rgb(233, 151, 63));
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="question"] .callout-title .callout-icon {
-    color: rgb(233, 151, 63);
-    background-color: rgb(233, 151, 63);
+    color: light-dark(rgb(236, 117, 0), rgb(233, 151, 63));
+    background-color: light-dark(rgb(236, 117, 0), rgb(233, 151, 63));
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
-    color: rgb(233, 151, 63);
+    color: light-dark(rgb(236, 117, 0), rgb(233, 151, 63));
     font-weight: 400;
   }
 
@@ -453,8 +587,11 @@ body {
 
   .callout[data-callout="success"] {
     --callout-color: 68, 207, 110;
-    background-color: rgba(68, 207, 110, 0.1);
-    border-color: rgba(68, 207, 110, 0.25);
+    background-color: light-dark(
+      rgba(8, 185, 78, 0.1),
+      rgba(68, 207, 110, 0.1)
+    );
+    border-color: light-dark(rgba(8, 185, 78, 0.25), rgba(68, 207, 110, 0.25));
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
@@ -464,18 +601,18 @@ body {
 
   .callout[data-callout="success"] .callout-title {
     border-radius: 0px;
-    color: rgb(68, 207, 110);
+    color: light-dark(rgb(8, 185, 78), rgb(68, 207, 110));
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="success"] .callout-title .callout-icon {
-    color: rgb(68, 207, 110);
-    background-color: rgb(68, 207, 110);
+    color: light-dark(rgb(8, 185, 78), rgb(68, 207, 110));
+    background-color: light-dark(rgb(8, 185, 78), rgb(68, 207, 110));
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
-    color: rgb(68, 207, 110);
+    color: light-dark(rgb(8, 185, 78), rgb(68, 207, 110));
     font-weight: 400;
   }
 
@@ -486,8 +623,11 @@ body {
 
   .callout[data-callout="tip"] {
     --callout-color: 83, 223, 221;
-    background-color: rgba(83, 223, 221, 0.1);
-    border-color: rgba(83, 223, 221, 0.25);
+    background-color: light-dark(
+      rgba(0, 191, 188, 0.1),
+      rgba(83, 223, 221, 0.1)
+    );
+    border-color: light-dark(rgba(0, 191, 188, 0.25), rgba(83, 223, 221, 0.25));
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
@@ -497,18 +637,18 @@ body {
 
   .callout[data-callout="tip"] .callout-title {
     border-radius: 0px;
-    color: rgb(83, 223, 221);
+    color: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="tip"] .callout-title .callout-icon {
-    color: rgb(83, 223, 221);
-    background-color: rgb(83, 223, 221);
+    color: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
+    background-color: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
-    color: rgb(83, 223, 221);
+    color: light-dark(rgb(0, 191, 188), rgb(83, 223, 221));
     font-weight: 400;
   }
 
@@ -519,8 +659,11 @@ body {
 
   .callout[data-callout="todo"] {
     --callout-color: 2, 122, 255;
-    background-color: rgba(2, 122, 255, 0.1);
-    border-color: rgba(2, 122, 255, 0.25);
+    background-color: light-dark(
+      rgba(8, 109, 221, 0.1),
+      rgba(2, 122, 255, 0.1)
+    );
+    border-color: light-dark(rgba(8, 109, 221, 0.25), rgba(2, 122, 255, 0.25));
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
@@ -530,18 +673,18 @@ body {
 
   .callout[data-callout="todo"] .callout-title {
     border-radius: 0px;
-    color: rgb(2, 122, 255);
+    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="todo"] .callout-title .callout-icon {
-    color: rgb(2, 122, 255);
-    background-color: rgb(2, 122, 255);
+    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
+    background-color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
-    color: rgb(2, 122, 255);
+    color: light-dark(rgb(8, 109, 221), rgb(2, 122, 255));
     font-weight: 400;
   }
 
@@ -552,8 +695,11 @@ body {
 
   .callout[data-callout="warning"] {
     --callout-color: 233, 151, 63;
-    background-color: rgba(233, 151, 63, 0.1);
-    border-color: rgba(233, 151, 63, 0.25);
+    background-color: light-dark(
+      rgba(236, 117, 0, 0.1),
+      rgba(233, 151, 63, 0.1)
+    );
+    border-color: light-dark(rgba(236, 117, 0, 0.25), rgba(233, 151, 63, 0.25));
     border-radius: 4px;
     border-style: solid;
     border-width: 0px;
@@ -563,18 +709,18 @@ body {
 
   .callout[data-callout="warning"] .callout-title {
     border-radius: 0px;
-    color: rgb(233, 151, 63);
+    color: light-dark(rgb(236, 117, 0), rgb(233, 151, 63));
     gap: 4px;
     padding: 0px;
   }
 
   .callout[data-callout="warning"] .callout-title .callout-icon {
-    color: rgb(233, 151, 63);
-    background-color: rgb(233, 151, 63);
+    color: light-dark(rgb(236, 117, 0), rgb(233, 151, 63));
+    background-color: light-dark(rgb(236, 117, 0), rgb(233, 151, 63));
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
-    color: rgb(233, 151, 63);
+    color: light-dark(rgb(236, 117, 0), rgb(233, 151, 63));
     font-weight: 400;
   }
 
@@ -584,19 +730,19 @@ body {
   }
 
   .data-footnote-backref {
-    color: rgb(178, 178, 184);
-    text-decoration: none solid rgb(178, 178, 184);
+    color: light-dark(rgb(219, 77, 82), rgb(107, 202, 251));
+    text-decoration: none solid rgb(107, 202, 251);
   }
 
   .explorer .explorer-content {
-    background-color: rgb(24, 29, 39);
+    background-color: light-dark(rgb(251, 251, 251), rgb(30, 32, 34));
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-    color: rgb(179, 179, 179);
+    color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
     cursor: default;
-    font-family: "Bai Jamjuree";
-    font-weight: 700;
+    font-family: Avenir, "Avenir Next";
+    font-weight: 400;
     text-decoration: none solid rgb(179, 179, 179);
   }
 
@@ -604,29 +750,32 @@ body {
     .explorer-content
     li:has(> .folder-outer:not(.open))
     > .folder-container {
-    color: rgb(179, 179, 179);
+    color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
     cursor: default;
-    font-family: "Bai Jamjuree";
-    font-weight: 700;
-    text-decoration: none solid rgb(179, 179, 179);
-  }
-
-  .explorer .explorer-content ul.explorer-ul li a {
-    color: rgb(179, 179, 179);
-    cursor: default;
-    font-family: "Bai Jamjuree";
+    font-family: Avenir, "Avenir Next";
     font-weight: 400;
     text-decoration: none solid rgb(179, 179, 179);
   }
 
+  .explorer .explorer-content ul.explorer-ul li a {
+    color: rgb(178, 178, 178);
+    cursor: default;
+    font-family: Avenir, "Avenir Next";
+    font-weight: 400;
+    text-decoration: none solid rgb(178, 178, 178);
+  }
+
   .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-    background-color: rgba(255, 255, 255, 0.067);
-    color: rgb(216, 215, 223);
+    background-color: light-dark(
+      rgba(0, 0, 0, 0.067),
+      rgba(255, 255, 255, 0.067)
+    );
+    color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
     cursor: default;
   }
 
   .graph .graph-outer {
-    border-color: rgb(36, 43, 58);
+    border-color: rgba(146, 161, 161, 0.48);
   }
 
   .graph > .global-graph-outer {
@@ -636,7 +785,7 @@ body {
 
   .graph > .global-graph-outer > .global-graph-container {
     background-color: transparent;
-    border-color: rgb(36, 43, 58);
+    border-color: rgba(146, 161, 161, 0.48);
   }
 
   .katex > .katex-html {
@@ -645,33 +794,35 @@ body {
 
   .katex-display > .katex {
     display: block;
-    font: 16px / 0px "Bai Jamjuree";
+    font:
+      15px / 0px Avenir,
+      "Avenir Next";
     text-align: center;
     white-space: normal;
   }
 
   .katex-display > .katex > .katex-html {
-    font-family: "Bai Jamjuree";
+    font-family: Avenir, "Avenir Next";
   }
 
   .page > #quartz-body {
-    background-color: rgb(24, 29, 39);
+    background-color: light-dark(rgb(251, 251, 251), rgb(30, 32, 34));
   }
 
   .page > #quartz-body .left.sidebar {
-    background-color: rgb(24, 29, 39);
-    border-color: rgb(36, 43, 58);
+    background-color: light-dark(rgb(251, 251, 251), rgb(30, 32, 34));
+    border-color: rgba(146, 161, 161, 0.48);
     border-right-width: 1px;
   }
 
   .page > #quartz-body .right.sidebar {
-    background-color: rgb(24, 29, 39);
-    border-color: rgb(36, 43, 58);
+    background-color: light-dark(rgb(251, 251, 251), rgb(30, 32, 34));
+    border-color: rgba(146, 161, 161, 0.48);
     border-left-width: 1px;
   }
 
   .page > #quartz-body .sidebar.left:has(.explorer) {
-    background-color: rgb(24, 29, 39);
+    background-color: light-dark(rgb(251, 251, 251), rgb(30, 32, 34));
   }
 
   .page > #quartz-body div.center {
@@ -682,7 +833,7 @@ body {
   }
 
   .page article li:has(> input[type="checkbox"]:checked) {
-    color: rgb(179, 179, 179);
+    color: light-dark(rgb(92, 92, 92), rgb(179, 179, 179));
     text-decoration: line-through solid rgb(179, 179, 179);
     text-decoration-color: rgb(179, 179, 179);
   }
@@ -690,14 +841,14 @@ body {
   .page article p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(216, 215, 223);
+    color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
     cursor: auto;
     filter: none;
-    font-family: "Bai Jamjuree";
+    font-family: Avenir, "Avenir Next";
     font-weight: 400;
-    outline: rgb(216, 215, 223) none 0px;
-    text-decoration: none solid rgb(216, 215, 223);
-    text-decoration-color: rgb(216, 215, 223);
+    outline: rgb(221, 221, 221) none 0px;
+    text-decoration: none solid rgb(221, 221, 221);
+    text-decoration-color: rgb(221, 221, 221);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -708,14 +859,14 @@ body {
   .page article p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(216, 215, 223);
+    color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
     cursor: auto;
     filter: none;
-    font-family: "Bai Jamjuree";
+    font-family: Avenir, "Avenir Next";
     font-weight: 400;
-    outline: rgb(216, 215, 223) none 0px;
-    text-decoration: none solid rgb(216, 215, 223);
-    text-decoration-color: rgb(216, 215, 223);
+    outline: rgb(221, 221, 221) none 0px;
+    text-decoration: none solid rgb(221, 221, 221);
+    text-decoration-color: rgb(221, 221, 221);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -726,14 +877,14 @@ body {
   .page article p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(216, 215, 223);
+    color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
     cursor: auto;
     filter: none;
-    font-family: "Bai Jamjuree";
+    font-family: Avenir, "Avenir Next";
     font-weight: 400;
-    outline: rgb(216, 215, 223) none 0px;
-    text-decoration: none solid rgb(216, 215, 223);
-    text-decoration-color: rgb(216, 215, 223);
+    outline: rgb(221, 221, 221) none 0px;
+    text-decoration: none solid rgb(221, 221, 221);
+    text-decoration-color: rgb(221, 221, 221);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -744,14 +895,14 @@ body {
   .page article p > s,
   s {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(216, 215, 223);
+    color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
     cursor: auto;
     filter: none;
-    font-family: "Bai Jamjuree";
+    font-family: Avenir, "Avenir Next";
     font-weight: 400;
-    outline: rgb(216, 215, 223) none 0px;
-    text-decoration: none solid rgb(216, 215, 223);
-    text-decoration-color: rgb(216, 215, 223);
+    outline: rgb(221, 221, 221) none 0px;
+    text-decoration: none solid rgb(221, 221, 221);
+    text-decoration-color: rgb(221, 221, 221);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -762,14 +913,14 @@ body {
   .page article p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(216, 215, 223);
+    color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
     cursor: auto;
     filter: none;
-    font-family: "Bai Jamjuree";
-    font-weight: 600;
-    outline: rgb(216, 215, 223) none 0px;
-    text-decoration: none solid rgb(216, 215, 223);
-    text-decoration-color: rgb(216, 215, 223);
+    font-family: Avenir, "Avenir Next";
+    font-weight: 900;
+    outline: rgb(221, 221, 221) none 0px;
+    text-decoration: none solid rgb(221, 221, 221);
+    text-decoration-color: rgb(221, 221, 221);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -780,14 +931,14 @@ body {
   .page article p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(216, 215, 223);
+    color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
     cursor: auto;
     filter: none;
-    font-family: "Bai Jamjuree";
-    font-weight: 600;
-    outline: rgb(216, 215, 223) none 0px;
-    text-decoration: none solid rgb(216, 215, 223);
-    text-decoration-color: rgb(216, 215, 223);
+    font-family: Avenir, "Avenir Next";
+    font-weight: 900;
+    outline: rgb(221, 221, 221) none 0px;
+    text-decoration: none solid rgb(221, 221, 221);
+    text-decoration-color: rgb(221, 221, 221);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -798,14 +949,14 @@ body {
   .page article p > u,
   u {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(216, 215, 223);
+    color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
     cursor: auto;
     filter: none;
-    font-family: "Bai Jamjuree";
+    font-family: Avenir, "Avenir Next";
     font-weight: 400;
-    outline: rgb(216, 215, 223) none 0px;
-    text-decoration: none solid rgb(216, 215, 223);
-    text-decoration-color: rgb(216, 215, 223);
+    outline: rgb(221, 221, 221) none 0px;
+    text-decoration: none solid rgb(221, 221, 221);
+    text-decoration-color: rgb(221, 221, 221);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -814,21 +965,21 @@ body {
   }
 
   .popover .popover-inner {
-    background-color: rgb(24, 29, 39);
-    border-color: rgb(36, 43, 58);
+    background-color: light-dark(rgb(251, 251, 251), rgb(30, 32, 34));
+    border-color: rgba(146, 161, 161, 0.48);
   }
 
   .search > .search-button {
-    background-color: rgb(42, 42, 42);
-    border: 1px solid rgb(36, 43, 58);
-    border-color: rgb(36, 43, 58);
+    background-color: light-dark(rgb(255, 255, 255), rgb(42, 42, 42));
+    border: 1px solid rgba(146, 161, 161, 0.48);
+    border-color: rgba(146, 161, 161, 0.48);
     border-radius: 5px;
-    color: rgb(216, 215, 223);
-    font-family: "Bai Jamjuree";
+    color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
+    font-family: Avenir, "Avenir Next";
   }
 
   .search > .search-container > .search-space {
-    background-color: rgb(24, 29, 39);
+    background-color: light-dark(rgb(251, 251, 251), rgb(30, 32, 34));
     border: 1px solid rgb(85, 85, 85);
     border-radius: 12px;
     box-shadow:
@@ -839,14 +990,14 @@ body {
 
   .search > .search-container > .search-space > * {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(216, 215, 223);
+    color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
     cursor: auto;
     filter: none;
-    font-family: "Bai Jamjuree";
+    font-family: Avenir, "Avenir Next";
     font-weight: 400;
-    outline: rgb(216, 215, 223) none 0px;
-    text-decoration: none solid rgb(216, 215, 223);
-    text-decoration-color: rgb(216, 215, 223);
+    outline: rgb(221, 221, 221) none 0px;
+    text-decoration: none solid rgb(221, 221, 221);
+    text-decoration-color: rgb(221, 221, 221);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -859,7 +1010,7 @@ body {
     > .search-space
     > .search-layout
     > .results-container {
-    color: rgb(216, 215, 223);
+    color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
   }
 
   .search
@@ -868,7 +1019,7 @@ body {
     > .search-layout
     > .results-container
     .result-card {
-    border-color: rgb(216, 215, 223);
+    border-color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
   }
 
   .search
@@ -913,7 +1064,7 @@ body {
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
     .card-description {
-    color: rgb(216, 215, 223);
+    color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
   }
 
   .search
@@ -934,20 +1085,20 @@ body {
     > .search-layout
     > .results-container
     > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: rgb(219, 84, 97);
-    color: rgb(216, 215, 223);
+    background-color: light-dark(rgb(255, 255, 255), rgb(37, 37, 37));
+    color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
     font-weight: 400;
   }
 
   .search > .search-container > .search-space > .search-layout,
   .search > .search-container > .search-space > .search-layout.display-results {
-    border-color: rgb(85, 85, 85);
+    border-color: light-dark(rgb(189, 189, 189), rgb(85, 85, 85));
   }
 
   .search > .search-container > .search-space > input {
-    background-color: rgb(24, 29, 39);
+    background-color: light-dark(rgb(251, 251, 251), rgb(30, 32, 34));
     border: unset;
-    border-bottom: 1px solid rgb(24, 29, 39);
+    border-bottom: 1px solid rgb(30, 32, 34);
     border-radius: 0px;
     box-shadow: none;
   }
@@ -964,9 +1115,9 @@ body {
       ~ .result-card:focus,
       ~ .result-card:hover
     ) {
-    background-color: rgb(219, 84, 97);
+    background-color: light-dark(rgb(255, 255, 255), rgb(37, 37, 37));
     border-radius: 4px;
-    color: rgb(216, 215, 223);
+    color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
   }
 
   .search
@@ -987,21 +1138,21 @@ body {
     > .search-layout
     > .results-container
     .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: rgb(219, 84, 97);
+    background-color: light-dark(rgb(255, 255, 255), rgb(37, 37, 37));
     border-radius: 4px;
-    color: rgb(216, 215, 223);
+    color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
   }
 
   .text-highlight {
-    background-color: rgb(219, 84, 97);
-    color: rgb(216, 215, 223);
+    background-color: light-dark(rgb(211, 255, 164), rgb(38, 61, 146));
+    color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
     cursor: auto;
     filter: none;
-    font-family: "Bai Jamjuree";
+    font-family: Avenir, "Avenir Next";
     font-weight: 400;
-    outline: rgb(216, 215, 223) none 0px;
-    text-decoration: none solid rgb(216, 215, 223);
-    text-decoration-color: rgb(216, 215, 223);
+    outline: rgb(221, 221, 221) none 0px;
+    text-decoration: none solid rgb(221, 221, 221);
+    text-decoration-color: rgb(221, 221, 221);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1015,24 +1166,38 @@ body {
 
   ::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px none rgb(216, 215, 223);
-    border-color: rgb(216, 215, 223);
+    border: 0px none rgb(221, 221, 221);
+    border-color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
     border-radius: 0px;
     border-width: 0px;
     box-shadow: none;
   }
 
+  :root {
+    --code-background: #fbfbfb;
+    --code-comment: #b2b2b2;
+    --code-function: #e0ac00;
+    --code-important: #ec7500;
+    --code-keyword: #d53984;
+    --code-normal: #333;
+    --code-operator: #e93147;
+    --code-property: #00bfbc;
+    --code-punctuation: #5c5c5c;
+    --code-string: #08b94e;
+    --code-tag: #e93147;
+    --code-value: #7852ee;
+  }
 
   a.external {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(216, 215, 223);
+    color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
     cursor: auto;
     filter: none;
-    font-family: "Bai Jamjuree";
+    font-family: Avenir, "Avenir Next";
     font-weight: 400;
-    outline: rgb(216, 215, 223) none 0px;
-    text-decoration: none solid rgb(216, 215, 223);
-    text-decoration-color: rgb(216, 215, 223);
+    outline: rgb(221, 221, 221) none 0px;
+    text-decoration: none solid rgb(221, 221, 221);
+    text-decoration-color: rgb(221, 221, 221);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1042,15 +1207,15 @@ body {
 
   a.internal {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(255, 230, 153);
+    color: light-dark(rgb(219, 77, 82), rgb(107, 202, 251));
     cursor: pointer;
     filter: none;
-    font-family: "Bai Jamjuree";
+    font-family: Avenir, "Avenir Next";
     font-weight: 400;
-    outline: rgb(255, 230, 153) none 0px;
-    text-decoration: underline solid rgba(138, 92, 245, 0.3);
-    text-decoration-color: rgba(138, 92, 245, 0.3);
-    text-decoration-line: underline;
+    outline: rgb(107, 202, 251) none 0px;
+    text-decoration: none solid rgb(107, 202, 251);
+    text-decoration-color: rgb(107, 202, 251);
+    text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
     transition: opacity 0.14s ease-in-out;
@@ -1068,18 +1233,18 @@ body {
     > li
     > .match-tag {
     align-items: center;
-    background-color: rgba(138, 92, 245, 0.1);
+    background-color: rgb(167, 176, 179);
     border-bottom-color: rgba(138, 92, 245, 0.15);
-    border-bottom-left-radius: 28px;
-    border-bottom-right-radius: 28px;
+    border-bottom-left-radius: 26.25px;
+    border-bottom-right-radius: 26.25px;
     border-bottom-style: solid;
     border-left-color: rgba(138, 92, 245, 0.15);
     border-left-style: solid;
     border-right-color: rgba(138, 92, 245, 0.15);
     border-right-style: solid;
     border-top-color: rgba(138, 92, 245, 0.15);
-    border-top-left-radius: 28px;
-    border-top-right-radius: 28px;
+    border-top-left-radius: 26.25px;
+    border-top-right-radius: 26.25px;
     border-top-style: solid;
     display: flex;
     font-family:
@@ -1099,13 +1264,13 @@ body {
   }
 
   a.internal.tag-link::before {
-    color: rgb(255, 230, 153);
+    color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
   }
 
   blockquote {
     background-color: rgba(0, 0, 0, 0);
-    border-inline-start: 2px solid rgb(219, 84, 97);
-    font-family: "Bai Jamjuree";
+    border-inline-start: 2px solid rgb(74, 168, 251);
+    font-family: Avenir, "Avenir Next";
     font-style: normal;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
@@ -1115,13 +1280,16 @@ body {
   }
 
   code {
-    background-color: rgb(15, 18, 24);
-    border: 0px solid rgb(36, 43, 58);
-    border-color: rgb(36, 43, 58);
+    background-color: light-dark(rgb(255, 255, 255), rgb(37, 37, 37));
+    border: 0px solid rgba(146, 161, 161, 0.48);
+    border-color: rgba(146, 161, 161, 0.48);
     border-radius: 4px;
-    color: rgb(190, 183, 223);
-    font-family: "Bai Jamjuree";
-    padding: 2.16px 4.32px;
+    color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
+    font-family:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
+      "Source Code Pro", monospace;
+    padding: 2.025px 4.05px;
   }
 
   code.mermaid > svg {
@@ -1131,14 +1299,14 @@ body {
 
   del {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(216, 215, 223);
+    color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
     cursor: auto;
     filter: none;
-    font-family: "Bai Jamjuree";
+    font-family: Avenir, "Avenir Next";
     font-weight: 400;
-    outline: rgb(216, 215, 223) none 0px;
-    text-decoration: line-through solid rgb(216, 215, 223);
-    text-decoration-color: rgb(216, 215, 223);
+    outline: rgb(221, 221, 221) none 0px;
+    text-decoration: line-through solid rgb(221, 221, 221);
+    text-decoration-color: rgb(221, 221, 221);
     text-decoration-line: line-through;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1152,79 +1320,79 @@ body {
 
   div#quartz-root {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(216, 215, 223);
-    font-family: "Bai Jamjuree";
-    font-size: 16px;
+    color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
+    font-family: Avenir, "Avenir Next";
+    font-size: 15px;
   }
 
   div.graph {
-    --quartz-graph-line: #3f3f3f;
-    --quartz-graph-node: #b3b3b3;
-    --quartz-graph-node-attachment: #e0de71;
-    --quartz-graph-node-focused: #ffe699;
-    --quartz-graph-node-tag: #44cf6e;
-    --quartz-graph-node-unresolved: #b2b2b8;
-    --quartz-graph-text: #d8d7df;
+    --quartz-graph-line: #d4d4d4;
+    --quartz-graph-node: #5c5c5c;
+    --quartz-graph-node-attachment: #e0ac00;
+    --quartz-graph-node-focused: hsl(258, 88%, 66%);
+    --quartz-graph-node-tag: #08b94e;
+    --quartz-graph-node-unresolved: #b2b2b2;
+    --quartz-graph-text: #333;
   }
 
   h1 {
-    color: rgb(190, 183, 223);
-    font-family: "Bai Jamjuree";
+    color: light-dark(rgb(51, 51, 51), rgb(203, 219, 229));
+    font-family: Avenir, "Avenir Next";
     text-shadow: none;
   }
 
   h2 {
-    color: rgb(255, 216, 94);
-    font-family: "Bai Jamjuree";
+    color: light-dark(rgb(51, 51, 51), rgb(203, 219, 229));
+    font-family: Avenir, "Avenir Next";
     text-shadow: none;
   }
 
   h3 {
-    color: rgb(255, 79, 0);
-    font-family: "Bai Jamjuree";
+    color: light-dark(rgb(51, 51, 51), rgb(203, 219, 229));
+    font-family: Avenir, "Avenir Next";
     text-shadow: none;
   }
 
   h4 {
-    color: rgb(76, 134, 168);
-    font-family: "Bai Jamjuree";
+    color: light-dark(rgb(51, 51, 51), rgb(203, 219, 229));
+    font-family: Avenir, "Avenir Next";
     text-shadow: none;
   }
 
   h5 {
-    color: rgb(128, 100, 67);
-    font-family: "Bai Jamjuree";
+    color: light-dark(rgb(51, 51, 51), rgb(203, 219, 229));
+    font-family: Avenir, "Avenir Next";
     text-shadow: none;
   }
 
   h6 {
-    color: rgb(201, 202, 217);
-    font-family: "Bai Jamjuree";
+    color: light-dark(rgb(51, 51, 51), rgb(203, 219, 229));
+    font-family: Avenir, "Avenir Next";
     text-shadow: none;
   }
 
   hr {
     border: unset;
-    border-color: rgb(36, 43, 58);
+    border-color: rgba(146, 161, 161, 0.48);
     border-style: solid none none;
-    border-top: 2px solid rgb(36, 43, 58);
+    border-top: 2px solid rgba(146, 161, 161, 0.48);
     box-shadow: none;
     margin: 32px 0px;
   }
 
   input[type="checkbox"] {
     appearance: none;
-    border: 1px solid rgb(107, 154, 182);
-    border-color: rgb(107, 154, 182);
-    border-radius: 4px;
-    margin: 0px 8px 0px -24px;
-    margin-inline-end: 8px;
+    border: 1px solid rgb(167, 176, 179);
+    border-color: rgb(167, 176, 179);
+    border-radius: 3px;
+    margin: 0px 0px 0px -24px;
+    margin-inline-end: 0px;
     margin-inline-start: -24px;
     padding: 0px;
     position: relative;
-    top: 2.66667px;
+    top: 0px;
     transition: box-shadow 0.15s ease-in-out;
-    width: 16px;
+    width: 16.6641px;
   }
 
   input[type="checkbox"]:checked:after {
@@ -1302,24 +1470,24 @@ body {
   }
 
   ol > li {
-    color: rgb(216, 215, 223);
+    color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
     text-align: start;
   }
 
   ol > li::marker {
-    color: rgb(216, 215, 223);
+    color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
   }
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(216, 215, 223);
+    color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
     cursor: auto;
     filter: none;
-    font-family: "Bai Jamjuree";
+    font-family: Avenir, "Avenir Next";
     font-weight: 400;
-    outline: rgb(216, 215, 223) none 0px;
-    text-decoration: none solid rgb(216, 215, 223);
-    text-decoration-color: rgb(216, 215, 223);
+    outline: rgb(221, 221, 221) none 0px;
+    text-decoration: none solid rgb(221, 221, 221);
+    text-decoration-color: rgb(221, 221, 221);
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto;
@@ -1328,27 +1496,27 @@ body {
   }
 
   pre > code {
-    background-color: rgb(15, 18, 24);
-    border: 0px none rgb(190, 183, 223);
-    border-color: rgb(190, 183, 223);
+    background-color: light-dark(rgb(255, 255, 255), rgb(37, 37, 37));
+    border: 0px none rgb(221, 221, 221);
+    border-color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
     border-radius: 4px;
     overflow-x: visible;
-    padding: 4px;
+    padding: 20px;
     white-space: pre-wrap;
   }
 
   pre:has(> code) {
-    background-color: rgb(15, 18, 24);
-    border: 0px solid rgb(36, 43, 58);
-    border-color: rgb(36, 43, 58);
+    background-color: light-dark(rgb(251, 251, 251), rgb(30, 32, 34));
+    border: 0px solid rgba(146, 161, 161, 0.48);
+    border-color: rgba(146, 161, 161, 0.48);
     border-radius: 4px;
     overflow-x: auto;
-    padding: 12px 16px;
+    padding: 0px;
     white-space: pre-wrap;
   }
 
   ul > li {
-    color: rgb(216, 215, 223);
+    color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
     text-align: start;
   }
 
@@ -1360,10 +1528,10 @@ body {
 
   ul > li::marker {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px none rgb(216, 215, 223);
-    border-color: rgb(216, 215, 223);
+    border: 0px none rgb(221, 221, 221);
+    border-color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
     border-radius: 0px;
-    color: rgb(216, 215, 223);
+    color: light-dark(rgb(51, 51, 51), rgb(221, 221, 221));
     content: normal;
     pointer-events: auto;
     transform: none;
@@ -1664,6 +1832,67 @@ body {
   .callout.is-collapsed .callout-content > :first-child {
     margin-top: -4rem;
   }
+
+  figure[data-rehype-pretty-code-figure] pre,
+  pre {
+    background-color: var(--code-background);
+    white-space: pre;
+
+    & > code {
+      span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
+        color: var(--code-value) !important;
+        //color: var(--color-purple) !important;
+      }
+      span[style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"] {
+        color: var(--code-function) !important;
+        //color: var(--color-blue) !important;
+      }
+      span[style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"] {
+        color: var(--code-string) !important;
+        //color: var(--color-cyan) !important;
+      }
+      span[style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;"] {
+        color: var(--code-property) !important;
+        //color: var(--code-yellow) !important;
+      }
+      span[style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"] {
+        color: var(--code-normal) !important;
+        //color: var(--code-normal) !important;
+      }
+      span[style="--shiki-light:#586069;--shiki-dark:#D1D5DA;"] {
+        color: var(--code-punctuation) !important;
+        //color: var(--text-muted) !important;
+      }
+      span[style="--shiki-light:#F6F8FA;--shiki-dark:#2F363D;"] {
+        color: var(--code-comment) !important;
+        //color: var(--text-faint) !important;
+      }
+      span[style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"] {
+        color: var(--code-comment) !important;
+        //color: var(--code-comment) !important;
+      }
+      span[style="--shiki-light:#22863A;--shiki-dark:#85E89D;"] {
+        color: var(--code-tag) !important;
+        //color: var(--color-green) !important;
+      }
+      span[style="--shiki-light:#E36209;--shiki-dark:#FFAB70;"] {
+        color: var(--code-important) !important;
+        //color: var(--color-orange) !important;
+      }
+      span[style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;"] {
+        color: var(--text-operator) !important;
+        //color: var(--color-pink) !important;
+      }
+      span[style="--shiki-light:#D73A49;--shiki-dark:#F97583;"] {
+        color: var(--code-keyword) !important;
+        //color: var(--color-red) !important;
+      }
+
+      background-color: transparent;
+      color: var(--code-normal);
+    }
+  }
+}
 
 :root[saved-theme="light"] {
   button.darkmode {
