@@ -1,0 +1,23 @@
+---
+{"publish":true,"created":"2025.04.23 수 오전 11:34","modified":"2025.04.23 수 오전 11:35","cssclasses":""}
+---
+
+
+.zed/settings.json
+```json
+{
+  "lsp": {
+    "tailwindcss-language-server": {
+      "settings": {
+        "experimental": {
+          "configFile": {
+            "my_app/src/styles/app.css": "my_app/**"
+          }
+        }
+      }
+    }
+  }
+}
+
+
+```

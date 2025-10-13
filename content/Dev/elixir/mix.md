@@ -1,0 +1,84 @@
+---
+{"publish":true,"created":"2024.04.03 수 오후 13:57","modified":"2025.03.18 화 오후 18:02","tags":["e","l","i","x","i","r","m","i","x","h","e","x","p","h","o","e","n","i","x","e","c","t","o","a","s","h"],"cssclasses":""}
+---
+
+
+elixir의 통합 관리자 cli
+
+[mix guide](https://hexdocs.pm/elixir/introduction-to-mix.html)
+mix내에 있는 hex는 패키지 관리자임
+
+https://hex.pm/packages
+에서 패키지 검색
+
+## Packages manager
+
+`mix help`: 도움말
+`mix deps.get`: 종속성 설치
+`mix hex.outdated`: 업데이트가 필요한 패키지 확인
+`mix deps.update --all`: 패키지 전부 업데이트
+`mix app.tree`: 패키지 종속성 트리 보기
+
+***
+
+## Phoenix
+
+`mix phx.routes $APP_NAME`
+
+app에 대한 routes 보기
+![[env/첨부파일/CleanShot 2025-01-15 at 17.14.58@2x.jpg]]
+
+#### [mix phx.gen.schema](https://hexdocs.pm/phoenix/Mix.Tasks.Phx.Gen.Schema.html)
+
+ex) `mix phx.gen.schema Chat.Room rooms name:text topic:text`
+
+ecto 스키마, 마이그레이션 생성
+`$APP_NAME/lib/$APP_NAME/{Context}` 에
+
+### mix phx.gen.auth(https://hexdocs.pm/phoenix/Mix.Tasks.Phx.Gen.Auth.html)
+
+인증 추가
+
+ex) `mix phx.gen.auth Accounts User users`
+Accounts context에 User 스키마를 users 데이터베이스에 만든다는 의미이다.
+
+## Ecto
+
+### [mix ecto.migrate](https://hexdocs.pm/ecto_sql/Mix.Tasks.Ecto.Migrate.html)
+
+### [mix ecto.migrations](https://hexdocs.pm/ecto_sql/Mix.Tasks.Ecto.Migrate.html)
+
+전체 migration 내역 보기
+
+![[env/첨부파일/CleanShot 2025-01-17 at 16.55.19@2x.jpg]]
+
+### [mix ecto.rollback](https://hexdocs.pm/ecto_sql/Mix.Tasks.Ecto.Rollback.html)
+
+ecto migrate 되돌리기
+
+### [mix ecto.get.migration](https://hexdocs.pm/ecto_sql/Mix.Tasks.Ecto.Gen.Migration.html)
+
+migration 생성
+ex)
+[[Dev/elixir/phoenix/Ecto #notnull 추가]]
+
+### [mix ecto.dump](https://hexdocs.pm/ecto_sql/Mix.Tasks.Ecto.Dump.html)
+
+ecto migration 기반의 확인 용도의 sql 파일 생성
+
+## Ash
+
+### mix ash.gen.resource
+
+리소스를 만들고 도메인 리소스에 추가한다
+
+ex)
+mix ash.gen.resource MyApp.Chat.Room --extend postgres
+
+ MyApp.Chat.Room 리소스를 생성 후 MyApp.Chat 도메인에 리소스를 연결한다.
+
+### mix ash.codegen
+
+ecto migration 생성.
+
+그 후 mix setup(mix ash.migrate)을 적용된다.
