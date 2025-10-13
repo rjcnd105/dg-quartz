@@ -3,6 +3,23 @@
 :root {
   color-scheme: dark;
   font-size: 16px;
+
+}
+
+
+:root {
+  --code-background: #181d27;
+  --code-comment: #b2b2b8;
+  --code-function: #e0de71;
+  --code-important: #e9973f;
+  --code-keyword: #fa99cd;
+  --code-normal: #d8d7df;
+  --code-operator: #fb464c;
+  --code-property: #53dfdd;
+  --code-punctuation: #b3b3b3;
+  --code-string: #44cf6e;
+  --code-tag: #fb464c;
+  --code-value: #a882ff;
 }
 
 :root:root {
@@ -1024,20 +1041,6 @@ body {
     box-shadow: none;
   }
 
-  :root {
-    --code-background: #181d27;
-    --code-comment: #b2b2b8;
-    --code-function: #e0de71;
-    --code-important: #e9973f;
-    --code-keyword: #fa99cd;
-    --code-normal: #d8d7df;
-    --code-operator: #fb464c;
-    --code-property: #53dfdd;
-    --code-punctuation: #b3b3b3;
-    --code-string: #44cf6e;
-    --code-tag: #fb464c;
-    --code-value: #a882ff;
-  }
 
   a.external {
     background-color: rgba(0, 0, 0, 0);
