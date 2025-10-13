@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2024-02-04T17:35:13.881+09:00","modified":"2025-10-13T12:57:17.627+09:00","tags":["참조","아티클","개발"],"cssclasses":""}
+{"publish":true,"created":"2024-02-04T17:35:13.881+09:00","modified":"2025-10-13T14:07:27.068+09:00","tags":["참조","아티클","개발"],"cssclasses":""}
 ---
 
 
@@ -108,9 +108,9 @@ I learned something new about window's storage event!
 `24-10-04 11:10`
 [Patterns for Memory Efficient DOM Manipulation with Modern Vanilla JavaScript – Frontend Masters Boost](https://frontendmasters.com/blog/patterns-for-memory-efficient-dom-manipulation/)
 ```
-Marc Grabanski        
+Marc Grabanski
 
-        
+
                     Frontend Masters
 Let’s continue the modern vanilla JavaScript series!
 
@@ -379,7 +379,7 @@ As a Front-End Engineer: The Magic Behind “Event Emitter” in JavaScript That
 📅️ Published: February  3, 2024  • 🕣
 
 		17 min read
-	
+
 📅️ 게시됨: 2024년 2월 3일 - 🕣 17분 읽기
 
 24-02-10 0:02

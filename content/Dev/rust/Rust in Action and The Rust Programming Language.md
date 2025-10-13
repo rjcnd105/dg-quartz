@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2024-02-04T16:44:37.549+09:00","modified":"2025-10-13T12:57:16.821+09:00","tags":["rust","book","study"],"cssclasses":""}
+{"publish":true,"created":"2024-02-04T16:44:37.549+09:00","modified":"2025-10-13T14:07:27.071+09:00","tags":["rust","book","study"],"cssclasses":""}
 ---
 
 
@@ -8,7 +8,7 @@
 
 ## 인트로
 
-모든 rust binary 프로젝트는 다음과 같은 구조에서 시작된다. 
+모든 rust binary 프로젝트는 다음과 같은 구조에서 시작된다.
 
 ![[env/첨부파일/rust1.png]]
 
@@ -41,10 +41,10 @@
 5. server-side application.
 6. desktop application. 적합하지만 생태계 부족
 7. Mobile. swift, android처럼 인터페이스와 대화 가능하다. 추가적인 런타임 비용 없이.
-8. Web. wasm 
+8. Web. wasm
 9. System Programming. 여러 OS에서 러스트를 쓰려고 한다.
 
-  
+
 
 ## 변수
 
@@ -92,14 +92,14 @@ String과 str은 비슷해보이지만 별개의 유형이다.
 ### String
 
 *String*은 합치거나 추가, 공백 제거와 같은 다양한 기능들이 있다.
-String은 awned(소유) type이다. 
+String은 awned(소유) type이다.
 
 소유자는 데이터를 변경할 수 있으며 범위를 벗어날 때 소유한 값을 삭제할 책임이 있다.
 
 ### str (string slice)
 
-*str*은 기능이 적지만 고성능 유형이다. 
-한번 생성된 str은 확장할 수 없다. 
+*str*은 기능이 적지만 고성능 유형이다.
+한번 생성된 str은 확장할 수 없다.
 
 마치 원시 메모리(c언어에서의 배열과 같은) 유사하지만 Rust는 UTF-8 문자를 보장한다.
 str은 일반적으로 &str처럼 표시된다.
@@ -107,14 +107,14 @@ string slice라고 부른다.
 
 str유형에 변수를 할당하면 실패한다. str 값은 임의의 길이일 수 있으므로 참조에 의해 지역 변수로만 저장할 수 있다.
 
-&str은 borrowed(빌린) type이다. 
+&str은 borrowed(빌린) type이다.
 
 실용적인 측면에서 이것은 &str이 읽기 전용 데이터로 간주될 수 있는 반면 String은 읽기-쓰기로 간주될 수 있음을 의미한다.
 
 ### String vs str
 
-String은 동적 메모리 할당을 사용하여 표시하는 텍스트를 저장한다. 
-&str 값을 생성하면 메모리 할당을 피할 수 있다. 
+String은 동적 메모리 할당을 사용하여 표시하는 텍스트를 저장한다.
+&str 값을 생성하면 메모리 할당을 피할 수 있다.
 
 String은 Vec\<u8\>에 대한 것이고 str은 [u8]에 대한 것이다.
 
@@ -160,7 +160,7 @@ pub fn numeric_literals_and_basic_operations_on_numbers_in_rust() {
 
     let forty_twos = [42.3424, 42f32, 42.3423_f32];
 
-    println!("{:02}", forty_twos[0]); 
+    println!("{:02}", forty_twos[0]);
 }
 /* Result
 20 + 21 + 22 = 63
@@ -564,9 +564,9 @@ rust 설치를 관리
 ## 참고
 
 - 예제 파일들
-    
+
     [https://github.com/rust-in-action/code](https://github.com/rust-in-action/code)
-    
+
 
 ## 문자열
 String과 str은 비슷해보이지만 별개의 유형이다.

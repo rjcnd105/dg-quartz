@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2024-10-02T18:58:04.812+09:00","modified":"2025-10-13T12:57:16.738+09:00","tags":["nix","nix_flake"],"cssclasses":""}
+{"publish":true,"created":"2024-10-02T18:58:04.812+09:00","modified":"2025-10-13T14:07:27.078+09:00","tags":["nix","nix_flake"],"cssclasses":""}
 ---
 
 

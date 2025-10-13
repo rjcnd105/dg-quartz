@@ -1,13 +1,13 @@
 ---
-{"publish":true,"created":"2024-12-27T15:43:33.384+09:00","modified":"2025-10-13T12:57:16.755+09:00","cssclasses":""}
+{"publish":true,"created":"2024-12-27T15:43:33.384+09:00","modified":"2025-10-13T14:07:27.044+09:00","cssclasses":""}
 ---
 
 
 기본적인 쉘 스크립트 실행
 ```nix
-{ pkgs, ... }: { 
-t = builtins.readFile ( 
-	pkgs.runCommand  "timestamp" { when = builtins.currentTime; } "echo -n `date -d @$when +%Y-%m-%d_%H-%M-%S` > $out" 
+{ pkgs, ... }: {
+t = builtins.readFile (
+	pkgs.runCommand  "timestamp" { when = builtins.currentTime; } "echo -n `date -d @$when +%Y-%m-%d_%H-%M-%S` > $out"
 )
 ```
 
@@ -16,4 +16,3 @@ t = builtins.readFile (
 ```nix
 pkgs.runCommandLocal "ex-dir" {} "
 ```
-

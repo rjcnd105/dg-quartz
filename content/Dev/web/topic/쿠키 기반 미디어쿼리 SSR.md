@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-07-23T12:58:42.014+09:00","modified":"2025-10-13T12:57:16.979+09:00","cssclasses":""}
+{"publish":true,"created":"2025-07-23T12:58:42.014+09:00","modified":"2025-10-13T14:07:27.077+09:00","cssclasses":""}
 ---
 
 
@@ -21,7 +21,7 @@ window width size를 nextjs서버 통해 쿠키로 저장해서 sever side에서
 
 - 쿠키 있을 시
 	1. server side인 root layout에서 provider를 통해 해당 mediaSize cookie값 hydration
-    
+
 	2. 이 후 media query로 분기되어 렌더링되는 컴포넌트들에 초기 SSR 기준을 해당 쿠키 사이즈 기준으로 잡음
 
 - 공통

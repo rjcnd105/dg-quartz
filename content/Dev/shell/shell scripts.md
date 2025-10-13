@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2024-07-19T15:58:50.535+09:00","modified":"2025-10-13T12:57:16.842+09:00","tags":["shell","bash"],"cssclasses":""}
+{"publish":true,"created":"2024-07-19T15:58:50.535+09:00","modified":"2025-10-13T14:07:27.076+09:00","tags":["shell","bash"],"cssclasses":""}
 ---
 
 
@@ -30,7 +30,7 @@ cat > lib/app_config.ex << EOF
 		defmacro app_macro, do: quote do: unquote(@app)
 		defmacro web_app_macro, do: quote do: unquote(@web_app)
 	 end
-  EOF 
+  EOF
 ```
 
 ### 조건

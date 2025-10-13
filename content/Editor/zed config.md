@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2024-10-07T16:32:21.576+09:00","modified":"2025-10-13T12:57:17.161+09:00","tags":["nix","sh"],"cssclasses":""}
+{"publish":true,"created":"2024-10-07T16:32:21.576+09:00","modified":"2025-10-13T14:05:36.837+09:00","tags":["nix","sh"],"cssclasses":""}
 ---
 
 

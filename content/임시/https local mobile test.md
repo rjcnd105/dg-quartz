@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"https local mobile test","created":"2025-06-12T18:52:09.399+09:00","modified":"2025-10-13T12:57:17.984+09:00","cssclasses":""}
+{"publish":true,"aliases":"https local mobile test","created":"2025-06-12T18:52:09.399+09:00","modified":"2025-10-13T14:07:27.051+09:00","cssclasses":""}
 ---
 
 

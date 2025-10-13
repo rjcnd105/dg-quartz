@@ -1,16 +1,16 @@
 ---
-{"publish":true,"created":"2025-04-03T19:04:24.919+09:00","modified":"2025-10-13T12:57:17.947+09:00","tags":["a","s","h","l","i","v","e","v","i","e","w","f","o","r","m","c","o","d","e","_","i","n","t","e","r","f","a","c","e"],"cssclasses":""}
+{"publish":true,"created":"2025-04-03T19:04:24.919+09:00","modified":"2025-10-13T14:07:27.072+09:00","tags":["a","s","h","l","i","v","e","v","i","e","w","f","o","r","m","c","o","d","e","_","i","n","t","e","r","f","a","c","e"],"cssclasses":""}
 ---
 
 
 room을 읽어서 :action에 해당하는 update form을 만든 후 params와 함께 submit하면 된다.
 
 ```elixir
- Settlement.get_room_by_short_id!("@xZiOtcCj5S0dDe9KmgLq") 
- |> AshPhoenix.Form.for_update(:update_name) 
- |> Phoenix.Component.to_form() 
+ Settlement.get_room_by_short_id!("@xZiOtcCj5S0dDe9KmgLq")
+ |> AshPhoenix.Form.for_update(:update_name)
+ |> Phoenix.Component.to_form()
  |> AshPhoenix.Form.submit(params: %{"name" => "정산영수증11"})
- 
+
 ```
 
 live view 내에서의 submit 처리의 경우 예시

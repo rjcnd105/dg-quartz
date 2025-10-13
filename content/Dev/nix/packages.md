@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2024-11-14T17:29:56.058+09:00","modified":"2025-10-13T12:57:16.775+09:00","tags":["nix","nix_flake"],"cssclasses":""}
+{"publish":true,"created":"2024-11-14T17:29:56.058+09:00","modified":"2025-10-13T14:07:27.075+09:00","tags":["nix","nix_flake"],"cssclasses":""}
 ---
 
 
@@ -13,7 +13,7 @@ https://github.com/NixOS/nixpkgs/tags
 #### flake-utils
 https://github.com/numtide/flake-utils
 
-여러 시스템 목록에 관한 동일한 구조 작성시 유용 
+여러 시스템 목록에 관한 동일한 구조 작성시 유용
 
 #### flake-parts
 https://github.com/hercules-ci/flake-parts
@@ -24,7 +24,7 @@ https://github.com/hercules-ci/flake-parts
 https://github.com/nix-systems
 
 
---- 
+---
 ### Languages frameworks
 https://github.com/NixOS/nixpkgs/tree/master/doc/languages-frameworks
 

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-03-19T17:01:47.930+09:00","modified":"2025-10-13T12:57:18.029+09:00","tags":["e","l","i","x","i","r","d","e","b","u","g","e","t","s"],"cssclasses":""}
+{"publish":true,"created":"2025-03-19T17:01:47.930+09:00","modified":"2025-10-13T14:07:27.064+09:00","tags":["e","l","i","x","i","r","d","e","b","u","g","e","t","s"],"cssclasses":""}
 ---
 
 
@@ -47,12 +47,12 @@ import MyDebug, only: [dbg_vget: 0, dbg_vget: 1, dbg_store: 1, dbg_store: 2, dbg
 ```elixir
 def mount(assigns) do
   # ...
-	assigns 
+	assigns
 	|> MyDebug.dbg_store()
 end
 ```
 
 2. iex 내에서 값 출력
 ```elixir
-iex(1)> dbg_vget() 
+iex(1)> dbg_vget()
 ```
