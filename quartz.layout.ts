@@ -5,7 +5,27 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [
+    Component.Comments({
+      provider: 'giscus',
+      options: {
+        // from data-repo
+        repo: 'rjcnd105/dg-quartz',
+        // from data-repo-id
+        repoId: 'R_kgDOQBSPFg',
+        // from data-category
+        category: 'Announcements',
+        // from data-category-id
+        categoryId: 'DIC_kwDOQBSPFs4CwlXf',
+        inputPosition: "bottom",
+        // from data-lang
+        loading: "lazy",
+        mapping: "url",
+        reactionsEnabled: true,
+        lang: 'ko'
+      }
+    })
+  ],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/rjcnd105",
@@ -27,6 +47,7 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.TagList(),
   ],
+
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),

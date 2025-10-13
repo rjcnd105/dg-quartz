@@ -1888,8 +1888,10 @@ body {
         //color: var(--color-red) !important;
       }
 
-      background-color: transparent;
-      color: var(--code-normal);
+      & {
+        background-color: transparent;
+        color: var(--code-normal);
+      }
     }
   }
 }

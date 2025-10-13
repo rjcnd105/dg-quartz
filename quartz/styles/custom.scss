@@ -2,8 +2,24 @@
 @use "themes";
 
 html {
-  font-size: 16px;
+  font-size: 14px;
+  --external-link-color: rgba(123, 151, 170, 1);
+
 }
+
+
+:root {
+  [saved-theme=light] {
+    --lightningcss-light: var(--light);
+    --lightningcss-dark: var(--dark);
+  }
+
+  [saved-theme=dark] {
+    --lightningcss-light: var(--dark);
+    --lightningcss-dark: var(--light);
+  }
+}
+
 
 body {
   .explorer .explorer-content ul.explorer-ul li a  {
@@ -15,6 +31,8 @@ body {
 
   a.external {
     cursor: pointer !important;
+    text-decoration: underline;
+    text-underline-offset: 2px;
   }
 
   hr {
@@ -30,11 +48,9 @@ body {
 
   [data-ui="tags"] {
     .tag-link {
-      color: inherit;
-      cursor: pointer;
       display: inline !important;
       border: none;
-      padding: 4px 8px;
+      padding: 2px;
 
       &:before {
         color: inherit !important;
@@ -60,6 +76,32 @@ body {
   .page_tag-hidden .tags {
     display: none !important;
   }
+
+  a.internal {
+    color: var(--secondary);
+  }
+
+  a.internal.tag-link {
+    border: none !important;
+    outline: none !important;
+    background-color: transparent !important;
+  }
+
+  a.internal.tag-link {
+    cursor: pointer !important;
+    color: var(--dark);
+  }
+
+  .clipboard-button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+    & > svg {
+      fill: var(--dark);
+    }
+  }
+
 }
 
 
@@ -70,3 +112,5 @@ body {
     }
   }
 }
+
+

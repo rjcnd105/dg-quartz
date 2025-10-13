@@ -18,6 +18,7 @@ type Options = {
     reactionsEnabled?: boolean
     inputPosition?: "top" | "bottom"
     lang?: string
+    loading?: "lazy" | "eager"
   }
 }
 
@@ -51,6 +52,7 @@ export default ((opts: Options) => {
         data-theme-url={
           opts.options.themeUrl ?? `https://${cfg.baseUrl ?? "example.com"}/static/giscus`
         }
+        data-loading={opts.options.loading ?? "lazy"}
         data-lang={opts.options.lang ?? "en"}
       ></div>
     )

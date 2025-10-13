@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "hj's digital garden",
+    pageTitle: "hj blog",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -90,8 +90,9 @@ const config: QuartzConfig = {
       Plugin.NotFoundPage(),
       // Comment out CustomOgImages to speed up build time
       Plugin.CustomOgImages(),
-    ],
+    ]
   },
+
 }
 
 export default config
