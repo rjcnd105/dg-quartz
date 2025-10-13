@@ -6,7 +6,7 @@ on:
       - v4
 
 env:
-  THEME_NAME: tokyo-night-storm
+  THEME_NAME: space
 
 permissions:
   contents: read
@@ -29,8 +29,9 @@ jobs:
           bun-version: latest
       - name: Install Dependencies
         run: bun install
-      - name: Fetch Quartz Theme
-        run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- $THEME_NAME
+      # theme
+      # - name: Fetch Quartz Theme
+      #   run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- $THEME_NAME
       - name: Build Quartz
         run: bun --bun quartz build
       - name: Upload artifact
