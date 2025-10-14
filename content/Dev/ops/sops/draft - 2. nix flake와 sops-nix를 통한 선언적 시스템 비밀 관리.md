@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025.10.06 월 오후 20:24","modified":"2025.10.13 월 오후 12:22","published":"2025-10-14T12:45:48.045+09:00","tags":["sops","sops-nix","nix","nix_flake","age","gitops"],"cssclasses":"","createdAt":"2025.10.06 월 오후 20:24","modifiedAt":"2025.10.13 월 오후 12:22"}
+{"publish":true,"created":"2025.10.06 월 오후 20:24","modified":"2025.10.13 월 오후 12:22","published":"2025-10-14T16:34:03.875+09:00","tags":["sops","sops-nix","nix","nix_flake","age","gitops"],"cssclasses":"","createdAt":"2025.10.06 월 오후 20:24","modifiedAt":"2025.10.13 월 오후 12:22"}
 ---
 
 
