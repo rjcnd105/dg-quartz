@@ -59,9 +59,9 @@ const config: QuartzConfig = {
       Plugin.CreatedModifiedDate({
         priority: ["frontmatter", "git", "filesystem"],
       }),
+      Plugin.HardLineBreaks(),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
-      Plugin.HardLineBreaks(),
       Plugin.SyntaxHighlighting({
         theme: {
           light: "github-light",
