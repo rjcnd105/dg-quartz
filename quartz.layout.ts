@@ -6,24 +6,31 @@ export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
   afterBody: [
-    Component.Comments({
-      provider: 'giscus',
-      options: {
-        // from data-repo
-        repo: 'rjcnd105/dg-quartz',
-        // from data-repo-id
-        repoId: 'R_kgDOQBSPFg',
-        // from data-category
-        category: 'Announcements',
-        // from data-category-id
-        categoryId: 'DIC_kwDOQBSPFs4CwlXf',
-        inputPosition: "bottom",
-        // from data-lang
-        loading: "lazy",
-        mapping: "url",
-        reactionsEnabled: true,
-        lang: 'ko'
-      }
+    Component.ConditionalRender({
+      component: Component.Comments({
+        provider: 'giscus',
+        options: {
+          // from data-repo
+          repo: 'rjcnd105/dg-quartz',
+          // from data-repo-id
+          repoId: 'R_kgDOQBSPFg',
+          // from data-category
+          category: 'Announcements',
+          // from data-category-id
+          categoryId: 'DIC_kwDOQBSPFs4CwlXf',
+          inputPosition: "bottom",
+          // from data-lang
+          loading: "lazy",
+          mapping: "url",
+          reactionsEnabled: true,
+          lang: 'ko'
+        }
+      }),
+      condition: (page) => {
+        // 실제 마크다운 파일이면서 태그 페이지가 아닌 경우만 댓글 표시
+        return page.fileData.filePath !== undefined &&
+               page.fileData.slug !== "index"
+      },
     })
   ],
   footer: Component.Footer({
