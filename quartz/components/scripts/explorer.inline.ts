@@ -222,10 +222,10 @@ async function setupExplorer(currentSlug: FullSlug) {
       explorerUl.scrollTop = parseInt(scrollTop)
     } else {
       // try to scroll to the active element if it exists
-      const activeElement = explorerUl.querySelector(".active")
-      if (activeElement) {
-        activeElement.scrollIntoView({ behavior: "smooth" })
-      }
+      // const activeElement = explorerUl.querySelector(".active")
+      // if (activeElement) {
+      //   activeElement.scrollIntoView({ behavior: "smooth" })
+      // }
     }
 
     // Set up event handlers
