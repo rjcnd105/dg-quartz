@@ -40,7 +40,6 @@ export default ((opts: Options) => {
       <div
         class={classNames(displayClass, "giscus")}
         data-repo={opts.options.repo}
-        style={{ overflowAnchor: "none" }}
         data-repo-id={opts.options.repoId}
         data-category={opts.options.category}
         data-category-id={opts.options.categoryId}
@@ -53,7 +52,6 @@ export default ((opts: Options) => {
         data-theme-url={
           opts.options.themeUrl ?? `https://${cfg.baseUrl ?? "example.com"}/static/giscus`
         }
-        data-loading={opts.options.loading ?? "lazy"}
         data-lang={opts.options.lang ?? "en"}
       ></div>
     )
