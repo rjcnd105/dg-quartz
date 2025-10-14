@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2024.03.29 금 오전 0:00","modified":"2025.10.13 월 오후 18:24","published":"2025-10-13T18:24:09.842+09:00","cssclasses":["page_tag-hidden"],"createdAt":"2024.03.29 금 오전 0:00","modifiedAt":"2025.10.13 월 오후 18:24"}
+{"publish":true,"created":"2024.03.29 금 오전 0:00","modified":"2025.10.14 화 오전 10:54","published":"2025-10-14T10:54:31.124+09:00","cssclasses":"","createdAt":"2024.03.29 금 오전 0:00","modifiedAt":"2025.10.14 화 오전 10:54","hiddenTags":true}
 ---
 
 
@@ -8,7 +8,7 @@
 
 ## 최근 업데이트순 (modified date)
 
-- [[Dev/ops/sops/1. git과 sops를 사용한 선언적 패러다임으로 비밀을 관리하기(feat mise)\|1. git과 sops를 사용한 선언적 패러다임으로 비밀을 관리하기(feat mise)]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#sops, #mise, #age, #gitops</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev/ops/sops` | 2025.10.13 PM 6:25 </span>
+- [[Dev/ops/sops/1. git과 sops를 사용한 선언적 패러다임으로 비밀을 관리하기(feat mise)\|1. git과 sops를 사용한 선언적 패러다임으로 비밀을 관리하기(feat mise)]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#sops, #mise, #age, #gitops</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev/ops/sops` | 2025.10.13 PM 7:31 </span>
 - [[pockets\|pockets]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#참조, #아티클, #개발</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`` | 2025.10.13 PM 2:43 </span>
 - [[Philosophia/Contents/의식 성장이란 진짜로 무엇인가\|의식 성장이란 진짜로 무엇인가]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#의식, #유튜브</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Philosophia/Contents` | 2025.10.13 PM 2:07 </span>
 - [[Dev/elixir/Elixir study\|Elixir study]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#elixir</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev/elixir` | 2025.10.13 PM 2:07 </span>
@@ -98,7 +98,7 @@
 - [[Dev/typescript/[ts, fp] @fp-tsschema를 사용한 안전한 데이터 유효성 검사, 변환\|[ts, fp] @fp-tsschema를 사용한 안전한 데이터 유효성 검사, 변환]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#typescript</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev/typescript` | 2025.10.13 PM 12:22 </span>
 - [[Dev/개발 회고/2022년 회고\|2022년 회고]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'></span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev/개발 회고` | 2025.10.13 PM 1:03 </span>
 - [[Dev/개발 회고/2020년 신버전 프로젝트 중간 회고\|2020년 신버전 프로젝트 중간 회고]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#회고</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev/개발 회고` | 2025.10.13 PM 12:57 </span>
-- [[Dev/ops/sops/1. git과 sops를 사용한 선언적 패러다임으로 비밀을 관리하기(feat mise)\|1. git과 sops를 사용한 선언적 패러다임으로 비밀을 관리하기(feat mise)]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#sops, #mise, #age, #gitops</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev/ops/sops` | 2025.10.13 PM 6:25 </span>
+- [[Dev/ops/sops/1. git과 sops를 사용한 선언적 패러다임으로 비밀을 관리하기(feat mise)\|1. git과 sops를 사용한 선언적 패러다임으로 비밀을 관리하기(feat mise)]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#sops, #mise, #age, #gitops</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev/ops/sops` | 2025.10.13 PM 7:31 </span>
 - [[Dev/app, server stack\|app, server stack]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'></span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev` | 2025.10.13 PM 2:07 </span>
 - [[Dev/typescript/Module Augmentation와 Interface Merge를 활용한 bottom - up 식 구현\|Module Augmentation와 Interface Merge를 활용한 bottom - up 식 구현]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#typescript</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev/typescript` | 2025.10.13 PM 2:07 </span>
 - [[Dev/web/topic/쿠키 기반 미디어쿼리 SSR\|쿠키 기반 미디어쿼리 SSR]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'></span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev/web/topic` | 2025.10.13 PM 2:07 </span>
