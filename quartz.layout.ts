@@ -20,7 +20,7 @@ export const sharedPageComponents: SharedLayout = {
           categoryId: 'DIC_kwDOQBSPFs4CwlXf',
           inputPosition: "bottom",
           // from data-lang
-          loading: "lazy",
+          // loading: "lazy",
           mapping: "url",
           reactionsEnabled: true,
           lang: 'ko'

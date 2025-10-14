@@ -40,6 +40,7 @@ export default ((opts: Options) => {
       <div
         class={classNames(displayClass, "giscus")}
         data-repo={opts.options.repo}
+        style={{ overflowAnchor: "none" }}
         data-repo-id={opts.options.repoId}
         data-category={opts.options.category}
         data-category-id={opts.options.categoryId}
