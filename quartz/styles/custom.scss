@@ -112,6 +112,10 @@ body {
     margin-top: 0.5rem;
     font-size: 0.8rem;
   }
+
+  pre > code {
+    padding: 0.5rem;
+  }
 }
 
 .breadcrumb-container {
