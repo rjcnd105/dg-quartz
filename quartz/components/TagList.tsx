@@ -4,7 +4,8 @@ import { classNames } from "../util/lang"
 
 const TagList: QuartzComponent = ({ fileData, displayClass }: QuartzComponentProps) => {
   const tags = fileData.frontmatter?.tags
-  if (tags && tags.length > 0) {
+  const hiddenTags = fileData.frontmatter?.hiddenTags
+  if (!hiddenTags && tags && tags.length > 0) {
     return (
       <ul class={classNames(displayClass, "tags")}>
         {tags.map((tag) => {
