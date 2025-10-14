@@ -107,6 +107,17 @@ body {
     --quartz-graph-node-unresolved: var(--lightgray);
     --quartz-graph-text: var(--dark);
   }
+
+  .content-meta {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+.breadcrumb-container {
+  &:last-of-type(.breadcrumb-element) {
+    display: none;
+  }
 }
 
 body .page article p>strong>em, body strong>em, body .page article p>strong, body strong {
