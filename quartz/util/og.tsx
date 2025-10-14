@@ -197,6 +197,9 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
   const tags = fileData.frontmatter?.tags ?? []
   const bodyFont = getFontSpecificationName(cfg.theme.typography.body)
   const headerFont = getFontSpecificationName(cfg.theme.typography.header)
+  const korFont = "IBM Plex Sans KR"
+  const bodyFontFamily = `${bodyFont}, ${korFont}`
+  const headerFontFamily = `${headerFont}, ${korFont}`
 
   return (
     <div
@@ -207,7 +210,7 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
         width: "100%",
         backgroundColor: cfg.theme.colors[colorScheme].light,
         padding: "2.5rem",
-        fontFamily: bodyFont,
+        fontFamily: bodyFontFamily,
       }}
     >
       {/* Header Section */}
@@ -234,7 +237,7 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
             display: "flex",
             fontSize: 32,
             color: cfg.theme.colors[colorScheme].gray,
-            fontFamily: bodyFont,
+            fontFamily: bodyFontFamily,
           }}
         >
           {cfg.baseUrl}
@@ -253,7 +256,7 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
           style={{
             margin: 0,
             fontSize: useSmallerFont ? 64 : 72,
-            fontFamily: headerFont,
+            fontFamily: headerFontFamily,
             fontWeight: 700,
             color: cfg.theme.colors[colorScheme].dark,
             lineHeight: 1.2,
