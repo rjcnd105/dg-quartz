@@ -14,6 +14,10 @@ import { styleText } from "util"
 const defaultHeaderWeight = [700]
 const defaultBodyWeight = [400]
 
+
+const koreanFontName = "IBM Plex Sans KR"
+const koreanWeights: FontWeight[] = [400, 700]
+
 export async function getSatoriFonts(headerFont: FontSpecification, bodyFont: FontSpecification) {
   // Get all weights for header and body fonts
   const headerWeights: FontWeight[] = (
@@ -50,16 +54,29 @@ export async function getSatoriFonts(headerFont: FontSpecification, bodyFont: Fo
       style: "normal" as const,
     }
   })
+  // 한글 폰트 추가
+  const koreanFontPromises = koreanWeights.map(async (weight) => {
+    const data = await fetchTtf(koreanFontName, weight)
+    if (!data) return null
+    return {
+      name: koreanFontName,
+      data,
+      weight,
+      style: "normal" as const,
+    }
+  })
 
-  const [headerFonts, bodyFonts] = await Promise.all([
+  const [headerFonts, bodyFonts, koreanFonts] = await Promise.all([
     Promise.all(headerFontPromises),
     Promise.all(bodyFontPromises),
+    Promise.all(koreanFontPromises),
   ])
 
   // Filter out any failed fetches and combine header and body fonts
   const fonts: SatoriOptions["fonts"] = [
     ...headerFonts.filter((font): font is NonNullable<typeof font> => font !== null),
     ...bodyFonts.filter((font): font is NonNullable<typeof font> => font !== null),
+    ...koreanFonts.filter((font): font is NonNullable<typeof font> => font !== null),
   ]
 
   return fonts
@@ -197,7 +214,7 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
   const tags = fileData.frontmatter?.tags ?? []
   const bodyFont = getFontSpecificationName(cfg.theme.typography.body)
   const headerFont = getFontSpecificationName(cfg.theme.typography.header)
-  const korFont = "IBM Plex Sans KR"
+  const korFont = koreanFontName
   const bodyFontFamily = `${bodyFont}, ${korFont}`
   const headerFontFamily = `${headerFont}, ${korFont}`
 
