@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2024-03-29T08:19:34Z","modified":"2025-10-16T04:49:46Z","cssclasses":""}
+{"publish":true,"created":"2024-03-29T08:19:34Z","modified":"2025-10-16T07:04:57Z","cssclasses":""}
 ---
 
 
@@ -8,6 +8,8 @@
 
 ## 최근 업데이트순 (modified date)
 
+- [[datacore test\|datacore test]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'></span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`` | 2025.10.16 PM 7:04 </span>
+- [[obsidian base test\|obsidian base test]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'></span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`` | 2025.10.16 PM 7:04 </span>
 - [[Dev/ops/sops/1. git과 sops를 사용한 선언적 패러다임으로 비밀을 관리하기(feat mise)\|1. git과 sops를 사용한 선언적 패러다임으로 비밀을 관리하기(feat mise)]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#sops, #mise, #age, #gitops</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev/ops/sops` | 2025.10.16 PM 3:14 </span>
 - [[Study_etc/추상대수학\|추상대수학]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#현대대수학, #추상대수학, #Category-theory, #Category, #morphisms, #group</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Study_etc` | 2025.10.16 PM 3:13 </span>
 - [[Philosophia/Contents/지식을 축적하고 창조적인 삶을 살기 - 김정운 박사\|지식을 축적하고 창조적인 삶을 살기 - 김정운 박사]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#창조, #사용가치, #재미, #몰입</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Philosophia/Contents` | 2025.10.16 PM 3:13 </span>
@@ -35,7 +37,6 @@
 - [[임시/zed monorepo 에서의 tailwind v4 지정\|zed monorepo 에서의 tailwind v4 지정]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'></span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`임시` | 2025.10.16 PM 1:47 </span>
 - [[Dev/elixir/liveview/Liveview에서 여러 phx- 잇는 방법.\|Liveview에서 여러 phx- 잇는 방법.]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#liveview, #phoenix</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev/elixir/liveview` | 2025.10.16 PM 1:47 </span>
 - [[Dev/elixir/liveview/Liveview handle_async simple exemple\|Liveview handle_async simple exemple]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#phoenix, #handle_async, #heex, #liveview</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev/elixir/liveview` | 2025.10.16 PM 1:46 </span>
-- [[obsidian base test\|obsidian base test]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'></span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`` | 2025.10.16 PM 1:46 </span>
 - [[pockets\|pockets]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#참조, #아티클, #개발</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`` | 2025.10.16 PM 1:46 </span>
 - [[Study_etc/Zettelkasten\|Zettelkasten]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'></span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Study_etc` | 2025.10.16 PM 1:42 </span>
 - [[Study_etc/영양제/Saffran\|Saffran]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#nootropic</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Study_etc/영양제` | 2025.10.16 PM 1:42 </span>
@@ -88,6 +89,7 @@
 
 ## 최신 생성 글 (created date)
 
+- [[datacore test\|datacore test]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'></span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`` | 2025.10.16 PM 7:04 </span>
 - [[Dev/ops/sops/draft - 2. nix flake와 sops-nix를 통한 선언적 시스템 비밀 관리\|draft - 2. nix flake와 sops-nix를 통한 선언적 시스템 비밀 관리]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#sops, #sops-nix, #nix, #nix_flake, #age, #gitops</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev/ops/sops` | 2025.10.16 PM 1:38 </span>
 - [[Dev/typescript/2021년 사내 스터디 글 모음\|2021년 사내 스터디 글 모음]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'></span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev/typescript` | 2025.10.16 PM 1:38 </span>
 - [[Dev/typescript/식별할 수 있는 문자열(문자열 리터럴) 확인하는 방법\|식별할 수 있는 문자열(문자열 리터럴) 확인하는 방법]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#typescript</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev/typescript` | 2025.10.16 PM 1:38 </span>
@@ -97,7 +99,7 @@
 - [[Dev/개발 회고/2022년 회고\|2022년 회고]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'></span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev/개발 회고` | 2025.10.13 PM 1:03 </span>
 - [[Dev/개발 회고/2020년 신버전 프로젝트 중간 회고\|2020년 신버전 프로젝트 중간 회고]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#회고</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev/개발 회고` | 2025.10.13 PM 12:57 </span>
 - [[Dev/ops/sops/1. git과 sops를 사용한 선언적 패러다임으로 비밀을 관리하기(feat mise)\|1. git과 sops를 사용한 선언적 패러다임으로 비밀을 관리하기(feat mise)]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#sops, #mise, #age, #gitops</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev/ops/sops` | 2025.10.16 PM 3:14 </span>
-- [[obsidian base test\|obsidian base test]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'></span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`` | 2025.10.16 PM 1:46 </span>
+- [[obsidian base test\|obsidian base test]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'></span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`` | 2025.10.16 PM 7:04 </span>
 - [[Dev/app, server stack\|app, server stack]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'></span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev` | 2025.10.16 PM 1:39 </span>
 - [[Dev/typescript/Module Augmentation와 Interface Merge를 활용한 bottom - up 식 구현\|Module Augmentation와 Interface Merge를 활용한 bottom - up 식 구현]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#typescript</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev/typescript` | 2025.10.16 PM 1:38 </span>
 - [[Dev/web/topic/쿠키 기반 미디어쿼리 SSR\|쿠키 기반 미디어쿼리 SSR]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'></span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev/web/topic` | 2025.10.16 PM 1:38 </span>
