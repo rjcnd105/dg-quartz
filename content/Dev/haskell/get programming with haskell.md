@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2024-02-18T07:55:39Z","modified":"2025-10-16T04:38:10Z","tags":["haskell","study"],"cssclasses":""}
+{"publish":true,"created":"2024-02-18T07:55:39Z","modified":"2025-10-16T04:53:55Z","tags":["haskell","study"],"cssclasses":""}
 ---
 
 
