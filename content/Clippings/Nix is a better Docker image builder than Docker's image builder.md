@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Nix is a better Docker image builder than Docker's image builder","description":"Xe Iaso's personal website.","created":"2025-01-24","modified":"2025.10.14 화 오후 15:16","published":null,"tags":["clippings"],"cssclasses":"","source":"https://xeiaso.net/talks/2024/nix-docker-build/","author":null,"createdAt":"2025.01.24 금 오후 18:39","modifiedAt":"2025.10.14 화 오후 15:16"}
+{"publish":true,"title":"Nix is a better Docker image builder than Docker's image builder","description":"Xe Iaso's personal website.","created":"2025-01-24","modified":"2025-10-14T15:16:14.015+09:00","tags":["clippings"],"cssclasses":""}
 ---
 
 

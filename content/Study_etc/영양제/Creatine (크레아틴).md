@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025.03.06 목 오전 10:10","modified":"2025.04.01 화 오전 8:57","published":"2025-10-13T14:07:27.073+09:00","tags":"운동, nootropic","cssclasses":"","createdAt":"2025.03.06 목 오전 10:10","modifiedAt":"2025.04.01 화 오전 8:57"}
+{"publish":true,"created":"2025-03-06T01:10:45Z","modified":"2025-10-16T04:41:22Z","tags":["운동","nootropic"],"cssclasses":""}
 ---
 
 

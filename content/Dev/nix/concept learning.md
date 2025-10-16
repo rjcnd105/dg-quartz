@@ -1,9 +1,10 @@
 ---
-{"publish":true,"created":"2024.11.19 화 오후 14:33","modified":"2024.11.20 수 오후 17:30","published":"2025-10-13T14:07:27.078+09:00","tags":["nix","flake","direnv","nix_develop","nix_profile","nix_flake"],"cssclasses":"","createdAt":"2024.11.19 화 오후 14:33","modifiedAt":"2024.11.20 수 오후 17:30"}
+{"publish":true,"created":"2024-11-19T05:33:44Z","modified":"2025-10-16T04:48:53Z","tags":["nix","flake","direnv","nix_develop","nix_profile","nix_flake"],"cssclasses":""}
 ---
 
 
 ### nix profile (구 nix-env)
+
 시스템 global 환경 설정 프로필이라고 생각하면 된다.
 마치 git처럼 히스토리 관리가 된다.
 프로필 변경(like branch checkout)은 작업들은 수동으로 처리해줘야 하는 불편함이 있다..
@@ -24,11 +25,10 @@ nix profile history
 
 ```
 
-
-
 ### nix flake
 
 #### template
+
 https://github.com/the-nix-way/dev-templates/blob/main/flake.nix#L141 의 경우에 방법은 아래와 같다. (전부 결과는 같음)
 ```sh
 # github에서
@@ -40,8 +40,8 @@ nix flake init --template github:the-nix-way/dev-templates?dir=elixir
 nix flake init --template "https://flakehub.com/f/the-nix-way/dev-templates/*#elixir"
 ```
 
-
 #### with direnv
+
 구성된 것을 그대로 덮어서 사용하는 경우에 편하다.
 
 `touch .envrc`
@@ -53,8 +53,6 @@ use flake "github:the-nix-way/dev-templates?dir=gleam"
 ```
 
 ``direnv allow .`
-
-
 
 특히 나만의 설정들을 모아놓은 스크립트들을 dvd라고 부르기도 한다.
 

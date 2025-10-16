@@ -1,6 +1,7 @@
 ---
-{"publish":true,"created":"2024.02.04 일 오후 15:31","modified":"2024.04.03 수 오후 18:22","published":"2025-10-13T14:07:27.052+09:00","cssclasses":"","createdAt":"2024.02.04 일 오후 15:31","modifiedAt":"2024.04.03 수 오후 18:22"}
+{"publish":true,"created":"2024-02-04T06:31:49Z","modified":"2025-10-16T04:42:53Z","cssclasses":""}
 ---
+
 
 #### 임시 노트
 

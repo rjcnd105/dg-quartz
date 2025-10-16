@@ -1,7 +1,6 @@
 ---
-{"publish":true,"created":"2024.02.04 일 오후 16:44","modified":"2024.04.03 수 오후 18:54","published":"2025-10-13T14:07:27.071+09:00","tags":["rust","book","study"],"cssclasses":"","createdAt":"2024.02.04 일 오후 16:44","modifiedAt":"2024.04.03 수 오후 18:54"}
+{"publish":true,"created":"2024-02-04T07:44:37Z","modified":"2025-10-16T04:38:28Z","tags":["rust","book","study"],"cssclasses":""}
 ---
-
 
 
 ![[env/첨부파일/rust.png]]
@@ -43,8 +42,6 @@
 7. Mobile. swift, android처럼 인터페이스와 대화 가능하다. 추가적인 런타임 비용 없이.
 8. Web. wasm
 9. System Programming. 여러 OS에서 러스트를 쓰려고 한다.
-
-
 
 ## 변수
 
@@ -567,10 +564,12 @@ rust 설치를 관리
 
     [https://github.com/rust-in-action/code](https://github.com/rust-in-action/code)
 
-
 ## 문자열
+
 String과 str은 비슷해보이지만 별개의 유형이다.
+
 ### String
+
 *String*은 합치거나 추가, 공백 제거와 같은 다양한 기능들이 있다.
 String은 awned(소유) type이다. 소유자는 데이터를 변경할 수 있으며 범위를 벗어날 때 소유한 값을 삭제할 책임이 있습니다.
 String::from(&str)로 &str -> String 변환 가능
@@ -585,10 +584,12 @@ str유형에 변수를 할당하면 실패한다. str 값은 임의의 길이일
 &str은 borrowed(빌린) type이다. 실용적인 측면에서 이것은 &str이 읽기 전용 데이터로 간주될 수 있는 반면 String은 읽기-쓰기로 간주될 수 있음을 의미합니다.
 
 ### String literals
+
 "hello world" 같은 String literals는 &`static str
 처럼
 
 ### char
+
 4바이트로 된 단일 문자.
 1~4바이트로 이루어져있는 UTF-8에 비해 컴파일러가 추론하기 쉽다.
 

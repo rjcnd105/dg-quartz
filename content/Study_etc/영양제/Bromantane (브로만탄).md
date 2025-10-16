@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025.03.06 목 오전 9:49","modified":"2025.03.06 목 오전 10:15","published":"2025-10-13T14:07:27.052+09:00","tags":"nootropic, 도파민","cssclasses":"","createdAt":"2025.03.06 목 오전 9:49","modifiedAt":"2025.03.06 목 오전 10:15"}
+{"publish":true,"created":"2025-03-06T00:49:12Z","modified":"2025-10-16T04:41:27Z","tags":["nootropic","도파민"],"cssclasses":""}
 ---
 
 

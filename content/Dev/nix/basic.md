@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2024.10.02 수 오후 18:58","modified":"2025.08.07 목 오전 10:58","published":"2025-10-13T14:07:27.078+09:00","tags":["nix","nix_flake"],"cssclasses":"","createdAt":"2024.10.02 수 오후 18:58","modifiedAt":"2025.08.07 목 오전 10:58"}
+{"publish":true,"created":"2024-10-02T09:58:04Z","modified":"2025-10-16T04:48:52Z","tags":["nix","nix_flake"],"cssclasses":""}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025.03.06 목 오전 9:43","modified":"2025.03.06 목 오전 10:15","published":"2025-10-13T14:07:27.064+09:00","tags":"nootropic, 우울증","cssclasses":"","createdAt":"2025.03.06 목 오전 9:43","modifiedAt":"2025.03.06 목 오전 10:15"}
+{"publish":true,"created":"2025-03-06T00:43:08Z","modified":"2025-10-16T04:41:33Z","tags":["nootropic","우울증"],"cssclasses":""}
 ---
 
 

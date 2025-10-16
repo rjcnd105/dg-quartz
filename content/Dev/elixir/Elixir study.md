@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2024.11.08 금 오후 17:26","modified":"2025.03.18 화 오후 17:38","published":"2025-10-15T16:15:40.694+09:00","tags":"elixir","cssclasses":"","createdAt":"2024.11.08 금 오후 17:26","modifiedAt":"2025.03.18 화 오후 17:38","\n```elixir\ndefmodule Circle2 do\n  @moduledoc \"원에 대한 기본 계산 기능들 구현\"\n\n  # 여기서 @pi 중요한 점은 상수에 대한 참조가 인라인될 때 모듈을 컴파일하는 동안에만 존재한다는 것이다.\n  @pi 3.14159\n\n  @spec area(number) ":"number","\n  @spec circumference(number) ":"number","\n  @type input_todo_item ":"%{date: Date.t(), title: String.t()}","  @type todo_item ":"%{id: integer(), date: Date.t(), title: String.t()}","  @type todo_list ":"%{integer() => todo_item()}","  @type t ":"%TodoList_proto3{next_id: pos_integer(), entries: %{integer() => todo_item()}}","\n  def new() do\n    %TodoList_proto3{}\n  end\n\n  # 함수가 중간에 실패한다면 모든 변경사항이 적용되지 않음.\n  # 모두 적용 되거나, 모두 안되거나 둘 중 하나임\n  @spec add_entry(t(), input_todo_item()) ":"t()","  end\n\n  @spec entries(t(), Date.t()) ":"t()","  def entries(todo_list, date) do\n    todo_list.entries\n    |> Map.values()\n    |> Enum.filter(fn entry -> entry.date == date end)\n  end\n\n  # 연습과제1 - 항목 업데이트\n  @spec update_entry(t(), integer(), (id ":"integer() -> todo_list())) :: t()","    end\n  end\n\n  # 연습과제2 - 항목 삭제\n  @spec delete_entry(t(), integer()) ":"t()","\nTodoList_proto3.delete_entry(todo_list, 2)\n```\n\n## csv file -> todolist 연습문제\n\n### 요구사항\n\n파일을 읽어서 TodoList의 모양을 반환해라\n\n```elixir\ndefmodule TodoList_proto3.CsvImporter do\n  @spec from_file(charlist()) ":"TodoList_proto3.t()","id ":"integer("}
+{"publish":true,"created":"2024-11-08T08:26:25Z","modified":"2025-10-16T01:16:19Z","cssclasses":""}
 ---
 
 
@@ -106,7 +106,7 @@ Circle.area(2) |> IO.puts()
 Code.fetch_docs(Circle)
 ```
 
-https://hexdocs.pm/ex_doc/readme.html 사용시 바로 @doc, @moduledoc을 기반으로 HTML 문서를 생성할 수 있다.
+https://hexdocs.pm/ex_doc/readme.html 사용시 바로 `@doc`, `@moduledoc`을 기반으로 HTML 문서를 생성할 수 있다.
 
 ```elixir
 defmodule Circle2 do
@@ -129,7 +129,7 @@ end
 
 ## Atoms
 
-상수. F#에 있는 열거형과 비슷하다.
+상수. `F#` 에 있는 열거형과 비슷하다.
 
 ```elixir
 :an_atom
@@ -212,12 +212,6 @@ new_tuple = put_elem(a_tuple, 1, b2)
 # 리바인드를 하면 가비지 콜렉션이 됩니다.
 ```
 
-![](files/tuple1.png)
-
-<!-- livebook:{"break_markdown":true} -->
-
-![](files/tuple2.png)
-
 ## Lists
 
 목록은 배열처럼 보이지만 singly linked lists처럼 작동한다. 목록으로 작업을 수행하려면 탐색해야한다.
@@ -286,14 +280,6 @@ List.to_tuple([:share, [:elixir, 163]])
 
 List의 꼬리쪽에 수정하게되면 앞에 있는 요소들을 전부 얕은 복사를 하므로 비용이 크게 든다. <br>
 새 요소를 맨 앞으로 푸쉬하면 훨신 비용이 적게 든다
-
-<!-- livebook:{"break_markdown":true} -->
-
-![](files/list1.png)
-
-<!-- livebook:{"break_markdown":true} -->
-
-![](files/list2.png)
 
 ## Maps
 
@@ -634,8 +620,6 @@ mix run -e "IO.puts(MyProject.hello())"
 = 는 대입이 아닌 패턴 매칭이다.<br>
 해당 케이스의 매칭이 아닐경우 에러가 발생한다.<br>
 상수를 작성함으로써 특정 케이스에 매칭되도록 할 수 있다.
-
-<!-- livebook:{"break_markdown":true} -->
 
 ### Tuple
 
@@ -1017,6 +1001,7 @@ IteratorStudy1.sum_nums([1, "not a number", 2, :x, 3, 4])
 https://hexdocs.pm/elixir/Kernel.SpecialForms.html#for/1
 
 ```elixir
+
 # 열거형 도우미 역할
 for x <- [1, 2, 3] do
   x * x
@@ -1068,6 +1053,7 @@ Stream은 lazy한 enum이라 보면 된다. <br>
 Stream에 대한 여러 처리는 평가될때 병합되어 계산된다.
 
 ```elixir
+
 # 아래 예에서 filter, map 등의 처리들은 여러번 순회가 아닌 한번의 순회에서 처리되도록 병합됨.
 # 지연 계산을 하려면 계산을 수행하는 람다를 반환해야 한다.
 [9, -1, "foo", 25, 49]
@@ -1130,6 +1116,7 @@ end
 ```
 
 ```elixir
+
 # 위의 코드를 Composing abstractions(추상화 구성) 을 통하면 더 깔끔하게 할 수 있다.
 # 책임을 별도의 추상화로 추출하는 고전적인 관심사 분리 방법
 
@@ -1174,6 +1161,7 @@ Map.to_list(one_half) # [__struct__: Fraction, a: 1, b: 2] <br>
 https://hexdocs.pm/elixir/Kernel.html#defstruct/1
 
 ```elixir
+
 # 만약에 프로그램에서 분수만을 처리한다고 했을때 문제가 생길 여지가 많음.
 # 이런 경우 작은 추상화를 하는게 좋음
 
@@ -1221,6 +1209,7 @@ Kernel.inspect/1 함수를 재정의하여 출력시 다르게 보이게 할 수
 https://hexdocs.pm/elixir/Kernel.html#dbg/2
 
 ```elixir
+
 # MapSet.new([:monday])
 MapSet.new([:monday])
 # %{__struct__: MapSet, map: %{monday: []}}
@@ -1239,9 +1228,10 @@ Fraction.new(1, 4)
 ## 증분 ID
 
 ```elixir
-# id를 키로 하는 예제, 그러면 별도의 ModuleDics 같은 추상화가 필요 없어짐
+
+# id를 키로 하는 예제, 그러면 별도의 ModuleDics 같은 추상화가 필요 없어짐  
 defmodule TodoList_proto3 do
-  defstruct next_id: 1, entries: %{}
+  defstruct next_id: 1, entries: %{} 
 
   @type input_todo_item :: %{date: Date.t(), title: String.t()}
   @type todo_item :: %{id: integer(), date: Date.t(), title: String.t()}

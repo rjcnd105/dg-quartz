@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2024.02.04 일 오후 17:35","modified":"2025.10.13 월 오후 14:43","published":"2025-10-13T14:43:46.930+09:00","tags":["참조","아티클","개발"],"cssclasses":"","createdAt":"2024.02.04 일 오후 17:35","modifiedAt":"2025.10.13 월 오후 14:43"}
+{"publish":true,"created":"2024-02-04T08:35:13Z","modified":"2025-10-16T04:46:53Z","tags":["참조","아티클","개발"],"cssclasses":""}
 ---
 
 

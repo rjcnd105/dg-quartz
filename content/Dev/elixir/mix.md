@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2024.04.03 수 오후 13:57","modified":"2025.03.18 화 오후 18:02","published":"2025-10-13T14:07:27.060+09:00","tags":"elixir, mix, hex, phoenix, ecto, ash","cssclasses":"","createdAt":"2024.04.03 수 오후 13:57","modifiedAt":"2025.03.18 화 오후 18:02"}
+{"publish":true,"created":"2024-04-03T04:57:39Z","modified":"2025-10-16T01:30:54Z","tags":["elixir","mix","hex","phoenix","ecto","ash"],"cssclasses":""}
 ---
 
 
