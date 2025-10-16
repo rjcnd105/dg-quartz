@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2024-11-08T17:43:51.122+09:00","modified":"2025-10-13T14:07:27.049+09:00","tags":["erlang","elixir","data_structure","ets"],"cssclasses":""}
+{"publish":true,"tags":["erlang","elixir","data_structure","ets"],"cssclasses":""}
 ---
 
 

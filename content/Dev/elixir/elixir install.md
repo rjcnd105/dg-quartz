@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2024-04-01T18:10:20.115+09:00","modified":"2025-10-16T12:16:43.723+09:00","tags":["elixir","zed","pkgx","erlang","lexical-lsp","next-ls"],"cssclasses":""}
+{"publish":true,"tags":["elixir","zed","pkgx","erlang","lexical-lsp","next-ls"],"cssclasses":""}
 ---
 
 
