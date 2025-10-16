@@ -8,7 +8,7 @@
 
 ## 최근 업데이트순 (modified date)
 
-- [[datacore test\|datacore test]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'></span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`` | 2025.10.16 PM 10:43 </span>
+- [[datacore test\|datacore test]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'></span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`` | 2025.10.16 PM 10:45 </span>
 - [[obsidian base test\|obsidian base test]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'></span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`` | 2025.10.16 PM 7:04 </span>
 - [[Dev/ops/sops/1. git과 sops를 사용한 선언적 패러다임으로 비밀을 관리하기(feat mise)\|1. git과 sops를 사용한 선언적 패러다임으로 비밀을 관리하기(feat mise)]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#sops, #mise, #age, #gitops</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev/ops/sops` | 2025.10.16 PM 3:14 </span>
 - [[Study_etc/추상대수학\|추상대수학]]<span data-ui='tags' style='font-size:0.65rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#현대대수학, #추상대수학, #Category-theory, #Category, #morphisms, #group</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Study_etc` | 2025.10.16 PM 3:13 </span>
@@ -89,7 +89,7 @@
 
 ## 최신 생성 글 (created date)
 
-- [[datacore test\|datacore test]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'></span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`` | 2025.10.16 PM 10:43 </span>
+- [[datacore test\|datacore test]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'></span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`` | 2025.10.16 PM 10:45 </span>
 - [[Dev/ops/sops/draft - 2. nix flake와 sops-nix를 통한 선언적 시스템 비밀 관리\|draft - 2. nix flake와 sops-nix를 통한 선언적 시스템 비밀 관리]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#sops, #sops-nix, #nix, #nix_flake, #age, #gitops</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev/ops/sops` | 2025.10.16 PM 1:38 </span>
 - [[Dev/typescript/2021년 사내 스터디 글 모음\|2021년 사내 스터디 글 모음]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'></span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev/typescript` | 2025.10.16 PM 1:38 </span>
 - [[Dev/typescript/식별할 수 있는 문자열(문자열 리터럴) 확인하는 방법\|식별할 수 있는 문자열(문자열 리터럴) 확인하는 방법]]<span data-ui='tags' style='font-size:0.6rem; margin-left:0.5rem; color:var(--tag-color); opacity: 0.85;'>#typescript</span><br/><span style='font-size:0.6rem; margin-left: 0.5rem;opacity:0.8;vertical-align: top;'>`Dev/typescript` | 2025.10.16 PM 1:38 </span>
