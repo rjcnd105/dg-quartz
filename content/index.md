@@ -6,7 +6,7 @@
 제 소개는 여기서 볼 수 있습니다.
 [About Me](https://hj1.notion.site/About-me-dca57d891fc942cf87aebb938317e435?pvs=143)
 
-<div><style>
+<div hidden=""><style>
 [data-ui=page-index] {
   [data-slot=tag-wrap] {
     display: inline-block;
