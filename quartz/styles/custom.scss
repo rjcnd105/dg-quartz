@@ -126,7 +126,7 @@ body .page article p>strong>em, body strong>em, body .page article p>strong, bod
     &:after {
       content: ", ";
     }
-    &:last-child:after {
+    &:last-of-type:after {
       content: "";
     }
   }
