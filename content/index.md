@@ -15,11 +15,12 @@
     font-size: 0.58rem;
     color: var(--tag-color);
     opacity: 0.85;
+
     &amp;:after {
-      content: ", "
+      content: ", ";
     }
     &amp;:last-child:after {
-      content: ""
+      content: "";
     }
   }
   [data-slot=info] {
@@ -27,9 +28,9 @@
     opacity: 0.8;
     vertical-align: top;
   }
+
   [data-slot=list-item] {
     margin-bottom: 0.5rem;
-
   }
 
   [data-slot=tag] {
@@ -54,11 +55,12 @@
     font-size: 0.58rem;
     color: var(--tag-color);
     opacity: 0.85;
+
     &amp;:after {
-      content: ", "
+      content: ", ";
     }
     &amp;:last-child:after {
-      content: ""
+      content: "";
     }
   }
   [data-slot=info] {
@@ -66,9 +68,9 @@
     opacity: 0.8;
     vertical-align: top;
   }
+
   [data-slot=list-item] {
     margin-bottom: 0.5rem;
-
   }
 
   [data-slot=tag] {
