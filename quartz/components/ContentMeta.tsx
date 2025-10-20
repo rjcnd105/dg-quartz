@@ -19,6 +19,7 @@ const defaultOptions: ContentMetaOptions = {
   showComma: true,
 }
 
+let count = 0;
 export default ((opts?: Partial<ContentMetaOptions>) => {
   // Merge options with defaults
   const options: ContentMetaOptions = { ...defaultOptions, ...opts }
@@ -29,12 +30,14 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
     if (text) {
       const segments: (string | JSX.Element)[] = []
 
-      console.log("---------------ContentMetadata----------------")
-      console.log("fileData", fileData)
-      console.log("options", options)
-      console.log("cfg", cfg)
-      console.log("displayClass", displayClass)
-      console.log("text", text)
+      if (count < 3) {
+        console.log("---------------ContentMetadata----------------")
+        console.log("fileData", fileData)
+        console.log("options", options)
+        console.log("cfg", cfg)
+        console.log("displayClass", displayClass)
+        console.log("text", text)
+      }
 
       if (fileData.frontmatter) {
         if (fileData.frontmatter.created) {
