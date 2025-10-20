@@ -113,3 +113,40 @@ body .page article p>strong>em, body strong>em, body .page article p>strong, bod
 
 
 
+
+
+
+[data-ui=page-index] {
+  [data-slot=tag-wrap] {
+    display: inline-block;
+    font-size: 0.58rem;
+    color: var(--tag-color);
+    opacity: 0.85;
+
+    &:after {
+      content: ", ";
+    }
+    &:last-child:after {
+      content: "";
+    }
+  }
+
+  [data-slot=info] {
+    font-size: 0.6rem;
+    opacity: 0.8;
+    vertical-align: top;
+  }
+
+  [data-slot=list-item] {
+    margin-bottom: 0.5rem;
+  }
+
+  [data-slot=tag] {
+    padding: 2px;
+    margin-left: 0.25rem;
+
+    &:before {
+      color: inherit !important;
+    }
+  }
+}
