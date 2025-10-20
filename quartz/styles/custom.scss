@@ -144,7 +144,7 @@ body .page article p>strong>em, body strong>em, body .page article p>strong, bod
   [data-slot=tag] {
     padding: 2px;
     margin-left: 0.25rem;
-    display: inline;
+    display: inline !important;
 
     &:before {
       color: inherit !important;
