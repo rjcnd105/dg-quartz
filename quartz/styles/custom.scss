@@ -28,24 +28,8 @@ body {
 
 
 
-  .tag-link+.tag-link {
+  .tag-link + .tag-link {
     margin-left: 4px;
-  }
-
-  [data-ui="tags"] {
-    .tag-link {
-      display: inline !important;
-      border: none;
-      padding: 2px;
-
-      &:before {
-        color: inherit !important;
-      }
-    }
-
-    :first-of-type(.tag-link) {
-      margin-left: 0;
-    }
   }
 
   .language-dataview {
@@ -68,14 +52,11 @@ body {
   }
 
   a.internal.tag-link {
+    cursor: pointer !important;
+    color: var(--dark);
     border: none !important;
     outline: none !important;
     background-color: transparent !important;
-  }
-
-  a.internal.tag-link {
-    cursor: pointer !important;
-    color: var(--dark);
   }
 
   .clipboard-button {
@@ -130,13 +111,5 @@ body .page article p>strong>em, body strong>em, body .page article p>strong, bod
   color: var(--code-keyword);
 }
 
-
-[data-slug="index"] {
-  .page-header {
-    .tags, .content-meta {
-      display: none !important;
-    }
-  }
-}
 
 
