@@ -16,10 +16,10 @@
     color: var(--tag-color);
     opacity: 0.85;
 
-    :after {
+    &amp;:after {
       content: ", ";
     }
-    :last-child:after {
+    &amp;:last-child:after {
       content: "";
     }
   }
@@ -40,7 +40,7 @@
     margin-right: 0.25rem;
     padding: 0;
 
-    :before {
+    &amp;:before {
       color: inherit !important;
     }
   }
@@ -57,10 +57,10 @@
     color: var(--tag-color);
     opacity: 0.85;
 
-    :after {
+    &amp;:after {
       content: ", ";
     }
-    :last-child:after {
+    &amp;:last-child:after {
       content: "";
     }
   }
@@ -81,7 +81,7 @@
     margin-right: 0.25rem;
     padding: 0;
 
-    :before {
+    &amp;:before {
       color: inherit !important;
     }
   }
