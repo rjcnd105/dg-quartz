@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-10-06T11:24:55Z","modified":"2025-10-22T01:43:08Z","tags":["sops","sops-nix","nix","nix_flake","age","gitops"],"cssclasses":""}
+{"publish":true,"created":"2025-10-06T11:24:55Z","modified":"2025-10-22T01:44:07Z","tags":["sops","sops-nix","nix","nix_flake","age","gitops"],"cssclasses":""}
 ---
 
 
@@ -43,4 +43,5 @@ home manager라면
 ```
 
 현재 내 flake내 sops 설정 파일
-https://github.com/rjcnd105/hj-dotfiles/blob/main/homes/workspace/sops.nix
+home manager: https://github.com/rjcnd105/hj-dotfiles/blob/b0e851a97f91b982105f94a689ec57a52549fc04/systems/workspace/default.nix#L71
+sops-nix 설정: https://github.com/rjcnd105/hj-dotfiles/blob/main/homes/workspace/sops.nix
