@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-10-29T04:54:07Z","modified":"2025-10-29T07:21:42Z","cssclasses":""}
+{"publish":true,"created":"2025-10-29T04:54:07Z","modified":"2025-10-29T07:23:08Z","cssclasses":""}
 ---
 
 
@@ -17,11 +17,12 @@ ms: aks
 
 #### CICD
 
-fluxCD, argoCD(gui)
+1. fluxCD
+2. argoCD(gui)
 
 #### Override
 
-kustomize: kuber yaml 설정 변수 기반으로 덮어 씌우기. 버전을 올리는 경우 등에 좋음
+kustomize: kuber yaml 설정 변수 기반으로 덮어 씌우기. 버전을 올리는 경우 등에 사용
 
 #### dashboard
 
