@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-10-29T04:54:07Z","modified":"2025-10-29T07:23:08Z","cssclasses":""}
+{"publish":true,"created":"2025-10-29T04:54:07Z","modified":"2025-10-30T06:15:34Z","cssclasses":""}
 ---
 
 
@@ -43,6 +43,8 @@ https://github.com/Lillecarl/nix-csi
 #### 관련 글
 
 [Kubernetes 오케스트레이션은 YAML 파일 그 이상입니다.](https://yokecd.github.io/blog/posts/yoke-resource-orchestration/)
+
+---
 
 ### 내 VPS 용 Stack
 
