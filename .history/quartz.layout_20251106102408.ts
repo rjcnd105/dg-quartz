@@ -70,7 +70,6 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.Explorer({
       useSavedState: true,
-      folderClickBehavior: "collapse"
     }),
   ],
   right: [
