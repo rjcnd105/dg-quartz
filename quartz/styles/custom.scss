@@ -25,6 +25,12 @@ body {
     border-top-width: 1px;
     height: 0;
   }
+  .folder-container {
+    gap: 4px;
+  }
+  .folder-container div>button span {
+    font-weight: 500;
+  }
 
 
 

@@ -23,7 +23,10 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
+        header: {
+          name: "IBM Plex Sans KR",
+          weights: [300, 400, 500, 600],
+        },
         body: "Source Sans Pro",
         code: "IBM Plex Mono",
       },
