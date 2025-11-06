@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-10-29T04:54:07Z","modified":"2025-10-30T06:15:34Z","cssclasses":""}
+{"publish":true,"created":"2025-10-29T04:54:07Z","modified":"2025-11-03T03:41:32Z","cssclasses":""}
 ---
 
 
@@ -35,6 +35,9 @@ kustomize: kuber yaml 설정 변수 기반으로 덮어 씌우기. 버전을 올
 #####  alpha
 
 https://github.com/kubernetes-sigs/kro
+
+gitops podman quadlet
+https://github.com/stryan/materia
 
 with nix
 https://github.com/Lillecarl/easykubenix
