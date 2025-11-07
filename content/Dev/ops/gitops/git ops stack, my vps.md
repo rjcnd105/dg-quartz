@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-10-29T04:54:07Z","modified":"2025-11-03T03:41:32Z","cssclasses":""}
+{"publish":true,"created":"2025-10-29T04:54:07Z","modified":"2025-11-07T04:08:46Z","cssclasses":""}
 ---
 
 
@@ -8,14 +8,24 @@
 #### kuber
 
 심플, 경량: k3s
+k8s
 보안이 아주 중요한 경우: RKE2
 
-#### kuber cloude
+#### kuber cloud
 
-Amazon: eks
-ms: aks
+1. EKS (Amazon)
+2. AKS (ms)
 
-#### CICD
+#### CLI
+
+1. [k9s](https://github.com/derailed/k9s)
+2. kubectl
+
+#### CI
+
+1. github action
+
+#### CD
 
 1. fluxCD
 2. argoCD(gui)
@@ -28,9 +38,21 @@ kustomize: kuber yaml 설정 변수 기반으로 덮어 씌우기. 버전을 올
 
 [kite](https://github.com/zxh326/kite)
 
+#### config lang
+
+alpha
+1. [nickel](https://nickel-lang.org/)
+
+#### Package Manager
+
+1. Helm
+
+alpha
+1. [yoke](https://yokecd.github.io/docs/concepts/cluster-access/)
+
 #### else
 
-프로그래밍 방식 패키지 관리: [yoke](https://yokecd.github.io/docs/concepts/cluster-access/)
+쿠버 PostgreSQL 솔루션: [cloudenative-PG](https://github.com/cloudnative-pg/cloudnative-pg)
 
 #####  alpha
 
@@ -42,6 +64,8 @@ https://github.com/stryan/materia
 with nix
 https://github.com/Lillecarl/easykubenix
 https://github.com/Lillecarl/nix-csi
+
+1. [crossplane](https://www.crossplane.io/)
 
 #### 관련 글
 
