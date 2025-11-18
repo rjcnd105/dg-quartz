@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-11-18T07:01:27Z","modified":"2025-11-18T07:20:40Z","cssclasses":""}
+{"publish":true,"created":"2025-11-18T07:01:27Z","modified":"2025-11-18T09:08:01Z","cssclasses":""}
 ---
 
 
@@ -11,11 +11,7 @@ env 파일이 이미지에 남지 않도록 시크릿으로 전달합니다.
 ### docker compose
 
 ```yaml
-# vps/docker-compose.yml
-
-  
-
-name: test
+name: with-enc
 services:
 	sync:
 		build:
@@ -33,7 +29,7 @@ services:
 			MISE_SOPS_AGE_RECIPIENTS: "ci-age-public-key"
 
 		volumes:
-			- ./sync:/test/sync:ro
+			- ./sync:/with-enc/sync:ro
 
 secrets:
 	s1:
@@ -47,7 +43,7 @@ secrets:
 ```dockerfile
 FROM alpine:3.22 AS base
 
-WORKDIR /vps
+WORKDIR /with-enc
 
 ENV MISE_DATA_DIR="/mise" \
 	MISE_CONFIG_DIR="/mise" \
