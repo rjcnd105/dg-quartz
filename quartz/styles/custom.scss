@@ -8,6 +8,11 @@ html {
 }
 
 body {
+
+  iframe {
+    border: none;
+  }
+
   .explorer .explorer-content ul.explorer-ul li a  {
     cursor: pointer;
   }
