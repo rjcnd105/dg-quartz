@@ -1,10 +1,10 @@
 ---
-{"publish":true,"created":"2025-11-18T07:01:27Z","modified":"2025-11-18T09:08:01Z","cssclasses":""}
+{"publish":true,"created":"2025-11-18T07:01:27Z","modified":"2025-11-19T03:28:47Z","cssclasses":""}
 ---
 
 
 docker compose 실행시 enc 파일 및 `MISE_SOPS_AGE_KEY` 를 주입하여 실행한다.
-`MISE_SOPS_AGE_RECIPIENTS` 는 age의 public key 이다. env를 통해 넘겨준다.
+`MISE_SOPS_AGE_RECIPIENTS` 는 .sops.yaml에 등록된 age의 public key 이다. env를 통해 넘겨준다.
 
 env 파일이 이미지에 남지 않도록 시크릿으로 전달합니다.
 
