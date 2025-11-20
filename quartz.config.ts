@@ -13,12 +13,14 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "plausible",
+      provider: "google",
+      tagId: "G-8V5B0D08Q8"
     },
     locale: "ko-KR",
     baseUrl: "rjcnd105.github.io/dg-quartz",
     ignorePatterns: ["private", "templates", ".obsidian", "trash"],
     defaultDateType: "modified",
+
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
