@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-11-18T07:01:27Z","modified":"2025-11-19T03:28:47Z","cssclasses":""}
+{"publish":true,"created":"2025-11-18T07:01:27Z","modified":"2025-11-21T01:22:56Z","cssclasses":""}
 ---
 
 
@@ -50,7 +50,7 @@ ENV MISE_DATA_DIR="/mise" \
 	MISE_CACHE_DIR="/mise/cache" \
 	MISE_INSTALL_PATH="/usr/local/bin/mise" \
 	PATH="/mise/shims:$PATH" \
-	MISE_OVERRIDE_CONFIG_FILENAMES="mise.tools.toml,mise.tasks.toml"
+	MISE_OVERRIDE_CONFIG_FILENAMES="mise.ci.toml"
 
 
 RUN apk add --no-cache ca-certificates rsync curl openssh-client \
@@ -72,7 +72,9 @@ RUN mise trust
 CMD ["sh", "-c", "mise run my-task"]
 ```
 
-### mise.tools.toml
+### mise.ci.toml
+
+mise의 태스크로 실행시 env에 있는 암호화된 시크릿이 주입되어 있는 격리된 환경에서 실행됩니다.
 
 ```toml
 [tools.sops]
@@ -82,17 +84,6 @@ version = "3.11.0"
 [tools.age]
 version = "1.2.1"
 
-
-[env]
-SOPS_AGE_KEY = { value = "{{env.MISE_SOPS_AGE_KEY}}", redact = true, read_only = true }
-
-```
-
-### mise.tasks.toml
-
-mise의 태스크로 실행시 env에 있는 암호화된 시크릿이 주입되어 있는 격리된 환경에서 실행됩니다.
-
-```toml
 [tools.my-task]
 run = '''
 	echo "$MY_SECRET_1"
@@ -100,8 +91,10 @@ run = '''
 '''
 
 [env]
+SOPS_AGE_KEY = { value = "{{env.MISE_SOPS_AGE_KEY}}", redact = true, read_only = true }
 _.file = [
 	{ path = "./s1.enc.yaml", redact = true, read_only = true },
 	{ path = "./s2.enc.yaml", redact = true, read_only = true }
 ]
+
 ```
