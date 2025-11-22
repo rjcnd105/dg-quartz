@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-10-29T04:54:07Z","modified":"2025-11-07T04:08:46Z","cssclasses":""}
+{"publish":true,"created":"2025-10-29T04:54:07Z","modified":"2025-11-21T05:33:13Z","cssclasses":""}
 ---
 
 
@@ -49,6 +49,24 @@ alpha
 
 alpha
 1. [yoke](https://yokecd.github.io/docs/concepts/cluster-access/)
+
+#### Data Layer
+
+redis 포지션
+
+1. Garnet
+
+#### Gateway Layer
+
+ngnix 포지션
+
+1. Caddy
+2. Nginx Proxy manager (NPM)
+
+#### Messaging System
+
+1. NATS(with Jetstream)
+2. 
 
 #### else
 
