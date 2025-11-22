@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-11-22T06:26:14Z","modified":"2025-11-22T08:32:16Z","cssclasses":""}
+{"publish":true,"created":"2025-11-22T06:26:14Z","modified":"2025-11-22T08:36:27Z","cssclasses":""}
 ---
 
 
@@ -9,7 +9,7 @@
 
 ## Trunk base + Feature flag + ci test
 
-git Trunk[^1] 전략 기준
+git [Trunk ](https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development) 전략 기준
 매 커밋 별 dev 배포를 피하기 위한다면 github flow 와 같은 단순한 형태의 브랜치 전략 사용
 
 feature flag를 통해 제어되므로 개발 중인 기능이 main 브랜치에 병합되어도 문제가 생기지 않음.
@@ -50,7 +50,3 @@ feature flag group이 있고 해당 그룹은 기본적으로 release, staging, 
   해당 논리적 분기는 feature flag group을 추가하면 얼마든지 생성 가능
   ex) www.A.dev.myapp.com, www.B.dev.myapp.com, www.C.dev.myapp.com
   위 A, B, C 라는 feature flag group을 각각에 feature flag들을 다르게 설정하여 테스트 할 수 있음
-
----
-
-[^1]: main 브런치에 다 같이 커밋, 릴리즈시 릴리즈 브랜치를 별개로 생성하는 전략
