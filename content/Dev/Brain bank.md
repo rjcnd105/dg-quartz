@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-11-22T06:26:14Z","modified":"2025-11-22T08:36:27Z","cssclasses":""}
+{"publish":true,"created":"2025-11-22T06:26:14Z","modified":"2025-11-24T01:11:09Z","tags":["git","feature_flag"],"cssclasses":""}
 ---
 
 
@@ -21,10 +21,10 @@ feature flag group이 있고 해당 그룹은 기본적으로 release, staging, 
 ### 필수 조건
 
 1. 개발 중인 기능을 main에 추가하더라도 문제가 생기지 않아야 함 (feature flag를 통해 통제되므로)
-   - [ ] feature flag group들을 한눈에 확인하고 각 그룹별로 설정하고 컨트롤 할 수 있는 페이지 필요 - 관련 솔루션 알아봐야함, 혹은 직접 구현?
-      feature flag 별 가능한 버전 명시 필요? (front, back)
-1. main push event시 ci를 통해 빌드(dev) 및 테스트를 거침
-2. main에 push event시 dev 배포, release/{version} 브랜치 push event시 staging 배포
+   feature flag 별 가능한 버전 명시 필요? (front, back)
+   TODO: feature flag group들을 한눈에 확인하고 각 그룹별로 설정하고 컨트롤 할 수 있는 페이지 필요 - 관련 솔루션 알아봐야함, 혹은 직접 구현?
+2. main push event시 ci를 통해 빌드(dev) 및 테스트를 거침
+3. main에 push event시 dev 배포, release/{version} 브랜치 push event시 staging 배포
    - **realease**
      staging으로 확인하고 문제 없는 경우 트리거 액션으로 배포
      tag: `v1.12.3`
@@ -37,10 +37,9 @@ feature flag group이 있고 해당 그룹은 기본적으로 release, staging, 
      image version tag: `:1.12.3-rc.0`
    
    - **dev**
-     main에 push event마다 배포
-     - [ ] 각 버전에 대한 dev 배포가 필요할지?? (e.g `v.1.12.0-dev.20251122`)
-     latest tag: `dev`
-     image version tag: `:{date}.{shortSha}` (e.g `:20251122.b4723bd`)
+     main에 push event마다 배포 (TOOD: 각 버전에 대한 dev 배포가 필요할지?? (e.g `v.1.12.0-dev.20251122`)
+	  latest tag: `dev`
+	  image version tag: `:{date}.{shortSha}` (e.g `:20251122.b4723bd`)
 
 ### 추가 아이디어
 
