@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-10-29T04:54:07Z","modified":"2025-11-21T05:33:13Z","cssclasses":""}
+{"publish":true,"created":"2025-10-29T04:54:07Z","modified":"2025-11-24T01:16:17Z","cssclasses":""}
 ---
 
 
@@ -40,8 +40,9 @@ kustomize: kuber yaml 설정 변수 기반으로 덮어 씌우기. 버전을 올
 
 #### config lang
 
-alpha
-1. [nickel](https://nickel-lang.org/)
+1. cue
+2. pkl
+3. nickel
 
 #### Package Manager
 
