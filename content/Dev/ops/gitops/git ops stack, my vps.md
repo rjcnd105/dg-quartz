@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-10-29T04:54:07Z","modified":"2025-11-24T01:16:17Z","cssclasses":""}
+{"publish":true,"created":"2025-10-29T04:54:07Z","modified":"2025-11-26T07:23:12Z","cssclasses":""}
 ---
 
 
@@ -10,6 +10,7 @@
 심플, 경량: k3s
 k8s
 보안이 아주 중요한 경우: RKE2
+쿠버네티스 기반 OS: Talos os -
 
 #### kuber cloud
 
@@ -25,6 +26,14 @@ k8s
 
 1. github action
 
+#### telemetry
+
+소
+1. netdata, local journald
+
+중대
+1. Grafana/Prometheus
+
 #### CD
 
 1. fluxCD
@@ -34,11 +43,21 @@ k8s
 
 kustomize: kuber yaml 설정 변수 기반으로 덮어 씌우기. 버전을 올리는 경우 등에 사용
 
+#### db
+
+1. [stackgres](https://stackgres.io/) (postgresql)
+
+#### security
+
+1. cilium
+
 #### dashboard
 
 [kite](https://github.com/zxh326/kite)
 
 #### config lang
+
+default yaml
 
 1. cue
 2. pkl
@@ -63,11 +82,17 @@ ngnix 포지션
 
 1. Caddy
 2. Nginx Proxy manager (NPM)
+3. Traefik (간단한 경우)
 
 #### Messaging System
 
 1. NATS(with Jetstream)
 2. 
+
+#### data storage
+
+small
+1. minio block storage
 
 #### else
 
@@ -89,6 +114,7 @@ https://github.com/Lillecarl/nix-csi
 #### 관련 글
 
 [Kubernetes 오케스트레이션은 YAML 파일 그 이상입니다.](https://yokecd.github.io/blog/posts/yoke-resource-orchestration/)
+[공식 쿠버네티스 모범 사례](https://kubernetes.io/blog/2025/11/25/configuration-good-practices/)
 
 ---
 

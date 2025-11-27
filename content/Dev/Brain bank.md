@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-11-22T06:26:14Z","modified":"2025-11-24T01:11:09Z","tags":["git","feature_flag"],"cssclasses":""}
+{"publish":true,"created":"2025-11-22T06:26:14Z","modified":"2025-11-27T06:23:49Z","tags":["git","feature_flag"],"cssclasses":""}
 ---
 
 
@@ -24,14 +24,14 @@ feature flag group이 있고 해당 그룹은 기본적으로 release, staging, 
    feature flag 별 가능한 버전 명시 필요? (front, back)
    TODO: feature flag group들을 한눈에 확인하고 각 그룹별로 설정하고 컨트롤 할 수 있는 페이지 필요 - 관련 솔루션 알아봐야함, 혹은 직접 구현?
 2. main push event시 ci를 통해 빌드(dev) 및 테스트를 거침
-3. main에 push event시 dev 배포, release/{version} 브랜치 push event시 staging 배포
+3. main에 push event시 dev 배포, rc 태그 추가시 staging 배포,
    - **realease**
-     staging으로 확인하고 문제 없는 경우 트리거 액션으로 배포
+     릴리즈 태그 추가 후 release 배포 github action trigger 생성
      tag: `v1.12.3`
      image version tag: `:1.12.3`
      
    - **staging**
-     `release/v1.12.3` 에 push event 마다 배포
+     rc 태그 지정시 배포
      tag: `v1.12.3-rc.0`, `v1.12.3-rc.1`, ...
      latest tag: `v1.12.3-rc`
      image version tag: `:1.12.3-rc.0`
