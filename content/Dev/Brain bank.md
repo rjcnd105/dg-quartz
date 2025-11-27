@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-11-22T06:26:14Z","modified":"2025-11-27T06:28:46Z","tags":["git","feature_flag"],"cssclasses":""}
+{"publish":true,"created":"2025-11-22T06:26:14Z","modified":"2025-11-27T06:32:50Z","tags":["git","feature_flag"],"cssclasses":""}
 ---
 
 
@@ -37,7 +37,7 @@ feature flag group이 있고 해당 그룹은 기본적으로 release, staging, 
      image version tag: `:1.12.3-rc.0`
    
    - **dev**
-     main에 push event마다 배포 (TOOD: 각 버전에 대한 dev 배포가 필요할지?? (e.g `v.1.12.0-dev.20251122`)
+     main에 push event마다 배포 (한번에 5개의 commit 추가시 맨 마지막 커밋)
 	  latest tag: `dev`
 	  image version tag: `:{date}.{shortSha}` (e.g `:20251122.b4723bd`)
 
