@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-11-27T06:39:55Z","modified":"2025-11-27T07:06:07Z","cssclasses":""}
+{"publish":true,"created":"2025-11-27T06:39:55Z","modified":"2025-11-27T07:07:20Z","cssclasses":""}
 ---
 
 
@@ -32,7 +32,8 @@ nextjs는 기본적으로 vercel에 최적화된 모습을 보인다. 그래서 
 
     두 방식의 차이는 dynamic은 ssr를 선택할 수 있으며 제 경험에서 dynamic인 경우 내부적으로 nextjs측에서 캐싱하는 것 같은데, 그로 인한 버그가 발생하는 경우에는 react의 lazy를 사용했습니다.
     
-2. 오직 클라이언트에서만 알 수 있는 정보에 의존하여 렌더링되는 하위 컴포넌트 - (예제의 ChildComponent) (가급적 피해야 합니다!) 이 경우 위에 dynamic이랑 실질적으로는 같으면서 import는 초기에 합니다.
+2. 오직 클라이언트에서만 알 수 있는 정보에 의존하여 렌더링되는 하위 컴포넌트 - (예제의 ChildComponent, 가급적 피해야 합니다!)
+   이 경우 위에 dynamic이랑 실질적으로는 같으면서 import는 초기에 합니다.
 
     ```tsx
     import ChildComponent from "./ChildComponent"
