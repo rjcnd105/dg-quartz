@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-11-22T06:26:14Z","modified":"2025-11-27T06:23:49Z","tags":["git","feature_flag"],"cssclasses":""}
+{"publish":true,"created":"2025-11-22T06:26:14Z","modified":"2025-11-27T06:28:46Z","tags":["git","feature_flag"],"cssclasses":""}
 ---
 
 
@@ -10,7 +10,7 @@
 ## Trunk base + Feature flag + ci test
 
 git [Trunk ](https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development) 전략 기준
-매 커밋 별 dev 배포를 피하기 위한다면 github flow 와 같은 단순한 형태의 브랜치 전략 사용
+매 커밋 별 dev 배포를 피하기 위한다면 trunk base + github flow 와 같은 단순한 형태의 브랜치 전략 사용
 
 feature flag를 통해 제어되므로 개발 중인 기능이 main 브랜치에 병합되어도 문제가 생기지 않음.
 각 feature flag는 전체 시스템(back, front, infra) 통합적
@@ -31,7 +31,7 @@ feature flag group이 있고 해당 그룹은 기본적으로 release, staging, 
      image version tag: `:1.12.3`
      
    - **staging**
-     rc 태그 지정시 배포
+     rc 태그 지정시 staging 배포
      tag: `v1.12.3-rc.0`, `v1.12.3-rc.1`, ...
      latest tag: `v1.12.3-rc`
      image version tag: `:1.12.3-rc.0`
