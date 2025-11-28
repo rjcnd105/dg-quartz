@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-11-27T06:39:55Z","modified":"2025-11-27T07:07:20Z","cssclasses":""}
+{"publish":true,"created":"2025-11-27T06:39:55Z","modified":"2025-11-28T02:28:21Z","cssclasses":""}
 ---
 
 
@@ -59,20 +59,23 @@ dynamic, lazy 로드시 추가적인 http 요청이 발생하므로 용량이 �
 zustand 사용의 경우 context + provider과 함께 사용해야 hydration이 이루어져 초기 initial 값으로 SSR 렌더링이 가능해집니다~ ([zustand guide](https://zustand.docs.pmnd.rs/guides/nextjs#app-router))
 그러므로 바로 보여져야 하는 화면에서는 가급적 provider를 써서 초기 서버 렌더링으로 보여주는 것이 좋아요.
 
-Dynamic 사용 케이스
+**Dynamic 사용 케이스**
+
+꼭 아래 다이어그램처럼 하는 것 보다는 정도에 따라서 유동적인 판단을 내리는 것이 좋습니다.
 
 ```mermaid
 graph LR
-  A{처음부터 화면에 바로
-   보여져야 하는가?} -->|Yes| AA[import]
-	A -->|No| AB{"사이즈가 큰가? 
-	or
-	사용 수가 적은가?
-	or
-	각 국가, 언어별로 컴포넌트가 나뉘어져 있는가?
-	"}
-	AB -->|NO| AA
-	AB -->|Yes| ABA["Dynamic"]
+	AB1{"사이즈가 큰가?"}
+	AB1 -->|No| AB2{"사용 빈도가 적은가?"}
+	AB2 -->|No| AB3{"각 국가, 언어별로 컴포넌트가 나뉘어져 있는가?"}
+	AB3 -->|No| AA["import"]
+	
+	AB1 -->|Yes| ABA{"지연이 되어도 상관 없는가?"}
+	AB2 -->|Yes| ABA
+	AB3 -->|Yes| ABA
+	
+	ABA -->|Yes| ABAA["dynamic(ssr: true)"]
+	ABA -->|No| ABAB["dynamic(ssr: false)"]
 	
 ```
 
@@ -138,14 +141,13 @@ function PageOrLayout({children, params}: PageOrLayoutProps) {
 3. fetch하는 데이터가 많거나 시간이 오래 걸리는가?
 4. 페이지가 너무 많이 생성되지는 않는가? 예를 들어 다국어 5개 x 제품 200개면 1000개의 페이지가 생성될 수 있음 페이지가 많이 생성되고 괜찮지만 그만큼 리스크가 생길 수 있기 때문에 각 언어별로만 분기되는 static한 페이지면 더 적용하기 좋음.
 
-## url을 통한 상태 관리
+## serarchParams을 통한 상태 관리
 
-searchParams는 서버단에서 읽을 수 있기 때문에 렌더링에 아주 유리합니다.
-서버사이드 렌더링도 가능하고,
+rl 경로상의 차이는 없지만 화면상에는 차이가 있는 간단한 상태에(tab, modal 상태 같은) searchParams를 사용시 서버사이드에서 렌더링도 되면서 클라이언트 단과의 sync도 맞출 수 있어 좋습니다.
 
 nextjs에서 searchParams를 변경하는 작업을 할때 아래 방법들이 각각의 문제가 있어서 가급적 [nuqs](https://nuqs.47ng.com/)를 쓰는게 좋습니다.
 
-제가 nextjs의 useRouter와 useSearchParams로 searchParams를 조작하면서 겪은 문제들이에요.
+nextjs의 useRouter와 useSearchParams로 searchParams를 조작하면서 겪은 문제들이에요.
 1. router.replace로 searchParams를 변경하면 스크롤이 맨 위로 튕기고 컴포넌트들 재렌더링 되면서 useEffect가 다시 실행되는 문제
 2. 렌더링 이슈를 피하기 위해 window.history.replaceState로 변경하면 페이지 이동 전까지는 nextjs의 searchParams와 sync가 되지 않고 searchParams를 읽을때의 타이밍 이슈
 
