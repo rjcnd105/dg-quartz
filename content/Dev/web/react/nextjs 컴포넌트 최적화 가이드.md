@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-11-27T06:39:55Z","modified":"2025-11-28T02:30:38Z","cssclasses":""}
+{"publish":true,"created":"2025-11-27T06:39:55Z","modified":"2025-11-28T02:31:22Z","cssclasses":""}
 ---
 
 
@@ -67,7 +67,8 @@ zustand 사용의 경우 context + provider과 함께 사용해야 hydration이 
 graph LR
 	AB1{"사이즈가 큰가?"}
 	AB1 -->|No| AB2{"사용 빈도가 적은가?"}
-	AB2 -->|No| AB3{"각 국가, 언어별로 컴포넌트가 나뉘어져 있는가?"}
+	AB2 -->|No| AB3{"각 국가, 언어별로
+	 나뉘어져 있는가?"}
 	AB3 -->|No| AA["import"]
 	
 	AB1 -->|Yes| ABA{"렌더링 지연이 
