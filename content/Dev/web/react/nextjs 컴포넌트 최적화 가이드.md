@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-11-27T06:39:55Z","modified":"2025-11-28T02:28:21Z","cssclasses":""}
+{"publish":true,"created":"2025-11-27T06:39:55Z","modified":"2025-11-28T02:30:38Z","cssclasses":""}
 ---
 
 
@@ -70,12 +70,13 @@ graph LR
 	AB2 -->|No| AB3{"각 국가, 언어별로 컴포넌트가 나뉘어져 있는가?"}
 	AB3 -->|No| AA["import"]
 	
-	AB1 -->|Yes| ABA{"지연이 되어도 상관 없는가?"}
+	AB1 -->|Yes| ABA{"렌더링 지연이 
+	되어도 괜찮은가?"}
 	AB2 -->|Yes| ABA
 	AB3 -->|Yes| ABA
 	
-	ABA -->|Yes| ABAA["dynamic(ssr: true)"]
-	ABA -->|No| ABAB["dynamic(ssr: false)"]
+	ABA -->|Yes| ABAA["dynamic(ssr: false)"]
+	ABA -->|No| ABAB["dynamic(ssr: true)"]
 	
 ```
 
