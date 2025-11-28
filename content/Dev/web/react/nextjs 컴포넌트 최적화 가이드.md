@@ -1,7 +1,9 @@
 ---
-{"publish":true,"created":"2025-11-27T06:39:55Z","modified":"2025-11-28T02:31:22Z","cssclasses":""}
+{"publish":true,"created":"2025-11-27T06:39:55Z","modified":"2025-11-28T02:45:05Z","cssclasses":""}
 ---
 
+
+nextjs 14 버전 기준으로 작성되었습니다.
 
 ## 배포 플랫폼 최적화
 
@@ -134,14 +136,23 @@ function PageOrLayout({children, params}: PageOrLayoutProps) {
 
 [nextjs ISR 페이지 참고](https://nextjs.org/docs/app/guides/incremental-static-regeneration)
 
-데이터가 최신화 되는게 중요한 페이지가 아니라면 [ISR 방식](https://nextjs.org/docs/app/guides/incremental-static-regeneration) 사용을 고려해 보세요! 서버 리소스를 크게 아끼고 렌더링 속도도 챙길 수 있습니다. 다만 제약사항이 꽤 있어요.
+데이터가 최신화 되는게 중요한 페이지가 아니고 일정 주기로만 업데이트 되어도 괜찮다면 [ISR 방식](https://nextjs.org/docs/app/guides/incremental-static-regeneration) 사용을 고려해 보세요! 서버 리소스를 크게 아끼고 렌더링 속도도 챙길 수 있습니다. 다만 제약사항이 꽤 있어요.
 
 **ISR 체크리스트**
 
 1. 해당 페이지로 접속하는 사용자 수가 많은가?
 2. 데이터가 매번 최신화되지 않아도 괜찮은가?
 3. fetch하는 데이터가 많거나 시간이 오래 걸리는가?
-4. 페이지가 너무 많이 생성되지는 않는가? 예를 들어 다국어 5개 x 제품 200개면 1000개의 페이지가 생성될 수 있음 페이지가 많이 생성되고 괜찮지만 그만큼 리스크가 생길 수 있기 때문에 각 언어별로만 분기되는 static한 페이지면 더 적용하기 좋음.
+4. 페이지가 너무 많이 생성되지는 않는가?
+   예를 들어 다국어 5개 x 제품 200개면 1000개의 페이지가 생성될 수 있음 페이지가 많이 생성되고 그 만큼 리스크가 생길 수 있기 때문에 각 언어별로만 분기되는 페이지면 더 적용하기 좋음.
+
+### SSG
+
+위의 ISR 같은 일정 주기로 데이터 갱신이 필요한 증분 재생성 전략이 필요가 없는 완전한 static 페이지라면 SSG로 하는게 좋아요.
+nextjs에서는 ISR 방식에서 캐시를 무제한으로 설정해서 우회적으로 SSG를 구현할 수 있어요.
+cache옵션을 force-cache로 설정하면 가능해요.
+
+[nextjs route config 참고](https://nextjs.org/docs/14/app/api-reference/file-conventions/route-segment-config)
 
 ## serarchParams을 통한 상태 관리
 
