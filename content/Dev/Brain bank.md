@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-11-22T06:26:14Z","modified":"2025-12-01T07:30:41Z","tags":["git","feature_flag"],"cssclasses":""}
+{"publish":true,"created":"2025-11-22T06:26:14Z","modified":"2025-12-01T07:34:40Z","tags":["git","feature_flag"],"cssclasses":""}
 ---
 
 
@@ -31,8 +31,10 @@ git stacking tool
 - [jj(Jujutsu)](https://github.com/jj-vcs/jj) - 스택 별로 쌓고 이전 스택에 커밋하면 쌓인 스택들이 자동으로 리베이스 됨
   [jjui](https://github.com/idursun/jjui)
   [jj workflow](https://ofcr.se/jujutsu-merge-workflow)
+
 git 가상 브랜치 gui tools
 - [gitbutler](https://gitbutler.com/)
+
 git 효율성 솔루션
 - [Graphite](https://graphite.com/) - 각 커밋을 레이어별로 쪼개서 분할 PR을 날림 (POC 필요). 구글의 전략을 기반으로 만들어짐
 
