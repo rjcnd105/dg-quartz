@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-11-19T03:50:03Z","modified":"2025-11-21T05:14:40Z","cssclasses":""}
+{"publish":true,"created":"2025-11-19T03:50:03Z","modified":"2025-12-01T06:51:02Z","cssclasses":""}
 ---
 
 
@@ -9,3 +9,11 @@
 ```html
 <iframe src="https://gist.github.com/rjcnd105/b15a02b7786c8486eecbef1c9a39f17a.pibb" style="width: 100%"> </iframe>
 ```
+
+### jj
+
+- [jj doc](https://www.jj-vcs.dev/latest/)
+- [jj 튜토리얼?](https://v5.chriskrycho.com/essays/jj-init/)
+- [workflow](https://ofcr.se/jujutsu-merge-workflow)
+- [with claude-cli](https://codeberg.org/jcdickinson/nix/src/branch/main/home/common/scripts/jj-auto.fish)
+ 

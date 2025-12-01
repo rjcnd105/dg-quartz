@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-11-22T06:26:14Z","modified":"2025-11-27T06:32:50Z","tags":["git","feature_flag"],"cssclasses":""}
+{"publish":true,"created":"2025-11-22T06:26:14Z","modified":"2025-12-01T07:30:41Z","tags":["git","feature_flag"],"cssclasses":""}
 ---
 
 
@@ -10,7 +10,6 @@
 ## Trunk base + Feature flag + ci test
 
 git [Trunk ](https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development) 전략 기준
-매 커밋 별 dev 배포를 피하기 위한다면 trunk base + github flow 와 같은 단순한 형태의 브랜치 전략 사용
 
 feature flag를 통해 제어되므로 개발 중인 기능이 main 브랜치에 병합되어도 문제가 생기지 않음.
 각 feature flag는 전체 시스템(back, front, infra) 통합적
@@ -18,11 +17,30 @@ feature flag를 통해 제어되므로 개발 중인 기능이 main 브랜치에
 feature flag group이 있고 해당 그룹은 기본적으로 release, staging, dev의 구분을 지님
 해당 feature flag group은 request url을 통해 구분
 
+### 팀 지침
+
+- PR 병합이 되지 않더라도 그로 인한 업무 지장이 가지 않도록 **git stacking** 전락을 사용 (e.g - jj, gitbutler)
+- PR 확인하는 시간은 하루에 2번
+  출근 직후, 4:00~4:30
+- 300줄 미만의 작은 단위로 PR
+- PR에 `Pass` 라벨을 붙혀서 책임 하에 코드 리뷰 없이 병합 가능. 단, 팀원이 재량껏 사후 코드 리뷰를  할 수 있음.
+- 매 브랜치는 하루 이내에 병합되어야 함 - 매일 아침 생성된지 하루 이상 지난 브랜치 존재시 마지막 커밋 팀원에게 슬랙 경고 알람
+
+**git, pr 관련 툴**
+git stacking tool
+- [jj(Jujutsu)](https://github.com/jj-vcs/jj) - 스택 별로 쌓고 이전 스택에 커밋하면 쌓인 스택들이 자동으로 리베이스 됨
+  [jjui](https://github.com/idursun/jjui)
+  [jj workflow](https://ofcr.se/jujutsu-merge-workflow)
+git 가상 브랜치 gui tools
+- [gitbutler](https://gitbutler.com/)
+git 효율성 솔루션
+- [Graphite](https://graphite.com/) - 각 커밋을 레이어별로 쪼개서 분할 PR을 날림 (POC 필요). 구글의 전략을 기반으로 만들어짐
+
 ### 필수 조건
 
-1. 개발 중인 기능을 main에 추가하더라도 문제가 생기지 않아야 함 (feature flag를 통해 통제되므로)
-   feature flag 별 가능한 버전 명시 필요? (front, back)
-   TODO: feature flag group들을 한눈에 확인하고 각 그룹별로 설정하고 컨트롤 할 수 있는 페이지 필요 - 관련 솔루션 알아봐야함, 혹은 직접 구현?
+1. feature flag를 통해 통제하여 개발 중인 기능을 main에 추가하더라도 문제가 생기지 않아야 함
+   feature flag 별 가능한 버전 명시 필요?
+	   TODO: feature flag group들을 한눈에 확인하고 각 그룹별로 설정하고 컨트롤 할 수 있는 페이지 필요 - 관련 솔루션 알아봐야함, 혹은 직접 구현?
 2. main push event시 ci를 통해 빌드(dev) 및 테스트를 거침
 3. main에 push event시 dev 배포, rc 태그 추가시 staging 배포,
    - **realease**

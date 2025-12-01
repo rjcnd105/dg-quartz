@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-11-27T06:39:55Z","modified":"2025-11-28T03:50:01Z","cssclasses":""}
+{"publish":true,"created":"2025-11-27T06:39:55Z","modified":"2025-11-28T05:32:46Z","cssclasses":""}
 ---
 
 
@@ -148,7 +148,7 @@ function PageOrLayout({children, params}: PageOrLayoutProps) {
 
 ### SSG
 
-위의 ISR 같은 일정 주기로 데이터 갱신이 필요한 증분 재생성 전략이 필요가 없는 완전한 static 페이지라면 SSG로 하는게 좋아요.
+위의 ISR 같은 증분 재생성 전략이 필요가 없는 static 페이지라면 SSG로 하는게 좋아요.
 nextjs에서는 ISR 방식에서 캐시를 무제한으로 설정해서 우회적으로 SSG를 구현할 수 있어요.
 cache옵션을 force-cache로 설정하면 가능해요.
 
@@ -156,7 +156,7 @@ cache옵션을 force-cache로 설정하면 가능해요.
 
 ## serarchParams을 통한 상태 관리
 
-rl 경로상의 차이는 없지만 화면상에는 차이가 있는 간단한 상태에(tab, modal 상태 같은) searchParams를 사용시 서버사이드에서 렌더링도 되면서 클라이언트 단과의 sync도 맞출 수 있어 좋습니다.
+경로상의 차이는 없지만 화면상에는 차이가 있는 간단한 상태에(tab, modal 상태 같은) searchParams를 사용시 서버사이드에서 렌더링도 되면서 클라이언트 단과의 sync도 맞출 수 있어 좋습니다.
 
 nextjs에서 searchParams를 변경하는 작업을 할때 아래 방법들이 각각의 문제가 있어서 가급적 [nuqs](https://nuqs.47ng.com/)를 쓰는게 좋습니다.
 
