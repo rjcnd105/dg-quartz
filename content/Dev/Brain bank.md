@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-11-22T06:26:14Z","modified":"2025-12-03T01:51:21Z","tags":["git","feature_flag"],"cssclasses":""}
+{"publish":true,"created":"2025-11-22T06:26:14Z","modified":"2025-12-03T02:02:53Z","tags":["git","feature_flag"],"cssclasses":""}
 ---
 
 
@@ -69,3 +69,5 @@ git 효율성 솔루션
   해당 논리적 분기는 feature flag group을 추가하면 얼마든지 생성 가능
   ex) www.A.dev.myapp.com, www.B.dev.myapp.com, www.C.dev.myapp.com
   위 A, B, C 라는 feature flag group을 각각에 feature flag들을 다르게 설정하여 테스트 할 수 있음
+  예제 이미지
+	![[env/첨부파일/CleanShot 2025-12-03 at 11.01.45.jpg|400]]
