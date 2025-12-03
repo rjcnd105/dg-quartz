@@ -1,8 +1,9 @@
 ---
-{"publish":true,"created":"2025-11-27T06:39:55Z","modified":"2025-11-28T05:32:46Z","cssclasses":""}
+{"publish":true,"created":"2025-11-27T06:39:55Z","modified":"2025-12-03T03:42:22Z","cssclasses":""}
 ---
 
 
+사내 가이드로 작성
 nextjs 14 버전 기준으로 작성되었습니다.
 
 ## 배포 플랫폼 최적화
