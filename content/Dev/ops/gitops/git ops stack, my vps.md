@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-10-29T04:54:07Z","modified":"2025-11-26T07:23:12Z","cssclasses":""}
+{"publish":true,"created":"2025-10-29T04:54:07Z","modified":"2025-12-04T04:36:34Z","cssclasses":""}
 ---
 
 
@@ -11,6 +11,7 @@
 k8s
 보안이 아주 중요한 경우: RKE2
 쿠버네티스 기반 OS: Talos os -
+NixOS의 [services.kubernets](https://nixos.wiki/wiki/Kubernetes)
 
 #### kuber cloud
 
@@ -92,7 +93,9 @@ ngnix 포지션
 #### data storage
 
 small
-1. minio block storage
+~~1. minio block storage~~ - [유지 관리 모드가 됨](https://news.ycombinator.com/item?id=46136023)
+1. [Garage](https://garagehq.deuxfleurs.fr/)
+2. 
 
 #### else
 
@@ -127,4 +130,4 @@ fluxCD
 kite
 
 일단
-한번 설정하고 말 것이라면 ansible 까지는 과한 듯 -> 방화벽은 수동으로 하고 mise를 사용
+한번 설정하고 말 것이라면 ansible 까지는 과한 듯 -> 방화벽은 수동

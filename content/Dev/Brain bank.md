@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-11-22T06:26:14Z","modified":"2025-12-03T02:06:22Z","tags":["git","feature_flag"],"cssclasses":""}
+{"publish":true,"created":"2025-11-22T06:26:14Z","modified":"2025-12-04T02:11:38Z","tags":["git","feature_flag"],"cssclasses":""}
 ---
 
 
@@ -36,7 +36,7 @@ git 가상 브랜치 gui tools
 - [gitbutler](https://gitbutler.com/)
 
 git 효율성 솔루션
-- [Graphite](https://graphite.com/) - 각 커밋을 레이어별로 쪼개서 분할 PR을 날림 (POC 필요). 구글의 전략을 기반으로 만들어짐
+- [Graphite](https://graphite.com/) - 각 커밋을 레이어별로 쪼개서 분할 PR을 날림 (POC 필요). 구글의 전략을 기반으로 만들어짐, stacking 전략 지원 됨
 
 ### 필수 조건
 
