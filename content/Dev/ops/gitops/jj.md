@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-12-03T09:27:07Z","modified":"2025-12-05T09:02:44Z","tags":["jj"],"cssclasses":""}
+{"publish":true,"created":"2025-12-03T09:27:07Z","modified":"2025-12-05T09:39:09Z","tags":["jj"],"cssclasses":""}
 ---
 
 
@@ -8,9 +8,14 @@ stacking branch 전략을 위한 여정.
 
 ## info
 
-### keywords
+### [revsets](https://docs.jj-vcs.dev/latest/revsets/)
 
-#### Revision Id
+revision 집합을 선택하기 위한 표현 방식
+
+`::`: 저장소의 모든 숨겨지지 않은 커밋
+=: `all()`, `root()::visible_heads()`
+`..`: root를 제외한 모든 숨겨지지 않은 commit
+=: `~root()`, `root()..visible_heads()`
 
 `@` : 현재 작업 사본 커밋 최상위
 `@-` , `@--`, ...: `-` 가 붙을때마다 최상위에서 이 전 커밋을 의미한다.
@@ -92,13 +97,15 @@ ex: `jj new 'description(substring:"Document hello.py in README.md")'
 
 `jj restore`
 전체 복원
-`jj `
+`jj restore --from <REVISON> <FILE>`
+이렇게 특정 커밋의 파일로 복원할 수 있음
 
 ### log
 
 `jj log`
 := `jj`
 `jj log --revisions 'all()'`
+:= `jj log -r ::`
 
 ### show
 
@@ -123,8 +130,9 @@ jj에서는 기본적으로 모든 것을 commit한다.
 git으로 치면 모든 것이 staged, unstaged가 없음
 
 `jj commit`
-
-`jj commit -m <MESSAGE>`
+`jj commit -m <MESSAGE> <?FILE>
+ex: `jj commit -m "fix: readme.md"`
+ex: `jj commit -m "chore: update package" package.json`
 
 ### bookmark
 
