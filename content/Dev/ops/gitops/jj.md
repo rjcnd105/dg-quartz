@@ -1,48 +1,98 @@
 ---
-{"publish":true,"created":"2025-12-03T09:27:07Z","modified":"2025-12-05T04:04:53Z","tags":["jj"],"cssclasses":""}
+{"publish":true,"created":"2025-12-03T09:27:07Z","modified":"2025-12-05T09:02:44Z","tags":["jj"],"cssclasses":""}
 ---
 
 
 stacking branch 전략을 위한 여정.
 [jj](https://github.com/jj-vcs/jj)
 
+## info
+
 ### keywords
 
-**Revision Id**
+#### Revision Id
+
 `@` : 현재 작업 사본 커밋 최상위
 `@-` , `@--`, ...: `-` 가 붙을때마다 최상위에서 이 전 커밋을 의미한다.
 
+### patterns
+
+[string pattern](https://docs.jj-vcs.dev/latest/revsets/#string-patterns)
+
+### [functions](https://docs.jj-vcs.dev/latest/revsets/#functions)
+
+`description(pattern)`
+
+### graph
+
+`◆` : 보호된 커밋 - 변경 불가능
+`○`: 변경 가능
+
+## actions
+
 ### git
 
+#### init
+
 `jj git init <PROJECT_PATH>`
+
+#### remote
 
 `jj git remote add <REMOTE> <REMOTE_URL>`
 ex: `jj git remote add origin git@github.com:...`
 
 `jj git remote list`
 
+#### push
+
 `jj git push`
 `jj git push --bookmark <BOOKMARK>`
 `--bookmark <BOOKMAR>` 이 없는 경우 실제로 푸시할 북마크를 자동으로 선택함.
-`jj git push --change <REVISION>`
-
 bookmark를 branch로 원격에 push
 ex: `jj git push --bookmark main`
 
+`jj git push --change <REVISION>`
+변경사항에 대한 임시 북마크(브랜치)를 생성해서 push
+ex: `jj git push --change @-`
+
+#### fetch
+
 `jj git fetch`
+
+### abandon
+
+커밋 제거
+
+`jj abandon <RECISION>`
 
 ### new
 
 `jj new`
 빈 커밋 생성. 설명도 없음
+
+`jj new main`
+main으로 빈 리비전 생성 - git의 checkout과 비슷한 효과
+
 `jj new <IDENTITY> <IDENTITY>`
 두개의 부모를 가진 병합 커밋 생성
+
 ex: `jj new main@origin @-`
-새로운 커밋을 만드는데 main@origin, @-
+새로운 커밋을 만드는데 main@origin, @- 를 병합한 커밋을 생성
+
+ex: `jj new 'description(substring:"Document hello.py in README.md")'
+위에처럼 특정 commit 설명에 일치하는 revision 위에 생성하게 할 수도 있음
 
 ### metaedit
 
 `jj metaedit --update-author`
+
+### restore
+
+사본 커밋에서 변경된 파일 복원
+
+`jj restore`
+전체 복원
+`jj `
 
 ### log
 
