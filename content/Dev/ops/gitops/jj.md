@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-12-03T09:27:07Z","modified":"2025-12-05T01:10:27Z","tags":["jj"],"cssclasses":""}
+{"publish":true,"created":"2025-12-03T09:27:07Z","modified":"2025-12-05T04:04:53Z","tags":["jj"],"cssclasses":""}
 ---
 
 
@@ -9,21 +9,22 @@ stacking branch 전략을 위한 여정.
 ### keywords
 
 **Revision Id**
-`@` : 현재 작업 사본 커밋 최상위p
+`@` : 현재 작업 사본 커밋 최상위
 `@-` , `@--`, ...: `-` 가 붙을때마다 최상위에서 이 전 커밋을 의미한다.
 
 ### git
 
 `jj git init <PROJECT_PATH>`
 
-`jj git remote add <REMOTE_NAME> <URL>`
+`jj git remote add <REMOTE> <REMOTE_URL>`
 ex: `jj git remote add origin git@github.com:...`
 
 `jj git remote list`
 
 `jj git push`
-`jj git push --bookmark <BOOKMARK_NAME>`
-`--bookmark <BOOKMAR_NAME>` 이 없는 경우 실제로 푸시할 북마크를 자동으로 선택함.
+`jj git push --bookmark <BOOKMARK>`
+`--bookmark <BOOKMAR>` 이 없는 경우 실제로 푸시할 북마크를 자동으로 선택함.
+`jj git push --change <REVISION>`
 
 bookmark를 branch로 원격에 push
 ex: `jj git push --bookmark main`
@@ -53,16 +54,18 @@ ex: `jj new main@origin @-`
 
 `jj show`
 현재 상위 커밋 정보 확인
-`jj show <BOOKMARK_NAME>`
-`jj show <REVISION_ID>`
-`jj show <BOOKMARK_NAME>@<REMOTE_NAME>`
+`jj show <BOOKMARK>`
+`jj show <REVISION>`
+`jj show <BOOKMARK>@<REMOTE>`
 ex: `jj show main@origin`
 
 ### [rebase](https://docs.jj-vcs.dev/latest/cli-reference/#jj-rebase)
 
-`jj rebase --onto <BOOKMARK_NAME>@<REMOTE_NAME>`
+`jj rebase --onto <BOOKMARK>@<REMOTE>`
 revisions를 지정 안할시 기본 `-b @` 가 `--onto` 앞에 생략된 형태라고 보면 됨
-`--onto` : 이전 베이스 위에 쌓음
+`--onto` (-o) : 이전 베이스 위에 쌓음
+`jj rebase -s A --onto B --onto C`
+위에 처럼 여러 --onto를 함으로써 merge revision을 만들 수 있다.
 
 ### commit
 
@@ -80,14 +83,14 @@ git으로 치면 모든 것이 staged, unstaged가 없음
 branch는 모든 상위 커밋을 포함하는 커밋 집합을 이야기 한다.
 bookmark는 단일 커밋에 붙은 라벨이다.
 
-`jj bookmark create <BOOKMARK_NAME> --revision <REVISION_ID>`
+`jj bookmark create <BOOKMARK> --revision <REVISION>`
 ex: `jj bookmark create main --revision q` - id 약자도 가능
 
-`jj bookmark track <BOOKMARK_NAME>@<REMOTE_NAME>`
+`jj bookmark track <BOOKMARK>@<REMOTE>`
 ex: `jj bookmark track main@origin`
 
-`jj bookmark move <BOOKMARK_NAME> --to <REVISION_ID>`
-`jj bookmark move <BOOKMARK_NAME> --to @-`
+`jj bookmark move <BOOKMARK> --to <REVISION>`
+`jj bookmark move <BOOKMARK> --to @-`
 `@-` 는 작업 사본 commit의 부모를 참조하는 키워드다. 해당 commit의 id를 입력해도 동일하다.
 
 ### else
