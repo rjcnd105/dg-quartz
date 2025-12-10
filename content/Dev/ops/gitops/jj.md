@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-12-03T09:27:07Z","modified":"2025-12-05T09:39:09Z","tags":["jj"],"cssclasses":""}
+{"publish":true,"created":"2025-12-03T09:27:07Z","modified":"2025-12-08T06:16:05Z","tags":["jj"],"cssclasses":""}
 ---
 
 
@@ -7,6 +7,8 @@ stacking branch 전략을 위한 여정.
 [jj](https://github.com/jj-vcs/jj)
 
 ## info
+
+http://localhost:3000/kr/ko/stories/winter-collection
 
 ### [revsets](https://docs.jj-vcs.dev/latest/revsets/)
 
@@ -64,13 +66,9 @@ ex: `jj git push --change @-`
 
 `jj git fetch`
 
-### abandon
-
-커밋 제거
-
-`jj abandon <RECISION>`
-
 ### new
+
+새로운 revision 생성
 
 `jj new`
 빈 커밋 생성. 설명도 없음
@@ -87,6 +85,26 @@ ex: `jj new main@origin @-`
 ex: `jj new 'description(substring:"Document hello.py in README.md")'
 위에처럼 특정 commit 설명에 일치하는 revision 위에 생성하게 할 수도 있음
 
+### describe
+
+revision에 설명을 작성
+
+`jj describe`
+`jj describe -m "<MESSAGE>"`
+`jj describe --revision <REVISION> -m "<MESSAGE>"`
+이전 메세지를 다시 작성함
+
+`--revision`
+:= `-r`
+
+### edit
+
+### abandon
+
+커밋 제거
+
+`jj abandon <RECISION>`
+
 ### metaedit
 
 `jj metaedit --update-author`
@@ -96,7 +114,7 @@ ex: `jj new 'description(substring:"Document hello.py in README.md")'
 사본 커밋에서 변경된 파일 복원
 
 `jj restore`
-전체 복원
+전체 파일 복원
 `jj restore --from <REVISON> <FILE>`
 이렇게 특정 커밋의 파일로 복원할 수 있음
 
@@ -106,6 +124,8 @@ ex: `jj new 'description(substring:"Document hello.py in README.md")'
 := `jj`
 `jj log --revisions 'all()'`
 := `jj log -r ::`
+`jj log -p <FILE|PATH>`
+특정 파일에 대한 jj log
 
 ### show
 
@@ -126,11 +146,13 @@ revisions를 지정 안할시 기본 `-b @` 가 `--onto` 앞에 생략된 형태
 
 ### commit
 
-jj에서는 기본적으로 모든 것을 commit한다.
-git으로 치면 모든 것이 staged, unstaged가 없음
+jj에서는 commit 이라는 기본 개념은 없다.
+describe와 new를 합친 sugar로 보면 된다.
+
+`git commit -m "something"` 은 `jj describe -m "something" && jj new`  와 동일하다고 보면 된다.
 
 `jj commit`
-`jj commit -m <MESSAGE> <?FILE>
+`jj commit -m "<MESSAGE>" <?FILE>
 ex: `jj commit -m "fix: readme.md"`
 ex: `jj commit -m "chore: update package" package.json`
 
@@ -158,6 +180,12 @@ ex: `jj bookmark track main@origin`
 
 `jj file untrack <FILE_NAME>`
 커밋에 기록되고 .gitignore에 제외했지만 이미 파일이 등록되어 있는 경우 해당 파일 추적 해제
+
+`jj immutable <REVSETS>`
+해당 리비전을 불변 커밋으로 함
+
+`jj operation log`
+명령어 실행 로그
 
 ### config
 
