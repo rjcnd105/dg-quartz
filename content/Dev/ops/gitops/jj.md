@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-12-03T09:27:07Z","modified":"2025-12-08T06:16:05Z","tags":["jj"],"cssclasses":""}
+{"publish":true,"created":"2025-12-03T09:27:07Z","modified":"2025-12-22T09:35:58Z","tags":["jj"],"cssclasses":""}
 ---
 
 
@@ -57,6 +57,8 @@ ex: `jj git remote add origin git@github.com:...`
 `--bookmark <BOOKMAR>` 이 없는 경우 실제로 푸시할 북마크를 자동으로 선택함.
 bookmark를 branch로 원격에 push
 ex: `jj git push --bookmark main`
+`jj git push -N`
+새 브랜치의 경우 push하고 track까지 함
 
 `jj git push --change <REVISION>`
 변경사항에 대한 임시 북마크(브랜치)를 생성해서 push
@@ -117,6 +119,7 @@ revision에 설명을 작성
 전체 파일 복원
 `jj restore --from <REVISON> <FILE>`
 이렇게 특정 커밋의 파일로 복원할 수 있음
+ex: `jj restore --from kkmppwlz src/main.rs`
 
 ### log
 
@@ -141,6 +144,8 @@ ex: `jj show main@origin`
 `jj rebase --onto <BOOKMARK>@<REMOTE>`
 revisions를 지정 안할시 기본 `-b @` 가 `--onto` 앞에 생략된 형태라고 보면 됨
 `--onto` (-o) : 이전 베이스 위에 쌓음
+:= `-d`, `--dedestination`
+
 `jj rebase -s A --onto B --onto C`
 위에 처럼 여러 --onto를 함으로써 merge revision을 만들 수 있다.
 
@@ -172,6 +177,9 @@ ex: `jj bookmark track main@origin`
 `jj bookmark move <BOOKMARK> --to <REVISION>`
 `jj bookmark move <BOOKMARK> --to @-`
 `@-` 는 작업 사본 commit의 부모를 참조하는 키워드다. 해당 commit의 id를 입력해도 동일하다.
+
+`jj bookmark set <BOOKMARKS>`
+bookmark의 upsert 같은 느낌
 
 ### else
 

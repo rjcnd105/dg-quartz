@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-10-29T04:54:07Z","modified":"2025-12-04T04:36:34Z","cssclasses":""}
+{"publish":true,"created":"2025-10-29T04:54:07Z","modified":"2025-12-15T01:38:12Z","cssclasses":""}
 ---
 
 
@@ -99,7 +99,8 @@ small
 
 #### else
 
-쿠버 PostgreSQL 솔루션: [cloudenative-PG](https://github.com/cloudnative-pg/cloudnative-pg)
+[cloudenative-PG](https://github.com/cloudnative-pg/cloudnative-pg): 쿠버 PostgreSQL 솔루션
+[Terragrunt](https://github.com/gruntwork-io/terragrunt): terraform에서의 추상 framework 같은 것
 
 #####  alpha
 
