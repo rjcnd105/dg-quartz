@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-12-03T09:27:07Z","modified":"2025-12-22T09:35:58Z","tags":["jj"],"cssclasses":""}
+{"publish":true,"created":"2025-12-03T09:27:07Z","modified":"2026-01-08T07:53:08Z","tags":["jj"],"cssclasses":""}
 ---
 
 
@@ -87,7 +87,7 @@ ex: `jj new main@origin @-`
 ex: `jj new 'description(substring:"Document hello.py in README.md")'
 위에처럼 특정 commit 설명에 일치하는 revision 위에 생성하게 할 수도 있음
 
-### describe
+### describe (desc)
 
 revision에 설명을 작성
 
@@ -136,7 +136,7 @@ ex: `jj restore --from kkmppwlz src/main.rs`
 현재 상위 커밋 정보 확인
 `jj show <BOOKMARK>`
 `jj show <REVISION>`
-`jj show <BOOKMARK>@<REMOTE>`
+`jj show <BOOKMARK> --remote=origin`
 ex: `jj show main@origin`
 
 ### [rebase](https://docs.jj-vcs.dev/latest/cli-reference/#jj-rebase)
@@ -171,7 +171,7 @@ bookmark는 단일 커밋에 붙은 라벨이다.
 `jj bookmark create <BOOKMARK> --revision <REVISION>`
 ex: `jj bookmark create main --revision q` - id 약자도 가능
 
-`jj bookmark track <BOOKMARK>@<REMOTE>`
+`jj bookmark track <BOOKMARK> --remote=origin`
 ex: `jj bookmark track main@origin`
 
 `jj bookmark move <BOOKMARK> --to <REVISION>`
