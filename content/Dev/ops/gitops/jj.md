@@ -1,14 +1,13 @@
 ---
-{"publish":true,"created":"2025-12-03T09:27:07Z","modified":"2026-01-08T07:53:08Z","tags":["jj"],"cssclasses":""}
+{"publish":true,"created":"2025-12-03T09:27:07Z","modified":"2026-01-09T10:02:25Z","tags":["jj"],"cssclasses":""}
 ---
 
 
+git 보다 더 높은 생산성과 PR 병합 시점이 내 업무에 방해가 되지 않도록.
 stacking branch 전략을 위한 여정.
 [jj](https://github.com/jj-vcs/jj)
 
 ## info
-
-http://localhost:3000/kr/ko/stories/winter-collection
 
 ### [revsets](https://docs.jj-vcs.dev/latest/revsets/)
 
