@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2025-11-22T06:26:14Z","modified":"2025-12-04T02:11:38Z","tags":["git","feature_flag"],"cssclasses":""}
+{"publish":true,"created":"2025-11-22T06:26:14Z","modified":"2026-01-16T09:48:32Z","tags":["git","feature_flag"],"cssclasses":""}
 ---
 
 
@@ -71,3 +71,12 @@ git 효율성 솔루션
   위 A, B, C 라는 feature flag group을 각각에 feature flag들을 다르게 설정하여 테스트 할 수 있음
   예제 이미지
 	![[env/첨부파일/CleanShot 2025-12-03 at 11.01.45.jpg|400]]
+
+## 백엔드 OpenApi Spec 변경시 ai로 이전과 diff하여 프론트엔드에 PR
+
+매번 api 바뀌는 것  대응하기 힘들다..
+
+## Sentry 에러로부터 ai 통해서 Review 및 PR
+
+해당 문제에 대한 수정사항을 어떻게 고유화할 것이냐가 핵심.
+예를 들어 특정 공유 컴포넌트의 문제로 인해 여러 페이지에서 에러가 발생했을시 이것을 각각의 에러가 아닌 해당 컴포넌트에 대한 문제인 것을 인식할 수 있어야 함.
