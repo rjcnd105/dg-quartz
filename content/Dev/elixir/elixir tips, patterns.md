@@ -1,5 +1,8 @@
 ---
-{"publish":true,"created":"2024-04-15T07:49:03Z","modified":"2025-12-22T09:42:42Z","cssclasses":""}
+publish: true
+created: 2024-04-15T07:49:03Z
+modified: 2025-12-22T09:42:42Z
+cssclasses: ""
 ---
 
 

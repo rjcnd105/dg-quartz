@@ -1,5 +1,11 @@
 ---
-{"publish":true,"created":"2024-11-14T08:29:56Z","modified":"2025-10-16T04:48:54Z","tags":["nix","nix_flake"],"cssclasses":""}
+publish: true
+created: 2024-11-14T08:29:56Z
+modified: 2025-10-16T04:48:54Z
+tags:
+  - nix
+  - nix_flake
+cssclasses: ""
 ---
 
 

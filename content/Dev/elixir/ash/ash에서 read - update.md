@@ -1,5 +1,13 @@
 ---
-{"publish":true,"created":"2025-04-03T10:04:24Z","modified":"2025-10-20T04:49:20Z","tags":["ash","liveview","form","code_interface"],"cssclasses":""}
+publish: true
+created: 2025-04-03T10:04:24Z
+modified: 2025-10-20T04:49:20Z
+tags:
+  - ash
+  - liveview
+  - form
+  - code_interface
+cssclasses: ""
 ---
 
 

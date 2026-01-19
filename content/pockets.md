@@ -1,5 +1,12 @@
 ---
-{"publish":true,"created":"2024-02-04T08:35:13Z","modified":"2025-10-16T04:46:53Z","tags":["참조","아티클","개발"],"cssclasses":""}
+publish: true
+created: 2024-02-04T08:35:13Z
+modified: 2025-10-16T04:46:53Z
+tags:
+  - 참조
+  - 아티클
+  - 개발
+cssclasses: ""
 ---
 
 

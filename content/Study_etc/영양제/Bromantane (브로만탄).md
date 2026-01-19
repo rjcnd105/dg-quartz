@@ -1,5 +1,11 @@
 ---
-{"publish":true,"created":"2025-03-06T00:49:12Z","modified":"2025-10-16T04:41:27Z","tags":["nootropic","도파민"],"cssclasses":""}
+publish: true
+created: 2025-03-06T00:49:12Z
+modified: 2025-10-16T04:41:27Z
+tags:
+  - nootropic
+  - 도파민
+cssclasses: ""
 ---
 
 

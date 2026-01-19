@@ -1,5 +1,11 @@
 ---
-{"publish":true,"created":"2024-07-19T06:58:50Z","modified":"2025-10-16T04:38:30Z","tags":["shell","bash"],"cssclasses":""}
+publish: true
+created: 2024-07-19T06:58:50Z
+modified: 2025-10-16T04:38:30Z
+tags:
+  - shell
+  - bash
+cssclasses: ""
 ---
 
 

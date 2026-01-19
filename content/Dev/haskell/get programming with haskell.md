@@ -1,5 +1,11 @@
 ---
-{"publish":true,"created":"2024-02-18T07:55:39Z","modified":"2025-10-20T04:42:59Z","tags":["haskell","study"],"cssclasses":""}
+publish: true
+created: 2024-02-18T07:55:39Z
+modified: 2025-10-20T04:42:59Z
+tags:
+  - haskell
+  - study
+cssclasses: ""
 ---
 
 

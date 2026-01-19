@@ -1,5 +1,12 @@
 ---
-{"publish":true,"created":"2023-09-27T07:17:10Z","modified":"2025-10-16T04:38:50Z","tags":["dotenv","token","test"],"cssclasses":""}
+publish: true
+created: 2023-09-27T07:17:10Z
+modified: 2025-10-16T04:38:50Z
+tags:
+  - dotenv
+  - token
+  - test
+cssclasses: ""
 ---
 
 

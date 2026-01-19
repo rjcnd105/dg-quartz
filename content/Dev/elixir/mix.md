@@ -1,5 +1,15 @@
 ---
-{"publish":true,"created":"2024-04-03T04:57:39Z","modified":"2025-10-16T01:30:54Z","tags":["elixir","mix","hex","phoenix","ecto","ash"],"cssclasses":""}
+publish: true
+created: 2024-04-03T04:57:39Z
+modified: 2025-10-16T01:30:54Z
+tags:
+  - elixir
+  - mix
+  - hex
+  - phoenix
+  - ecto
+  - ash
+cssclasses: ""
 ---
 
 

@@ -1,5 +1,11 @@
 ---
-{"publish":true,"created":"2025-11-22T06:26:14Z","modified":"2026-01-16T09:48:32Z","tags":["git","feature_flag"],"cssclasses":""}
+publish: true
+created: 2025-11-22T06:26:14Z
+modified: 2026-01-16T09:48:32Z
+tags:
+  - git
+  - feature_flag
+cssclasses: ""
 ---
 
 

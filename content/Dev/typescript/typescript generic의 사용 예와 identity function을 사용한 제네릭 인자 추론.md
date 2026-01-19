@@ -1,5 +1,10 @@
 ---
-{"publish":true,"created":"2025-10-02T08:50:05Z","modified":"2025-10-16T03:09:48Z","tags":["typescript"],"cssclasses":""}
+publish: true
+created: 2025-10-02T08:50:05Z
+modified: 2025-10-16T03:09:48Z
+tags:
+  - typescript
+cssclasses: ""
 ---
 
 

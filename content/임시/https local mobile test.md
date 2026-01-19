@@ -1,5 +1,9 @@
 ---
-{"publish":true,"aliases":"https local mobile test","created":"2025-06-12T09:52:09Z","modified":"2025-10-16T04:47:10Z","cssclasses":""}
+publish: true
+aliases: https local mobile test
+created: 2025-06-12T09:52:09Z
+modified: 2025-10-16T04:47:10Z
+cssclasses: ""
 ---
 
 
