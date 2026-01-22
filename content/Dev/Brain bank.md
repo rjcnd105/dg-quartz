@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2025-11-22T06:26:14Z
-modified: 2026-01-16T09:48:32Z
+modified: 2026-01-22T05:57:19Z
 tags:
   - git
   - feature_flag
@@ -86,3 +86,8 @@ git 효율성 솔루션
 
 해당 문제에 대한 수정사항을 어떻게 고유화할 것이냐가 핵심.
 예를 들어 특정 공유 컴포넌트의 문제로 인해 여러 페이지에서 에러가 발생했을시 이것을 각각의 에러가 아닌 해당 컴포넌트에 대한 문제인 것을 인식할 수 있어야 함.
+
+## 디자인 시스템 토큰화 + AI Agent SKILL로 등록
+
+당근 디자인 시스템 https://github.com/daangn/seed-design 참고. 다만 yaml은 싫다..
+cue, pkl, nickel로 할 수는 없을까?
