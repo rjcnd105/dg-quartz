@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2025-11-22T06:26:14Z
-modified: 2026-01-22T05:57:19Z
+modified: 2026-01-23T05:54:52Z
 tags:
   - git
   - feature_flag
@@ -91,3 +91,16 @@ git 효율성 솔루션
 
 당근 디자인 시스템 https://github.com/daangn/seed-design 참고. 다만 yaml은 싫다..
 cue, pkl, nickel로 할 수는 없을까?
+
+## 선언적 VPS stack
+
+### 초기
+
+NixOs + nix packages의 DockerTools을 사용한 nix 언어로 Docker 선언
+Comin으로 GitOps 기반으로 구성하며 sops-nix를 통해 비밀 관리
+외부 클라우드 설정은 개별 cli 툴을 사용함.
+
+### 목표
+
+위의 Comin + sops-nix와 더불어 NixOs + Nix의 k3s 설정으로 마이그레이션 한다.
+docker 기반의 설정을 kuberneties로 변경, 외부 클라우드 기반 설정은 terraform으로 변경
