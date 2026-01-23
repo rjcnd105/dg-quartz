@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2025-11-22T06:26:14Z
-modified: 2026-01-23T05:54:52Z
+modified: 2026-01-23T05:56:03Z
 tags:
   - git
   - feature_flag
@@ -90,7 +90,7 @@ git 효율성 솔루션
 ## 디자인 시스템 토큰화 + AI Agent SKILL로 등록
 
 당근 디자인 시스템 https://github.com/daangn/seed-design 참고. 다만 yaml은 싫다..
-cue, pkl, nickel로 할 수는 없을까?
+cue, pkl, nickel로 할 수는 없을까? - 디자인 시스템 명세라면 cue가 가장 적합해보이기는 함
 
 ## 선언적 VPS stack
 
