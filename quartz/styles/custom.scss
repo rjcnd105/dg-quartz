@@ -68,6 +68,9 @@ body {
     border: none !important;
     outline: none !important;
     background-color: transparent !important;
+    display: inline-flex !important;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
   }
 
   .clipboard-button {
