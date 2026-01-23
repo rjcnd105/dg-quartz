@@ -1,5 +1,12 @@
 ---
-{"publish":true,"created":"2024-02-04T07:44:37Z","modified":"2025-10-16T04:38:28Z","tags":["rust","book","study"],"cssclasses":""}
+publish: true
+created: 2024-02-04T07:44:37Z
+modified: 2025-10-16T04:38:28Z
+tags:
+  - rust
+  - book
+  - study
+cssclasses: ""
 ---
 
 

@@ -1,5 +1,15 @@
 ---
-{"publish":true,"created":"2025-10-06T11:24:55Z","modified":"2025-11-07T04:10:44Z","tags":["sops","sops-nix","nix","nix_flake","age","gitops"],"cssclasses":""}
+publish: true
+created: 2025-10-06T11:24:55Z
+modified: 2025-11-07T04:10:44Z
+tags:
+  - sops
+  - sops-nix
+  - nix
+  - nix_flake
+  - age
+  - gitops
+cssclasses: ""
 ---
 
 

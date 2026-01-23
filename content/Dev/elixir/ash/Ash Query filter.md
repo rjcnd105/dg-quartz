@@ -1,5 +1,21 @@
 ---
-{"publish":true,"created":"2025-04-01T04:50:59Z","modified":"2025-10-16T04:47:03Z","tags":["a","s","h","a","s","h","_","q","u","e","r","y"],"cssclasses":""}
+publish: true
+created: 2025-04-01T04:50:59Z
+modified: 2025-10-16T04:47:03Z
+tags:
+  - a
+  - s
+  - h
+  - a
+  - s
+  - h
+  - _
+  - q
+  - u
+  - e
+  - r
+  - y
+cssclasses: ""
 ---
 
 

@@ -1,5 +1,11 @@
 ---
-{"publish":true,"created":"2024-10-07T07:32:21Z","modified":"2025-10-16T04:39:18Z","tags":["nix","sh"],"cssclasses":""}
+publish: true
+created: 2024-10-07T07:32:21Z
+modified: 2025-10-16T04:39:18Z
+tags:
+  - nix
+  - sh
+cssclasses: ""
 ---
 
 

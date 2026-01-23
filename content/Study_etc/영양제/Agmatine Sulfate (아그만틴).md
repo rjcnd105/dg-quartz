@@ -1,5 +1,11 @@
 ---
-{"publish":true,"created":"2025-03-06T00:43:08Z","modified":"2025-10-16T04:41:33Z","tags":["nootropic","우울증"],"cssclasses":""}
+publish: true
+created: 2025-03-06T00:43:08Z
+modified: 2025-10-16T04:41:33Z
+tags:
+  - nootropic
+  - 우울증
+cssclasses: ""
 ---
 
 

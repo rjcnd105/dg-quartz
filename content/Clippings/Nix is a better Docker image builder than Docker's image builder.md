@@ -1,5 +1,11 @@
 ---
-{"publish":true,"title":"Nix is a better Docker image builder than Docker's image builder","description":"Xe Iaso's personal website.","created":"2025-01-24","tags":["clippings"],"cssclasses":""}
+publish: true
+title: Nix is a better Docker image builder than Docker's image builder
+description: Xe Iaso's personal website.
+created: 2025-01-24
+tags:
+  - clippings
+cssclasses: ""
 ---
 
 

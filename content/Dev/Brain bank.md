@@ -1,5 +1,11 @@
 ---
-{"publish":true,"created":"2025-11-22T06:26:14Z","modified":"2025-12-04T02:11:38Z","tags":["git","feature_flag"],"cssclasses":""}
+publish: true
+created: 2025-11-22T06:26:14Z
+modified: 2026-01-23T06:09:12Z
+tags:
+  - git
+  - feature_flag
+cssclasses: ""
 ---
 
 
@@ -71,3 +77,32 @@ git 효율성 솔루션
   위 A, B, C 라는 feature flag group을 각각에 feature flag들을 다르게 설정하여 테스트 할 수 있음
   예제 이미지
 	![[env/첨부파일/CleanShot 2025-12-03 at 11.01.45.jpg|400]]
+
+## 백엔드 OpenApi Spec 변경시 ai로 이전과 diff하여 프론트엔드에 PR
+
+매번 api 바뀌는 것  대응하기 힘들다..
+
+## Sentry 에러로부터 ai 통해서 Review 및 PR
+
+해당 문제에 대한 수정사항을 어떻게 고유화할 것이냐가 핵심.
+예를 들어 특정 공유 컴포넌트의 문제로 인해 여러 페이지에서 에러가 발생했을시 이것을 각각의 에러가 아닌 해당 컴포넌트에 대한 문제인 것을 인식할 수 있어야 함.
+
+## 디자인 시스템 토큰화 + AI Agent SKILL로 등록
+
+당근 디자인 시스템 https://github.com/daangn/seed-design 참고. 다만 yaml은 싫다..
+cue, pkl, nickel로 할 수는 없을까? - 디자인 시스템 명세라면 cue가 가장 적합해보이기는 함
+
+## 선언적 VPS stack
+
+#nixos #nix #kubernetes #sops #gitops
+
+### 초기
+
+NixOs + nix packages의 DockerTools을 사용한 nix 언어로 Docker 선언
+Comin으로 GitOps 기반으로 구성하며 sops-nix를 통해 비밀 관리
+외부 클라우드 설정은 개별 cli 툴을 사용함.
+
+### 목표
+
+위의 Comin + sops-nix와 더불어 NixOs + Nix의 k3s 설정으로 마이그레이션 한다.
+docker 기반의 설정을 kubernetes 변경, 외부 클라우드 기반 설정은 terraform으로 변경

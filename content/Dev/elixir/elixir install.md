@@ -1,5 +1,13 @@
 ---
-{"publish":true,"tags":["elixir","zed","pkgx","erlang","lexical-lsp","next-ls"],"cssclasses":""}
+publish: true
+tags:
+  - elixir
+  - zed
+  - pkgx
+  - erlang
+  - lexical-lsp
+  - next-ls
+cssclasses: ""
 ---
 
 

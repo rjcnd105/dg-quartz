@@ -1,5 +1,27 @@
 ---
-{"publish":true,"created":"2025-03-17T06:27:20Z","modified":"2025-10-16T04:47:05Z","tags":["e","r","r","o","r","e","l","i","x","i","r","a","s","h","f","o","r","m"],"cssclasses":""}
+publish: true
+created: 2025-03-17T06:27:20Z
+modified: 2025-10-16T04:47:05Z
+tags:
+  - e
+  - r
+  - r
+  - o
+  - r
+  - e
+  - l
+  - i
+  - x
+  - i
+  - r
+  - a
+  - s
+  - h
+  - f
+  - o
+  - r
+  - m
+cssclasses: ""
 ---
 
 

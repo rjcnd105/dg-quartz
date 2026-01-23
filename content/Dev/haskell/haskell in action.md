@@ -1,5 +1,12 @@
 ---
-{"publish":true,"created":"2024-02-04T09:37:02Z","modified":"2025-10-16T03:28:44Z","tags":["ghcup","haskell","study"],"cssclasses":""}
+publish: true
+created: 2024-02-04T09:37:02Z
+modified: 2025-10-16T03:28:44Z
+tags:
+  - ghcup
+  - haskell
+  - study
+cssclasses: ""
 ---
 
 

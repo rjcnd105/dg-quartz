@@ -1,5 +1,15 @@
 ---
-{"publish":true,"created":"2024-11-19T05:33:44Z","modified":"2025-10-16T04:48:53Z","tags":["nix","flake","direnv","nix_develop","nix_profile","nix_flake"],"cssclasses":""}
+publish: true
+created: 2024-11-19T05:33:44Z
+modified: 2025-10-16T04:48:53Z
+tags:
+  - nix
+  - flake
+  - direnv
+  - nix_develop
+  - nix_profile
+  - nix_flake
+cssclasses: ""
 ---
 
 

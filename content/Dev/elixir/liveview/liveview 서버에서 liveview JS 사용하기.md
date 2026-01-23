@@ -1,5 +1,10 @@
 ---
-{"publish":true,"created":"2025-04-04T08:44:43Z","modified":"2025-10-16T04:47:09Z","tags":["liveview"],"cssclasses":""}
+publish: true
+created: 2025-04-04T08:44:43Z
+modified: 2025-10-16T04:47:09Z
+tags:
+  - liveview
+cssclasses: ""
 ---
 
 

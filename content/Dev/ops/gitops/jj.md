@@ -1,5 +1,10 @@
 ---
-{"publish":true,"created":"2025-12-03T09:27:07Z","modified":"2026-01-09T10:02:25Z","tags":["jj"],"cssclasses":""}
+publish: true
+created: 2025-12-03T09:27:07Z
+modified: 2026-01-09T10:02:25Z
+tags:
+  - jj
+cssclasses: ""
 ---
 
 

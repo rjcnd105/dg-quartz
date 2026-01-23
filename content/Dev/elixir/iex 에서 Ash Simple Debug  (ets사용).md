@@ -1,5 +1,12 @@
 ---
-{"publish":true,"created":"2025-03-19T08:01:47Z","modified":"2025-10-16T04:53:23Z","tags":["elixir","debug","ets"],"cssclasses":""}
+publish: true
+created: 2025-03-19T08:01:47Z
+modified: 2025-10-16T04:53:23Z
+tags:
+  - elixir
+  - debug
+  - ets
+cssclasses: ""
 ---
 
 
