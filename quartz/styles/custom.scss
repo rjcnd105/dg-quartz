@@ -14,6 +14,12 @@ body {
   iframe {
     border: none;
   }
+  .explorer-content ul {
+    overscroll-behavior: auto;
+  }
+  .explorer-ul.overflow {
+    overscroll-behavior: contain;
+  }
 
   .explorer .explorer-content ul.explorer-ul li a  {
     cursor: pointer;
