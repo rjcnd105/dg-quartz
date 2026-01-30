@@ -1,13 +1,17 @@
 ---
 publish: true
 created: 2025-03-06T01:10:45Z
-modified: 2025-10-16T04:41:22Z
+modified: 2026-01-30T02:51:07Z
 tags:
   - 운동
   - nootropic
 cssclasses: ""
 ---
 
+
+[크레아틴이 뇌에 미치는 영향 관련한 커뮤니티 글](https://www.reddit.com/r/ADHDers/comments/1nq13pj/after_seeing_some_studies_about_taking_creatine/)
+
+초기 로딩을 위해서 15mg 정도씩 먹다가 그 후 5mg 씩 꾸준히 먹으면 수면, 인지, ADHD에 아주 좋음
 
 # 크레아틴에 관한 Rhonda Patrick의 팟캐스트에서 얻은 10가지 주요 정보
 
