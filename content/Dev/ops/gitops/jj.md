@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2025-12-03T09:27:07Z
-modified: 2026-01-09T10:02:25Z
+modified: 2026-01-29T14:28:49Z
 tags:
   - jj
 cssclasses: ""
@@ -107,9 +107,10 @@ revision에 설명을 작성
 
 ### abandon
 
-커밋 제거
+리비전 제거
 
-`jj abandon <RECISION>`
+`jj abandon <REVISON>`
+ex: `jj abandon l`
 
 ### metaedit
 
@@ -117,12 +118,12 @@ revision에 설명을 작성
 
 ### restore
 
-사본 커밋에서 변경된 파일 복원
+리비전에서 변경된 파일 복원
 
 `jj restore`
 전체 파일 복원
 `jj restore --from <REVISON> <FILE>`
-이렇게 특정 커밋의 파일로 복원할 수 있음
+이렇게 특정 리비전의 파일로 복원할 수 있음
 ex: `jj restore --from kkmppwlz src/main.rs`
 
 ### log
@@ -135,6 +136,8 @@ ex: `jj restore --from kkmppwlz src/main.rs`
 특정 파일에 대한 jj log
 
 ### show
+
+리비전 보기
 
 `jj show`
 현재 상위 커밋 정보 확인
