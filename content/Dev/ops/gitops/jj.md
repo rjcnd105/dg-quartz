@@ -180,7 +180,7 @@ ex: `jj bookmark create main --revision q` - id 약자도 가능
 
 `jj bookmark track <BOOKMARK> --remote=origin`
 ex: `jj bookmark track main@origin`
-
+	
 `jj bookmark move <BOOKMARK> --to <REVISION>`
 `jj bookmark move <BOOKMARK> --to @-`
 `@-` 는 작업 사본 commit의 부모를 참조하는 키워드다. 해당 commit의 id를 입력해도 동일하다.
