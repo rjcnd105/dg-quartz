@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2025-11-22T06:26:14Z
-modified: 2026-01-23T06:09:12Z
+modified: 2026-03-11T06:38:18Z
 tags:
   - git
   - feature_flag
@@ -97,6 +97,10 @@ cue, pkl, nickel로 할 수는 없을까? - 디자인 시스템 명세라면 cue
 #nixos #nix #kubernetes #sops #gitops
 
 ### 초기
+
+Arcane + docker 기반
+
+### 중기
 
 NixOs + nix packages의 DockerTools을 사용한 nix 언어로 Docker 선언
 Comin으로 GitOps 기반으로 구성하며 sops-nix를 통해 비밀 관리
