@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-01-19T01:29:29Z
-modified: 2026-03-19T07:54:24Z
+modified: 2026-03-19T08:04:59Z
 tags:
   - ai
   - llm
@@ -15,6 +15,9 @@ AI를 잘 사용하기 위한 나의 지식들
 
 ## 개요
 
+[클로드 코드 작동 방식](https://medium.com/@boredhead/context-skills-hooks-subagents-how-claude-code-actually-works-acdbb7baef6a)
+[클로드 코드 장편 가이드](https://x.com/affaanmustafa/status/2014040193557471352)
+
 ### 세부화된 파일 참조
 
 함수, 모듈을 분리하여 import 하듯이 agents 지침도 세분화하여 한번에 많은 context를 불러오지 않게끔 하는 것이 아주 중요하다.
@@ -25,8 +28,6 @@ AI를 잘 사용하기 위한 나의 지식들
 AI는 몇 초의 시간이면 PM - 디자이너 - 개발자 간에 방대한 양의 동일한 context를 전달할 수 있지만, 사람은 몇 시간, 몇 일이 걸리기도 하며 정확성도 떨어진다.
 그러므로 사람의 개입은 최소화하는 방향으로 점진적으로 구축해나가야 한다.
 
-[클로드 코드 작동 방식](https://medium.com/@boredhead/context-skills-hooks-subagents-how-claude-code-actually-works-acdbb7baef6a)
-[클로드 코드 장편 가이드](https://x.com/affaanmustafa/status/2014040193557471352)
 [클로드 코드의 10단계 참고](https://github.com/darnoux/claude-code-level-up)
 
 인간은 인간이 역할이 최소화될 수 있게끔하는 시스템을 점진적으로 구축 해야한다.
