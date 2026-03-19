@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-01-19T01:29:29Z
-modified: 2026-03-19T07:20:03Z
+modified: 2026-03-19T07:25:23Z
 tags:
   - ai
   - llm
@@ -41,15 +41,17 @@ AI는 몇 초의 시간이면 PM - 디자이너 - 개발자 간에 방대한 양
 특정 Skill, Hooks 등을 해당 에이전트의 Context내에서 사용하게끔 하라. (토큰 절약 + 역할 특화)
 그리고 subagents 들이 서로 간에 공유할 수 있는 창구를 만들어라 (file, db)
 
-### Main agents
+[공식 가이드](https://code.claude.com/docs/ko/sub-agents)
 
-subagents 들을 역할에 따라 만들고 조율하는 에이전트. 에이전트 오케스트레이터, kubernetes의 master node 역할
+### Master subagents
 
-### Sub agents
+worker subagents 들을 역할에 따라 만들고 조율하는 subagent. 에이전트 오케스트레이터
+kubernetes의 master node 역할
+
+### Worker subagents
 
 특정 맥락 내에서 특정 역할을 수행하는 도구성 에이전트
-
-[공식 제작 가이드](https://code.claude.com/docs/ko/sub-agents)
+kubernetes의 worker node 역할
 
 ## Plugins
 
