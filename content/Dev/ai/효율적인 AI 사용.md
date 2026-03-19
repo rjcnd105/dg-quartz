@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-01-19T01:29:29Z
-modified: 2026-03-19T08:04:59Z
+modified: 2026-03-19T08:44:10Z
 tags:
   - ai
   - llm
@@ -97,9 +97,13 @@ harness를 프로그래밍 방식으로 구축하는 관련 라이브러리
 
 [클로드 코드와 함께한 건축 과정](https://shawnos.ai/blog/6-weeks-of-building-with-claude-code)
 [스스로 발전하는 에이전트 만들기](https://medium.com/@nomannayeem/lets-build-a-self-improving-ai-agent-that-learns-from-your-feedback-722d2ce9c2d9)
+[클로드의 스킬 레벨을 10배로 올리는 방법 (카르파티의 자동 연구 방법을 활용)](https://x.com/itsolelehmann/status/2033919415771713715)
 
 관련 라이브러리
 [hindsight](https://github.com/vectorize-io/hindsight)
+
+관련 글
+[MiniMax M2.7: 자기 진화의 초기 흔적](https://x.com/MiniMax_AI/status/2034335605145182659)
 
 관련 연구 자료
 [Efficient Lifelong Memory for LLM Agents](https://arxiv.org/html/2601.02553v1)
