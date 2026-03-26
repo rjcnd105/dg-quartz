@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-01-19T01:29:29Z
-modified: 2026-03-19T08:44:10Z
+modified: 2026-03-26T07:03:28Z
 tags:
   - ai
   - llm
@@ -17,6 +17,9 @@ AI를 잘 사용하기 위한 나의 지식들
 
 [클로드 코드 작동 방식](https://medium.com/@boredhead/context-skills-hooks-subagents-how-claude-code-actually-works-acdbb7baef6a)
 [클로드 코드 장편 가이드](https://x.com/affaanmustafa/status/2014040193557471352)
+[.claude/ 폴더의 구조](https://x.com/akshay_pachaar/article/2035341800739877091)
+[2026년에 실제로 효과가 있는 프롬프트 기법 30가지](https://x.com/zodchiii/article/2036093004725747955)
+[클로드 코드 모범 사례: 도구에서 시스템으로](https://x.com/Voxyz_ai/article/2036863425905586265)
 
 ### 세부화된 파일 참조
 
@@ -40,7 +43,7 @@ AI는 몇 초의 시간이면 PM - 디자이너 - 개발자 간에 방대한 양
 cli나 bash, scripts격에 해당하는 도구들과 결합되면 더욱 강력하다. (일종의 harness + context 절약)
 
 [공식 가이드](https://code.claude.com/docs/en/skills)
-[스킬 실전 활용법](https://x.com/trq212/status/2033949937936085378)
+[스킬 실전 활용법](https://x.com/trq212/article/2033949937936085378)
 
 ## Hooks
 
@@ -78,7 +81,8 @@ claude 구성(skill, hooks, Agents, Instruction, ... 등)을 묶은 단위라고
 lint들을 설정하고 lint 내용은 지침에서 제외하고 workflow로 설정하라.
 에이전트가(특히 subagent) 특정 스키마에 해당하는 결과 값을 내뱉도록 제한함으로써 검증 가능하도록 해라.
 
-https://openai.com/ko-KR/index/harness-engineering/
+[오픈ai 하네스 엔지니어링 개요](https://openai.com/ko-KR/index/harness-engineering/)
+[장기 애플리케이션 개발을 위한 하네스 설계](https://www.anthropic.com/engineering/harness-design-long-running-apps)
 
 harness를 프로그래밍 방식으로 구축하는 관련 라이브러리
  [deepagents](https://github.com/langchain-ai/deepagents)
@@ -109,5 +113,6 @@ harness를 프로그래밍 방식으로 구축하는 관련 라이브러리
 [Efficient Lifelong Memory for LLM Agents](https://arxiv.org/html/2601.02553v1)
 [Lifelong Learning of Large Language Model based Agents](https://arxiv.org/html/2501.07278v1)
 [A Survey on the Memory Mechanism of Large Language Model-based Agents](https://dl.acm.org/doi/10.1145/3748302)
+[Strategic Base Representation Learning via Feature Augmentations for Few-Shot Class Incremental Learning](https://arxiv.org/pdf/2501.09361)
 
 
