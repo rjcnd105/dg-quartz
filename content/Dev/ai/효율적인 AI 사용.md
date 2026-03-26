@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-01-19T01:29:29Z
-modified: 2026-03-26T07:11:59Z
+modified: 2026-03-26T07:14:54Z
 tags:
   - ai
   - llm
@@ -17,13 +17,13 @@ AI를 잘 사용하기 위한 나의 지식들
 
 [클로드 코드 작동 방식](https://medium.com/@boredhead/context-skills-hooks-subagents-how-claude-code-actually-works-acdbb7baef6a)
 [클로드 코드 장편 가이드](https://x.com/affaanmustafa/status/2014040193557471352)
-[.claude/ 폴더의 구조](https://x.com/akshay_pachaar/article/2035341800739877091)
 [2026년에 실제로 효과가 있는 프롬프트 기법 30가지](https://x.com/zodchiii/article/2036093004725747955)
 [클로드 코드 모범 사례: 도구에서 시스템으로](https://x.com/Voxyz_ai/article/2036863425905586265)
 
 ### 세부화된 파일 참조
 
 함수, 모듈을 분리하여 import 하듯이 agents 지침도 세분화하여 한번에 많은 context를 불러오지 않게끔 하는 것이 아주 중요하다.
+[.claude/ 폴더의 구조](https://x.com/akshay_pachaar/article/2035341800739877091)
 
 ### 인간의 개입 최소화 추구
 
