@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-01-19T01:29:29Z
-modified: 2026-03-26T07:08:58Z
+modified: 2026-03-26T07:11:59Z
 tags:
   - ai
   - llm
@@ -51,7 +51,7 @@ cli나 bash, scripts격에 해당하는 도구들과 결합되면 더욱 강력�
 
 [공식 가이드](https://code.claude.com/docs/en/hooks-guide)
 
-## Agents
+## SubAgents
 
 역할별로 구분하여 특화시키고, 역할에 맞는 권한을 부여해라.
 특정 Skill, Hooks 등을 해당 에이전트의 Context내에서 사용하게끔 하라. (토큰 절약 + 역할 특화)
@@ -59,12 +59,12 @@ cli나 bash, scripts격에 해당하는 도구들과 결합되면 더욱 강력�
 
 [공식 가이드](https://code.claude.com/docs/ko/sub-agents)
 
-### Master subagents
+### Master(main) subagents
 
 worker subagents 들을 역할에 따라 만들고 조율하는 subagent. 에이전트 오케스트레이터
 kubernetes의 master node 역할
 
-### Worker subagents
+### Worker(sub) subagents
 
 특정 맥락 내에서 특정 역할을 수행하는 도구성 에이전트
 kubernetes의 worker node 역할
@@ -104,7 +104,7 @@ harness를 프로그래밍 방식으로 구축하는 관련 라이브러리
 [클로드의 스킬 레벨을 10배로 올리는 방법 (카르파티의 자동 연구 방법을 활용)](https://x.com/itsolelehmann/status/2033919415771713715)
 
 관련 라이브러리
-[hindsight](https://github.com/vectorize-io/hindsight)
+[hindsight](https://github.com/vectorize-io/hindsight) : 메모리적 재귀 개선
 
 관련 글
 [MiniMax M2.7: 자기 진화의 초기 흔적](https://x.com/MiniMax_AI/status/2034335605145182659)
