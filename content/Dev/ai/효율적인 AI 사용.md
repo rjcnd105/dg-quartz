@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-01-19T01:29:29Z
-modified: 2026-03-26T07:03:28Z
+modified: 2026-03-26T07:08:58Z
 tags:
   - ai
   - llm
@@ -96,8 +96,8 @@ harness를 프로그래밍 방식으로 구축하는 관련 라이브러리
 
 시스템은 지속적으로 향상되어. 재귀적인 복리 효과를 일으켜야한다.
 이를 위해서는 harness, 측정이 매우 중요하다.
-에이전트가 자신이 실행한 세션들을 기록하여 사용자의 피드백과 함께 회고하고 그것이 더 나은 에이전트를 만들게끔 하는 재귀적 자기 개선 루프를 설정하라.
-인간이 필요 없어지는 그날까지..
+스스로 세션을 기록하고 하네스를 기반하여 결과를 측정하며 측정을 바탕으로 하네스를 개선하는 loop를 돌게끔 해라.
+이때 피드백이 매우 중요한데, 피드백은 비동기적으로 받게끔(db, file, message 등에 기록) 해서 에이전트의 자기 개선 루프의 걸림돌이 되지 않도록 하여라.
 
 [클로드 코드와 함께한 건축 과정](https://shawnos.ai/blog/6-weeks-of-building-with-claude-code)
 [스스로 발전하는 에이전트 만들기](https://medium.com/@nomannayeem/lets-build-a-self-improving-ai-agent-that-learns-from-your-feedback-722d2ce9c2d9)
