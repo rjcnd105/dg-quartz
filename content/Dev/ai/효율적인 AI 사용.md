@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-01-19T01:29:29Z
-modified: 2026-03-26T07:14:54Z
+modified: 2026-03-26T07:20:01Z
 tags:
   - ai
   - llm
@@ -39,7 +39,7 @@ AI는 몇 초의 시간이면 PM - 디자이너 - 개발자 간에 방대한 양
 ## Skills
 
 에이전트가 사용하는 도구
-일회성 context
+ context 주입, 이번 메세지에서 높은 우선순위로 강력히 따르게 
 cli나 bash, scripts격에 해당하는 도구들과 결합되면 더욱 강력하다. (일종의 harness + context 절약)
 
 [공식 가이드](https://code.claude.com/docs/en/skills)
