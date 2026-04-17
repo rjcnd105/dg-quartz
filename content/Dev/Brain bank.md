@@ -1,13 +1,11 @@
 ---
 publish: true
 created: 2025-11-22T06:26:14Z
-modified: 2026-03-11T06:38:18Z
+modified: 2026-04-13T08:47:39Z
 tags:
   - git
   - feature_flag
-cssclasses: ""
 ---
-
 
 떠오르는 주제들을 적어두고 추후 딥다이브
 
@@ -34,38 +32,41 @@ feature flag group이 있고 해당 그룹은 기본적으로 release, staging, 
 
 **git, pr 관련 툴**
 git stacking tool
+
 - [jj(Jujutsu)](https://github.com/jj-vcs/jj) - 스택 별로 쌓고 이전 스택에 커밋하면 쌓인 스택들이 자동으로 리베이스 됨
   [jjui](https://github.com/idursun/jjui)
   [jj workflow](https://ofcr.se/jujutsu-merge-workflow)
 
 git 가상 브랜치 gui tools
+
 - [gitbutler](https://gitbutler.com/)
 
 git 효율성 솔루션
+
 - [Graphite](https://graphite.com/) - 각 커밋을 레이어별로 쪼개서 분할 PR을 날림 (POC 필요). 구글의 전략을 기반으로 만들어짐, stacking 전략 지원 됨
 
 ### 필수 조건
 
 1. feature flag를 통해 통제하여 개발 중인 기능을 main에 추가하더라도 문제가 생기지 않아야 함
    feature flag 별 가능한 버전 명시 필요?
-	   TODO: feature flag group들을 한눈에 확인하고 각 그룹별로 설정하고 컨트롤 할 수 있는 페이지 필요 - 관련 솔루션 알아봐야함, 혹은 직접 구현?
+   TODO: feature flag group들을 한눈에 확인하고 각 그룹별로 설정하고 컨트롤 할 수 있는 페이지 필요 - 관련 솔루션 알아봐야함, 혹은 직접 구현?
 2. main push event시 ci를 통해 빌드(dev) 및 테스트를 거침
 3. main에 push event시 dev 배포, rc 태그 추가시 staging 배포,
    - **realease**
      릴리즈 태그 추가 후 release 배포 github action trigger 생성
      tag: `v1.12.3`
      image version tag: `:1.12.3`
-     
+
    - **staging**
      rc 태그 지정시 staging 배포
      tag: `v1.12.3-rc.0`, `v1.12.3-rc.1`, ...
      latest tag: `v1.12.3-rc`
      image version tag: `:1.12.3-rc.0`
-   
+
    - **dev**
      main에 push event마다 배포 (한번에 5개의 commit 추가시 맨 마지막 커밋)
-	  latest tag: `dev`
-	  image version tag: `:{date}.{shortSha}` (e.g `:20251122.b4723bd`)
+     latest tag: `dev`
+     image version tag: `:{date}.{shortSha}` (e.g `:20251122.b4723bd`)
 
 ### 추가 아이디어
 
@@ -76,7 +77,7 @@ git 효율성 솔루션
   ex) www.A.dev.myapp.com, www.B.dev.myapp.com, www.C.dev.myapp.com
   위 A, B, C 라는 feature flag group을 각각에 feature flag들을 다르게 설정하여 테스트 할 수 있음
   예제 이미지
-	![[env/첨부파일/CleanShot 2025-12-03 at 11.01.45.jpg|400]]
+  ![[env/첨부파일/CleanShot 2025-12-03 at 11.01.45.jpg|400]]
 
 ## 백엔드 OpenApi Spec 변경시 ai로 이전과 diff하여 프론트엔드에 PR
 
@@ -96,9 +97,9 @@ cue, pkl, nickel로 할 수는 없을까? - 디자인 시스템 명세라면 cue
 
 #nixos #nix #kubernetes #sops #gitops
 
-### 초기
+\~~### 초기
 
-Arcane + docker 기반
+Arcane + docker 기반~~
 
 ### 중기
 

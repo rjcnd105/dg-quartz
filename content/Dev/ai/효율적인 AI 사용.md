@@ -1,15 +1,13 @@
 ---
 publish: true
 created: 2026-01-19T01:29:29Z
-modified: 2026-03-26T07:20:01Z
+modified: 2026-04-08T02:43:24Z
 tags:
   - ai
   - llm
   - agents
   - claude
-cssclasses: ""
 ---
-
 
 AI를 잘 사용하기 위한 나의 지식들
 
@@ -34,12 +32,12 @@ AI는 몇 초의 시간이면 PM - 디자이너 - 개발자 간에 방대한 양
 [클로드 코드의 10단계 참고](https://github.com/darnoux/claude-code-level-up)
 
 인간은 인간이 역할이 최소화될 수 있게끔하는 시스템을 점진적으로 구축 해야한다.
-에이전트가 스스로 개선할 수 있는 [[Dev/ai/효율적인 AI 사용#재귀적 자기 개선 루프]]를 만들어라.
+에이전트가 스스로 개선할 수 있는 [[효율적인 AI 사용#재귀적 자기 개선 루프]]를 만들어라.
 
 ## Skills
 
 에이전트가 사용하는 도구
- context 주입, 이번 메세지에서 높은 우선순위로 강력히 따르게 
+context 주입, 이번 메세지에서 높은 우선순위로 강력히 따르게
 cli나 bash, scripts격에 해당하는 도구들과 결합되면 더욱 강력하다. (일종의 harness + context 절약)
 
 [공식 가이드](https://code.claude.com/docs/en/skills)
@@ -81,16 +79,19 @@ claude 구성(skill, hooks, Agents, Instruction, ... 등)을 묶은 단위라고
 lint들을 설정하고 lint 내용은 지침에서 제외하고 workflow로 설정하라.
 에이전트가(특히 subagent) 특정 스키마에 해당하는 결과 값을 내뱉도록 제한함으로써 검증 가능하도록 해라.
 
+[하네스 엔지니어링 설명](https://x.com/heynavtoor/article/2037200578842157462)
+
 [오픈ai 하네스 엔지니어링 개요](https://openai.com/ko-KR/index/harness-engineering/)
 [장기 애플리케이션 개발을 위한 하네스 설계](https://www.anthropic.com/engineering/harness-design-long-running-apps)
 
 harness를 프로그래밍 방식으로 구축하는 관련 라이브러리
- [deepagents](https://github.com/langchain-ai/deepagents)
- [pydantic AI](https://ai.pydantic.dev/)
+[deepagents](https://github.com/langchain-ai/deepagents)
+[pydantic AI](https://ai.pydantic.dev/)
 [claude sdk 사용](https://platform.claude.com/docs/en/agent-sdk/overview)
 
 관련 연구 자료
 [AutoHarness](https://arxiv.org/abs/2603.03329)
+[Meta-Harness: End-to-End Optimization of Model Harnesses](https://arxiv.org/pdf/2603.28052)
 
 ## 재귀적 자기 개선 루프
 
@@ -114,5 +115,3 @@ harness를 프로그래밍 방식으로 구축하는 관련 라이브러리
 [Lifelong Learning of Large Language Model based Agents](https://arxiv.org/html/2501.07278v1)
 [A Survey on the Memory Mechanism of Large Language Model-based Agents](https://dl.acm.org/doi/10.1145/3748302)
 [Strategic Base Representation Learning via Feature Augmentations for Few-Shot Class Incremental Learning](https://arxiv.org/pdf/2501.09361)
-
-
