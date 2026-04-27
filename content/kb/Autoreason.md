@@ -58,4 +58,5 @@ Sonnet 4.6 이상 스케일에서 held-out task의 이득은 사라지기 시작
 - [[Simple Self-Distillation]] — 자기 출력으로 SFT, 전제가 다름 (refinement가 아닌 data augmentation)
 - [[Scale-Dependent Verbosity]] — 큰 모델의 과한 개선 성향, autoreason의 "do nothing" 옵션으로 완화 가능
 - [[Memory Intelligence Agent (MIA)]] — peer-review 스타일 다중 reviewer 판정의 유사 패턴
+- [[Self-Evolving Code]] — per-cycle rewrite+verify를 repo 전체 규모로 확장. formal verification gate가 Autoreason Borda 투표 기능과 상응
 - 원문: https://github.com/NousResearch/autoreason

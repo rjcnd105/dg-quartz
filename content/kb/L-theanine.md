@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-17T08:00:00Z
-modified: 2026-04-17T08:00:00Z
+modified: 2026-04-27T03:36:44Z
 tags:
   - kb
   - health
@@ -55,4 +55,5 @@ NovosLabs가 소개한 2026 리뷰(ScienceDirect)에 따르면 L-theanine은 "�
 ## 관련 링크
 
 - [[BDNF]] — 뇌·신경 영역에서의 유사한 "하나의 분자가 여러 경로에 modulator로 작용" 서사
+- [[Carbohydrate Preference and Energy Expenditure]] — nutrition input이 energy metabolism으로 이어지는 Health/Science 인접 주제
 - 원문 리뷰: https://www.sciencedirect.com/science/article/pii/S0014299926001974

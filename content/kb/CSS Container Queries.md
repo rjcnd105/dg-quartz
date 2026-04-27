@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-08T03:15:00Z
-modified: 2026-04-08T03:20:00Z
+modified: 2026-04-27T03:33:23Z
 tags:
   - kb
   - css
@@ -89,8 +89,51 @@ Container size queries는 2023년부터 Baseline 지원이며, 2026년 기준 �
 
 `auto`에서 고정 크기로의 애니메이션을 CSS만으로 처리하는 유일한 방법이지만, 프로덕션 사용 시 반드시 폴백이 필요하다.
 
+## 컴포넌트 구조 변경 패턴
+
+Container query는 **scalar 조정이 아니라 진짜 구조 변화**에만 써야 한다는 원칙이 [[Fluid Responsive Design]]에서 정식화된다. 값 크기 조정은 `clamp()`·container units(`cqi`, `cqb`)로 처리하고, container query는 레이아웃 재배열·요소 hide/show 같은 구조 pivot에 국한.
+
+```css
+.container { container-type: inline-size; }
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  @container (max-width: 32em) {
+    flex-direction: row;
+    gap: 0.5em;
+    .icon { font-size: 1.5em; }
+    p { display: none; }
+  }
+}
+```
+
+(출처: [[Building a UI Without Breakpoints]])
+
+## Name-only containers as scope
+
+`@container`는 size condition 없이 container name만으로도 selector scope처럼 사용할 수 있다. Component root에 고유한 `container-name`을 붙이고 component stylesheet를 `@container <name>` 블록 안에 두면, `.title` 같은 흔한 class name이 다른 component와 충돌하지 않는다 (출처: [[Name-Only Containers The Scoping We Needed]]).
+
+```css
+ds-card {
+  container-name: ds-card;
+}
+
+@container ds-card {
+  .title {
+    font-weight: 600;
+  }
+}
+```
+
+이 패턴은 responsive condition이 아니라 **component style scoping**을 위해 container query mechanism을 사용하는 것이다. 다만 같은 목적은 `@scope (ds-card) { ... }`로 더 직접 표현할 수 있다. Scoping 의도가 핵심이면 [[CSS Style Scoping]]에서 browser target과 toolchain을 함께 비교해야 한다.
+
 ## 관련 문서
 
 - [[CSS Nesting]]
 - [[CSS :has() 선택자]]
 - [[CSS Anchor Positioning]]
+- [[Fluid Responsive Design]] — container query가 속한 4-primitive 시스템. Viewport breakpoint를 보조 도구로 재배치
+- [[CSS Style Scoping]]

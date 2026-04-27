@@ -81,5 +81,6 @@ Hierarchical orchestration (non-hierarchical 대비)도 별도 기여. File-as-B
 - [[Memory Intelligence Agent (MIA)]] — parametric + non-parametric memory 관점. File-as-Bus는 non-parametric 외부 메모리의 한 구현
 - [[Agent Memory Systems]] — durable artifact 유형 (trajectory/workflow/summary/insight)
 - [[Agent Task Verification]] — Witness oath도 파일 기반 verdict, AiScientist의 exp\_log와 유사한 durable evidence 패턴
+- [[Self-Evolving Code]] — Multi-agent + 디렉토리 ownership으로 1.2M LoC 진화. Tier 분리 철학 공유, isolation 구현만 다름
 - 원문: https://arxiv.org/html/2604.13018v1
 - 코드: https://github.com/AweAI-Team/AiScientist

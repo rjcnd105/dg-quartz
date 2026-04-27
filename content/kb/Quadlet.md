@@ -50,6 +50,7 @@ NixOS에서는 [[quadlet-nix]]를 사용하여 Nix 표현식으로 Quadlet을 �
 ## 관련 링크
 
 - [[quadlet-nix]] — Nix 표현식 → Quadlet 변환 flake
+- [[Docker Compose 대안 비교]] — Nix 생태계 Docker Compose 대체 옵션 비교 (Quadlet 포함)
 - [[Nix 기반 Docker 이미지 빌드]] — 빌드 측면의 Nix 활용
 - 관련 vault 노트: [[basic|Nix basic]]
 - Podman 공식 문서: https://docs.podman.io/en/latest/markdown/podman-systemd.unit.5.html

@@ -104,6 +104,7 @@ $$\Phi\_f(\mathcal{P}) = \text{recomb}\_f \circ \text{select}\_f(\mathcal{P})$$
 ## 관련 링크
 
 - [[Autoreason]] — A/B/AB Borda로 self-refinement 개선. Squeeze Evolve와 상보: Autoreason은 품질·판단 개선, Squeeze는 cost·diversity
+- [[Self-Evolving Code]] — persistent repo-scale evolution. Squeeze Evolve는 single-prompt test-time scaling — 축이 다름
 - [[Test-Time Learning]] — test-time scaling 전반
 - [[Agent Memory Systems]] — fitness로서 confidence 활용 패턴
 - 원문: https://arxiv.org/html/2604.07725v2

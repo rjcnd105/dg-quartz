@@ -4,6 +4,7 @@ created: 2026-04-08T03:35:00Z
 modified: 2026-04-08T03:35:00Z
 tags:
   - kb
+  - glossary
   - elixir
   - phoenix
   - vue

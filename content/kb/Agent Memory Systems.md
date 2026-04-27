@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-17T08:00:00Z
-modified: 2026-04-17T09:00:00Z
+modified: 2026-04-27T03:39:39Z
 tags:
   - kb
   - llm
@@ -90,11 +90,25 @@ cross-domain 이식 실패 패턴:
 
 Cross-model 전이 가능 (model-agnostic meta-knowledge) 하지만 self-generated보다 열세. Embedding similarity가 LLM reranking·rewriting보다 실제로 우위 — 동적 agent 설정에서 필요 knowledge 예측 어려움.
 
+## World Knowledge as Environment Memory
+
+[[Native Agent Evolution]]은 task trajectory가 아니라 **environment instance 자체**를 압축한 Markdown guidebook을 external memory로 사용한다 (출처: [[Training LLM Agents for Spontaneous, Reward-Free Self-Evolution via World Knowledge Exploration]]). 이는 process-oriented memory와 knowledge-oriented memory의 중간에 있다. 저장 대상은 "이 task를 어떻게 풀었나"가 아니라 "이 website/game/repository가 어떻게 구성되어 있나"이며, downstream task가 나중에 주어질 때 context module로 재사용된다.
+
+위험은 memory transfer의 negative mode와 같다. 잘못 압축된 world knowledge는 agent가 환경을 다시 탐색하지 않고 오래된 guidebook에 고정되는 anchor bias를 만들 수 있다.
+
+## Memory as versioned resource
+
+[[Autogenesis Protocol]]은 memory를 prompt/tool/agent/environment와 같은 first-class RSPL resource로 둔다 (출처: [[Untitled]]). 이는 memory를 단순 vector store나 context chunk가 아니라 lifecycle, version lineage, rollback 대상이 되는 mutable system component로 보는 관점이다.
+
+실무적으로는 memory update가 곧 production state mutation이므로, 저장 전 evaluation과 rollback path가 필요하다. 특히 agent가 자기 memory를 수정할 수 있으면 false validation confidence나 domain-mismatched anchoring이 누적될 수 있다.
+
 ## 관련 링크
 
 - [[Memory Intelligence Agent (MIA)]] — 위 원칙의 구체적 구현
 - [[Memory Transfer Learning]] — 4-format taxonomy와 abstraction-transferability 실증
 - [[Test-Time Learning]] — 메모리 업데이트 타이밍의 한 축
 - [[LLM Wiki 패턴]] — knowledge-oriented 메모리의 한 형태
+- [[Native Agent Evolution]] — reward-free inference에서 world knowledge를 생성·재사용하는 agent evolution 패턴
+- [[Autogenesis Protocol]] — memory lifecycle/version lineage를 protocol surface로 올리는 접근
 - [[ReAct]] — Executor가 도구와 상호작용하는 기본 루프
 - [[File-as-Bus]] — durable artifact 기반 memory의 한 구현

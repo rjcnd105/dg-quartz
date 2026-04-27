@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-08T03:15:00Z
-modified: 2026-04-08T03:15:00Z
+modified: 2026-04-27T03:36:44Z
 tags:
   - kb
   - llm
@@ -35,4 +35,5 @@ Harness 최적화는 모델 교체 없이 시스템 성능을 개선하는 경�
 
 ## 관련 링크
 
+- [[Failure-Aware RAG]] — retrieve 단계가 실패했을 때 harness가 retry가 아니라 failure diagnosis와 routing을 수행하는 패턴
 - [[Scale-Dependent Verbosity]] — 모델에 제시하는 정보(harness의 역할)가 출력 행동에 미치는 영향의 한 사례

@@ -43,3 +43,5 @@ button {
 
 - [[CSS :has() 선택자]]
 - [[CSS Container Queries]]
+- [[CSS Partial Keyframes]]
+- [[CSS Anchor Positioning]]

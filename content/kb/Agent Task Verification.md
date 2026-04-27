@@ -78,5 +78,6 @@ Witness 시스템의 설계 원칙:
 - [[LLM Harness]] — 에이전트 주변 인프라. Witness는 harness의 verification 레이어에 해당
 - [[Memory Intelligence Agent (MIA)]] — peer-review 스타일 다중 reviewer + AC 판정. Witness Tier 2 auditor와 유사 모티프
 - [[Agent Memory Systems]] — 실패 trajectory를 negative paradigm으로 저장. Witness 실패 verdict도 유사 활용 가능
+- [[Self-Evolving Code]] — CEC/DRAT formal gate가 Witness oath와 동일 철학. "evaluator를 속이지 못하게" 차단
 - 원문: https://www.reddit.com/r/temm1e\_labs/comments/1skyjtt/
 - 코드: https://github.com/temm1e-labs/temm1e

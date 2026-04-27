@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-08T03:15:00Z
-modified: 2026-04-08T03:15:00Z
+modified: 2026-04-23T00:00:00Z
 tags:
   - kb
   - llm
@@ -40,3 +40,4 @@ tags:
 
 - [[Simple Self-Distillation]] — LLM 디코딩 행동 개선의 또 다른 접근: 자체 출력으로 토큰 분포를 재형성
 - [[LLM Harness]] — 모델에 정보를 제시하는 방식(harness)이 출력 행동에 영향을 주는 관점에서 관련
+- [[Over-Editing]] — 코드 영역의 대응 현상. GPT-5/GPT-5.4가 여기서도 최악 over-editor. Brevity 지시가 Levenshtein 감소와 Pass@1 동시 향상을 낳는 구조 공유

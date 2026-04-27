@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-08T03:35:00Z
-modified: 2026-04-08T03:35:00Z
+modified: 2026-04-23T00:00:00Z
 tags:
   - kb
   - health
@@ -37,3 +37,11 @@ tags:
 10. **새로운 학습** — 도전적 지적 활동
 
 (출처: [[How to Increase BDNF 10 Ways to Rescue Your Brain]])
+
+## 관련 링크
+
+- [[L-theanine]] — 뇌·인지 영역 supplement
+- [[Gut Microbiome Social Transfer]] — 사회적 교류가 gut-brain axis 통해 뇌 건강에도 영향. BDNF의 "사회적 교류" 항목과 기제 인접
+- [[N-Acetyl Cysteine]] — 해마 subfield 구조 복원·항우울 효과. BDNF 경로와 인접
+- [[Omega-3와 정신건강]] — 오메가-3 보충·trans fats 회피가 BDNF 경로에 작용. 임신기 trans fats 섭취는 자손 BDNF 저하
+- [[CREB]] — BDNF 프로모터 전사인자. 많은 항우울·nootropic 약물이 CREB-BDNF 축으로 수렴

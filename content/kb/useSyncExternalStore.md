@@ -61,3 +61,4 @@ const setTheme = (newTheme: Theme) => {
 ## 관련 문서
 
 - [[TanStack Router 파일 기반 라우팅]]
+- [[useEffect 안티패턴]] — React 훅 오용 패턴. useSyncExternalStore는 "외부 시스템 동기화"의 올바른 대체 중 하나
