@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-23T00:00:00Z
-modified: 2026-04-23T00:00:00Z
+modified: 2026-04-27T07:14:32Z
 tags:
   - kb
   - pharmacology
@@ -60,10 +60,17 @@ Glutamate modulation + 항산화 경로로 항우울제·procognitive 효과가 
 - 주요 정신의학 학회 가이드라인에서 monotherapy로 채택한 사례는 없음. adjunct 가능성 제기 수준.
 - 건강 보조제로는 여전히 OTC. 품질 편차 큼.
 
+## Anhedonia와 community signal
+
+NAC의 formal research에는 anti-anhedonic 또는 compulsive/addictive behavior 완화 방향의 연구가 많다. 반대로 nootropics/anhedonia 커뮤니티에서는 "고용량 NAC가 감정 둔화, reward blunting, 무기력감을 만든다"는 보고가 반복된다. 두 신호는 모순이라기보다 대상군과 baseline glutamate/anxiety/OCD-like arousal 차이일 수 있다.
+
+따라서 항우울제나 ADHD 약물을 쓰는 사람의 supplement trial에서는 "불안이 줄어든 것"과 "즐거움·동기까지 둔해진 것"을 분리해서 기록해야 한다. [[Ashwagandha]], [[Lion's Mane]], 강한 cholinergic stack과 함께 시작하면 원인 분리가 어렵다.
+
 ## 관련 링크
 
 - [[Acetaminophen vs Ibuprofen]] — NAC의 응급의학 맥락, NAPQI 경로
 - [[BDNF]] — 해마 neurogenesis 공통 경로. NAC의 hippocampal subfield 복원 효과와 기전 인접
 - [[Bromantane]] — 다른 antidepressive 후보. 기전 상이
 - [[L-theanine]] — glutamate modulation 다른 접근 (NMDA partial effect)
+- [[ADHD Medication and Supplement Stacking]] — 항우울제/ADHD 약물 위에서 anhedonia signal을 추적하는 기준
 - 원 논문: https://pubmed.ncbi.nlm.nih.gov/31751620/

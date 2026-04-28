@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-23T00:00:00Z
-modified: 2026-04-23T00:00:00Z
+modified: 2026-04-27T07:14:32Z
 tags:
   - kb
   - health
@@ -10,7 +10,7 @@ tags:
   - nootropic
 ---
 
-Omega-3 다가불포화지방산(ALA, EPA, DHA)이 **전전두엽(PFC) 구조·기능 유지**에 필수적이고, [[Trans Fats]]가 이 경로를 역방향으로 교란한다는 주장의 종합. ADHD·양극성장애·불안·우울·자폐 여러 정신질환과 연결된 공통 영양 축 (출처: [[The relationship between Omega 3s, fried foods and mental healthadhd.]]).
+Omega-3 다가불포화지방산(ALA, EPA, DHA)이 **전전두엽(PFC) 구조·기능 유지**와 염증 조절에 관여하고, [[Trans Fats]]가 이 경로를 역방향으로 교란할 수 있다는 단일 Reddit 종합 post의 주장과 관련 임상 근거를 함께 정리한 페이지. ADHD·양극성장애·불안·우울·자폐와의 연결은 질환별로 근거 강도가 다르다 (출처: [[The relationship between Omega 3s, fried foods and mental healthadhd.]]).
 
 > [!info] 단일 출처 주의
 > 본 페이지는 Reddit r/NooTopics 종합 post 단일 출처. 인용 논문은 광범위하나 저자의 내러티브 선택 bias 가능. 특히 "trans fats → ADHD 인과"는 관찰 상관 다수·기전 연구 일부에 기반한 추론. hedging 톤.
@@ -38,8 +38,8 @@ Omega-3 다가불포화지방산(ALA, EPA, DHA)이 **전전두엽(PFC) 구조·�
 - **Meta-analysis 결론은 혼란스러움**: 오메가-3 보충의 효과가 null~약함. Post 저자 반론: 결핍이 **3개월 이상** 걸려야 회복되는데 대다수 시험 기간 짧음.
 - 저자 가설: 이미 PFC가 underdevelop된 성인에서는 보충이 구조적 복원을 완전히 못 할 수 있음 (성인 neurogenesis 제한, PMC3106107).
 
-> [!warning] 논쟁
-> Omega-3의 ADHD 치료 효과는 임상 합의 없음. 관찰 연구의 결핍-ADHD 상관은 유의하지만 개입 RCT는 혼재. "충분히 길게 투여하면 효과 있을 것"은 저자의 가설이고 검증되지 않음.
+> [!info] 근거 수준
+> Omega-3의 ADHD 치료 효과는 임상 합의가 강하지 않다. 관찰 연구의 결핍-ADHD 상관은 유의하지만 개입 RCT는 혼재하며, 2023 meta-analysis도 EPA 고용량이나 높은 EPA/DHA 비율이 ADHD 증상을 일관되게 개선하지 못했다고 정리했다 (PubMed 37656283). "충분히 길게 투여하면 효과 있을 것"은 post 저자의 가설로 남겨야 한다.
 
 ### 양극성장애
 
@@ -81,8 +81,8 @@ Omega-3 다가불포화지방산(ALA, EPA, DHA)이 **전전두엽(PFC) 구조·�
 - Testosterone 맥락: EPA+DHA 조합이 cAMP 경로로 더 유리. 순수 DHA는 인지 목적.
 - EPA는 항염이지만 pro-inflammatory 측면이 있고 DHA가 이를 보정.
 
-> [!warning] 논쟁
-> "EPA 불필요, DHA만 쓰라"는 post 저자 개인 결론. 주류 영양학은 EPA+DHA 혼합을 권고하며 특히 EPA가 우울증 개입 RCT에서 DHA 단독보다 더 강한 효과를 보이는 meta-analysis가 다수. 저자 주장은 소수 견해.
+> [!info] 근거 수준
+> "EPA 불필요, DHA만 쓰라"는 post 저자 개인 결론이다. 근거를 질환별로 나누면 DHA는 구조·발달·막 기능 맥락에서 중요하고, EPA는 우울증 개입 연구에서 상대적으로 강한 신호가 반복된다. 2024-2025 depression review/meta-analysis도 고용량 EPA 또는 EPA+DHA의 일부 MDD 하위군 효과를 시사하지만, 최적 용량·기간·대상군은 아직 확정되지 않았다고 정리한다 (PubMed 39912390, PMC12241902).
 
 ## 실전 시사점
 
@@ -91,9 +91,17 @@ Omega-3 다가불포화지방산(ALA, EPA, DHA)이 **전전두엽(PFC) 구조·�
 - 오메가-3 보충은 **최소 3개월 지속** 후 효과 판단.
 - Trans fats는 집 조리라도 반복 가열·고온을 피하고 로즈메리 등 항산화 추가.
 
+### Supplement stack 관점
+
+- ADHD/mood 목적이면 "fish oil" 총량보다 EPA/DHA 실제 함량과 EPA:DHA 비율을 확인한다.
+- 우울 증상 쪽은 EPA-rich formulation이 더 자주 논의되고, DHA는 membrane/brain structural claim에서 중요하다. 둘을 하나로 뭉개면 목적별 판단이 흐려진다.
+- IBS가 있으면 fishy reflux, loose stool, 산패된 제품을 먼저 의심한다.
+- anticoagulant/antiplatelet medication, 수술 전후, 멍/코피가 잦은 경우에는 고용량 omega-3를 의료진과 확인한다.
+
 ## 관련 링크
 
 - [[BDNF]] — 오메가-3가 BDNF 증가 수단. Trans fats는 자손 BDNF 저하
 - [[Trans Fats]] — 조리 유래·partial hydrogenation 경로, 신경독성
 - [[Gut Microbiome Social Transfer]] — MIA·자손 microbiome 영향 부분과 맥락 인접
+- [[ADHD Medication and Supplement Stacking]] — ADHD 약물 위에서 상대적으로 낮은 상호작용 위험의 baseline 후보
 - 원문 post: https://www.reddit.com/r/NooTopics/comments/1squoek/

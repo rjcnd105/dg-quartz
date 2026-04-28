@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-27T03:33:23Z
-modified: 2026-04-27T03:33:23Z
+modified: 2026-04-27T07:27:05Z
 tags:
   - kb
   - health
@@ -31,8 +31,18 @@ Lin et al. (2024)의 double-blind randomized PET-MRI study에 따르면, 5일 ch
 
 2026년 Neuropsychopharmacology mouse study는 acute sleep deprivation이 hippocampal CA2 plasticity와 social memory를 손상시키고, caffeine supplementation이 adenosine receptor modulation을 통해 일부 deficit을 reverse할 수 있다고 보고했다. 이는 caffeine이 항상 "sleep loss response를 악화"시키는 단일 방향 효과가 아니라, dose, timing, brain region, outcome measure에 따라 다른 효과를 낼 수 있음을 시사한다. 원문: https://doi.org/10.1038/s41386-026-02362-w
 
+## ADHD 약물 스택에서의 의미
+
+Methylphenidate, atomoxetine, bupropion은 각기 다른 방식으로 catecholamine/norepinephrine 축과 수면에 영향을 줄 수 있다. 이 위에 caffeine을 더하면 집중 체감이 좋아져도 BP/HR 상승, appetite suppression, crash, 불안, sleep onset delay가 더 중요한 비용이 될 수 있다.
+
+[[L-theanine]]이나 [[Taurine]]을 함께 넣어 "부드러운 카페인"으로 만드는 전략은 체감상 유용할 수 있지만, caffeine의 half-life와 adenosine receptor 효과를 없애지는 않는다. chronic insomnia가 있으면 오전 용량·cutoff time·총량이 핵심 변수다.
+
+녹차는 커피보다 약하게 느껴져도 양이 커지면 의미 있는 caffeine source가 된다. brewed green tea reference range(약 29-50 mg/237-250 mL)를 적용하면 700 mL-1 L/day는 대략 85-210 mg/day caffeine에 해당할 수 있다. 제품형 green tea는 label의 caffeine per bottle/per 100 mL가 우선이다.
+
 ## 관련 링크
 
 - [[Adenosine Receptors]] — caffeine과 sleep pressure가 만나는 receptor 축
 - [[BDNF]] — sleep deprivation mouse study에서 plasticity-related protein으로 등장
 - [[L-theanine]] — caffeine과 함께 자주 논의되는 tea-derived compound
+- [[Green Tea Beverages]] — ready-to-drink 녹차 volume이 caffeine 총량으로 바뀌는 방식
+- [[ADHD Medication and Supplement Stacking]] — stimulant/noradrenergic 약물 위에 caffeine을 얹을 때의 위험 축

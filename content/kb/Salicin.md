@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-23T00:00:00Z
-modified: 2026-04-23T00:00:00Z
+modified: 2026-04-27T06:06:35Z
 tags:
   - kb
   - nootropic
@@ -10,16 +10,16 @@ tags:
   - health
 ---
 
-White willow bark 추출물의 주요 활성 화합물. 항염증 효과의 대부분을 담당. 경구 섭취 시 salicylic acid로 대사되어 **aspirin의 대사체와 유사한 프로파일**을 보이나, GI 손상·혈액 희석 등 aspirin의 대표 부작용이 거의 없다.
+White willow bark 추출물의 주요 salicylate 계열 화합물. 경구 섭취 시 salicylic acid로 대사되어 aspirin과 일부 약리 축을 공유하지만, acetylsalicylic acid(aspirin) 자체와 동일하게 취급하면 안 된다. 표준화된 willow bark extract에서는 위 점막·혈액응고 영향이 aspirin보다 약하게 관찰된 자료가 있으나, salicylate 관련 금기와 상호작용은 여전히 적용해야 한다.
 
 > [!info] 단일 출처 주의
 > 본 페이지는 Reddit r/NooTopics post 종합 단일 출처(Everychem 개발자 [[About Salicin (new Everychem release)]]). 인용 논문은 pubmed 링크 다수지만 저자 한 명의 주관 해석. hedging 톤 유지.
 
 ## 핵심 내용
 
-- **화학적 위치**: Salicin은 white willow bark 추출물의 주된 활성 성분. 경구 240 mg → 체내에서 \*\*87 mg acetylsalicylic acid(aspirin)\*\*에 해당하는 salicylic acid 생성 (출처: [[About Salicin (new Everychem release)]], PMID 11599656).
-- **Aspirin과 차이**: 같은 salicylic acid로 수렴하지만 경로·속도 차이로 **GI 손상·과도 혈액 희석 부재** (PMID 21226125). 이론적으로 aspirin의 ototoxicity도 완화 가능성이 있다고 post 저자가 추정(근거는 간접적).
-- **안전성**: White willow bark 추출물 전반은 부작용 드문 것으로 알려짐 (PMID 25997859).
+- **화학적 위치**: Salicin은 white willow bark 추출물의 주요 salicylate 성분. 경구 240 mg salicin은 혈중 salicylic acid 노출 기준으로 약 **87 mg aspirin** 섭취에 해당하는 수준으로 환산됐다 (출처: [[About Salicin (new Everychem release)]], PMID 11599656).
+- **Aspirin과 차이**: salicylic acid로 수렴하지만 acetylation·흡수 속도·식물 추출물 matrix가 달라 aspirin과 동일한 GI/platelet profile로 보긴 어렵다. 표준화 추출물 240 mg salicin 연구에서는 위 점막 손상이나 혈액응고 영향이 aspirin보다 약하게 보고됐다 (PMID 21226125).
+- **안전성 경계**: White willow bark 추출물은 단기 사용에서 비교적 내약성이 좋게 보고되지만 (PMID 25997859), EMA는 salicylate sensitivity/asthma, active stomach ulcer, severe liver/kidney dysfunction, clotting disorders, G6PD deficiency 같은 금기를 둔다. 항응고제·항혈소판제 병용, 임신·수유, 소아/청소년 사용도 보수적으로 봐야 한다.
 
 ## Dopaminergic / 기분 효과
 
@@ -38,8 +38,8 @@ Aspirin 기반 증거를 Salicin으로 외삽하는 구조. 기전 공유 가정
 - 기전은 **PPARα 의존** (PNAS 2018, Roy et al.).
 - 건강한 사람에서 aspirin이나 Salicin의 procognitive 효과는 증명되지 않음.
 
-> [!warning] 논쟁
-> Post 저자는 mice aspirin 연구를 Salicin에 외삽해 "mild stimulatory + 항염증, caffeine 보조제로 가치"라고 결론. 그러나 Salicin 단독의 CNS 연구는 희소하고 salicylic acid 생성량이 적다는 점이 dopaminergic 효과의 강도를 제한할 수 있다.
+> [!info] 근거 수준
+> Post 저자는 mice aspirin 연구를 Salicin에 외삽해 "mild stimulatory + 항염증, caffeine 보조제로 가치"라고 결론낸다. 그러나 Salicin 단독의 인간 CNS·nootropic 연구는 희소하고, 240 mg salicin의 salicylic acid 노출은 저용량 aspirin 수준이라 dopaminergic 효과의 강도는 제한적일 수 있다. 현재는 nootropic claim보다 salicylate 계열 anti-inflammatory/analgesic 맥락으로 보는 편이 안전하다.
 
 ## 실전 사용 (커뮤니티 anecdote)
 
