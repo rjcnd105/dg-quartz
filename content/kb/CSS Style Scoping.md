@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-27T03:33:23Z
-modified: 2026-04-27T03:33:23Z
+modified: 2026-04-29T04:54:11Z
 tags:
   - kb
   - css
@@ -54,3 +54,4 @@ Coyier는 update에서 `@scope`가 이 use case에 더 aligned 하고 browser su
 - [[CSS Container Queries]] — name-only container가 기대는 `@container` 메커니즘
 - [[Fluid Responsive Design]] — component-first CSS 설계와 연결
 - [[CSS Nesting]] — scoping을 흉내 내는 nested selector와 specificity trade-off
+- [[CSS Masked Glow Border]] — card component 내부 custom property와 pseudo-element로 decorative effect를 격리하는 예

@@ -42,6 +42,7 @@ Lee et al. (2026-04, _Molecular Ecology_)의 Seychelles warbler (쿠진 섬 개�
 ## 관련 링크
 
 - [[BDNF]] — 건강·뇌과학 일반
+- [[Gut Microbiome and Pediatric Psychiatric Disorders]] — microbiome과 pediatric psychiatric disorder association
 - [[L-theanine]] — 건강 계열
 - [[출산 자세의 역사]] — 건강·진화 인류학
 - 원문: https://scitechdaily.com/living-with-roommates-might-be-changing-your-gut-microbiome-without-you-knowing/

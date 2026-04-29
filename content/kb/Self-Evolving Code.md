@@ -95,6 +95,7 @@ Agent가 **native coding style에 자발적으로 수렴** (ABC formatting, nami
 ## 관련 링크
 
 - [[Autogenesis Protocol]] — prompt/tool/memory/environment를 versioned resource로 관리하는 self-evolution protocol
+- [[AI Organisation]] — OMC는 code artifact가 아니라 Talent, SOP, task routing 같은 조직 artifact를 진화시킨다
 - [[Native Agent Evolution]] — task 없이 environment를 먼저 탐색하고 world knowledge를 만든다. Self-Evolving Code가 persistent repo mutation이라면, Native Agent Evolution은 external context를 만들어 execution을 보조한다
 - [[Squeeze Evolve]] — test-time scaling evolution. Self-Evolving Code는 persistent repo 수정, Squeeze Evolve는 한 프롬프트 답변 생성 — scale·persistence 축이 다름
 - [[Autoreason]] — self-refinement (A/B/AB Borda). Self-Evolving Code의 per-cycle rewrite와 유사한 검증 구조, 더 작은 단위
