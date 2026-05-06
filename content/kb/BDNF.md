@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-08T03:35:00Z
-modified: 2026-04-23T00:00:00Z
+modified: 2026-05-06T08:44:23Z
 tags:
   - kb
   - health
@@ -38,6 +38,10 @@ tags:
 
 (출처: [[How to Increase BDNF 10 Ways to Rescue Your Brain]])
 
+## NSI-189 관련 plasticity signal
+
+[[NSI-189]] post는 NSI-189가 stress를 받은 hippocampal cell에서 BDNF와 stem cell factor를 upregulate하고, TrkB 차단 시 cognitive/plasticity 효과가 줄어드는 mouse model 결과를 인용한다 (출처: [[NSI-189 Growing the Substrate of Cognition]]). 이 내용은 NSI-189의 downstream plasticity mechanism을 설명하는 단일 종합 출처로 취급한다.
+
 ## 관련 링크
 
 - [[L-theanine]] — 뇌·인지 영역 supplement
@@ -45,3 +49,4 @@ tags:
 - [[N-Acetyl Cysteine]] — 해마 subfield 구조 복원·항우울 효과. BDNF 경로와 인접
 - [[Omega-3와 정신건강]] — 오메가-3 보충·trans fats 회피가 BDNF 경로에 작용. 임신기 trans fats 섭취는 자손 BDNF 저하
 - [[CREB]] — BDNF 프로모터 전사인자. 많은 항우울·nootropic 약물이 CREB-BDNF 축으로 수렴
+- [[NSI-189]] — neurogenesis/plasticity를 겨냥한 investigational compound

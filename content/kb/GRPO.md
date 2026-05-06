@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-17T08:00:00Z
-modified: 2026-04-17T08:00:00Z
+modified: 2026-05-06T08:44:23Z
 tags:
   - kb
   - llm
@@ -23,8 +23,11 @@ Clipped policy ratio와 KL 정규화 항을 결합한 objective는 PPO와 유사
 
 DeepSeekMath(Shao et al., 2024)에서 제안. [[Memory Intelligence Agent (MIA)]]가 Planner·Executor alternating RL의 기반으로 사용한다 (출처: [[Memory Intelligence Agent]]).
 
+[[RL Conductor]]도 Conductor가 출력한 natural language workflow를 실행한 뒤 format/correctness reward로 학습시키는 데 GRPO 계열 grouped rollout objective를 사용한다 (출처: [[Learning to Orchestrate Agents in Natural Language with the Conductor]]).
+
 ## 관련 링크
 
 - [[Memory Intelligence Agent (MIA)]] — alternating GRPO로 Planner/Executor 훈련
 - [[Test-Time Learning]] — 배포 중 파라미터 업데이트에도 GRPO 활용
+- [[RL Conductor]] — multi-agent workflow 자체를 reward 대상으로 삼는 사례
 - 원 논문: Shao et al., "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models" (2024)

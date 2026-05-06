@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-08T03:15:00Z
-modified: 2026-04-08T03:15:00Z
+modified: 2026-05-06T08:44:23Z
 tags:
   - kb
   - css
@@ -74,3 +74,4 @@ tags:
 ## 관련 문서
 
 - [[CSS Nesting]]
+- [[CSS Scroll-Driven Animations]]
