@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-29T04:54:11Z
-modified: 2026-05-07T03:26:38Z
+modified: 2026-05-07T03:34:32Z
 tags:
   - kb
   - glossary
@@ -25,6 +25,7 @@ PYY 수치 하나로 appetite, body weight, psychiatric symptom을 설명하면 
 
 ## 관련 링크
 
+- [[Biomarker Interpretation Ladder]] — hormone marker와 appetite/weight endpoint를 분리하는 해석 패턴
 - [[Gut Microbiome and Pediatric Psychiatric Disorders]]
 
 ## 자료

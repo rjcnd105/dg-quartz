@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-07T03:10:01Z
-modified: 2026-05-07T03:10:01Z
+modified: 2026-05-07T03:34:32Z
 tags:
   - kb
   - health
@@ -37,6 +37,7 @@ Epigenetic skin aging은 epidermal [[DNA methylation]] pattern을 피부의 biol
 
 - [[DNA methylation]] — methylation biomarker 기본 용어
 - [[Epigenetic Clock]] — methylation pattern으로 biological age를 추정하는 모델
+- [[Biomarker Interpretation Ladder]] — methylation age 변화와 clinical/cosmetic endpoint를 분리하는 해석 패턴
 - [[Nrf2]] — skin antioxidant/longevity claim과 자주 연결되는 stress-response 전사인자
 - [[NMN and NAD+ Precursors]] — longevity biomarker와 endpoint를 구분해야 하는 supplement 축
 - 원문: https://link.springer.com/article/10.1007/s13555-026-01764-4

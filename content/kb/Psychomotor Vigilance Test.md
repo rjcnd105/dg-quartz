@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-07T03:10:01Z
-modified: 2026-05-07T03:26:38Z
+modified: 2026-05-07T03:34:32Z
 tags:
   - kb
   - glossary
@@ -28,6 +28,7 @@ PVT는 sustained attention의 behavioral endpoint이지 sleep architecture나 su
 
 ## 관련 링크
 
+- [[Biomarker Interpretation Ladder]] — behavioral marker와 sleep physiology/clinical endpoint를 분리하는 해석 패턴
 - [[Creatine]]
 - [[Caffeine and Sleep Restriction]]
 
