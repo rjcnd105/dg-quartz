@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-27T09:30:00Z
-modified: 2026-04-27T09:30:00Z
+modified: 2026-05-07T03:10:01Z
 tags:
   - kb
   - health
@@ -46,6 +46,7 @@ Longevity 커뮤니티에서는 NMN hype가 2024-2026년에 더 회의적으로 
 - [[Resveratrol]] — SIRT1/longevity stack 동료 후보
 - [[CoQ10]] — mitochondrial/energy stack에서 더 임상 endpoint가 있는 편
 - [[SIRT1]] — NAD+와 연결되는 deacetylase 축
+- [[Epigenetic Skin Aging]] — biological age biomarker를 cosmetic/dermatology endpoint와 결합하는 별도 longevity 축
 - NAD systematic review: https://pubmed.ncbi.nlm.nih.gov/37971292/
 - NMN RCT: https://pmc.ncbi.nlm.nih.gov/articles/pmid/36482258/
 - NMN meta-analysis: https://www.tandfonline.com/doi/abs/10.1080/10408398.2024.2387324

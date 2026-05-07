@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-27T09:30:00Z
-modified: 2026-04-27T07:52:54Z
+modified: 2026-05-07T03:10:01Z
 tags:
   - kb
   - health
@@ -24,6 +24,7 @@ Ashwagandha(Withania somnifera)는 stress, anxiety, sleep, testosterone claim으
 - withanolides, alkaloids 등 여러 성분이 HPA axis, GABAergic signaling, thyroid axis와 연결되어 논의된다.
 - calm/sedation이 목적일 수 있지만, 감정 둔화·무기력으로 체감되는 사람도 있다.
 - [[Rhodiola rosea]]와 같은 adaptogen 범주지만 방향성이 다르다: Rhodiola는 activating, ashwagandha는 sedating/blunting 쪽 보고가 더 많다.
+- 2026년 8주 randomized double-blind placebo-controlled trial을 다룬 Reddit 종합 post에 따르면, KSM-66 root extract 300 mg bid와 [[Melatonin]] 3 mg/day 병용군은 단독군보다 sleep onset latency, total sleep time, WASO, sleep efficiency, PSQI, HAM-A에서 더 큰 평균 개선을 보였다 (출처: [[The combination of ashwagandha and melatonin was the most effective in improving sleep in an 8-week study]]).
 
 ## 안전성
 
@@ -34,6 +35,7 @@ Ashwagandha(Withania somnifera)는 stress, anxiety, sleep, testosterone claim으
 ## 실전 사용
 
 - chronic insomnia와 anxiety가 있어도 first-line sleep hygiene/[[CBT-I]]/의료 평가를 대체하지 않는다.
+- ashwagandha + melatonin 조합은 단기 signal이 있어도 8주 연구이고, 장기 사용·중단·특정 insomnia phenotype별 효과는 아직 분리되지 않았다.
 - emotional blunting/anhedonia를 이미 걱정하는 사람에게는 "보류 또는 short trial only"가 더 합리적이다.
 - 사용한다면 단일 제품, 낮은 용량, 짧은 기간, liver symptom(소양감, 황달, 진한 소변, 우상복부 통증) 중단 기준이 필요하다.
 - trazodone 같은 sedating/serotonergic 약물과 겹치면 next-day grogginess, orthostatic dizziness, vivid dreams, serotonin-related symptoms를 분리해서 본다.
@@ -46,6 +48,7 @@ Reddit r/Biohackers/r/Supplements/r/Ashwagandha에서는 emotional blunting, anh
 
 - [[Rhodiola rosea]] — 다른 방향의 adaptogen
 - [[Saffron]] — mood/sleep botanical 후보
+- [[Melatonin]] — circadian signal로 쓰이는 sleep supplement
 - [[N-Acetyl Cysteine]] — anhedonia community signal을 따로 봐야 하는 후보
 - [[ADHD Medication and Supplement Stacking]] — 처방약 위에 sedating botanical을 얹을 때의 추적 항목
 - Anxiety/insomnia meta-analysis: https://pubmed.ncbi.nlm.nih.gov/39083548/

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-27T09:30:00Z
-modified: 2026-04-27T09:30:00Z
+modified: 2026-05-07T03:10:01Z
 tags:
   - kb
   - health
@@ -22,6 +22,7 @@ Creatine은 phosphocreatine system을 통해 ATP buffering을 보조하는 영�
 
 - creatine은 근육과 뇌의 고에너지 phosphate pool을 보강한다.
 - 단회 고용량 creatine이 sleep deprivation 중 cognitive performance와 cerebral high-energy phosphates를 개선한 2024 RCT가 있다. 하지만 이 프로토콜은 일반적인 매일 복용과 다르고, "잠을 덜 자도 된다"는 근거가 아니다.
+- 2026년 double-blind randomized crossover trial은 더 낮은 단회 용량(0.2 g/kg)도 21시간 sleep deprivation 중 논리·수리 과제, language processing speed, [[Psychomotor Vigilance Test]] 악화를 줄였다고 보고했다. 효과는 0.35 g/kg 연구보다 약하지만 최대 12% 개선으로 제시됐다 (출처: [[Single-Dose Creatine Reduces Sleep Deprivation-Induced Deterioration in Cognitive Performance]]).
 - 일반 유지 용량은 흔히 3-5 g/day 범위로 연구된다. loading은 빠른 포화에는 유리하지만 위장 부작용을 늘릴 수 있다.
 
 ## 실전 사용
@@ -43,6 +44,7 @@ Nootropics/fitness 커뮤니티에서는 "수면 부족 날 인지 방어" 경�
 ## 관련 링크
 
 - [[Caffeine and Sleep Restriction]] — 수면 부족을 caffeine/creatine으로 보상하려는 전략의 한계
+- [[Psychomotor Vigilance Test]] — sleep deprivation 연구에서 쓰이는 sustained attention 측정
 - [[Magnesium]] — 운동·수면 스택에서 함께 쓰이지만 목적이 다름
 - [[Glycine]] — 수면 보조 후보
 - 2024 cognition meta-analysis: https://pmc.ncbi.nlm.nih.gov/articles/PMC11275561/

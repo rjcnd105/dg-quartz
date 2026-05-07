@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-22T00:00:00Z
-modified: 2026-04-22T00:00:00Z
+modified: 2026-05-07T03:10:01Z
 tags:
   - kb
   - health
@@ -42,6 +42,7 @@ Lee et al. (2026-04, _Molecular Ecology_)의 Seychelles warbler (쿠진 섬 개�
 ## 관련 링크
 
 - [[BDNF]] — 건강·뇌과학 일반
+- [[Gut-Derived Metabolic Reprogramming]] — microbiome 변화가 systemic metabolite와 immune aging으로 이어지는 축
 - [[Gut Microbiome and Pediatric Psychiatric Disorders]] — microbiome과 pediatric psychiatric disorder association
 - [[L-theanine]] — 건강 계열
 - [[출산 자세의 역사]] — 건강·진화 인류학

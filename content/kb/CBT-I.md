@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-27T07:52:54Z
-modified: 2026-04-27T07:52:54Z
+modified: 2026-05-07T03:10:01Z
 tags:
   - kb
   - health
@@ -37,6 +37,8 @@ American College of Physicians는 성인 만성 불면의 초기 치료로 CBT-I
 
 - [[Caffeine and Sleep Restriction]] — caffeine과 sleep pressure
 - [[Green Tea Beverages]] — 녹차 caffeine 총량
+- [[Melatonin]] — circadian signal 기반 sleep supplement
+- [[Ashwagandha]] — stress/anxiety/sleep botanical 후보
 - [[Magnesium]] — 보충제 기반 수면 후보
 - [[Glycine]] — 보충제 기반 수면 후보
 - NIH/NHLBI CBT-I overview: https://www.nhlbi.nih.gov/health/insomnia/treatment

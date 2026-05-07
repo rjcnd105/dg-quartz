@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-27T09:30:00Z
-modified: 2026-04-27T09:30:00Z
+modified: 2026-05-07T03:10:01Z
 tags:
   - kb
   - health
@@ -45,6 +45,7 @@ Reddit r/Nootropics/r/NooTopics에서는 "mood/pain/tolerance에 강하게 맞�
 - [[Alpha-lipoic acid]] — neuropathy 후보이나 당대사/저혈당 risk가 다름
 - [[ALCAR]] — neuropathic pain과 mitochondrial support 축
 - [[L-citrulline malate]] — NO/혈압 축에서 병용 주의
+- [[Ketamine Antidepressant Mechanisms]] — rapid antidepressant 기전 비교 대상
 - Agmatine antidepressant review: https://pmc.ncbi.nlm.nih.gov/articles/PMC8613765/
 - Small fiber neuropathy case series: https://pubmed.ncbi.nlm.nih.gov/32102167/
 - Long-term safety case report: https://pubmed.ncbi.nlm.nih.gov/25247837/

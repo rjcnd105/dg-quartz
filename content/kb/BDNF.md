@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-08T03:35:00Z
-modified: 2026-05-06T08:44:23Z
+modified: 2026-05-07T03:10:01Z
 tags:
   - kb
   - health
@@ -42,6 +42,10 @@ tags:
 
 [[NSI-189]] post는 NSI-189가 stress를 받은 hippocampal cell에서 BDNF와 stem cell factor를 upregulate하고, TrkB 차단 시 cognitive/plasticity 효과가 줄어드는 mouse model 결과를 인용한다 (출처: [[NSI-189 Growing the Substrate of Cognition]]). 이 내용은 NSI-189의 downstream plasticity mechanism을 설명하는 단일 종합 출처로 취급한다.
 
+## Ketamine 관련 plasticity signal
+
+2026년 ketamine 기전 연구를 다룬 Weill Cornell/Neuroscience News clipping은 ketamine의 장기 항우울 효과 유지가 BDNF-driven [[TrkB]] signaling과 [[mGluR5]] cross-talk에 의존한다고 설명한다. 이 상호작용은 synaptic potentiation을 강화하고 synaptic depression을 낮추는 방향의 metaplasticity mechanism으로 제시된다 (출처: [[How Scientists Cracked the Ketamine Code for Depression]]).
+
 ## 관련 링크
 
 - [[L-theanine]] — 뇌·인지 영역 supplement
@@ -50,3 +54,4 @@ tags:
 - [[Omega-3와 정신건강]] — 오메가-3 보충·trans fats 회피가 BDNF 경로에 작용. 임신기 trans fats 섭취는 자손 BDNF 저하
 - [[CREB]] — BDNF 프로모터 전사인자. 많은 항우울·nootropic 약물이 CREB-BDNF 축으로 수렴
 - [[NSI-189]] — neurogenesis/plasticity를 겨냥한 investigational compound
+- [[Ketamine Antidepressant Mechanisms]] — BDNF/TrkB/mGluR5와 opioid receptor 경로를 분리한 ketamine 기전 정리

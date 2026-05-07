@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-17T09:00:00Z
-modified: 2026-04-17T09:00:00Z
+modified: 2026-05-07T03:10:01Z
 tags:
   - kb
   - llm
@@ -104,6 +104,7 @@ $$\Phi\_f(\mathcal{P}) = \text{recomb}\_f \circ \text{select}\_f(\mathcal{P})$$
 ## 관련 링크
 
 - [[Autoreason]] — A/B/AB Borda로 self-refinement 개선. Squeeze Evolve와 상보: Autoreason은 품질·판단 개선, Squeeze는 cost·diversity
+- [[Mixture of Experts]] — parameter capacity와 active compute를 분리하는 model architecture 쪽 sparse routing
 - [[Self-Evolving Code]] — persistent repo-scale evolution. Squeeze Evolve는 single-prompt test-time scaling — 축이 다름
 - [[Test-Time Learning]] — test-time scaling 전반
 - [[Agent Memory Systems]] — fitness로서 confidence 활용 패턴
