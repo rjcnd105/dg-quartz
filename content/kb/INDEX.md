@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-07T07:55:00Z
-modified: 2026-05-07T03:18:43Z
+modified: 2026-05-07T03:32:08Z
 tags:
   - kb
   - index
@@ -148,16 +148,16 @@ kb/ 페이지의 카탈로그. frontmatter 기반으로 재생성 가능한 캐�
 
 ## Glossary
 
-- [[DNA methylation]] — DNA methylation은 DNA 염기, 특히 cytosine 주변에 methyl group이 붙는 epigenetic modification이다
-- [[Epigenetic Clock]] — Epigenetic clock은 DNA methylation pattern 같은 epigenetic marker를 사용해 tissue나 organism의 biological age를 추정하는 statistical model이다
-- [[Psychomotor Vigilance Test]] — Psychomotor Vigilance Test(PVT)는 sustained attention과 reaction time lapse를 측정하는 간단한 vigilance task다
-- [[Retinal Pigment Epithelium]] — Retinal pigment epithelium(RPE)은 retina 바깥쪽에 있는 epithelial cell layer다
-- [[TrkB]] — TrkB(tropomyosin receptor kinase B)는 BDNF가 결합하는 receptor tyrosine kinase 계열 수용체다
-- [[mGluR5]] — mGluR5(metabotropic glutamate receptor 5)는 glutamate에 반응하는 G protein-coupled receptor다
+- [[DNA methylation]] — DNA methylation은 DNA 염기, 특히 CpG cytosine에 methyl group이 붙는 epigenetic modification이다
+- [[Epigenetic Clock]] — Epigenetic clock은 DNA methylation pattern 같은 epigenetic marker를 사용해 tissue나 organism의 age-related state를 추정하는 statistical model이다
+- [[Psychomotor Vigilance Test]] — Psychomotor Vigilance Test(PVT)는 sustained attention과 reaction time lapse를 측정하는 reaction-time task다
+- [[Retinal Pigment Epithelium]] — Retinal pigment epithelium(RPE)은 photoreceptor와 choroid 사이에 있는 polarised epithelial cell layer다
+- [[TrkB]] — TrkB(tropomyosin receptor kinase B, NTRK2)는 BDNF가 결합하는 receptor tyrosine kinase 계열 수용체다
+- [[mGluR5]] — mGluR5(metabotropic glutamate receptor 5, GRM5)는 glutamate에 반응하는 group I G protein-coupled receptor다
 - [[DAG]] — DAG(Directed Acyclic Graph)는 방향이 있는 edge를 가진 graph 중 cycle이 없는 구조다. 어떤 node에서 edge 방향을 따라 이동해 다시 같은 node로 돌아올 수 없다.
-- [[Dysbiosis]] — Dysbiosis는 gut microbiome 같은 미생물 군집의 조성이 건강한 기준에서 벗어난 상태를 가리키는 넓은 용어다.
+- [[Dysbiosis]] — Dysbiosis는 gut microbiome 같은 미생물 군집의 조성, 다양성, 안정성, 대사 기능이 host context에 비해 불리하게 바뀐 상태를 가리키는 넓은 용어다.
 - [[Finite State Machine]] — Finite State Machine(FSM)은 시스템이 미리 정의된 상태 중 하나에 있고, event나 condition에 따라 허용된 transition만 수행하는 모델이다.
-- [[PYY]] — PYY(peptide YY)는 주로 장에서 분비되는 satiety hormone으로, 식후 포만감과 food intake regulation에 관여한다.
+- [[PYY]] — PYY(peptide YY)는 주로 ileum/colon의 enteroendocrine L cell에서 분비되는 gut satiety hormone이다
 - [[5-HT3 receptor]] — 5-HT3 receptor는 serotonin receptor 중 예외적으로 **ligand-gated ion channel**인 수용체다
 - [[AMPK]] — AMPK(AMP-activated protein kinase)는 세포의 energy sensor 역할을 하는 kinase다
 - [[Nrf2]] — Nrf2(nuclear factor erythroid 2-related factor 2)는 세포의 antioxidant response를 조절하는 전사인자다
