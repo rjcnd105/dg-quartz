@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-29T04:54:11Z
-modified: 2026-04-29T04:54:11Z
+modified: 2026-05-08T08:30:39Z
 tags:
   - kb
   - health
@@ -52,6 +52,7 @@ Reddit 댓글에서도 diet/physical activity/medication 통제 부족이 한계
 ## 관련 링크
 
 - [[Gut Microbiome Social Transfer]] — microbiome이 개인 단위만이 아니라 사회적 접촉/환경과 얽힐 수 있다는 별도 축
+- [[Social Anxiety Gut-Brain Axis]] — adolescent social anxiety microbiota transfer rat model
 - [[ADHD Medication and Supplement Stacking]] — ADHD에서 supplement/diet intervention을 약물과 섞을 때의 안전 경계
 - [[Dysbiosis]] — microbiome imbalance 용어
 - [[PYY]] — satiety hormone

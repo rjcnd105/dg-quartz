@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-17T08:00:00Z
-modified: 2026-04-27T03:39:39Z
+modified: 2026-05-08T08:30:39Z
 tags:
   - kb
   - llm
@@ -112,3 +112,4 @@ Cross-model 전이 가능 (model-agnostic meta-knowledge) 하지만 self-generat
 - [[Autogenesis Protocol]] — memory lifecycle/version lineage를 protocol surface로 올리는 접근
 - [[ReAct]] — Executor가 도구와 상호작용하는 기본 루프
 - [[File-as-Bus]] — durable artifact 기반 memory의 한 구현
+- [[Managed Agent Architecture]] — session log를 context window 밖의 durable context object로 두는 runtime pattern

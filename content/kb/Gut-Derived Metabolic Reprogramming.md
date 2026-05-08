@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-07T03:10:01Z
-modified: 2026-05-07T03:10:01Z
+modified: 2026-05-08T08:30:39Z
 tags:
   - kb
   - health
@@ -32,6 +32,9 @@ Gut-derived metabolic reprogramming은 gut microbiome 변화가 circulating meta
 
 - [[Gut Microbiome Social Transfer]] — microbiome이 개인 내부가 아니라 사회/환경과 연결되는 축
 - [[Gut Microbiome and Pediatric Psychiatric Disorders]] — microbiome association 해석 경계
+- [[Coffee and Gut-Brain Axis]] — diet factor가 gut microbiome, metabolite, inflammation과 연결되는 사례
+- [[IBD Stool Host DNA Biomarkers]] — stool sample에서 host inflammation signal을 읽는 접근
+- [[Bacteroides fragilis Toxin]] — bacterial toxin-receptor binding과 colon inflammation/cancer axis
 - [[Dysbiosis]] — microbiome imbalance 용어
 - [[Taurine]] — retina와 brain에 풍부한 amino acid-like compound
 - 원문: https://www.biorxiv.org/content/10.64898/2026.04.14.718497v1.full

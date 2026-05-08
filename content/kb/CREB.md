@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-23T00:00:00Z
-modified: 2026-04-23T00:00:00Z
+modified: 2026-05-08T08:30:39Z
 tags:
   - kb
   - glossary
@@ -22,3 +22,4 @@ tags:
 - 저용량 aspirin, [[Salicin]]이 CREB를 자극한다고 보고됨.
 - 항우울제(SSRI 등) 장기 투여가 hippocampal CREB-BDNF 경로를 상향시킨다는 가설.
 - [[Bromantane]]의 tyrosine hydroxylase 유전자 수준 상향도 CREB 상류에서 작동할 가능성.
+- [[PDE7 Inhibition]]은 cAMP breakdown을 줄여 PKA/CREB signaling을 강화하는 investigational target으로 논의된다.

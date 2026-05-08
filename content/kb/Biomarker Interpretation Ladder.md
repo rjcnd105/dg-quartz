@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-07T03:34:32Z
-modified: 2026-05-07T03:34:32Z
+modified: 2026-05-08T08:30:39Z
 tags:
   - kb
   - health
@@ -45,6 +45,9 @@ Supplement, longevity, microbiome, psychiatry 자료를 읽을 때 첫 질문은
 - [[Psychomotor Vigilance Test]]
 - [[NMN and NAD+ Precursors]]
 - [[ADHD Medication and Supplement Stacking]]
+- [[IBD Stool Host DNA Biomarkers]]
+- [[Bacteroides fragilis Toxin]]
+- [[Legumes Soy and Hypertension]]
 
 ## 자료
 

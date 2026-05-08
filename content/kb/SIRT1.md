@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-27T06:31:44Z
-modified: 2026-04-27T06:31:44Z
+modified: 2026-05-08T08:30:39Z
 tags:
   - kb
   - glossary
@@ -24,3 +24,4 @@ SIRT1은 NAD+-dependent deacetylase로, energy status와 gene regulation을 연�
 - [[EGCG]]
 - [[Astaxanthin]]
 - [[Tropisetron]]
+- [[S1PC and Aged Garlic Extract]]

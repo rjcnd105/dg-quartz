@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-07T03:10:01Z
-modified: 2026-05-07T03:10:01Z
+modified: 2026-05-08T08:30:39Z
 tags:
   - kb
   - health
@@ -34,5 +34,7 @@ Science Advances 연구는 ketamine의 지속 효과가 [[TrkB]]와 [[mGluR5]] �
 - [[Adenosine Receptors]] — rapid antidepressant mechanism에서 함께 논의되는 GPCR 계열
 - [[Agmatine]] — ketamine-like rapid antidepressant 후보로 논의되는 supplement/pharmacology topic
 - [[NSI-189]] — depression endpoint와 plasticity/cognition endpoint를 분리해야 하는 investigational compound
+- [[TMS Antidepressant Mechanisms]] — non-pharmacologic rapid antidepressant effect의 cell/circuit mechanism
+- [[Psilocybin Neuroplasticity]] — psychedelic-induced entropy/plasticity와 mental health signal
 - Cell paper: https://doi.org/10.1016/j.cell.2026.04.006
 - Science Advances paper: https://doi.org/10.1126/sciadv.aec1444

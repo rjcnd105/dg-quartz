@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2024-02-03T21:41:12Z
-modified: 2026-04-29T02:22:53Z
+modified: 2026-05-07T06:18:43Z
 tags:
   - 이력서
   - react
@@ -45,7 +45,7 @@ tags:
 
 ## 협업 성향
 
-내향적인 편이지만 동료들과 논의하고 같이 문제를 푸는 과정을 즐기고, 좋은 협업은 상호 신뢰에서 나온다고 믿습니다. 이전 회사들에서 **코드리뷰, KPT, PR 문화, 스터디 발표** 를 주도해 구축하고 개선했습니다.
+내향적인 편이지만 동료들과 논의하고 같이 문제를 푸는 과정을 즐기고, 좋은 협업은 상호 신뢰에서 나온다고 믿습니다. 이전 회사에서 **코드리뷰, KPT, PR 문화, 스터디 발표** 를 주도해 구축하고 개선했습니다.
 
 <div style="height:0.5rem;"></div>
 
@@ -62,8 +62,8 @@ tags:
 실무에서 지향해 온 **선언적·스키마 기반 원칙**을 개인 환경에도 동일하게 적용하고 있고, 여기서 검증한 패턴을 실무의 AI 워크플로우 도입에 이어가고 있습니다.
 
 - **토큰 예산 관리.** 개인 프로젝트 전반에 `rtk`·`caveman`를 사용해 LLM 컨텍스트 페이로드를 압축 — 비용·지연 통제.
-- **Context 관리.** `codesight` 를 통한 프로젝트 인덱싱 및 git hook을 통한 code base와의 context sync
-- [\*\*compound-engineering-plugin](https://www.notion.so/hj1/compound-engineering-plugin) 기반 워크플로우.\*\* 모든 작업의 plan·solution을 기록해, 에이전트가 프로젝트 맥락에 점진적으로 조율되도록 유지.
+- **Context 관리.** `graphify` 를 통한 프로젝트 인덱싱
+- **[compound-engineering-plugin](https://www.notion.so/hj1/compound-engineering-plugin) 기반 워크플로우.** 모든 작업의 plan·solution을 기록해, 에이전트가 프로젝트 맥락에 점진적으로 조율되도록 유지.
 - 2024년 부터 mac에 nix flake기반 선언적 시스템 도입 (<https://github.com/rjcnd105/hj-dotfiles>)
 
 ### Home lab (개인 server)

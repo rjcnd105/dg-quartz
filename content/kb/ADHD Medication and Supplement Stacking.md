@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-27T07:14:32Z
-modified: 2026-04-27T07:27:05Z
+modified: 2026-05-08T08:30:39Z
 tags:
   - kb
   - health
@@ -47,6 +47,9 @@ ADHD 약물 스택에서는 낮의 집중 체감보다 밤의 수면 손실이 �
 
 ## 관련 링크
 
+- [[ADHD Attention State Regulation]] — ADHD attention fluctuation을 strengths, local sleep intrusion, sustained effort fatigue로 나눠 보는 관점
+- [[GABA and Task Performance]] — calmness/fatigue reduction claim을 작은 task-performance study로 제한해서 보는 페이지
+- [[Coffee and Gut-Brain Axis]] — coffee를 caffeine-only가 아니라 microbiome/mood/inflammation exposure로 보는 연구
 - [[Caffeine and Sleep Restriction]] — 수면 부족과 caffeine 보상 전략
 - [[Green Tea Beverages]] — ready-to-drink 녹차와 caffeine/EGCG/theanine 노출
 - [[L-tyrosine]] — catecholamine precursor

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-08T03:35:00Z
-modified: 2026-05-07T03:10:01Z
+modified: 2026-05-08T08:30:39Z
 tags:
   - kb
   - health
@@ -55,3 +55,6 @@ tags:
 - [[CREB]] — BDNF 프로모터 전사인자. 많은 항우울·nootropic 약물이 CREB-BDNF 축으로 수렴
 - [[NSI-189]] — neurogenesis/plasticity를 겨냥한 investigational compound
 - [[Ketamine Antidepressant Mechanisms]] — BDNF/TrkB/mGluR5와 opioid receptor 경로를 분리한 ketamine 기전 정리
+- [[PDE7 Inhibition]] — cAMP/PKA/CREB를 통해 BDNF 축과 연결되는 investigational target
+- [[TMS Antidepressant Mechanisms]] — prefrontal synaptic structure recovery와 rapid antidepressant effect
+- [[Psilocybin Neuroplasticity]] — psychedelic entropy/plasticity와 wellbeing signal

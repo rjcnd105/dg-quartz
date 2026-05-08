@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-08T03:15:00Z
-modified: 2026-05-06T08:44:23Z
+modified: 2026-05-08T08:30:39Z
 tags:
   - kb
   - llm
@@ -33,8 +33,14 @@ Harness 최적화는 모델 교체 없이 시스템 성능을 개선하는 경�
 - 동일 모델에서 context 토큰을 줄이면서 성능을 올릴 수 있다 (비용 절감 + 성능 향상 동시 달성)
 - 여러 모델에 걸쳐 일반화되는 harness를 찾을 수 있다 (모델 5개 평균 +4.7점)
 
+## Runtime boundary
+
+[[Managed Agent Architecture]]는 harness를 sandbox와 session에서 분리해, harness 자체도 cattle처럼 restart 가능한 component로 만든다 (출처: [[Scaling Managed Agents Decoupling the brain from the hands]]). 이 관점에서 harness는 model prompt를 꾸미는 code만이 아니라 session event log를 읽고, tool/sandbox를 호출하고, credential boundary를 유지하는 runtime control plane이다.
+
 ## 관련 링크
 
 - [[Agent Skill Representation]] — harness가 로드하는 skill artifact를 구조화해 routing/review에 쓰는 표현
 - [[Failure-Aware RAG]] — retrieve 단계가 실패했을 때 harness가 retry가 아니라 failure diagnosis와 routing을 수행하는 패턴
 - [[Scale-Dependent Verbosity]] — 모델에 제시하는 정보(harness의 역할)가 출력 행동에 미치는 영향의 한 사례
+- [[Managed Agent Architecture]] — brain, hands, session을 분리하는 long-horizon agent runtime
+- [[Faithful Uncertainty]] — tool use와 retrieval을 조절하는 metacognitive control signal

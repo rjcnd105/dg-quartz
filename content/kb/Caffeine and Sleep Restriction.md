@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-27T03:33:23Z
-modified: 2026-04-27T07:27:05Z
+modified: 2026-05-08T08:30:39Z
 tags:
   - kb
   - health
@@ -46,3 +46,6 @@ Methylphenidate, atomoxetine, bupropion은 각기 다른 방식으로 catecholam
 - [[L-theanine]] — caffeine과 함께 자주 논의되는 tea-derived compound
 - [[Green Tea Beverages]] — ready-to-drink 녹차 volume이 caffeine 총량으로 바뀌는 방식
 - [[ADHD Medication and Supplement Stacking]] — stimulant/noradrenergic 약물 위에 caffeine을 얹을 때의 위험 축
+- [[Coffee and Gut-Brain Axis]] — coffee의 caffeine-independent microbiome/mood/inflammation signal
+- [[ADHD Attention State Regulation]] — attention lapse와 sleep-like slow wave 연결
+- [[Hypnagogic Mental States]] — wake/sleep boundary를 mental state cluster로 보는 연구
