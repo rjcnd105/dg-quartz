@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-08T08:30:39Z
-modified: 2026-05-08T08:30:39Z
+modified: 2026-05-11T05:31:24Z
 tags:
   - kb
   - health
@@ -28,3 +28,4 @@ Scientific Reports 연구를 다룬 Center for BrainHealth 보도는 BrainHealth
 - [[BDNF]] — exercise, learning, sleep 등 brain plasticity lifestyle axis
 - [[Myelin Metabolic Signaling]] — brain aging과 cell metabolism의 mechanistic 축
 - [[Hypnagogic Mental States]] — wake/sleep boundary와 cognition state를 세분화하는 연구 흐름
+- [[Intermittent Fasting in Older Adults]] — aging intervention을 cognition, frailty, lean mass와 함께 읽는 경계

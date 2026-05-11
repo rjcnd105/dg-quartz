@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-07T03:34:32Z
-modified: 2026-05-08T08:30:39Z
+modified: 2026-05-11T05:31:24Z
 tags:
   - kb
   - health
@@ -48,6 +48,10 @@ Supplement, longevity, microbiome, psychiatry 자료를 읽을 때 첫 질문은
 - [[IBD Stool Host DNA Biomarkers]]
 - [[Bacteroides fragilis Toxin]]
 - [[Legumes Soy and Hypertension]]
+- [[Gut-Eye Axis]]
+- [[Gut-Derived Acetaldehyde and MASH]]
+- [[Gut Microbial Tryptophan Metabolism]]
+- [[Intermittent Fasting in Older Adults]]
 
 ## 자료
 

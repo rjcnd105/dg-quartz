@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-08T08:30:39Z
-modified: 2026-05-08T08:30:39Z
+modified: 2026-05-11T05:31:24Z
 tags:
   - kb
   - health
@@ -32,5 +32,7 @@ Healthy volunteer 28명, indirect imaging, small sample이다. Psilocybin은 cli
 
 - [[TMS Antidepressant Mechanisms]] — rapid circuit intervention과 structural plasticity
 - [[Ketamine Antidepressant Mechanisms]] — rapid antidepressant plasticity mechanism
+- [[5-HT2A receptor]] — serotonergic psychedelic의 주요 receptor target
+- [[Microdosing Psychedelics]] — low-dose psychedelic evidence와 placebo/cognition 논쟁
 - [[BDNF]] — synaptic plasticity와 neurotrophic signaling
 - [[Hypnagogic Mental States]] — altered conscious state와 cognition boundary

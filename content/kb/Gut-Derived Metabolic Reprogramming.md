@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-07T03:10:01Z
-modified: 2026-05-08T08:30:39Z
+modified: 2026-05-11T05:31:24Z
 tags:
   - kb
   - health
@@ -36,5 +36,9 @@ Gut-derived metabolic reprogramming은 gut microbiome 변화가 circulating meta
 - [[IBD Stool Host DNA Biomarkers]] — stool sample에서 host inflammation signal을 읽는 접근
 - [[Bacteroides fragilis Toxin]] — bacterial toxin-receptor binding과 colon inflammation/cancer axis
 - [[Dysbiosis]] — microbiome imbalance 용어
+- [[Gut-Eye Axis]] — gut microbiota와 ocular inflammation 연결
+- [[Gut-Derived Acetaldehyde and MASH]] — gut microbial toxic metabolite와 liver fibrosis
+- [[Metformin Gut Mechanism]] — intestinal epithelial metabolism을 통한 systemic glucose effect
+- [[Gut Microbial Tryptophan Metabolism]] — gut-derived metabolites와 aging disease axis
 - [[Taurine]] — retina와 brain에 풍부한 amino acid-like compound
 - 원문: https://www.biorxiv.org/content/10.64898/2026.04.14.718497v1.full

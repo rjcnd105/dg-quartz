@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-07T03:10:01Z
-modified: 2026-05-07T03:10:01Z
+modified: 2026-05-11T05:31:24Z
 tags:
   - kb
   - health
@@ -28,4 +28,5 @@ Melatonin은 "강한 진정제"라기보다 circadian phase와 sleep timing을 �
 - [[CBT-I]] — chronic insomnia first-line behavioral intervention
 - [[Glycine]] — 보충제 기반 수면 후보
 - [[Magnesium]] — 보충제 기반 수면 후보
+- [[Stem Cell Mitophagy and Senescence]] — melatonin의 cell-culture mitochondrial quality-control signal
 - Reference: https://www.mdpi.com/2624-5175/8/2/15

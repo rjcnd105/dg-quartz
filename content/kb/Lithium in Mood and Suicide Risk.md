@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-08T08:30:39Z
-modified: 2026-05-08T08:30:39Z
+modified: 2026-05-11T05:31:24Z
 tags:
   - kb
   - health
@@ -30,3 +30,4 @@ Lithium은 self-experiment supplement가 아니라 처방·monitoring 약물이�
 - [[Emerging Psychiatric Drug Targets]] — ion channel, neuropeptide, inflammation, arousal target과 lithium의 위치 비교
 - [[BDNF]] — lithium neuroprotection claim에서 자주 언급되는 neurotrophic axis
 - [[ADHD Attention State Regulation]] — impulsivity/attention state와 psychiatric risk를 분리해서 보는 인접 주제
+- [[Thyroid-Serotonin Mood Axis]] — mood disorder에서 thyroid monitoring과 augmentation을 분리하는 맥락

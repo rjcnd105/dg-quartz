@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-27T09:30:00Z
-modified: 2026-04-27T07:14:32Z
+modified: 2026-05-11T05:31:24Z
 tags:
   - kb
   - health
@@ -47,5 +47,6 @@ CoQ10(coenzyme Q10, ubiquinone/ubiquinol)은 mitochondrial electron transport ch
 - [[Alpha-lipoic acid]] — redox/mitochondrial stack
 - [[Creatine]] — ATP buffering
 - [[ADHD Medication and Supplement Stacking]] — energy supplement를 약물 위에 얹을 때의 추적 항목
+- [[Stem Cell Mitophagy and Senescence]] — CoQ10의 cell-culture mitochondrial quality-control signal
 - Fatigue meta-analysis: https://pmc.ncbi.nlm.nih.gov/articles/PMC9449413/
 - Migraine meta-analysis: https://pmc.ncbi.nlm.nih.gov/articles/PMC7786797/

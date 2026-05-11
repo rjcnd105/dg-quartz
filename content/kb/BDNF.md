@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-08T03:35:00Z
-modified: 2026-05-08T08:30:39Z
+modified: 2026-05-11T05:31:24Z
 tags:
   - kb
   - health
@@ -58,3 +58,6 @@ tags:
 - [[PDE7 Inhibition]] — cAMP/PKA/CREB를 통해 BDNF 축과 연결되는 investigational target
 - [[TMS Antidepressant Mechanisms]] — prefrontal synaptic structure recovery와 rapid antidepressant effect
 - [[Psilocybin Neuroplasticity]] — psychedelic entropy/plasticity와 wellbeing signal
+- [[5-HT2A receptor]] — psychedelic plasticity target claim의 receptor-level 경계
+- [[Microdosing Psychedelics]] — low-dose psychedelic cognition/plasticity claim의 근거 경계
+- [[Intermittent Fasting in Older Adults]] — fasting-BDNF narrative와 older-adult safety boundary

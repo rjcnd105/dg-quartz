@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-27T07:14:32Z
-modified: 2026-05-08T08:30:39Z
+modified: 2026-05-11T05:23:57Z
 tags:
   - kb
   - health
@@ -45,9 +45,16 @@ ADHD 약물 스택에서는 낮의 집중 체감보다 밤의 수면 손실이 �
 - **상대적으로 낮은 위험이지만 수면/GI 추적 필요**: [[Magnesium]], [[Glycine]], [[L-theanine]], [[Taurine]], [[Omega-3와 정신건강]], [[Creatine]].
 - **감정 둔화 signal 별도 추적**: [[Ashwagandha]], [[N-Acetyl Cysteine]], [[Lion's Mane]], 고용량 cholinergic stack.
 
+## Community self-experiment signal
+
+2026 repost된 4년 전 r/Nootropics self-experiment report는 creatine, zinc, magnesium, omega-3, vitamin D3, [[L-tyrosine]], Noopept, [[Alpha-GPC]], [[Huperzine A]]를 high-value stack으로 평가하고, [[Ashwagandha]], [[N-Acetyl Cysteine]], 5-HTP를 emotional blunting 또는 safety concern 때문에 낮게 평가했다 (출처: [[Every nootropic  supplement I have ever taken ranked (repost)]]).
+
+이 자료의 유용성은 efficacy proof가 아니라 stack-failure taxonomy다. 같은 post 안에서도 high-dose tyrosine, cholinergic stack, nicotine, racetam, caffeine/theanine 같은 여러 축이 겹치므로, 어떤 성분이 실제로 mood/focus/sleep을 바꿨는지 분리하기 어렵다. 따라서 이 출처는 개인 anecdote로만 쓰고, formal evidence보다 adverse-effect candidate와 tracking 항목을 찾는 데 쓴다.
+
 ## 관련 링크
 
 - [[ADHD Attention State Regulation]] — ADHD attention fluctuation을 strengths, local sleep intrusion, sustained effort fatigue로 나눠 보는 관점
+- [[Nootropic Self-Experiment Reports]] — 개인 self-report를 KB에서 다루는 방식
 - [[GABA and Task Performance]] — calmness/fatigue reduction claim을 작은 task-performance study로 제한해서 보는 페이지
 - [[Coffee and Gut-Brain Axis]] — coffee를 caffeine-only가 아니라 microbiome/mood/inflammation exposure로 보는 연구
 - [[Caffeine and Sleep Restriction]] — 수면 부족과 caffeine 보상 전략

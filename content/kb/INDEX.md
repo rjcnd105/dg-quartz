@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-07T07:55:00Z
-modified: 2026-05-08T09:37:33Z
+modified: 2026-05-11T06:49:37Z
 tags:
   - kb
   - index
@@ -100,6 +100,16 @@ kb/ 페이지의 카탈로그. frontmatter 기반으로 재생성 가능한 캐�
 
 ## Health / Science
 
+- [[5-HT2A receptor]] — 5-HT2A receptor는 cortical pyramidal neuron과 일부 interneuron에서 psychedelic, serotonin, glutamate signaling이 만나는 GPCR target이다.
+- [[Gut Microbial Tryptophan Metabolism]] — Gut microbial tryptophan metabolism은 dietary tryptophan이 host와 microbiome 사이에서 indole, kynurenine, serotonin pathway로 갈라지며 immunity, barrier, redox, mitochondria, aging disease risk를 조절하는 축이다.
+- [[Gut-Derived Acetaldehyde and MASH]] — Gut-derived acetaldehyde and MASH 연구는 dietary fructose가 gut microbiota를 통해 ethanol-like toxic metabolite를 만들고, 이 metabolite가 liver fibrosis를 밀 수 있다는 축이다.
+- [[Gut-Eye Axis]] — Gut-eye axis는 gut microbiome, intestinal barrier, systemic immune signaling, ocular inflammation을 하나의 연결 축으로 보는 관점이다.
+- [[Intermittent Fasting in Older Adults]] — Intermittent fasting in older adults는 weight, cardiometabolic marker, cognition/mental health signal을 sarcopenia와 frailty risk와 함께 읽어야 하는 dietary intervention 영역이다.
+- [[Metformin Gut Mechanism]] — Metformin gut mechanism은 metformin의 glucose-lowering effect를 liver-only model이 아니라 intestinal epithelial mitochondrial complex I inhibition으로 읽는 접근이다.
+- [[Microdosing Psychedelics]] — Microdosing psychedelics는 overt psychedelic effect를 피하려는 낮은 용량의 LSD, psilocybin 등 serotonergic psychedelic 반복 사용이다.
+- [[Nootropic Self-Experiment Reports]] — Nootropic self-experiment reports는 supplement나 drug-like compound를 개인이 순차적으로 시험하고 주관적 focus, mood, sleep, motivation을 기록한 낮은 신뢰도 자료다.
+- [[Stem Cell Mitophagy and Senescence]] — Stem cell mitophagy and senescence 연구는 oxidative/glycative stress가 mesenchymal stem cell mitochondrial quality control을 무너뜨리고, low-dose antioxidant pretreatment가 mitophagy marker와 senescence phenotype을 일부 회복할 수 있는지 보는 영역이다.
+- [[Thyroid-Serotonin Mood Axis]] — Thyroid-serotonin mood axis는 thyroid hormone 상태가 brain serotonin responsiveness와 affective illness augmentation strategy에 영향을 줄 수 있다는 관점이다.
 - [[ADHD Attention State Regulation]] — ADHD의 attention 문제는 단순한 attention deficit보다, 관심·각성·수면성 slow wave가 attention allocation을 흔드는 state regulation 문제로 읽는 편이 설명력이 높다.
 - [[Bacteroides fragilis Toxin]] — Bacteroides fragilis toxin(BFT)은 colon epithelial cell의 claudin-4에 먼저 결합한 뒤 E-cadherin cleavage와 inflammation/tumor axis를 유도하는 pro-carcinogenic bacterial toxin이다.
 - [[Coffee and Gut-Brain Axis]] — Coffee and gut-brain axis 연구는 coffee를 caffeine source 하나가 아니라 microbiome, metabolite, inflammation, mood에 동시에 작용하는 dietary factor로 보는 접근이다.
@@ -169,6 +179,9 @@ kb/ 페이지의 카탈로그. frontmatter 기반으로 재생성 가능한 캐�
 
 ## Glossary
 
+- [[Aryl Hydrocarbon Receptor]] — Aryl hydrocarbon receptor(AhR)는 환경·식이·microbial small molecule에 반응하는 ligand-activated transcription factor다.
+- [[Kynurenine Pathway]] — Kynurenine pathway는 tryptophan이 IDO 또는 TDO를 거쳐 kynurenine 계열 metabolite로 분해되는 대사 경로다.
+- [[Mitophagy]] — Mitophagy는 손상되었거나 필요 없어진 mitochondria를 autophagy machinery로 선택적으로 제거하는 mitochondrial quality-control 과정이다.
 - [[DNA methylation]] — DNA methylation은 DNA 염기, 특히 CpG cytosine에 methyl group이 붙는 epigenetic modification이다
 - [[Epigenetic Clock]] — Epigenetic clock은 DNA methylation pattern 같은 epigenetic marker를 사용해 tissue나 organism의 age-related state를 추정하는 statistical model이다
 - [[Psychomotor Vigilance Test]] — Psychomotor Vigilance Test(PVT)는 sustained attention과 reaction time lapse를 측정하는 reaction-time task다
@@ -213,9 +226,9 @@ kb/ 페이지의 카탈로그. frontmatter 기반으로 재생성 가능한 캐�
 
 ## Health
 
-- 총 페이지: 173
-- 단일 출처 페이지: 120/173 (출처 없는 페이지 32 별도)
+- 총 페이지: 186
+- 단일 출처 페이지: 128/186 (출처 없는 페이지 35 별도)
 - 미해결 논쟁: 0
 - 최신 동향 만료: 0 (6개월 기준)
 - 고아 페이지: 0 (glossary 제외)
-- 마지막 rebuild-index: 2026-05-08
+- 마지막 rebuild-index: 2026-05-11

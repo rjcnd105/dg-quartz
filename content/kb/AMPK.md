@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-27T06:31:44Z
-modified: 2026-04-27T06:31:44Z
+modified: 2026-05-11T05:31:24Z
 tags:
   - kb
   - glossary
@@ -24,3 +24,5 @@ AMPK(AMP-activated protein kinase)는 세포의 energy sensor 역할을 하는 k
 - [[Matcha]]
 - [[L-theanine]]
 - [[SIRT1]]
+- [[Metformin Gut Mechanism]]
+- [[Intermittent Fasting in Older Adults]]

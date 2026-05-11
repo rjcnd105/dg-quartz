@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-29T04:54:11Z
-modified: 2026-05-07T03:34:32Z
+modified: 2026-05-11T05:31:24Z
 tags:
   - kb
   - glossary
@@ -28,6 +28,9 @@ Dysbiosis는 특정 세균 하나의 증감보다 전체 community balance, dive
 - [[Biomarker Interpretation Ladder]] — taxonomic shift와 causal/treatment claim을 분리하는 해석 패턴
 - [[Gut Microbiome and Pediatric Psychiatric Disorders]]
 - [[Gut Microbiome Social Transfer]]
+- [[Gut-Eye Axis]]
+- [[Gut-Derived Acetaldehyde and MASH]]
+- [[Gut Microbial Tryptophan Metabolism]]
 
 ## 자료
 
