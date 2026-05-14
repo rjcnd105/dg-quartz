@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-11T05:23:57Z
-modified: 2026-05-11T05:23:57Z
+modified: 2026-05-14T15:50:00Z
 tags:
   - kb
   - health
@@ -37,4 +37,5 @@ Self-experiment report는 placebo, regression to the mean, expectation, sleep/di
 - [[Huperzine A]]
 - [[N-Acetyl Cysteine]]
 - [[Ashwagandha]]
+- [[Supplement Stack Failure Modes]] — community stack 자료를 failure-pattern memory로 쓰는 방법
 - Original Reddit post: https://www.reddit.com/r/Nootropics/comments/uxfoji/every\_nootropic\_supplement\_i\_have\_ever\_taken/

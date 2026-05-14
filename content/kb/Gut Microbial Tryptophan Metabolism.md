@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-11T05:23:57Z
-modified: 2026-05-11T05:23:57Z
+modified: 2026-05-14T15:37:30Z
 tags:
   - kb
   - health
@@ -29,6 +29,12 @@ Review는 cardiovascular disease, cancer, neurodegenerative disease, IBD, IBS, o
 ## Clinical opportunity
 
 후보는 biomarker, IDO/TDO inhibitor, KMO inhibitor, TPH inhibitor, indole derivative supplementation, probiotic/synbiotic intervention이다. 하지만 대부분은 아직 precision therapeutics 이전 단계다. Strain specificity, off-target effect, microbial/host pathway 구분, diet/antibiotic/probiotic confounding이 큰 장애물이다.
+
+## Barrier model signal
+
+In vitro short communication은 tryptophan-derived microbial metabolites가 blood-brain barrier와 gut barrier cell model의 electrical resistance와 permeability를 dose-dependent하게 바꿀 수 있다고 보고한다 (출처: [[Microbial tryptophan metabolites modulate blood-brain and gut barriers in vitro]]). 이 결과는 indole 계열 metabolite가 barrier integrity와 연결될 수 있다는 mechanism signal을 강화한다.
+
+다만 cell-line barrier model은 실제 gut-brain axis의 immune cell, vascular flow, microbiome community, liver metabolism을 모두 담지 못한다. 따라서 이 자료는 probiotic이나 tryptophan supplement 결론이 아니라, metabolite별 barrier effect를 분리해 보는 실험 근거로 둔다.
 
 ## 해석 경계
 

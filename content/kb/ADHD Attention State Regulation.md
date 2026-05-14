@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-08T08:30:39Z
-modified: 2026-05-08T08:30:39Z
+modified: 2026-05-14T15:50:00Z
 tags:
   - kb
   - health
@@ -29,6 +29,8 @@ Strengths 연구는 self-report 기반 positive trait 비교이고, "ADHD가 무
 ## 관련 링크
 
 - [[ADHD Medication and Supplement Stacking]] — 약물·caffeine·supplement가 attention/sleep state에 미치는 누적 비용
+- [[ADHD Mortality and Health Risk]] — ADHD를 lifespan risk surface로 보는 관점
+- [[Histamine Brain System]] — ADHD와 겹치는 histaminergic brain map hypothesis
 - [[GABA and Task Performance]] — task anxiety/fatigue를 낮추는 nootropic claim의 작은 연구 신호
 - [[Caffeine and Sleep Restriction]] — caffeine이 sleep pressure와 brain plasticity에 미치는 별도 축
 - [[Hypnagogic Mental States]] — wake/sleep boundary가 이분법이 아니라 state mixture라는 인접 관점

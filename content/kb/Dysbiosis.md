@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-29T04:54:11Z
-modified: 2026-05-11T05:31:24Z
+modified: 2026-05-14T15:50:00Z
 tags:
   - kb
   - glossary
@@ -31,6 +31,7 @@ Dysbiosis는 특정 세균 하나의 증감보다 전체 community balance, dive
 - [[Gut-Eye Axis]]
 - [[Gut-Derived Acetaldehyde and MASH]]
 - [[Gut Microbial Tryptophan Metabolism]]
+- [[Psyllium Fiber Mechanics]] — soluble fiber의 물리적 효과와 gut function
 
 ## 자료
 

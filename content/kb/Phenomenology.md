@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-23T00:00:00Z
-modified: 2026-04-24T00:00:00Z
+modified: 2026-05-14T15:50:00Z
 tags:
   - kb
   - glossary
@@ -28,3 +28,5 @@ tags:
 - [[Embodied Cognition]]·enactivism·ecological psychology와 결합.
 - [[Affordances]]\(Gibson)가 Merleau-Ponty의 motor intentionality와 수렴.
 - 정신의학·심리학에서 정신병리를 "세계 경험 구조의 변형"으로 기술하는 접근(phenomenological psychiatry).
+- [[Inner Speech and Anendophasia]] — inner speech의 presence/absence를 1인칭 경험 구조로 다루는 인접 주제.
+- [[Holographic Principle]] — 물리학 개념이 경험적·신비주의적 은유로 오해될 때 구분이 필요한 사례.

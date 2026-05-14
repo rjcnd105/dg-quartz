@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-27T09:30:00Z
-modified: 2026-04-27T07:14:32Z
+modified: 2026-05-14T15:50:00Z
 tags:
   - kb
   - health
@@ -47,5 +47,6 @@ ADHD/energy 커뮤니티에서는 B-complex가 "확 켜진다"는 사람과 "불
 - [[Zinc]] — 결핍 보정형 micronutrient
 - [[Vitamin D3 and K2]] — lab-first nutrient
 - [[ADHD Medication and Supplement Stacking]] — activation과 수면 비용
+- [[Vitamin B12 and Muscle Mitochondria]] — B12와 skeletal muscle mitochondrial function의 preclinical signal
 - NIH ODS vitamin B6: https://ods.od.nih.gov/factsheets/VitaminB6-HealthProfessional/
 - B vitamins mood meta-analysis: https://pmc.ncbi.nlm.nih.gov/articles/PMC6770181/

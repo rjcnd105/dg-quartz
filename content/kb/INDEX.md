@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-07T07:55:00Z
-modified: 2026-05-11T06:49:37Z
+modified: 2026-05-14T16:21:38Z
 tags:
   - kb
   - index
@@ -100,6 +100,23 @@ kb/ 페이지의 카탈로그. frontmatter 기반으로 재생성 가능한 캐�
 
 ## Health / Science
 
+- [[ADHD Mortality and Health Risk]] — ADHD mortality and health risk는 ADHD를 단순 attention 문제가 아니라 사고, substance use, sleep, impulsivity, comorbidity, healthcare access가 누적되는 lifespan risk 문제로 보는 관점이다.
+- [[Almonds and Gut-Appetite Markers]] — Almonds and gut-appetite markers 연구는 almond snack이 gut microbiome, metabolite, inflammation marker, satiety hormone을 동시에 바꿀 수 있는지 보는 식품 intervention 축이다.
+- [[Anger and Longevity Claims]] — Anger and longevity claims는 chronic anger, resentment, stress arousal이 건강 노화에 나쁠 수 있다는 대중 심리 narrative를 다룬다.
+- [[Bedtime Procrastination and Self-Regulation]] — Bedtime procrastination은 졸리거나 자야 한다는 것을 알면서도 취침을 미루는 행동이며, self-regulation과 stress physiology가 함께 작동할 수 있다.
+- [[Brain-Abdomen Hydraulic Coupling]] — Brain-abdomen hydraulic coupling은 abdominal muscle contraction이 vertebral venous plexus를 통해 spinal/brain pressure wave와 tiny brain motion을 만들 수 있다는 mouse physiology 연구 축이다.
+- [[Choline and Anxiety]] — Choline and anxiety 연구는 anxiety disorder에서 뇌 choline-containing compound가 낮게 관찰될 수 있다는 신호를 다룬다.
+- [[Cholinergic Perceptual-Cognitive Training]] — Cholinergic perceptual-cognitive training은 acetylcholine signaling을 올리는 약물과 고부하 지각 훈련을 결합해 학습 속도를 바꿀 수 있는지 보는 연구 축이다.
+- [[Emotional Trauma Symptom Clusters]] — Emotional trauma symptom clusters는 외상 경험 뒤에 나타날 수 있는 정서, 신체, 행동, 관계 반응을 묶어 보는 실용적 관찰 틀이다.
+- [[Histamine Brain System]] — Histamine brain system은 histamine을 allergy molecule만이 아니라 cognition, emotion, sleep, reward를 조절하는 neuromodulator로 보는 연구 축이다.
+- [[Holographic Principle]] — Holographic principle은 어떤 volume 안의 gravitational physics가 그 boundary에 있는 lower-dimensional information으로 기술될 수 있다는 theoretical physics 관점이다.
+- [[Inner Speech and Anendophasia]] — Inner speech and anendophasia는 사람의 생각이 항상 말로 이루어진다는 가정에 의문을 제기하고, inner speech의 존재·강도·부재를 spectrum으로 보는 관점이다.
+- [[Interstitium]] — Interstitium은 조직 사이의 fluid-filled space와 connective tissue network를 단절된 빈틈이 아니라 서로 연결된 fluid circulation layer로 보려는 anatomy 연구 축이다.
+- [[Personalized Diet Microbiome Framework]] — Personalized diet microbiome framework는 단일 "좋은 음식"보다 개인의 반복 식품과 변동 식품이 gut microbiome을 어떻게 흔드는지 추적하려는 접근이다.
+- [[Psyllium Fiber Mechanics]] — Psyllium fiber mechanics는 psyllium husk의 효과를 단순 fiber gram이 아니라 viscosity, water-holding capacity, stool water content로 설명하는 관점이다.
+- [[Supplement Stack Failure Modes]] — Supplement stack failure modes는 supplement protocol이 실패하는 이유를 성분 효능보다 dose math, goal mismatch, missing diagnosis, lifestyle substitution 관점에서 보는 taxonomy다.
+- [[Visceral Fat and Brain Aging]] — Visceral fat and brain aging 연구는 body weight보다 abdominal visceral fat exposure가 long-term brain atrophy와 cognition에 더 직접적인 risk marker일 수 있다는 관점이다.
+- [[Vitamin B12 and Muscle Mitochondria]] — Vitamin B12 and muscle mitochondria 연구는 B12를 anemia와 neuropathy만이 아니라 skeletal muscle energy metabolism과 연결해 보는 축이다.
 - [[5-HT2A receptor]] — 5-HT2A receptor는 cortical pyramidal neuron과 일부 interneuron에서 psychedelic, serotonin, glutamate signaling이 만나는 GPCR target이다.
 - [[Gut Microbial Tryptophan Metabolism]] — Gut microbial tryptophan metabolism은 dietary tryptophan이 host와 microbiome 사이에서 indole, kynurenine, serotonin pathway로 갈라지며 immunity, barrier, redox, mitochondria, aging disease risk를 조절하는 축이다.
 - [[Gut-Derived Acetaldehyde and MASH]] — Gut-derived acetaldehyde and MASH 연구는 dietary fructose가 gut microbiota를 통해 ethanol-like toxic metabolite를 만들고, 이 metabolite가 liver fibrosis를 밀 수 있다는 축이다.
@@ -179,6 +196,7 @@ kb/ 페이지의 카탈로그. frontmatter 기반으로 재생성 가능한 캐�
 
 ## Glossary
 
+- [[Heart Rate Variability]] — HRV(Heart Rate Variability)는 연속된 심장 박동 사이 간격이 얼마나 유연하게 변하는지를 나타내는 marker다.
 - [[Aryl Hydrocarbon Receptor]] — Aryl hydrocarbon receptor(AhR)는 환경·식이·microbial small molecule에 반응하는 ligand-activated transcription factor다.
 - [[Kynurenine Pathway]] — Kynurenine pathway는 tryptophan이 IDO 또는 TDO를 거쳐 kynurenine 계열 metabolite로 분해되는 대사 경로다.
 - [[Mitophagy]] — Mitophagy는 손상되었거나 필요 없어진 mitochondria를 autophagy machinery로 선택적으로 제거하는 mitochondrial quality-control 과정이다.
@@ -226,9 +244,9 @@ kb/ 페이지의 카탈로그. frontmatter 기반으로 재생성 가능한 캐�
 
 ## Health
 
-- 총 페이지: 186
-- 단일 출처 페이지: 128/186 (출처 없는 페이지 35 별도)
+- 총 페이지: 204
+- 단일 출처 페이지: 143/204 (출처 없는 페이지 36 별도)
 - 미해결 논쟁: 0
 - 최신 동향 만료: 0 (6개월 기준)
 - 고아 페이지: 0 (glossary 제외)
-- 마지막 rebuild-index: 2026-05-11
+- 마지막 rebuild-index: 2026-05-14

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-27T09:30:00Z
-modified: 2026-04-27T07:14:32Z
+modified: 2026-05-14T15:50:00Z
 tags:
   - kb
   - health
@@ -46,6 +46,8 @@ Nootropics 커뮤니티에서는 "처음에는 선명한 집중감, 이후 둔�
 - [[Phosphatidylserine]] — membrane/cortisol/ADHD 후보
 - [[B-complex]] — choline은 전통적 B vitamin은 아니지만 methylation/one-carbon stack에서 같이 논의됨
 - [[ADHD Medication and Supplement Stacking]] — cholinergic load와 ADHD 약물 스택의 상호작용 추적
+- [[Choline and Anxiety]] — anxiety disorder의 brain choline marker 연구
+- [[Cholinergic Perceptual-Cognitive Training]] — donepezil과 perceptual-cognitive training의 작은 실험 신호
 - Alpha-GPC dementia meta-analysis: https://pmc.ncbi.nlm.nih.gov/articles/PMC10041421/
 - Stroke risk cohort: https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2786547
 - TMAO/atherosclerosis signal: https://pubmed.ncbi.nlm.nih.gov/34948275/

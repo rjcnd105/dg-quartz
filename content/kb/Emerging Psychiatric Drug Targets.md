@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-08T08:30:39Z
-modified: 2026-05-11T05:31:24Z
+modified: 2026-05-14T15:50:00Z
 tags:
   - kb
   - health
@@ -38,3 +38,4 @@ European Neuropsychopharmacology review는 기존 psychiatry drug discovery가 b
 - [[TMS Antidepressant Mechanisms]] — 약물이 아닌 circuit intervention의 mechanistic target
 - [[PTSD Single-Cell Neurobiology]] — psychiatric target discovery가 cell-type-specific으로 이동하는 흐름
 - [[Thyroid-Serotonin Mood Axis]] — endocrine augmentation과 serotonin mechanism hypothesis
+- [[Histamine Brain System]] — dopamine/serotonin 밖의 neuromodulator map과 psychiatric overlap
