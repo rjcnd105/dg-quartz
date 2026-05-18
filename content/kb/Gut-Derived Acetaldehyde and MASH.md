@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-11T05:23:57Z
-modified: 2026-05-11T05:31:24Z
+modified: 2026-05-14T20:24:32Z
 tags:
   - kb
   - health
@@ -10,27 +10,27 @@ tags:
   - liver
 ---
 
-Gut-derived acetaldehyde and MASH 연구는 dietary fructose가 gut microbiota를 통해 ethanol-like toxic metabolite를 만들고, 이 metabolite가 liver fibrosis를 밀 수 있다는 축이다.
+장 유래 acetaldehyde와 MASH 연구는 식이 fructose가 장내 미생물군을 통해 ethanol 유사 독성 대사산물을 만들고, 이 대사산물이 간 섬유화를 밀 수 있다는 축이다.
 
 ## 핵심 내용
 
-Reddit microbiomenews summary는 Cell Metabolism 2026 논문을 바탕으로, high sugar/fructose exposure가 특정 gut microbiota의 endogenous acetaldehyde production을 늘리고, 이 acetaldehyde가 liver로 이동해 hepatic stellate cell activation과 MMP7 증가를 통해 fibrosis를 촉진한다고 요약한다 (출처: [[How Sugar Turns Your Gut Into a Liver-Destroying Factory (And The "Smart Probiotic" That Stops It)]]).
+Reddit microbiomenews 요약은 Cell Metabolism 2026 논문을 바탕으로, 높은 설탕·fructose 노출이 특정 장내 미생물군의 내인성 acetaldehyde 생성을 늘리고, 이 acetaldehyde가 간으로 이동해 hepatic stellate cell 활성화와 MMP7 증가를 통해 섬유화를 촉진한다고 요약한다 (출처: [[How Sugar Turns Your Gut Into a Liver-Destroying Factory (And The "Smart Probiotic" That Stops It)]]).
 
-내부 `Link to Study`는 Cell Metabolism 논문 "Targeting microbiota-generated acetaldehyde to prevent progression of metabolic dysfunction-associated steatotic liver disease"로 확인된다. UK Biobank publication record와 ScienceDirect metadata는 PubMed ID 41775257, DOI 10.1016/j.cmet.2026.01.021, March 2026 publication을 가리킨다.
+내부 `Link to Study`는 Cell Metabolism 논문 "Targeting microbiota-generated acetaldehyde to prevent progression of metabolic dysfunction-associated steatotic liver disease"로 확인된다. UK Biobank 출판 기록과 ScienceDirect 메타데이터는 PubMed ID 41775257, DOI 10.1016/j.cmet.2026.01.021, 2026년 3월 출판을 가리킨다.
 
-이 framing의 전환점은 MASLD/MASH를 단순 calorie overload나 hepatic de novo lipogenesis만으로 보지 않고, gut microbial fermentation product가 liver injury signal로 작동할 수 있다는 점이다. Reddit summary는 acetaldehyde-degrading engineered _Ligilactobacillus salivarius_ HAM이 preclinical model에서 fibrosis를 막았다고 정리한다.
+이 해석 틀의 전환점은 MASLD/MASH를 단순 열량 과잉이나 간 de novo lipogenesis만으로 보지 않고, 장내 미생물 발효 산물이 간 손상 신호로 작동할 수 있다는 점이다. Reddit 요약은 acetaldehyde를 분해하도록 설계한 _Ligilactobacillus salivarius_ HAM이 전임상 모델에서 섬유화를 막았다고 정리한다.
 
 ## 해석 경계
 
-Human population data의 sugar-liver mortality association과 engineered probiotic intervention은 근거 단계가 다르다. Probiotic은 animal/diet-induced preclinical model signal이며, 실제 MASH patient에서 safety, colonization stability, acetaldehyde clearance, fibrosis endpoint가 검증된 것은 아니다.
+사람 인구 자료의 설탕-간 사망률 연관과 설계 probiotic 개입은 근거 단계가 다르다. Probiotic은 동물·식이 유도 전임상 모델 신호이며, 실제 MASH 환자에서 안전성, 정착 안정성, acetaldehyde 제거, 섬유화 평가 지표가 검증된 것은 아니다.
 
-이 주제는 "당을 먹어도 probiotic으로 상쇄"가 아니라, [[Dysbiosis]]와 gut-liver toxic metabolite가 metabolic liver disease를 악화시키는 mechanism 후보로 둬야 한다.
+이 주제는 "당을 먹어도 probiotic으로 상쇄"가 아니라, [[Dysbiosis]]와 장-간 독성 대사산물이 대사성 간질환을 악화시키는 기전 후보로 둬야 한다.
 
 ## 관련 링크
 
-- [[Gut-Derived Metabolic Reprogramming]] — gut-derived metabolites와 systemic tissue injury
-- [[Gut Microbial Tryptophan Metabolism]] — gut metabolite가 liver, immune, aging axis에 관여하는 다른 사례
-- [[Dysbiosis]] — taxonomic imbalance보다 functional metabolite output이 중요함
-- [[Biomarker Interpretation Ladder]] — association, mechanism, intervention endpoint 분리
+- [[Gut-Derived Metabolic Reprogramming]] — 장 유래 대사산물과 전신 조직 손상
+- [[Gut Microbial Tryptophan Metabolism]] — 장 대사산물이 간, 면역, 노화 축에 관여하는 다른 사례
+- [[Dysbiosis]] — 분류군 불균형보다 기능성 대사산물 출력이 중요함
+- [[Biomarker Interpretation Ladder]] — 연관, 기전, 개입 평가 지표 분리
 - Cell Metabolism paper: https://www.sciencedirect.com/science/article/pii/S1550413126000434
 - UK Biobank publication record: https://www.ukbiobank.ac.uk/publications/targeting-microbiota-generated-acetaldehyde-to-prevent-progression-of-metabolic-dysfunction-associated-steatotic-liver-disease/

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-08T08:30:39Z
-modified: 2026-05-08T08:30:39Z
+modified: 2026-05-18T06:06:55Z
 tags:
   - kb
   - health
@@ -24,6 +24,8 @@ Wired가 다룬 Nature Communications 연구는 regular coffee drinker 31명과 
 - Caffeinated coffee는 anxiety/attention 일부 지표, decaf는 memory/sleep quality/physical activity 일부 지표와 연결됐다.
 
 따라서 coffee effect는 caffeine뿐 아니라 polyphenol, microbiome substrate, bile acid metabolism, immune signaling이 섞인 dietary exposure로 보는 편이 낫다.
+
+Sciverse 보도도 같은 Nature Communications 연구를 coffee의 prebiotic-like effect로 해석한다 (출처: [[Scientists discovered that coffee acts as a prebiotic, feeding specific gut bacteria that directly control your stress and emotional state]]). 다만 "specific gut bacteria가 stress와 emotional state를 직접 control한다"는 제목은 과장이다. 이 연구에서 더 보수적인 해석은 caffeinated/decaffeinated coffee가 microbiome과 일부 mood/cognition 지표를 함께 바꿨고, caffeine-independent coffee compound 후보를 분리해 볼 필요가 있다는 정도다.
 
 ## 해석 경계
 

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-27T06:31:44Z
-modified: 2026-04-27T06:31:44Z
+modified: 2026-05-18T06:06:55Z
 tags:
   - kb
   - health
@@ -22,6 +22,7 @@ Astaxanthin은 미세조류와 해산물에 있는 붉은 carotenoid다. 항산�
 - **흡수 조건**: 지용성이므로 식사 지방과 함께 섭취할 때 흡수가 유리하다는 practical point는 타당하다. 공복 capsule보다 지방 포함 식사가 더 일관적이다.
 - **인간 근거**: 작은 RCT에서 2-8 mg/day 수준 astaxanthin이 CRP, DNA oxidative damage marker, 면역 반응 일부를 개선했다는 보고가 있다 (PMC2845588). 피부 노화 meta-analysis도 탄력·수분·주름 지표에서 긍정 신호를 정리하지만, 연구 규모와 제품 조성이 다양하다 (PMC8472736).
 - **운동·회복**: 러너 대상 8 mg/day 4주 연구는 muscle soreness나 cytokine/oxylipin 상승을 줄이지 못했고, 일부 immune protein 감소를 상쇄하는 정도의 신호를 보였다 (PubMed 37025615).
+- **전달체 연구**: ASX-loaded _Akkermansia muciniphila_ 연구는 astaxanthin을 _Akkermansia_ cell envelope에 loading해 simulated intestinal/colonic fluid에서 bioaccessibility를 높인 delivery-system 연구다 (출처: [[New Horizons of Astaxanthin-loaded Akkermansia muciniphila as an Integrated Dietary Supplement Physicochemical Structures and Gastrointestinal Fate]]). 이는 제품/사람 효능보다 지용성 carotenoid의 안정성·장 표적 release 문제를 다룬 전임상 제형 연구로 읽는다.
 
 ## 근거 경계
 
@@ -44,6 +45,7 @@ Astaxanthin은 미세조류와 해산물에 있는 붉은 carotenoid다. 항산�
 
 - [[Trans Fats]] — lipid oxidation과 만성 염증 맥락
 - [[Omega-3와 정신건강]] — 해산물·지용성 영양소·염증 조절 축
+- [[Akkermansia muciniphila]] — ASX-loaded _Akkermansia_ 같은 postbiotic delivery 후보
 - [[Nrf2]] — antioxidant response 경로
 - [[SIRT1]] — 노화·염증·대사 조절 경로
 - 2026 systematic review: https://pmc.ncbi.nlm.nih.gov/articles/PMC12840775/

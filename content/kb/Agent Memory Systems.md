@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-17T08:00:00Z
-modified: 2026-05-08T08:30:39Z
+modified: 2026-05-18T06:34:02Z
 tags:
   - kb
   - llm
@@ -105,6 +105,7 @@ Cross-model 전이 가능 (model-agnostic meta-knowledge) 하지만 self-generat
 ## 관련 링크
 
 - [[Memory Intelligence Agent (MIA)]] — 위 원칙의 구체적 구현
+- [[Personalized Research Automation Agents]] — skill bank, memory module, planner policy를 함께 진화시키는 research automation 사례
 - [[Memory Transfer Learning]] — 4-format taxonomy와 abstraction-transferability 실증
 - [[Test-Time Learning]] — 메모리 업데이트 타이밍의 한 축
 - [[LLM Wiki 패턴]] — knowledge-oriented 메모리의 한 형태

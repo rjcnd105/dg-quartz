@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-14T15:37:30Z
-modified: 2026-05-14T15:37:30Z
+modified: 2026-05-18T06:34:02Z
 tags:
   - kb
   - health
@@ -24,5 +24,6 @@ New York Times feature는 Theise, Wells 등의 연구를 중심으로, skin 아�
 ## 관련 링크
 
 - [[Brain-Abdomen Hydraulic Coupling]] — body pressure와 brain fluid movement의 mechanical route
+- [[Organ Intrinsic Nervous Systems]] — organ matrix가 local neuron identity와 organization을 지도한다는 발달생물학 사례
 - [[Gut-Derived Metabolic Reprogramming]]
 - 2018 Scientific Reports interstitium paper: https://doi.org/10.1038/s41598-018-23062-6

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-07T07:55:00Z
-modified: 2026-05-14T16:21:38Z
+modified: 2026-05-18T06:36:05Z
 tags:
   - kb
   - index
@@ -71,6 +71,8 @@ kb/ 페이지의 카탈로그. frontmatter 기반으로 재생성 가능한 캐�
 
 ## AI / LLM
 
+- [[Perceptual Decision Feedback Loops]] — Perceptual decision feedback loops는 sensory cortex가 단순 입력 처리기가 아니라, decision variable을 downstream cortical feedback과 함께 형성할 수 있다는 관점이다.
+- [[Personalized Research Automation Agents]] — Personalized research automation agents는 autonomous research pipeline이 topic만 처리하는 것이 아니라, 연구자별 resource, preference, output style, history를 장기적으로 반영해야 한다는 설계 축이다.
 - [[Faithful Uncertainty]] — Faithful uncertainty는 LLM이 외부 세계의 진실을 완벽히 맞히는 능력이 아니라, 자기 내부 불확실성을 언어적 확신도와 맞추는 metacognitive 능력이다.
 - [[Managed Agent Architecture]] — Managed agent architecture는 agent의 brain, hands, session을 서로 교체 가능한 interface로 분리해 long-horizon agent를 더 안정적으로 운영하는 설계다.
 - [[Mixture of Experts]] — Mixture of Experts(MoE)는 model capacity와 per-token active compute를 분리하는 neural architecture다
@@ -100,56 +102,70 @@ kb/ 페이지의 카탈로그. frontmatter 기반으로 재생성 가능한 캐�
 
 ## Health / Science
 
-- [[ADHD Mortality and Health Risk]] — ADHD mortality and health risk는 ADHD를 단순 attention 문제가 아니라 사고, substance use, sleep, impulsivity, comorbidity, healthcare access가 누적되는 lifespan risk 문제로 보는 관점이다.
-- [[Almonds and Gut-Appetite Markers]] — Almonds and gut-appetite markers 연구는 almond snack이 gut microbiome, metabolite, inflammation marker, satiety hormone을 동시에 바꿀 수 있는지 보는 식품 intervention 축이다.
+- [[Akkermansia muciniphila]] — _Akkermansia muciniphil&#x61;_&#xB294; intestinal mucus layer와 밀접한 mucin-degrading bacterium으로, metabolic health, gut barrier, inflammation 연구에서 next-generation beneficial microbe 후보로 자주 등장한다.
+- [[Autistic Traits, Uncertainty, and Affect Labeling]] — Autistic traits, intolerance of uncertainty(IU), affect labeling(AL)의 연결은 autism-related traits와 anxiety가 단일 경로가 아니라 uncertainty appraisal과 emotion labeling capacity를 통해 엮일 수 있다는 모델이다.
+- [[Exercise-Induced SF1 Neurons]] — Exercise-induced SF1 neurons는 exercise training adaptation이 muscle-local 변화만이 아니라, ventromedial hypothalamus(VMH)의 steroidogenic factor-1(SF1) neuron activity와도 연결될 수 있다는 mouse 연구 축이다.
+- [[Gut Microbiome Stress Reactivity]] — Gut microbiome stress reactivity는 gut microbial diversity와 SCFA-producing capacity가 acute stress 때 cortisol/subjective stress trajectory와 어떻게 연결되는지 보는 연구 축이다.
+- [[Omega-3 and Exercise Adaptation]] — Omega-3 and exercise adaptation은 EPA/DHA를 단순 항염 보충제가 아니라 운동 후 염증 해소, 근육막 fluidity, blood flow, muscle protein synthesis 같은 회복·적응 과정의 후보 조절자로 보는 관점이다.
+- [[Organ Intrinsic Nervous Systems]] — Organ intrinsic nervous systems는 장기 안의 peripheral neuron identity가 미리 정해진 신경 프로그램만으로 결정되는 것이 아니라, organ tissue와 extracellular matrix가 local instruction을 제공한다는 관점이다.
+- [[Partially Hydrolyzed Guar Gum]] — Partially hydrolyzed guar gum(PHGG)는 guar gum을 부분 가수분해해 점도를 낮춘 soluble prebiotic fiber로, IBS/constipation tolerability와 gut microbiome shift 연구에서 자주 쓰인다.
+- [[Positive Affect Treatment]] — Positive Affect Treatment(PAT)는 depression/anxiety에서 negative affect를 낮추는 것만이 아니라 low positive affect, reward sensitivity, approach behavior를 직접 표적으로 삼는 psychotherapy 접근이다.
+- [[Sedentary Behavior and Movement Breaks]] — Sedentary behavior and movement breaks는 운동 부족과 별개로, 하루 중 긴 sitting bout 자체가 cardiometabolic risk와 musculoskeletal discomfort를 만든다는 관점이다.
+- [[Self-Blame Network in Anxiety]] — Self-blame network in anxiety는 anxiety가 단순 worry가 아니라 guilt, shame, self-attack, self-distancing failure 같은 self-referential emotion pattern과 연결될 수 있다는 fMRI 연구 흐름이다.
+- [[Senescent Cell Aptamers]] — Senescent cell aptamers는 senescent cell 표면의 결합 표지를 찾아, 노화 세포를 detection 또는 targeted delivery 대상으로 삼으려는 생명공학 접근이다.
+- [[Seven-Day Fasting Proteome Response]] — Seven-day fasting proteome response는 prolonged water-only fasting에서 fuel switch보다 늦게 나타나는 systemic protein-level adaptation을 추적한 human proteomics 연구 축이다.
+- [[Short-Term Diet and Biological Age Markers]] — Short-term diet and biological age markers는 식단 조성이 몇 주 단위로 cholesterol, insulin, CRP 같은 physiological biomarker profile을 바꿀 수 있는지 보는 개입 연구 축이다.
+- [[Vitamin K2 and Mitochondrial Stress]] — Vitamin K2 and mitochondrial stress는 vitamin K2를 bone/vascular carboxylation만이 아니라 mitochondrial oxidative stress response와 longevity signaling 후보로 보는 전임상 연구 축이다.
+- [[ADHD Mortality and Health Risk]] — ADHD 사망률과 건강 위험은 ADHD를 단순 주의력 문제가 아니라 사고, 물질 사용, 수면, 충동성, 동반질환, 의료 접근성이 누적되는 생애 위험 문제로 보는 관점이다.
+- [[Almonds and Gut-Appetite Markers]] — 아몬드와 장-식욕 지표 연구는 아몬드 간식이 장내 미생물군, 대사산물, 염증 지표, 포만 호르몬을 동시에 바꿀 수 있는지 보는 식품 개입 축이다.
 - [[Anger and Longevity Claims]] — Anger and longevity claims는 chronic anger, resentment, stress arousal이 건강 노화에 나쁠 수 있다는 대중 심리 narrative를 다룬다.
 - [[Bedtime Procrastination and Self-Regulation]] — Bedtime procrastination은 졸리거나 자야 한다는 것을 알면서도 취침을 미루는 행동이며, self-regulation과 stress physiology가 함께 작동할 수 있다.
-- [[Brain-Abdomen Hydraulic Coupling]] — Brain-abdomen hydraulic coupling은 abdominal muscle contraction이 vertebral venous plexus를 통해 spinal/brain pressure wave와 tiny brain motion을 만들 수 있다는 mouse physiology 연구 축이다.
+- [[Brain-Abdomen Hydraulic Coupling]] — 뇌-복부 수압 결합은 복부 근육 수축이 척추 정맥총을 통해 척수·뇌 압력파와 아주 작은 뇌 움직임을 만들 수 있다는 마우스 생리학 연구 축이다.
 - [[Choline and Anxiety]] — Choline and anxiety 연구는 anxiety disorder에서 뇌 choline-containing compound가 낮게 관찰될 수 있다는 신호를 다룬다.
 - [[Cholinergic Perceptual-Cognitive Training]] — Cholinergic perceptual-cognitive training은 acetylcholine signaling을 올리는 약물과 고부하 지각 훈련을 결합해 학습 속도를 바꿀 수 있는지 보는 연구 축이다.
 - [[Emotional Trauma Symptom Clusters]] — Emotional trauma symptom clusters는 외상 경험 뒤에 나타날 수 있는 정서, 신체, 행동, 관계 반응을 묶어 보는 실용적 관찰 틀이다.
-- [[Histamine Brain System]] — Histamine brain system은 histamine을 allergy molecule만이 아니라 cognition, emotion, sleep, reward를 조절하는 neuromodulator로 보는 연구 축이다.
+- [[Histamine Brain System]] — 뇌 histamine 시스템은 histamine을 알레르기 분자만이 아니라 인지, 감정, 수면, 보상을 조절하는 neuromodulator로 보는 연구 축이다.
 - [[Holographic Principle]] — Holographic principle은 어떤 volume 안의 gravitational physics가 그 boundary에 있는 lower-dimensional information으로 기술될 수 있다는 theoretical physics 관점이다.
 - [[Inner Speech and Anendophasia]] — Inner speech and anendophasia는 사람의 생각이 항상 말로 이루어진다는 가정에 의문을 제기하고, inner speech의 존재·강도·부재를 spectrum으로 보는 관점이다.
 - [[Interstitium]] — Interstitium은 조직 사이의 fluid-filled space와 connective tissue network를 단절된 빈틈이 아니라 서로 연결된 fluid circulation layer로 보려는 anatomy 연구 축이다.
 - [[Personalized Diet Microbiome Framework]] — Personalized diet microbiome framework는 단일 "좋은 음식"보다 개인의 반복 식품과 변동 식품이 gut microbiome을 어떻게 흔드는지 추적하려는 접근이다.
 - [[Psyllium Fiber Mechanics]] — Psyllium fiber mechanics는 psyllium husk의 효과를 단순 fiber gram이 아니라 viscosity, water-holding capacity, stool water content로 설명하는 관점이다.
-- [[Supplement Stack Failure Modes]] — Supplement stack failure modes는 supplement protocol이 실패하는 이유를 성분 효능보다 dose math, goal mismatch, missing diagnosis, lifestyle substitution 관점에서 보는 taxonomy다.
-- [[Visceral Fat and Brain Aging]] — Visceral fat and brain aging 연구는 body weight보다 abdominal visceral fat exposure가 long-term brain atrophy와 cognition에 더 직접적인 risk marker일 수 있다는 관점이다.
-- [[Vitamin B12 and Muscle Mitochondria]] — Vitamin B12 and muscle mitochondria 연구는 B12를 anemia와 neuropathy만이 아니라 skeletal muscle energy metabolism과 연결해 보는 축이다.
+- [[Supplement Stack Failure Modes]] — 보충제 스택 실패 유형은 보충제 프로토콜이 실패하는 이유를 성분 효능보다 용량 계산, 목표 불일치, 누락된 진단, 생활습관 대체 관점에서 보는 분류다.
+- [[Visceral Fat and Brain Aging]] — 내장지방과 뇌 노화 연구는 체중보다 복부 내장지방 노출이 장기 뇌 위축과 인지 기능에 더 직접적인 위험 지표일 수 있다는 관점이다.
+- [[Vitamin B12 and Muscle Mitochondria]] — Vitamin B12와 근육 미토콘드리아 연구는 B12를 빈혈과 신경병증만이 아니라 골격근 에너지 대사와 연결해 보는 축이다.
 - [[5-HT2A receptor]] — 5-HT2A receptor는 cortical pyramidal neuron과 일부 interneuron에서 psychedelic, serotonin, glutamate signaling이 만나는 GPCR target이다.
-- [[Gut Microbial Tryptophan Metabolism]] — Gut microbial tryptophan metabolism은 dietary tryptophan이 host와 microbiome 사이에서 indole, kynurenine, serotonin pathway로 갈라지며 immunity, barrier, redox, mitochondria, aging disease risk를 조절하는 축이다.
-- [[Gut-Derived Acetaldehyde and MASH]] — Gut-derived acetaldehyde and MASH 연구는 dietary fructose가 gut microbiota를 통해 ethanol-like toxic metabolite를 만들고, 이 metabolite가 liver fibrosis를 밀 수 있다는 축이다.
-- [[Gut-Eye Axis]] — Gut-eye axis는 gut microbiome, intestinal barrier, systemic immune signaling, ocular inflammation을 하나의 연결 축으로 보는 관점이다.
-- [[Intermittent Fasting in Older Adults]] — Intermittent fasting in older adults는 weight, cardiometabolic marker, cognition/mental health signal을 sarcopenia와 frailty risk와 함께 읽어야 하는 dietary intervention 영역이다.
+- [[Gut Microbial Tryptophan Metabolism]] — 장내 미생물의 tryptophan 대사는 식이 tryptophan이 숙주와 미생물군 사이에서 indole, kynurenine, serotonin 경로로 갈라지며 면역, 장벽, 산화환원, 미토콘드리아, 노화 관련 질병 위험을 조절하는 축이다.
+- [[Gut-Derived Acetaldehyde and MASH]] — 장 유래 acetaldehyde와 MASH 연구는 식이 fructose가 장내 미생물군을 통해 ethanol 유사 독성 대사산물을 만들고, 이 대사산물이 간 섬유화를 밀 수 있다는 축이다.
+- [[Gut-Eye Axis]] — 장-눈 축은 장내 미생물군, 장 장벽, 전신 면역 신호, 눈 염증을 하나의 연결 축으로 보는 관점이다.
+- [[Intermittent Fasting in Older Adults]] — 고령자의 간헐적 단식은 체중, 심혈관·대사 지표, 인지·정신건강 신호를 근감소증과 허약 위험과 함께 읽어야 하는 식이 개입 영역이다.
 - [[Metformin Gut Mechanism]] — Metformin gut mechanism은 metformin의 glucose-lowering effect를 liver-only model이 아니라 intestinal epithelial mitochondrial complex I inhibition으로 읽는 접근이다.
-- [[Microdosing Psychedelics]] — Microdosing psychedelics는 overt psychedelic effect를 피하려는 낮은 용량의 LSD, psilocybin 등 serotonergic psychedelic 반복 사용이다.
+- [[Microdosing Psychedelics]] — Psychedelic microdosing은 뚜렷한 환각 효과를 피하려는 낮은 용량의 LSD, psilocybin 등 serotonin계 psychedelic 반복 사용이다.
 - [[Nootropic Self-Experiment Reports]] — Nootropic self-experiment reports는 supplement나 drug-like compound를 개인이 순차적으로 시험하고 주관적 focus, mood, sleep, motivation을 기록한 낮은 신뢰도 자료다.
 - [[Stem Cell Mitophagy and Senescence]] — Stem cell mitophagy and senescence 연구는 oxidative/glycative stress가 mesenchymal stem cell mitochondrial quality control을 무너뜨리고, low-dose antioxidant pretreatment가 mitophagy marker와 senescence phenotype을 일부 회복할 수 있는지 보는 영역이다.
-- [[Thyroid-Serotonin Mood Axis]] — Thyroid-serotonin mood axis는 thyroid hormone 상태가 brain serotonin responsiveness와 affective illness augmentation strategy에 영향을 줄 수 있다는 관점이다.
-- [[ADHD Attention State Regulation]] — ADHD의 attention 문제는 단순한 attention deficit보다, 관심·각성·수면성 slow wave가 attention allocation을 흔드는 state regulation 문제로 읽는 편이 설명력이 높다.
+- [[Thyroid-Serotonin Mood Axis]] — 갑상샘-serotonin 기분 축은 갑상샘 호르몬 상태가 뇌 serotonin 반응성과 정동장애 보강 치료 전략에 영향을 줄 수 있다는 관점이다.
+- [[ADHD Attention State Regulation]] — ADHD의 주의력 문제는 단순한 주의력 결핍보다, 관심·각성·수면성 slow wave가 주의 배분을 흔드는 상태 조절 문제로 읽는 편이 설명력이 높다.
 - [[Bacteroides fragilis Toxin]] — Bacteroides fragilis toxin(BFT)은 colon epithelial cell의 claudin-4에 먼저 결합한 뒤 E-cadherin cleavage와 inflammation/tumor axis를 유도하는 pro-carcinogenic bacterial toxin이다.
 - [[Coffee and Gut-Brain Axis]] — Coffee and gut-brain axis 연구는 coffee를 caffeine source 하나가 아니라 microbiome, metabolite, inflammation, mood에 동시에 작용하는 dietary factor로 보는 접근이다.
-- [[Cognitive Brain Health Span]] — Cognitive brain health span은 aging을 inevitable decline curve로만 보지 않고, clarity, connectedness, emotional balance 같은 multidimensional brain fitness가 lifespan 동안 개선될 수 있는지 보는 관점이다.
+- [[Cognitive Brain Health Span]] — 인지적 뇌 건강 수명은 노화를 피할 수 없는 하락 곡선으로만 보지 않고, 명료함, 연결감, 정서 균형 같은 다차원적 뇌 건강이 생애 동안 개선될 수 있는지 보는 관점이다.
 - [[Emerging Psychiatric Drug Targets]] — Emerging psychiatric drug targets는 monoamine 중심 psychopharmacology 밖에서 ion channel, stress peptide, neuroinflammation, intracellular stress, arousal/reward system을 치료 표적으로 보는 흐름이다.
 - [[GABA and Task Performance]] — Oral GABA의 task-performance claim은 stress/fatigue/confusion 감소 가능성은 흥미롭지만, 표본이 작고 blood-brain barrier 논쟁이 남아 있어 강한 nootropic 결론으로 쓰기 어렵다.
 - [[Hypnagogic Mental States]] — Hypnagogic mental states는 wakefulness와 sleep을 binary로 나누기보다, memory flashes, environmental awareness, dream-like imagery, goal-directed thought가 vigilance stage와 부분적으로 독립해 나타나는 상태 공간으로 보는 접근이다.
-- [[IBD Stool Host DNA Biomarkers]] — IBD stool host DNA biomarker는 fecal sample 안의 human DNA fragment를 noise로 버리지 않고, gut inflammation의 cell-origin signal로 읽는 접근이다.
+- [[IBD Stool Host DNA Biomarkers]] — IBD 대변 숙주 DNA 생체표지자는 대변 표본 안의 사람 DNA 조각을 잡음으로 버리지 않고, 장 염증의 세포 기원 신호로 읽는 접근이다.
 - [[Legumes Soy and Hypertension]] — Legume and soy intake는 potassium, magnesium, soluble fiber, soy isoflavone, short-chain fatty acid 경로를 통해 hypertension risk 감소와 연결될 수 있는 dietary pattern이다.
-- [[Lithium in Mood and Suicide Risk]] — Lithium은 bipolar disorder의 long-term mood stabilization과 suicide-risk reduction에서 오래된 약물이지만, monitoring이 필요한 좁은 therapeutic window를 가진다.
-- [[Myelin Metabolic Signaling]] — Myelin metabolic signaling은 glucose와 ketone-derived acetyl-CoA가 oligodendrocyte lineage의 proliferation, maturation, myelin synthesis를 조절한다는 관점이다.
+- [[Lithium in Mood and Suicide Risk]] — Lithium은 bipolar disorder의 장기 기분 안정화와 자살 위험 감소에서 오래된 약물이지만, 모니터링이 필요한 좁은 치료 범위를 가진다.
+- [[Myelin Metabolic Signaling]] — Myelin 대사 신호는 포도당과 ketone 유래 acetyl-CoA가 oligodendrocyte 계열의 증식, 성숙, myelin 합성을 조절한다는 관점이다.
 - [[PDE7 Inhibition]] — PDE7 inhibition은 cAMP breakdown을 줄여 PKA/CREB signaling, dopaminergic feedback, neuroinflammation, mitochondrial calcium handling을 조절하려는 investigational target이다.
-- [[PTSD Single-Cell Neurobiology]] — PTSD single-cell neurobiology는 trauma-related psychiatric disorder를 bulk brain region 평균이 아니라 cell type별 transcriptomic, epigenomic, vascular/immune change로 분해하는 접근이다.
+- [[PTSD Single-Cell Neurobiology]] — PTSD 단일세포 신경생물학은 trauma 관련 정신질환을 뇌 영역 전체 평균이 아니라 세포 유형별 전사체, 후성유전체, 혈관·면역 변화로 분해하는 접근이다.
 - [[Psilocybin Neuroplasticity]] — Psilocybin neuroplasticity 연구는 psychedelic acute entropy increase와 weeks-later structural/connectivity signal이 psychological insight, wellbeing, cognitive flexibility와 연결되는지 탐구한다.
-- [[S1PC and Aged Garlic Extract]] — S1PC(S-1-propenyl-L-cysteine)는 aged garlic extract에 포함된 compound로, adipose eNAMPT secretion과 hypothalamic signaling을 통해 aged muscle function에 영향을 줄 수 있다는 연구 신호가 있다.
-- [[Social Anxiety Gut-Brain Axis]] — Social anxiety gut-brain axis는 social anxiety disorder의 일부 phenotype이 gut microbiota와 medial prefrontal cortex metabolism을 통해 기능적으로 연결될 수 있다는 연구 가설이다.
-- [[TMS Antidepressant Mechanisms]] — TMS antidepressant mechanism 연구는 prefrontal cortex stimulation이 stress-disrupted synaptic structure와 specific neuron activity를 빠르게 회복할 수 있는지 탐구한다.
-- [[Biomarker Interpretation Ladder]] — Biomarker interpretation ladder는 biomarker 연구를 읽을 때 "무엇이 실제로 증명됐는가"를 단계별로 분리하는 패턴이다
+- [[S1PC and Aged Garlic Extract]] — S1PC(S-1-propenyl-L-cysteine)는 숙성 마늘 추출물에 포함된 화합물로, 지방 조직의 eNAMPT 분비와 시상하부 신호 전달을 통해 노화한 근육 기능에 영향을 줄 수 있다는 연구 신호가 있다.
+- [[Social Anxiety Gut-Brain Axis]] — 사회불안의 장-뇌 축은 사회불안장애의 일부 표현형이 장내 미생물군과 안쪽 전전두엽 대사를 통해 기능적으로 연결될 수 있다는 연구 가설이다.
+- [[TMS Antidepressant Mechanisms]] — TMS 항우울 기전 연구는 전전두엽 피질 자극이 스트레스로 손상된 시냅스 구조와 특정 neuron 활성을 빠르게 회복할 수 있는지 탐구한다.
+- [[Biomarker Interpretation Ladder]] — 생체표지자 해석 사다리는 생체표지자 연구를 읽을 때 "무엇이 실제로 증명됐는가"를 단계별로 분리하는 패턴이다
 - [[Epigenetic Skin Aging]] — Epigenetic skin aging은 epidermal DNA methylation pattern을 피부의 biological age와 visible aging phenotype을 읽는 biomarker로 사용하는 접근이다
 - [[Gut-Derived Metabolic Reprogramming]] — Gut-derived metabolic reprogramming은 gut microbiome 변화가 circulating metabolite, immune cell state, tissue degeneration으로 이어지는 축이다
-- [[Ketamine Antidepressant Mechanisms]] — Ketamine의 rapid antidepressant effect는 단일 "NMDA antagonist" 설명만으로 충분하지 않고, prefrontal cortex disinhibition, opioid receptor 경로, BDNF/TrkB/mGluR5 plasticity가 시간대별로 나뉘는 것으로 보인다. 2026년 Weill Cornell 연구 2건을 다룬 clipping은 초기 kick과 장기 유지 mechanism을 분리한다 (출처: How Scientists Cracked the Ketamine Code for Depression).
+- [[Ketamine Antidepressant Mechanisms]] — Ketamine의 빠른 항우울 효과는 단일 "NMDA antagonist" 설명만으로 충분하지 않고, 전전두엽 피질 탈억제, opioid receptor 경로, BDNF/TrkB/mGluR5 가소성이 시간대별로 나뉘는 것으로 보인다. 2026년 Weill Cornell 연구 2건을 다룬 clipping은 초기 효과와 장기 유지 기전을 분리한다 (출처: How Scientists Cracked the Ketamine Code for Depression).
 - [[Melatonin]] — Melatonin은 circadian timing signal로 쓰이는 sleep supplement다
-- [[NSI-189]] — NSI-189(ALTO-100, Amdiglurax)는 hippocampal neurogenesis와 plasticity를 겨냥한 investigational small molecule이다
+- [[NSI-189]] — NSI-189(ALTO-100, Amdiglurax)는 해마 신경생성과 가소성을 겨냥한 개발 중 저분자 약물이다
 - [[Gut Microbiome and Pediatric Psychiatric Disorders]] — 소아·청소년 psychiatric disorder에서 gut microbiome 조성 차이가 관찰될 수 있다는 연구 흐름
 - [[ALCAR]] — ALCAR(acetyl-L-carnitine)는 mitochondrial fatty acid transport와 acetyl group metabolism에 관여하는 carnitine derivative다
 - [[Agmatine]] — Agmatine은 arginine decarboxylation으로 생기는 endogenous amine이다
@@ -175,14 +191,14 @@ kb/ 페이지의 카탈로그. frontmatter 기반으로 재생성 가능한 캐�
 - [[Vitamin D3 and K2]] — Vitamin D3는 calcium/phosphate homeostasis와 면역·근골격 기능에 관여하고, vitamin K2는 vitamin K-dependent protein carboxylation에 관여한다
 - [[Zinc]] — Zinc는 면역, 상처 회복, taste/smell, testosterone, neurotransmission에 관여하는 필수 미네랄이다
 - [[CBT-I]] — CBT-I(Cognitive Behavioral Therapy for Insomnia, 불면 인지행동치료)는 만성 불면에서 약물이나 보충제보다 먼저 권고되는 구조화된 비약물 치료다
-- [[Green Tea Beverages]] — Green tea beverages are food-format sources of caffeine, catechins such as EGCG, and L-theanine
-- [[ADHD Medication and Supplement Stacking]] — ADHD 약물 위에 supplement를 쌓을 때 핵심 위험은 단일 성분보다 catecholamine load, serotonergic load, cholinergic load, CYP interaction, sleep disruption, BP/HR 변화가 누적되는 것이다.
+- [[Green Tea Beverages]] — 녹차 음료는 카페인, EGCG 같은 카테킨, L-theanine을 식품 형태로 제공한다
+- [[ADHD Medication and Supplement Stacking]] — ADHD 약물 위에 보충제를 쌓을 때 핵심 위험은 단일 성분보다 catecholamine 부하, serotonin계 부하, choline계 부하, CYP 상호작용, 수면 방해, 혈압·심박 변화가 누적되는 것이다.
 - [[Alpha7 nicotinic acetylcholine receptor]] — Alpha7 nicotinic acetylcholine receptor(α7 nAChR)는 acetylcholine과 choline에 반응하는 ligand-gated ion channel이다
 - [[Astaxanthin]] — Astaxanthin은 미세조류와 해산물에 있는 붉은 carotenoid다
 - [[EGCG]] — EGCG(epigallocatechin gallate)는 녹차 catechin 중 가장 많이 연구되는 polyphenol이다
 - [[Matcha]] — Matcha는 잎 전체를 분말로 섭취하는 녹차 형태다
 - [[Tropisetron]] — Tropisetron은 5-HT3 receptor antagonist로 쓰이는 antiemetic 계열 약물이면서, Alpha7 nicotinic acetylcholine receptor partial agonist로도 작용한다
-- [[Caffeine and Sleep Restriction]] — Lin et al. (2024)의 double-blind randomized PET-MRI study에 따르면, 5일 chronic sleep restriction 동안 반복 caffeine intake는 sleep restriction만 있을 때의 grey matter upregulation과 반대 방향의 grey matter reduction을 동반했다 (출처: Repeated caffeine intake suppresses cerebral grey matter responses to chronic sleep restriction in an A1 adenosine receptor-dependent manner a double-blind randomized controlled study with PET-MRI).
+- [[Caffeine and Sleep Restriction]] — Lin et al. (2024)의 이중눈가림 무작위 PET-MRI 연구에 따르면, 5일의 만성 수면 제한 동안 반복적인 카페인 섭취는 수면 제한만 있을 때의 회백질 증가와 반대 방향인 회백질 감소를 동반했다 (출처: Repeated caffeine intake suppresses cerebral grey matter responses to chronic sleep restriction in an A1 adenosine receptor-dependent manner a double-blind randomized controlled study with PET-MRI).
 - [[Carbohydrate Preference and Energy Expenditure]] — 단일 mouse study에 따르면, carbohydrate-rich staple food 선호는 총 calorie 섭취 증가 없이도 energy expenditure 저하와 간 지질 대사 변화로 fat mass 증가를 동반할 수 있다 (출처: Bread Might Be Making You Gain Weight Even Without Eating More Calories).
 - [[N-Acetyl Cysteine]] — **N-Acetyl Cysteine (NAC)**
 - [[Omega-3와 정신건강]] — Omega-3 다가불포화지방산(ALA, EPA, DHA)이 **전전두엽(PFC) 구조·기능 유지**와 염증 조절에 관여하고, Trans Fats가 이 경로를 역방향으로 교란할 수 있다는 단일 Reddit 종합 post의 주장과 관련 임상 근거를 함께 정리한 페이지. ADHD·양극성장애·불안·우울·자폐와의 연결은 질환별로 근거 강도가 다르다 (출처: The relationship between Omega 3s, fried foods and mental healthadhd.).
@@ -244,9 +260,9 @@ kb/ 페이지의 카탈로그. frontmatter 기반으로 재생성 가능한 캐�
 
 ## Health
 
-- 총 페이지: 204
-- 단일 출처 페이지: 143/204 (출처 없는 페이지 36 별도)
+- 총 페이지: 220
+- 단일 출처 페이지: 155/220 (출처 없는 페이지 36 별도)
 - 미해결 논쟁: 0
 - 최신 동향 만료: 0 (6개월 기준)
 - 고아 페이지: 0 (glossary 제외)
-- 마지막 rebuild-index: 2026-05-14
+- 마지막 rebuild-index: 2026-05-18

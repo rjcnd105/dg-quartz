@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-07T03:10:01Z
-modified: 2026-05-07T03:34:32Z
+modified: 2026-05-18T06:34:02Z
 tags:
   - kb
   - glossary
@@ -31,6 +31,7 @@ Clock age가 낮아졌다는 것은 biomarker가 변했다는 뜻이지, 임상�
 
 - [[DNA methylation]]
 - [[Epigenetic Skin Aging]]
+- [[Short-Term Diet and Biological Age Markers]] — 4주 식단 개입의 biomarker-based biological age 변화 사례
 - [[Biomarker Interpretation Ladder]] — clock age 변화와 clinical endpoint를 분리하는 해석 패턴
 
 ## 자료

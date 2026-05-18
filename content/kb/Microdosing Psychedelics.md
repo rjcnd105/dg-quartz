@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-11T05:23:57Z
-modified: 2026-05-11T05:23:57Z
+modified: 2026-05-14T20:24:32Z
 tags:
   - kb
   - health
@@ -10,33 +10,33 @@ tags:
   - psychedelic
 ---
 
-Microdosing psychedelics는 overt psychedelic effect를 피하려는 낮은 용량의 LSD, psilocybin 등 serotonergic psychedelic 반복 사용이다.
+Psychedelic microdosing은 뚜렷한 환각 효과를 피하려는 낮은 용량의 LSD, psilocybin 등 serotonin계 psychedelic 반복 사용이다.
 
 ## 핵심 내용
 
-Polito and Stevenson의 2019 observational study는 6주 동안 microdosing participant를 추적했다 (출처: [[A systematic study of microdosing psychedelics]]). Daily report에서는 dosing day에 connectedness, contemplation, creativity, focus, happiness, productivity, wellness가 모두 baseline보다 높게 보고됐지만, 대부분 다음날까지 유지되지 않았다. Day 2에는 focus와 productivity만 작게 남았다.
+Polito and Stevenson의 2019년 관찰 연구는 6주 동안 microdosing 참가자를 추적했다 (출처: [[A systematic study of microdosing psychedelics]]). 매일 보고에서는 복용일에 연결감, 사색, 창의성, 집중, 행복감, 생산성, 웰빙이 모두 기준보다 높게 보고됐지만, 대부분 다음날까지 유지되지 않았다. 2일차에는 집중과 생산성만 작게 남았다.
 
-Long-term questionnaire에서는 depression과 stress 감소, mind wandering 감소, absorption 증가, neuroticism 증가가 관찰됐다. Creativity, wellbeing, mindfulness 같은 popular narrative의 핵심 claim은 long-term battery에서 뚜렷하게 지지되지 않았다.
+장기 설문에서는 우울과 스트레스 감소, mind wandering 감소, 몰입 성향 증가, neuroticism 증가가 관찰됐다. 창의성, 웰빙, mindfulness 같은 대중 서사의 핵심 주장은 장기 검사 묶음에서 뚜렷하게 지지되지 않았다.
 
-## Expectancy와 placebo 문제
+## 기대 효과와 placebo 문제
 
-Study Two는 263명의 expectation을 조사했다. 참가자들은 microdosing이 거의 모든 영역을 넓게 개선할 것이라고 예상했지만, 기대 순위와 실제 관찰 변화의 순위는 잘 맞지 않았다. 따라서 2019 연구는 "전부 placebo"라고 단정하지도, "일반 cognitive enhancer"라고 확정하지도 않는다.
+Study Two는 263명의 기대를 조사했다. 참가자들은 microdosing이 거의 모든 영역을 넓게 개선할 것이라고 예상했지만, 기대 순위와 실제 관찰 변화의 순위는 잘 맞지 않았다. 따라서 2019 연구는 "전부 placebo"라고 단정하지도, "일반 인지 향상제"라고 확정하지도 않는다.
 
 ## 최신 동향 (2026-05)
 
-2019 observational study 이후 placebo-controlled 문헌이 늘었다. 2024 rapid review는 controlled dose + placebo comparator 연구 19개를 검토하고, microdosing을 전부 placebo로 환원하기에는 근거가 아직 부족하다고 정리했다. 반면 2026 preregistered meta-analysis는 14개 연구, 1614명, 59개 effect size에서 전반적 cognitive benefit을 찾지 못했고, cognitive control은 감소했다고 보고했다.
+2019년 관찰 연구 이후 placebo 대조 문헌이 늘었다. 2024년 rapid review는 통제 용량 + placebo 비교 연구 19개를 검토하고, microdosing을 전부 placebo로 환원하기에는 근거가 아직 부족하다고 정리했다. 반면 2026년 사전등록 메타분석은 14개 연구, 1614명, 59개 효과크기에서 전반적 인지 이득을 찾지 못했고, 인지 통제는 감소했다고 보고했다.
 
-2026 psilocybin microdosing double-blind longitudinal trials도 placebo 대비 안정적인 cognitive/emotional enhancement를 지지하지 않았다. 별도 2026 creativity mega-analysis는 divergent thinking quality 일부 signal을 보고했지만, convergent thinking이나 넓은 cognition benefit은 제한적이었다.
+2026년 psilocybin microdosing 이중눈가림 장기 시험도 placebo 대비 안정적인 인지·정서 향상을 지지하지 않았다. 별도 2026년 창의성 mega-analysis는 발산적 사고 품질 일부 신호를 보고했지만, 수렴적 사고나 넓은 인지 이득은 제한적이었다.
 
 ## 해석 경계
 
-Microdosing은 법적·의학적 supervision 밖에서 dose purity, potency, psychiatric vulnerability, medication interaction이 모두 불확실하다. 현재 근거는 "일부 subjective/affective/cognitive signal이 있을 수 있다"는 수준이지, ADHD, depression, productivity, creativity를 위한 self-treatment rule이 아니다.
+Microdosing은 법적·의학적 감독 밖에서 용량 순도, 효력, 정신과적 취약성, 약물 상호작용이 모두 불확실하다. 현재 근거는 "일부 주관적·정서적·인지적 신호가 있을 수 있다"는 수준이지, ADHD, 우울, 생산성, 창의성을 위한 자가치료 규칙이 아니다.
 
 ## 관련 링크
 
-- [[5-HT2A receptor]] — serotonergic psychedelic의 주요 receptor target
-- [[Psilocybin Neuroplasticity]] — high-dose psilocybin plasticity signal과 microdosing을 구분
-- [[ADHD Medication and Supplement Stacking]] — attention 목적 self-experiment의 안전 경계
+- [[5-HT2A receptor]] — serotonin계 psychedelic의 주요 receptor target
+- [[Psilocybin Neuroplasticity]] — 고용량 psilocybin 가소성 신호와 microdosing을 구분
+- [[ADHD Medication and Supplement Stacking]] — 주의력 목적 자가실험의 안전 경계
 - 2024 rapid review: https://doi.org/10.1177/02698811241254831
 - 2026 cognition meta-analysis: https://pubmed.ncbi.nlm.nih.gov/41314362/
 - 2026 psilocybin longitudinal trials: https://pubmed.ncbi.nlm.nih.gov/41110634/

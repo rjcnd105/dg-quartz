@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-11T05:23:57Z
-modified: 2026-05-11T05:23:57Z
+modified: 2026-05-18T06:34:02Z
 tags:
   - kb
   - health
@@ -30,6 +30,7 @@ Vikraman et al. (2026) PLoS One study는 human adipose-derived mesenchymal stem 
 ## 관련 링크
 
 - [[Mitophagy]] — damaged mitochondria clearance 개념
+- [[Senescent Cell Aptamers]] — senescent cell detection/targeting을 aptamer로 접근하는 biotechnology 사례
 - [[Melatonin]] — sleep/circadian supplement와 cell-biology effect 구분
 - [[CoQ10]] — mitochondrial electron transport와 antioxidant cycling
 - [[Nrf2]] — antioxidant response transcription factor

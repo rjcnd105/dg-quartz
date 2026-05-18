@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-27T06:31:44Z
-modified: 2026-04-27T06:31:44Z
+modified: 2026-05-18T06:34:02Z
 tags:
   - kb
   - glossary
@@ -24,3 +24,4 @@ Nrf2(nuclear factor erythroid 2-related factor 2)는 세포의 antioxidant respo
 - [[Matcha]]
 - [[Astaxanthin]]
 - [[L-theanine]]
+- [[Vitamin K2 and Mitochondrial Stress]]

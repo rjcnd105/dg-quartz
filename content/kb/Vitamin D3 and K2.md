@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-27T09:30:00Z
-modified: 2026-04-27T09:30:00Z
+modified: 2026-05-18T06:34:02Z
 tags:
   - kb
   - health
@@ -45,5 +45,6 @@ Vitamin D3는 calcium/phosphate homeostasis와 면역·근골격 기능에 관�
 - [[Magnesium]] — vitamin D metabolism과 함께 논의되지만 독립적으로 관리해야 함
 - [[Zinc]] — micronutrient stack에서 장기 과다 위험이 비슷하게 중요
 - [[B-complex]] — lab-first 접근이 더 나은 비타민 stack
+- [[Vitamin K2 and Mitochondrial Stress]] — K2를 C. elegans mitochondrial stress/longevity signaling에서 본 전임상 연구
 - NIH ODS vitamin D: https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/
 - NIH ODS vitamin K: https://ods.od.nih.gov/factsheets/VitaminK/

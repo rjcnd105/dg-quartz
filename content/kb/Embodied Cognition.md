@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-23T00:00:00Z
-modified: 2026-04-23T00:00:00Z
+modified: 2026-05-18T06:34:02Z
 tags:
   - kb
   - philosophy
@@ -73,6 +73,7 @@ Brent Dean Robbins의 확장: **agapic love (무조건적 사랑)** = 대인 관
 
 - [[Phenomenology]] — 배경 철학 전통
 - [[Affordances]] — Gibson의 ecological psychology 개념. Embodied cognition의 핵심 단위
+- [[Perceptual Decision Feedback Loops]] — sensory cortex가 action/choice loop 안에서 decision variable을 형성하는 neuroscience 사례
 - [[LLM Harness]] — 대조적으로 symbolic·disembodied 인지의 현대 구현. Embodied 관점에서는 grip 없는 시스템
 - 원 논문: https://doi.org/10.1177/00221678261422777
 - 기사: https://www.psypost.org/cognition-might-emerge-from-embodied-grip-with-the-world-rather-than-abstract-mental-processes/
