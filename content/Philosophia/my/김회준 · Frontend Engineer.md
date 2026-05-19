@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2024-02-03T21:41:12Z
-modified: 2026-05-07T06:18:43Z
+modified: 2026-05-19T00:08:18Z
 tags:
   - 이력서
   - react
@@ -17,7 +17,9 @@ tags:
 
 <div style="height:1rem;"></div>
 
-7년 차 프론트엔드 엔지니어. React/TypeScript 실무를 중심으로 개발 팀에서 기술 선두적인 역할을 해왔으며, **선언적·스키마 기반** 설계를 프로젝트에 꾸준히 녹여왔습니다. 최근에는 같은 원칙을 개발 환경과 에이전트에도 확장하는 중이에요.
+7년 차 프론트엔드 엔지니어 입니다. React/TypeScript 실무를 중심으로 개발 팀에서 기술 선두적인 역할을 해왔습니다.
+팀  차원에서 어떻게 하면 더 능률적으로 일을 할 수 있을지 늘 고심합니다.
+저는  팀원들과 같이 프로덕트를 만들어 나갈때 가슴이 뛰고 깊게 몰입합니다.
 
 - **GitHub:** [rjcnd105](https://github.com/rjcnd105) · **Email:** rjcnd123@gmail.com · **Blog:** [블로그](https://rjcnd105.github.io/dg-quartz/)
 
