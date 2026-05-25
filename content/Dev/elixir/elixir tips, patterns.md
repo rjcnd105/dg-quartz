@@ -1,10 +1,8 @@
 ---
 publish: true
 created: 2024-04-15T07:49:03Z
-modified: 2025-12-22T09:42:42Z
-cssclasses: ""
+modified: 2026-05-25T08:11:11Z
 ---
-
 
 ### Elixir Monad Result Pattern
 

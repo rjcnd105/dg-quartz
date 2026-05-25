@@ -1,10 +1,8 @@
 ---
 publish: true
 created: 2024-11-08T08:26:25Z
-modified: 2025-10-16T01:16:19Z
-cssclasses: ""
+modified: 2026-05-25T09:17:05Z
 ---
-
 
 # Elixir in action - part1
 
@@ -109,7 +107,7 @@ Circle.area(2) |> IO.puts()
 Code.fetch_docs(Circle)
 ```
 
-https://hexdocs.pm/ex_doc/readme.html 사용시 바로 `@doc`, `@moduledoc`을 기반으로 HTML 문서를 생성할 수 있다.
+https://hexdocs.pm/ex\_doc/readme.html 사용시 바로 `@doc`, `@moduledoc`을 기반으로 HTML 문서를 생성할 수 있다.
 
 ```elixir
 defmodule Circle2 do
@@ -130,9 +128,30 @@ end
 
 [Typespecs 공식 문서 참고](https://hexdocs.pm/elixir/typespecs.html)
 
+Elixir 1.17부터 compiler 자체가 gradual set-theoretic type warning을 내기 시작했다. 1.17은 같은 함수 안의 pattern 기반 map/struct/atom/binary 문제를 잡고, 1.18은 함수 호출과 return path를 더 검사하며, 1.19는 protocol dispatch/implementation까지 검사한다. 1.20 계열은 guard, 함수 body, clause 간 type inference, map key/domain tracking까지 확장된다.
+
+그래서 최신 Elixir에서는 `@spec`을 "Dialyzer용 부가 문서"로만 보지 않는 편이 낫다. public boundary, callback, protocol, data structure constructor, 외부 API 결과에는 타입을 남긴다. 내부 private function은 compiler inference가 충분하면 생략해도 되지만, result tuple이나 struct/map shape가 domain contract라면 명시한다.
+
+```elixir
+defmodule Accounts do
+  @type user :: %{id: pos_integer(), email: String.t(), active?: boolean()}
+  @type result(value) :: {:ok, value} | {:error, atom()}
+
+  @spec activate(user()) :: result(user())
+  def activate(%{id: id, email: email} = user)
+      when is_integer(id) and is_binary(email) do
+    {:ok, %{user | active?: true}}
+  end
+end
+```
+
+Elixir 1.20은 Erlang/OTP 27+를 요구하고 OTP 29와 호환된다. OTP 26까지 지원해야 하는 프로젝트라면 Elixir 1.19 이하를 기준으로 잡고, 1.20 전용 compiler/type warning에 의존하지 않는다.
+
 ## Atoms
 
 상수. `F#` 에 있는 열거형과 비슷하다.
+
+atom은 VM atom table에 영구적으로 올라간다. 외부 입력을 `String.to_atom/1`으로 바로 변환하지 않는다. 허용 목록으로 pattern matching 하거나 이미 존재하는 atom만 `String.to_existing_atom/1`로 바꾼다. OTP 29의 secure coding 흐름에서도 atom 생성 함수는 잠재적으로 unsafe한 함수군으로 본다.
 
 ```elixir
 :an_atom
@@ -150,32 +169,40 @@ IO.puts(MyIO == Elixir.IO)
 # -> true
 ```
 
+```elixir
+def parse_status("draft"), do: {:ok, :draft}
+def parse_status("published"), do: {:ok, :published}
+def parse_status(_), do: {:error, :invalid_status}
+```
+
 ## Bool
 
-Elixir에는 전용 부울이 없다. 대신 :true, :false atom을 사용한다.<br>
-콜론 없이도 사용할 수 있다.
+Elixir의 `true`, `false`는 atom이고 `boolean()` type은 `true | false`이다.<br>
+`and`, `or`, `not`은 boolean 전용이고 `&&`, `||`, `!`는 truthy/falsy 연산이다. `nil`과 `false`만 falsy다.
+
+Elixir 1.18부터 `unless`는 soft deprecated다. 새 코드에서는 `unless`보다 `if`, `case`, multi-clause function을 쓴다. 양쪽 branch가 값을 반환하고 strict boolean을 기대하면 `case bool do true -> ...; false -> ... end`가 더 명확하다.
 
 ```elixir
-true == true |> IO.puts()
+(true == true) |> IO.puts()
 
 # and
-true and false |> IO.puts()
+(true and false) |> IO.puts()
 
 # or
-false or true |> IO.puts()
+(false or true) |> IO.puts()
 
 # not
-not false |> IO.puts()
+(not false) |> IO.puts()
 
 # ||, &&, ! 사용 가능
 # 5
 (nil || false || 5 || true) |> IO.puts()
 # 6
-true && 6 |> IO.puts()
+(true && 6) |> IO.puts()
 IO.puts(!true)
 
-# none atom
-not :an_atom_other_than_true_or_false
+# nil 여부는 boolean predicate로 만든 뒤 not을 쓴다.
+not is_nil(:an_atom_other_than_true_or_false)
 ```
 
 ## Tuples
@@ -275,7 +302,7 @@ List.replace_at([1, 2, 3], -1, 0)
 
 # zip
 # [{1, 3, 5}, {2, 4, 6}]
-List.zip([[1, 2], [3, 4], [5, 6]])
+Enum.zip([[1, 2], [3, 4], [5, 6]])
 # to_tuple
 # {:share, [:elixir, 163]}
 List.to_tuple([:share, [:elixir, 163]])
@@ -284,9 +311,17 @@ List.to_tuple([:share, [:elixir, 163]])
 List의 꼬리쪽에 수정하게되면 앞에 있는 요소들을 전부 얕은 복사를 하므로 비용이 크게 든다. <br>
 새 요소를 맨 앞으로 푸쉬하면 훨신 비용이 적게 든다
 
+Elixir 1.18부터 `List.zip/1`는 deprecated이고 `Enum.zip/1`을 쓴다. Elixir 1.20 계열에서는 `List.first!/1`, `List.last!/1`도 추가되어 "없으면 터져야 하는" invariant를 명확히 표현할 수 있다.
+
 ## Maps
 
 맵은 키와 값이 임의의 용어일 수 있는 키-값 저장소입니다. Elixir에서는 지도를 두 가지 용도로 사용합니다. 이는 동적으로 크기가 조정된 키-값 구조를 강화하는 데 사용되지만 간단한 레코드(잘 정의된 두 개의 이름이 함께 묶인 필드)를 관리하는 데에도 사용됩니다.
+
+OTP 26 이후 map은 record-like data와 dictionary에서 더 공격적으로 최적화됐다. record-like map은 key가 compile-time에 정해져 있고 32개 이하일 때 가장 좋다. 새 인스턴스는 같은 constructor 함수에서 모든 key를 넣어 만들고, 이미 존재해야 하는 key는 `%{map | key: value}` update를 쓴다.
+
+OTP 26부터 `:maps.merge/2`는 small map의 key tuple sharing을 더 잘 활용한다. default가 많은 map을 여러 번 `Map.get(map, key, default)`로 읽는 것보다 default map을 한 번 `Map.merge(defaults, input)` 하는 쪽이 나을 수 있다. OTP 28부터는 compiler가 `maps:put/3` 계열을 map syntax로 rewrite할 수 있고, OTP 29에서는 map을 순회하는 여러 API의 iteration order가 같은 map에 대해 일관되게 정리됐다. 그래도 map order 자체는 business rule로 삼지 않는다. 출력 순서가 중요하면 `Enum.sort/1`를 명시한다.
+
+Elixir 1.20 계열 type checker는 `Map.put/3`, `Map.delete/2`, `Map.fetch!/2`, `Map.update!/3` 같은 연산으로 key가 추가/삭제/필수화되는 흐름까지 추적한다. 그래서 map shape가 domain contract라면 `Map.fetch/2`와 pattern matching을 더 적극적으로 쓰는 편이 warning 품질이 좋다.
 
 ```elixir
 empty_map = %{}
@@ -325,6 +360,21 @@ bob = %{name: "Bob", age: 25, works_at: "Initech"}
 next_years_bob = %{bob | age: 26, works_at: "Initrode"}
 ```
 
+```elixir
+defaults = %{active?: true, role: :member}
+
+def normalize_user(input) do
+  Map.merge(defaults, input)
+end
+
+def require_email(user) do
+  case Map.fetch(user, :email) do
+    {:ok, email} when is_binary(email) -> {:ok, email}
+    _ -> {:error, :email_required}
+  end
+end
+```
+
 ## Binaries, bitsequence, bitstring, string, Character lists
 
 ```elixir
@@ -347,6 +397,15 @@ next_years_bob = %{bob | age: 26, works_at: "Initrode"}
 # <>를 사용하여 바이너리 또는 비트열을 연결할 수 있다.
 # <<1, 2, 3, 4>>
 <<1, 2>> <> <<3, 4>>
+```
+
+binary pattern에서 size가 기존 변수라면 Elixir 1.20 계열부터 pin을 명시하는 방향으로 간다. 새 코드에서는 "값을 새로 bind"하는 것과 "기존 size 값을 사용"하는 것을 분리해서 쓴다.
+
+```elixir
+size = 4
+<<prefix::binary-size(^size), rest::binary>> = "ping-pong"
+# prefix == "ping"
+# rest == "-pong"
 ```
 
 바이너리 문자열
@@ -388,6 +447,8 @@ str = ~S(Not interpolated \n value: #{3 + 0.14})
 일반적으로 바이너리 스트링 (~s)를 더 선호해야 함<br>
 ASCII의 범위 내에 있는 정수 코드의 리스트임
 
+Elixir 1.17부터 single-quoted charlist는 deprecated다. charlist가 필요한 Erlang interop, legacy API, file path interop 같은 경우에만 `~c"ABC"`를 명시한다. 일반 application text는 binary string(`"ABC"`)을 쓴다.
+
 ```elixir
 # ABC
 IO.puts([65, 66, 67])
@@ -396,11 +457,8 @@ IO.puts([65, 66, 67])
 # ABC
 IO.puts(~c"ABC")
 
-# 작은 따옴표로 생성 가능
-# ABC
-IO.puts(~c"ABC")
-
-# ~c를 권장하고 작은 따옴표로 써도 ~c로 변환됨
+# 작은 따옴표 charlist는 deprecated
+# 'ABC' 대신 ~c"ABC"
 ```
 
 ## IO lists
@@ -408,6 +466,8 @@ IO.puts(~c"ABC")
 IO 목록은 바이트 스트림을 점진적으로 구축해야 할 때 유용합니다. 목록에 추가하는 것은 O(n) 작업이기 때문에 일반적으로 이 경우 목록은 효과적이지 않습니다. 대조적으로, IO 목록에 추가하는 것은 중첩을 사용할 수 있기 때문에 O(1)입니다.
 
 내부적으로는 구조가 평면화되어 사람이 읽을 수 있는 출력을 볼 수 있습니다. IO 목록을 파일이나 네트워크 소켓으로 보내면 동일한 효과를 얻을 수 있습니다.
+
+반복적으로 문자열을 만들 때 `<>`를 누적하지 말고 iodata를 누적한 뒤 마지막에 `IO.iodata_to_binary/1`를 호출한다. Elixir 1.20 계열에는 `IO.iodata_empty?/1`도 있어 nested iodata가 실제로 빈 출력인지 확인할 수 있다.
 
 ```elixir
 iolist = []
@@ -422,14 +482,44 @@ iolist = [iolist, " IO list."]
 IO.puts(iolist)
 ```
 
+## JSON
+
+Elixir 1.18부터 built-in `JSON` module이 있다. 단순 encode/decode는 stdlib로 충분하다. 기존 Phoenix/Ecto 프로젝트가 `Jason`을 표준으로 쓰고 있으면 일관성을 위해 그대로 둘 수 있지만, 새 라이브러리나 dependency를 줄이고 싶은 작은 tool에서는 `JSON`을 먼저 본다.
+
+`JSON.decode/1`은 `{:ok, term}` / `{:error, reason}`를 반환하고, `JSON.decode!/1`은 실패 시 raise한다. 외부 입력은 bang 함수보다 tuple 반환을 우선한다. network/socket에 바로 쓸 payload는 binary보다 `JSON.encode_to_iodata!/1`가 더 적합할 수 있다.
+
+```elixir
+case JSON.decode(payload) do
+  {:ok, %{"id" => id}} when is_integer(id) ->
+    {:ok, id}
+
+  {:ok, _} ->
+    {:error, :invalid_shape}
+
+  {:error, reason} ->
+    {:error, reason}
+end
+
+JSON.encode_to_iodata!(%{ok: true})
+```
+
 ## Enum
 
 Enum은 열거 가능한 구조를 다루며 List에만 국한되지 않는다. <br>
 Enum의 함수들은 호출되면 모든 열거 가능한 항목을 순회하기 때문에 lazy하게 처리하고 싶다면 Stream 모듈을 사용하시오
 
+Elixir 1.18+에서는 단순 "변환 후 합계/곱"에 `Enum.sum_by/2`, `Enum.product_by/2`를 쓸 수 있다. `Enum.map(... ) |> Enum.sum()`보다 의도가 직접적이고 intermediate list를 만들지 않는다. index 접근이 반복되면 `Enum.at/2` 대신 `Enum.with_index/1`, map, tuple, array 같은 자료구조를 다시 고른다.
+
 [Enum 모듈 문서](https://hexdocs.pm/elixir/main/Enum.html)
 
 [Enum Cheatsheet](https://hexdocs.pm/elixir/main/enum-cheat.html)
+
+```elixir
+orders = [%{total: 10}, %{total: 20}, %{total: 30}]
+
+Enum.sum_by(orders, & &1.total)
+# 60
+```
 
 ## 일급 함수(익명 함수, 람다)
 
@@ -499,6 +589,10 @@ range = 1..6
 # [1, 4, 9, 16, 25, 36]
 Enum.map(range, &(&1 * &1))
 
+# Elixir 1.17+에서는 감소 range step을 명시한다.
+Enum.to_list(10..1//-1)
+# [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+
 ## Keyword lists
 # 키워드 목록은 각 요소가 두 요소로 구성된 튜플이고 각 튜플의 첫 번째 요소가 원자인 목록의 특별한 경우이다.
 # 두 번째 요소는 모든 유형이 될 수 있다.
@@ -523,6 +617,9 @@ IO.inspect([100, 200, 300], width: 3, limit: 1)
 # 키워드 대신 Map을 사용하는 것이 더 나은지 궁금할 수 있다.
 # 키워드 목록에는 동일한 키에 대한 여러 값이 포함될 수 있다.
 # 또한 키워드 목록 요소의 순서를 제어할 수 있습니다. 이는 Map에서는 ​​불가능한 일이다.
+#
+# Elixir 1.17+에는 Keyword.intersect/2-3이 있다.
+# 허용된 option subset만 남길 때 직접 reduce하지 않는다.
 
 ## MapSet
 # javascript의 set과 같다고 보면 됨. 열거 순서를 보장하지 않음
@@ -579,11 +676,23 @@ naive_datetime.year
 naive_datetime.hour
 ```
 
+Elixir 1.17부터 `Duration`과 `shift/2` 계열 API가 추가됐다. 날짜/시간에 "1개월", "1일" 같은 calendar-aware 변경을 할 때 단순 초/일수 덧셈으로 모델링하지 않는다. timeout도 `to_timeout/1`로 duration keyword를 명시하면 의도가 좋다.
+
+```elixir
+~D[2016-01-31]
+|> Date.shift(month: 1)
+# ~D[2016-02-29]
+
+Process.send_after(self(), :wake_up, to_timeout(hour: 1))
+```
+
 ## Macro
 
 매크로는 입력 코드의 의미를 변경할 수 있는 Elixir 코드로 구성됩니다. 매크로는 항상 컴파일 타임에 호출됩니다. 입력 Elixir 코드의 구문 분석된 표현을 수신하고 해당 코드의 대체 버전을 반환할 기회가 있습니다.
 
 중요한 점은 매크로가 컴파일 타임 코드 변환기라는 것입니다. 어떤 것이 매크로라는 것을 알 때마다 기본 의미는 그것이 컴파일 타임에 실행되고 대체 코드를 생성한다는 것입니다.
+
+최신 Elixir에서는 macro보다 function, behaviour, protocol을 먼저 고른다. Macro는 DSL surface가 실제로 필요하거나 compile-time code generation이 책임일 때만 둔다. Elixir 1.16+ diagnostics가 좋아졌지만, macro가 만든 코드는 여전히 error span과 dependency tracking을 어렵게 만들 수 있다. macro를 쓸 때는 `quote bind_quoted: ...`로 변수를 명시적으로 주입하고, public macro에는 `@doc`과 예제를 남긴다.
 
 매크로에 대해 배울라면 너무 양이 많으므로 [메타프로그래밍 가이드](https://hexdocs.pm/elixir/quote-and-unquote.html)를 보세요
 
@@ -605,6 +714,16 @@ elixir --no-halt script.exs
 
 Mix 프로젝트를 시작하는 방법에 관계없이 ebin 폴더(.beam 파일이 있는 위치)가 로드 경로에 있으므로 VM이 모듈을 찾을 수 있습니다.
 
+버전 기준:
+
+- Elixir 1.16: OTP 26 시대의 diagnostics, docs, compiler warning 품질 개선이 핵심이다.
+- Elixir 1.17: OTP 27 지원, `Duration`, `Date.shift/2`, `to_timeout/1`, 초기 set-theoretic type warning.
+- Elixir 1.18: built-in `JSON`, type checking of function calls, `mix format --migrate`, `unless` soft deprecation.
+- Elixir 1.19: OTP 28.1+ 지원, protocol type checking, `mix help Mod.fun/arity`, struct update 관련 warning 강화.
+- Elixir 1.20 계열: OTP 27+ 필요, OTP 29 호환, guard/body/clause/map operation type inference 강화.
+
+OTP 26까지 지원해야 하는 프로젝트는 Elixir 1.20으로 올릴 수 없다. OTP 26 runtime boundary가 남아있으면 Elixir 1.19 이하를 유지하고, OTP 27+로 올린 뒤 1.20 type checker 이점을 쓴다.
+
 ```shell
 # 새 프로젝트 시작
 mix new my_project
@@ -616,13 +735,21 @@ mix compile
 mix test
 
 mix run -e "IO.puts(MyProject.hello())"
+
+# deprecation migration
+mix format --migrate
+
+# OTP 27+ profiler
+mix profile.tprof
 ```
 
 ## Pattern matching
 
-= 는 대입이 아닌 패턴 매칭이다.<br>
+\= 는 대입이 아닌 패턴 매칭이다.<br>
 해당 케이스의 매칭이 아닐경우 에러가 발생한다.<br>
 상수를 작성함으로써 특정 케이스에 매칭되도록 할 수 있다.
+
+Elixir 1.17+ compiler는 pattern에서 얻은 type 정보를 warning에 사용한다. map/struct key 오타, 불가능한 binary match, struct field 접근 오류가 더 잘 잡힌다. Elixir 1.18+에서는 recursive variable pattern처럼 절대 matching 될 수 없는 형태가 compile error가 될 수 있으니, 같은 값을 요구하려면 pin(`^`)이나 guard를 명시한다.
 
 ### Tuple
 
@@ -787,6 +914,8 @@ ListHelper.sum([1, 2, 3])
 
 제한된 형태로 사용가능하다. https://hexdocs.pm/elixir/patterns-and-guards.html#guards 여기서 확인 가능
 
+Elixir 1.20 계열에서는 guard의 type inference가 훨씬 중요해졌다. `when is_integer(id)` 같은 guard는 단순 runtime check가 아니라 이후 body type checking에도 정보를 준다. 비교 연산(`<`, `>`)은 term ordering 때문에 서로 다른 type에도 동작하므로, 숫자 의미라면 `is_number/1`, `is_integer/1` 같은 guard를 먼저 둔다. Elixir 1.19+에서는 `min/2`, `max/2`도 guard에서 사용할 수 있다.
+
 ```elixir
 defmodule TestNum do
   def test(x) when x < 0 do
@@ -842,9 +971,9 @@ defmodule UserExtraction do
     if a >= b, do: a, else: b
   end
 
-  ## unless는 if와 반대
+  ## Elixir 1.18+에서는 unless보다 if/case를 선호
   def min(a, b) do
-    unless a >= b, do: a, else: b
+    if a < b, do: a, else: b
   end
 
   ## cond
@@ -945,10 +1074,23 @@ UserExtraction.extract_user(%{
 # {:ok, %{email: "some_email", login: "some_login", password: "some_password"}}
 ```
 
+최신 Elixir에서는 `unless`보다 `if`, `case`, multi-clause function을 우선한다. 특히 `if/else`로 값 선택을 할 때 truthy/falsy를 의도한 것인지, strict boolean을 의도한 것인지 구분한다. strict boolean이면 아래처럼 `case`가 더 명확하다.
+
+```elixir
+case ready? do
+  true -> :run
+  false -> :skip
+end
+```
+
+Elixir 1.20 계열은 `case`, `cond`, `with`에서 occurrence typing을 수행한다. 앞 clause에서 `nil`을 처리하면 뒤 clause는 non-nil이라고 추론하는 식이다. 따라서 expected failure는 `{:ok, value}` / `{:error, reason}` 형태로 맞추고, `with`의 실패 반환 shape도 일관되게 유지하는 편이 compiler warning과 읽기 모두에 좋다.
+
 ## 반복
 
 elixir에는 while이 없다. <br>
 다만 마지막으로 호출하는 함수에 대한 꼬리재귀 최적화가 되어있어 스택이 쌓이지 않아 추가적인 메모리를 소모하지 않는다.
+
+일반 collection 처리는 재귀보다 `Enum`, `Stream`, comprehension을 먼저 쓴다. 직접 재귀는 early termination, streaming parser, tree/graph traversal처럼 shape 자체가 재귀적인 경우에 둔다. 재귀 함수 안에서 `if/else`로 구조를 나누기보다 head/tail pattern과 guard clause를 여러 절로 나누면 type inference와 readability가 좋아진다.
 
 <!-- livebook:{"reevaluate_automatically":true} -->
 
@@ -956,23 +1098,19 @@ elixir에는 while이 없다. <br>
 defmodule IteratorStudy1 do
   def sum_positive_num([]), do: 0
 
-  def sum_positive_num([head | tail]) do
-    if head > 0 do
-      head + sum_positive_num(tail)
-    else
-      sum_positive_num(tail)
-    end
+  def sum_positive_num([head | tail]) when is_number(head) and head > 0 do
+    head + sum_positive_num(tail)
   end
+
+  def sum_positive_num([_head | tail]), do: sum_positive_num(tail)
 
   def nagative_list([]), do: []
 
-  def nagative_list([head | tail]) do
-    if head < 0 do
-      [head | nagative_list(tail)]
-    else
-      nagative_list(tail)
-    end
+  def nagative_list([head | tail]) when is_number(head) and head < 0 do
+    [head | nagative_list(tail)]
   end
+
+  def nagative_list([_head | tail]), do: nagative_list(tail)
 
   def sum_nums(enumerable) do
     Enum.reduce(enumerable, 0, &add_num/2)
@@ -1002,6 +1140,8 @@ IteratorStudy1.sum_nums([1, "not a number", 2, :x, 3, 4])
 ## Comprehensions
 
 https://hexdocs.pm/elixir/Kernel.SpecialForms.html#for/1
+
+Elixir 1.19+ type checker는 `for` generator가 `Enumerable` protocol을 구현하지 않는 값을 받으면 warning을 낸다. comprehension은 "여러 generator + filter + collect"가 핵심일 때 쓰고, 단순 map/filter 한두 단계면 `Enum`/`Stream`이 더 읽기 쉽다. binary generator에서는 element type이 byte/codepoint인지 명확히 하려면 `<<x <- binary>>`와 `<<x::utf8 <- binary>>`를 구분한다.
 
 ```elixir
 
@@ -1054,6 +1194,8 @@ end
 
 Stream은 lazy한 enum이라 보면 된다. <br>
 Stream에 대한 여러 처리는 평가될때 병합되어 계산된다.
+
+Stream은 source가 크거나 무한하거나, 중간 결과를 만들면 손해가 클 때 쓴다. 마지막에는 반드시 `Enum.*`, `Stream.run/1`, `File.write` 같은 consumer가 있어야 실행된다. side effect만 소비한다면 `Enum.to_list()`로 억지 materialize하지 말고 `Stream.run/1`을 쓴다.
 
 ```elixir
 
@@ -1158,10 +1300,29 @@ todo_list =
 구조체는 단순한 맵이므로 성능 및 메모리에서 동일한 특성을 갖는다. <br>
 하지만 구조체 인스턴스는 맵으로 수행할 수 있는 일부 작업이 작동하지 않는다. (예: enum)
 
-Map.to_list(one_half) # [__struct__: Fraction, a: 1, b: 2] <br>
-처럼 __struct__ 비트가 있는데, 구조체에 자동으로 포함되어 적절한 런타임 디스패치와 패턴 일치에 사용됩니다.
+Map.to\_list(one\_half) # \[**struct**: Fraction, a: 1, b: 2] <br>
+처럼 **struct** 비트가 있는데, 구조체에 자동으로 포함되어 적절한 런타임 디스패치와 패턴 일치에 사용됩니다.
 
 https://hexdocs.pm/elixir/Kernel.html#defstruct/1
+
+최신 Elixir에서는 struct를 "이름 붙은 map" 이상으로 다루는 편이 좋다. `@enforce_keys`로 constructor invariant를 잡고, public constructor에서 값 검증을 한다. update는 `%{struct | key: value}` 또는 `%Module{struct | key: value}`를 쓰되, Elixir 1.19+에서는 struct update 전에 값이 해당 struct임을 pattern match 하는 흐름이 더 권장된다.
+
+OTP 28/Elixir 1.19 이후 regex literal은 struct default field로 두지 않는다. `defstruct regex: ~r/foo/` 대신 constructor에서 넣는다.
+
+```elixir
+defmodule Filter do
+  @enforce_keys [:name]
+  defstruct [:name, :regex]
+
+  def new(name) when is_binary(name) do
+    %Filter{name: name, regex: ~r/foo/}
+  end
+
+  def rename(%Filter{} = filter, name) when is_binary(name) do
+    %{filter | name: name}
+  end
+end
+```
 
 ```elixir
 
@@ -1208,6 +1369,8 @@ Fraction.new(1, 2)
 Kernel.inspect/1 함수를 재정의하여 출력시 다르게 보이게 할 수는 있다. <br>
 디버깅을 하는데 유용하지만 너무 믿지는 말라. <br>
 
+민감한 값이 있는 struct는 `@derive {Inspect, except: [...]}` 또는 custom `Inspect` implementation으로 숨긴다. Elixir 1.18+의 `dbg`는 `if`, `with`, code block 출력이 좋아졌고, Elixir 1.20 계열은 pipe 중간 결과를 더 잘 보여준다. 장기적으로 남길 로그는 `IO.inspect/2`보다 `Logger`를 쓰고, OTP 27+/Elixir 1.17+에서는 `Process.set_label/1`로 process label을 남기면 Logger와 test output 추적이 쉬워진다.
+
 디버깅에는 다음과 같은 매크로도 있다.
 https://hexdocs.pm/elixir/Kernel.html#dbg/2
 
@@ -1240,6 +1403,7 @@ defmodule TodoList_proto3 do
   @type todo_item :: %{id: integer(), date: Date.t(), title: String.t()}
   @type todo_list :: %{integer() => todo_item()}
   @type t :: %TodoList_proto3{next_id: pos_integer(), entries: %{integer() => todo_item()}}
+  @type updater :: (todo_item() -> todo_item())
 
   def new() do
     %TodoList_proto3{}
@@ -1264,7 +1428,7 @@ defmodule TodoList_proto3 do
     %TodoList_proto3{todo_list | entries: new_entries, next_id: todo_list.next_id + 1}
   end
 
-  @spec entries(t(), Date.t()) :: t()
+  @spec entries(t(), Date.t()) :: [todo_item()]
   def entries(todo_list, date) do
     todo_list.entries
     |> Map.values()
@@ -1272,7 +1436,7 @@ defmodule TodoList_proto3 do
   end
 
   # 연습과제1 - 항목 업데이트
-  @spec update_entry(t(), integer(), (id :: integer() -> todo_list())) :: t()
+  @spec update_entry(t(), integer(), updater()) :: t()
   def update_entry(todo_list, entry_id, updater_fun) do
     # Map.fetch/2는 항목을 찾아서 존재하면 {:ok, value}, 없으면 :error를 반환
     case Map.fetch(todo_list.entries, entry_id) do
@@ -1307,7 +1471,7 @@ todo_list =
   |> TodoList_proto3.add_entry(%{date: ~D[2023-12-19], title: "Movies"})
 
 TodoList_proto3.entries(todo_list, ~D[2023-12-19])
-|> IO.inspect(pretty: true, label: ~c"hihi2")
+|> IO.inspect(pretty: true, label: "hihi2")
 
 todo_list =
   TodoList_proto3.update_entry(
@@ -1342,13 +1506,13 @@ TodoList_proto3.delete_entry(todo_list, 2)
 
 ```elixir
 defmodule TodoList_proto3.CsvImporter do
-  @spec from_file(charlist()) :: TodoList_proto3.t()
+  @spec from_file(Path.t()) :: TodoList_proto3.t()
   def from_file(path) do
     File.stream!(path)
     |> Stream.map(&String.trim/1)
     |> Stream.map(fn v ->
       [date, name] = String.split(v, ",", trim: true)
-      %{date: Date.from_iso8601!(date), name: name}
+      %{date: Date.from_iso8601!(date), title: name}
     end)
     |> Enum.reduce(TodoList_proto3.new(), &TodoList_proto3.add_entry(&2, &1))
   end
@@ -1358,3 +1522,15 @@ TodoList_proto3.CsvImporter.from_file(
   "/Users/hj/study/elixir-action/livebook/2024_03_24/10_26_57ke/files/data.csv"
 )
 ```
+
+## References
+
+- https://github.com/elixir-lang/elixir/blob/v1.16/CHANGELOG.md
+- https://github.com/elixir-lang/elixir/blob/v1.17/CHANGELOG.md
+- https://github.com/elixir-lang/elixir/blob/v1.18/CHANGELOG.md
+- https://github.com/elixir-lang/elixir/blob/v1.19/CHANGELOG.md
+- https://github.com/elixir-lang/elixir/blob/v1.20/CHANGELOG.md
+- https://hexdocs.pm/elixir/main/gradual-set-theoretic-types.html
+- https://www.erlang.org/blog/otp-26-highlights/
+- https://www.erlang.org/blog/highlights-otp-29/
+- https://www.erlang.org/doc/system/maps.html
