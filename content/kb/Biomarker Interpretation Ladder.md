@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-07T03:34:32Z
-modified: 2026-05-14T20:24:32Z
+modified: 2026-05-26T07:05:13Z
 tags:
   - kb
   - health
@@ -29,6 +29,8 @@ tags:
 
 [[Psychomotor Vigilance Test]] 자료에서는 PVT가 수면 부족에 민감한 행동 평가 지표이지만, 수면 구조나 주관적 졸림 자체는 아니라는 경계가 중요했다.
 
+2026년 health clipping batch에서는 같은 패턴이 더 넓게 반복된다. [[Brief Meditation EEG Dynamics]]의 EEG band 변화, [[Gut Microbiome and Insomnia Severity]]의 16S taxa gradient, [[Grapes and Skin Photoprotection]]의 RNA-seq skin gene expression, [[Roseburia inulinivorans and Muscle Strength]]의 grip strength association은 모두 흥미로운 신호지만, 치료 효과나 장기 임상 평가 지표로 바로 승격하면 약하다.
+
 ## 실전 사용
 
 보충제, 장수, 미생물군, 정신건강 자료를 읽을 때 첫 질문은 "이 결과가 사다리의 어느 단계인가"다. 생체표지자가 변했다는 결과는 유용한 신호일 수 있지만, 임상 주장으로 승격하려면 최소한 개입 설계와 평가 지표 검증이 필요하다.
@@ -52,6 +54,11 @@ tags:
 - [[Gut-Derived Acetaldehyde and MASH]]
 - [[Gut Microbial Tryptophan Metabolism]]
 - [[Intermittent Fasting in Older Adults]]
+- [[Brief Meditation EEG Dynamics]]
+- [[Medication History and Gut Microbiome Confounding]]
+- [[Gut Microbiome and Insomnia Severity]]
+- [[Grapes and Skin Photoprotection]]
+- [[Roseburia inulinivorans and Muscle Strength]]
 
 ## 자료
 

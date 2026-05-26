@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-29T04:54:11Z
-modified: 2026-05-14T15:50:00Z
+modified: 2026-05-26T07:05:13Z
 tags:
   - kb
   - glossary
@@ -19,6 +19,8 @@ Dysbiosis는 특정 세균 하나의 증감보다 전체 community balance, dive
 
 최근 review들은 dysbiosis를 단순한 "나쁜 균 증가"가 아니라 host-microbe interaction failure로 다룬다. Metagenomics, metabolomics, shotgun sequencing, longitudinal sampling을 함께 써야 taxonomic dysbiosis와 functional dysbiosis를 분리할 수 있다.
 
+최근 clipping들은 dysbiosis 해석에서 질환별 맥락과 confounder를 더 강하게 요구한다. [[IBS and IBD Microbiome Differences]]는 같은 dysbiosis라도 IBS에서는 gut-brain/neuroimmune signaling, IBD에서는 barrier impairment와 inflammation pathway가 더 중심이라고 나눈다. [[Medication History and Gut Microbiome Confounding]]은 과거 처방 약물이 중단 후에도 수년간 microbial signature를 남길 수 있어, disease-associated taxa 해석에 medication history가 필수라고 본다.
+
 ## 해석 경계
 
 "Dysbiosis가 있다"는 말만으로 질병의 원인, 진단, 치료법이 자동으로 정해지지는 않는다. Probiotic, prebiotic, FMT, antibiotic 전략은 질환, strain, donor, timing, safety context에 따라 완전히 다르게 평가해야 한다.
@@ -31,6 +33,12 @@ Dysbiosis는 특정 세균 하나의 증감보다 전체 community balance, dive
 - [[Gut-Eye Axis]]
 - [[Gut-Derived Acetaldehyde and MASH]]
 - [[Gut Microbial Tryptophan Metabolism]]
+- [[Medication History and Gut Microbiome Confounding]]
+- [[IBS and IBD Microbiome Differences]]
+- [[Gut Microbiome and Insomnia Severity]]
+- [[Gut-Skin Axis in Psoriasis]]
+- [[Morganella-DEA Depression Pathway]]
+- [[Resistant Starch and Butyrate Producers]]
 - [[Psyllium Fiber Mechanics]] — soluble fiber의 물리적 효과와 gut function
 
 ## 자료

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-27T07:52:54Z
-modified: 2026-05-07T03:10:01Z
+modified: 2026-05-26T07:05:13Z
 tags:
   - kb
   - health
@@ -32,6 +32,7 @@ American College of Physicians는 성인 만성 불면의 초기 치료로 CBT-I
 - 첫 목표는 더 오래 누워 있기보다 **고정 기상 시간**과 **침대에서 깨어 있는 시간 줄이기**다.
 - sleep restriction은 초기에 힘들 수 있으므로, 우울·불안·업무 압박이 큰 사람은 전문가 지도 또는 digital CBT-I 프로그램을 쓰는 편이 낫다.
 - chronic insomnia가 있는 supplement stack에서는 [[Caffeine and Sleep Restriction]], [[Green Tea Beverages]], 저녁 빛 노출, 낮잠이 CBT-I 적용 전 먼저 정리할 변수다.
+- [[Gut Microbiome and Insomnia Severity]] 같은 microbiome 자료는 흥미로운 staging/기전 신호지만, cross-sectional association이므로 chronic insomnia의 1차 치료 우선순위를 바꾸지는 않는다.
 
 ## 관련 링크
 
@@ -41,6 +42,7 @@ American College of Physicians는 성인 만성 불면의 초기 치료로 CBT-I
 - [[Ashwagandha]] — stress/anxiety/sleep botanical 후보
 - [[Magnesium]] — 보충제 기반 수면 후보
 - [[Glycine]] — 보충제 기반 수면 후보
+- [[Gut Microbiome and Insomnia Severity]] — 불면 severity와 장내 미생물군 변화의 관찰 신호
 - NIH/NHLBI CBT-I overview: https://www.nhlbi.nih.gov/health/insomnia/treatment
 - ACP guideline announcement: https://www.acponline.org/acp-newsroom/acp-recommends-cognitive-behavioral-therapy-as-initial-treatment-forchronic-insomnia
 - CBT-I primer: https://pmc.ncbi.nlm.nih.gov/articles/PMC10002474/

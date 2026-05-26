@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-07T07:55:00Z
-modified: 2026-05-18T07:32:45Z
+modified: 2026-05-26T07:40:22Z
 tags:
   - kb
   - index
@@ -102,6 +102,20 @@ kb/ 페이지의 카탈로그. frontmatter 기반으로 재생성 가능한 캐�
 
 ## Health / Science
 
+- [[Action Symbols and Compositional Generalization]] — Action symbol은 개별 움직임이나 stroke를 낮은 수준의 근육 명령이 아니라 재조합 가능한 추상 단위로 표현하는 신경 표상이다
+- [[Bacopa monnieri]] — _Bacopa monnier&#x69;_&#xB294; bacoside 계열 triterpenoid saponin을 주요 후보 성분으로 갖는 Ayurvedic botanical이며, nootropic 논의에서는 memory, attention, neuroprotection 후보로 다뤄진다.
+- [[Brief Meditation EEG Dynamics]] — Brief meditation EEG dynamics는 명상을 rest-vs-meditation 평균 차이로만 보지 않고, 시작 후 몇 분 안에 brainwave pattern이 어떻게 이동하는지 추적하는 접근이다.
+- [[Grapes and Skin Photoprotection]] — Grapes and skin photoprotection은 whole grape intake가 UV exposure 뒤 산화손상, skin barrier gene expression, lipid profile을 바꿀 수 있는지 보는 nutrigenomics 연구 축이다.
+- [[Gut Microbiome and Insomnia Severity]] — Gut microbiome and insomnia severity 연구는 수면장애를 gut-brain axis 관점에서 보되, 불면의 원인·결과·동반 신호를 분리해야 하는 영역이다.
+- [[Gut-Skin Axis in Psoriasis]] — Psoriasis gut-skin axis는 건선을 피부 국소 염증만이 아니라 장내 미생물군, 전신 염증, 면역 조절 실패가 연결된 만성 면역매개 질환으로 읽는 관점이다.
+- [[Hypothalamic Menin and D-serine Aging Pathway]] — Hypothalamic Menin-D-serine pathway는 hypothalamus의 Menin 감소가 neuroinflammation, metabolic signaling, D-serine synthesis 저하를 통해 systemic aging phenotype과 cognitive decline에 관여할 수 있다는 전임상 노화 연구 축이다.
+- [[IBS and IBD Microbiome Differences]] — IBS와 IBD의 microbiome 차이는 두 질환 모두 dysbiosis가 관찰될 수 있지만, 병태생리와 치료 해석이 같지 않다는 점을 분리하는 개념이다.
+- [[Medication History and Gut Microbiome Confounding]] — Medication history confounding은 gut microbiome 연구에서 현재 복용 약물뿐 아니라 과거 처방 이력까지 미생물군 차이를 설명하는 숨은 변수로 다뤄야 한다는 문제다.
+- [[Morganella-DEA Depression Pathway]] — Morganella-DEA depression pathway는 gut bacterium _Morganella morgani&#x69;_&#xAC00; diethanolamine(DEA)을 포함한 unusual phospholipid를 만들고, 이 물질이 TLR1/TLR2 immune signaling을 자극해 depression-linked inflammation과 연결될 수 있다는 기전 가설이다.
+- [[Prefrontal Dopamine D1 and General Cognitive Ability]] — Prefrontal dopamine D1 sensitivity는 working memory, selective attention, general cognitive ability를 receptor density보다 receptor-mediated neuronal activation 관점에서 읽는 전임상 연구 축이다.
+- [[Pregnenolone]] — Pregnenolone은 여러 steroid hormone과 neurosteroid의 전구체로, nootropic 커뮤니티에서는 allopregnanolone, pregnenolone sulfate 같은 downstream neurosteroid를 통해 calm focus나 stress resilience를 바꿀 수 있다는 가설로 언급된다.
+- [[Resistant Starch and Butyrate Producers]] — Resistant starch and butyrate producers는 콩류와 tuber 같은 slow-fermenting substrate가 colon 깊은 부위의 butyrate-producing bacteria를 먹이고, gut barrier·inflammation·metabolic health와 연결될 수 있다는 식이-미생물군 축이다.
+- [[Roseburia inulinivorans and Muscle Strength]] — _Roseburia inulinivorans_ and muscle strength 연구는 SCFA-producing gut bacterium이 muscle fiber composition, grip strength, aerobic fitness와 연결될 수 있는지 보는 gut-muscle axis 자료다.
 - [[Akkermansia muciniphila]] — _Akkermansia muciniphil&#x61;_&#xB294; intestinal mucus layer와 밀접한 mucin-degrading bacterium으로, metabolic health, gut barrier, inflammation 연구에서 next-generation beneficial microbe 후보로 자주 등장한다.
 - [[Autistic Traits, Uncertainty, and Affect Labeling]] — Autistic traits, intolerance of uncertainty(IU), affect labeling(AL)의 연결은 autism-related traits와 anxiety가 단일 경로가 아니라 uncertainty appraisal과 emotion labeling capacity를 통해 엮일 수 있다는 모델이다.
 - [[Exercise-Induced SF1 Neurons]] — Exercise-induced SF1 neurons는 exercise training adaptation이 muscle-local 변화만이 아니라, ventromedial hypothalamus(VMH)의 steroidogenic factor-1(SF1) neuron activity와도 연결될 수 있다는 mouse 연구 축이다.
@@ -260,9 +274,9 @@ kb/ 페이지의 카탈로그. frontmatter 기반으로 재생성 가능한 캐�
 
 ## Health
 
-- 총 페이지: 220
-- 단일 출처 페이지: 155/220 (출처 없는 페이지 36 별도)
+- 총 페이지: 234
+- 단일 출처 페이지: 168/234 (출처 없는 페이지 36 별도)
 - 미해결 논쟁: 0
 - 최신 동향 만료: 0 (6개월 기준)
 - 고아 페이지: 0 (glossary 제외)
-- 마지막 rebuild-index: 2026-05-18
+- 마지막 rebuild-index: 2026-05-26

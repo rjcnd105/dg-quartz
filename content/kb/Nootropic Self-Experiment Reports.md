@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-11T05:23:57Z
-modified: 2026-05-14T15:50:00Z
+modified: 2026-05-26T07:05:13Z
 tags:
   - kb
   - health
@@ -22,6 +22,7 @@ Nootropic self-experiment reports는 supplement나 drug-like compound를 개인�
 - Cholinergic axis: [[Alpha-GPC]], [[Huperzine A]], CDP-choline, racetam/noopept류.
 - Baseline nutrient axis: [[Creatine]], [[Magnesium]], [[Omega-3와 정신건강]], [[Vitamin D3 and K2]], [[Zinc]].
 - Emotional blunting axis: [[Ashwagandha]], [[N-Acetyl Cysteine]], 5-HTP가 개인적으로 낮게 평가됐다.
+- Neurosteroid axis: [[Pregnenolone]] 사례처럼 calm focus, stress tolerance, caffeine need 감소가 보고될 수 있지만, hormone precursor 성격 때문에 self-experiment risk가 더 크다 (출처: [[5mg pregnenolone seems to do wonders for my focus 5mg 프레그네놀론은 제 집중력에 놀라운 효과를 주는 것 같습니다]]).
 
 ## 해석 경계
 
@@ -35,7 +36,9 @@ Self-experiment report는 placebo, regression to the mean, expectation, sleep/di
 - [[L-tyrosine]]
 - [[Alpha-GPC]]
 - [[Huperzine A]]
+- [[Bacopa monnieri]]
 - [[N-Acetyl Cysteine]]
 - [[Ashwagandha]]
 - [[Supplement Stack Failure Modes]] — community stack 자료를 failure-pattern memory로 쓰는 방법
+- [[Pregnenolone]]
 - Original Reddit post: https://www.reddit.com/r/Nootropics/comments/uxfoji/every\_nootropic\_supplement\_i\_have\_ever\_taken/

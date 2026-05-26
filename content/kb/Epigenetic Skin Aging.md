@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-07T03:10:01Z
-modified: 2026-05-07T03:34:32Z
+modified: 2026-05-26T07:05:13Z
 tags:
   - kb
   - health
@@ -32,6 +32,7 @@ Epigenetic skin aging은 epidermal [[DNA methylation]] pattern을 피부의 biol
 - Follow-up은 8주라서 durability, discontinuation effect, 장기 안전성은 아직 별도 질문이다.
 - Male and Asian volunteers는 적게 대표됐다.
 - Daily photoprotection과 topical retinoid는 여전히 photoaging 관리에서 더 확립된 축으로 남아 있다.
+- [[Grapes and Skin Photoprotection]]은 whole-food nutrigenomics가 UV oxidative damage와 skin barrier gene expression을 바꿀 수 있는지 보는 별도 축이다. 다만 표본이 작아 sunscreen이나 표준 dermatology care를 대체하는 근거로 읽으면 안 된다.
 
 ## 관련 링크
 
@@ -40,4 +41,5 @@ Epigenetic skin aging은 epidermal [[DNA methylation]] pattern을 피부의 biol
 - [[Biomarker Interpretation Ladder]] — methylation age 변화와 clinical/cosmetic endpoint를 분리하는 해석 패턴
 - [[Nrf2]] — skin antioxidant/longevity claim과 자주 연결되는 stress-response 전사인자
 - [[NMN and NAD+ Precursors]] — longevity biomarker와 endpoint를 구분해야 하는 supplement 축
+- [[Grapes and Skin Photoprotection]] — 식이 polyphenol/whole food와 피부 photoprotection 신호
 - 원문: https://link.springer.com/article/10.1007/s13555-026-01764-4

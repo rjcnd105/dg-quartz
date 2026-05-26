@@ -1,47 +1,18 @@
 ---
 publish: true
 created: 2025-04-04T08:40:11Z
-modified: 2025-10-16T04:46:58Z
+modified: 2026-05-26T07:46:59Z
 tags:
-  - p
-  - h
-  - o
-  - e
-  - n
-  - i
-  - x
-  - h
-  - a
-  - n
-  - d
-  - l
-  - e
-  - _
-  - a
-  - s
-  - y
-  - n
-  - c
-  - h
-  - e
-  - e
-  - x
-  - l
-  - i
-  - v
-  - e
-  - v
-  - i
-  - e
-  - w
-cssclasses: ""
+  - phoenix
+  - handle_async
+  - heex
+  - liveview
 ---
 
-
-Liveview에서 비동기 렌더링을 위한 handle_async exemple
+Liveview에서 비동기 렌더링을 위한 handle\_async exemple
 
 이렇게 수동 loading을 줄 수도 있고
-[AsyncResult](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.AsyncResult.html) 랑 [<.async_result>](https://hexdocs.pm/phoenix_live_view/Phoenix.Component.html#async_result/1)  컴포넌트를 사용하는 방법으로도 쓸 수 있다.
+[AsyncResult](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.AsyncResult.html) 랑 [<.async\_result>](https://hexdocs.pm/phoenix_live_view/Phoenix.Component.html#async_result/1)  컴포넌트를 사용하는 방법으로도 쓸 수 있다.
 
 ```elixir
 def render(assigns) do
