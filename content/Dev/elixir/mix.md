@@ -9,9 +9,7 @@ tags:
   - phoenix
   - ecto
   - ash
-cssclasses: ""
 ---
-
 
 elixir의 통합 관리자 cli
 
@@ -29,7 +27,7 @@ https://hex.pm/packages
 `mix deps.update --all`: 패키지 전부 업데이트
 `mix app.tree`: 패키지 종속성 트리 보기
 
-***
+---
 
 ## Phoenix
 
@@ -70,7 +68,7 @@ ecto migrate 되돌리기
 
 migration 생성
 ex)
-[[Dev/elixir/phoenix/Ecto #notnull 추가]]
+[[Ecto #notnull 추가]]
 
 ### [mix ecto.dump](https://hexdocs.pm/ecto_sql/Mix.Tasks.Ecto.Dump.html)
 
@@ -85,7 +83,7 @@ ecto migration 기반의 확인 용도의 sql 파일 생성
 ex)
 mix ash.gen.resource MyApp.Chat.Room --extend postgres
 
- MyApp.Chat.Room 리소스를 생성 후 MyApp.Chat 도메인에 리소스를 연결한다.
+MyApp.Chat.Room 리소스를 생성 후 MyApp.Chat 도메인에 리소스를 연결한다.
 
 ### mix ash.codegen
 

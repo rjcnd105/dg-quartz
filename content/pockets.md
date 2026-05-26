@@ -6,9 +6,7 @@ tags:
   - 참조
   - 아티클
   - 개발
-cssclasses: ""
 ---
-
 
 my settings
 **API URL**
@@ -21,6 +19,7 @@ Heading: pockets
 **Content Template**
 `{{ date "yy-MM-dd H:MM" }}`
 [{{page.title}}]({{page.url}})
+
 ```
 {{article.byline}}
 {{article.excerpt}}
@@ -34,6 +33,7 @@ Heading: pockets
 
 `24-10-22 17:10`
 [Why learning effect | Effect: Beginners Complete Getting Started](https://www.typeonce.dev/course/effect-beginners-complete-getting-started/setting-up-the-project/why-learning-effect)
+
 ```
 
 Welcome to Effect!
@@ -42,6 +42,7 @@ Welcome to Effect!
 
 `24-10-16 10:10`
 [A video course on PostgreSQL - Mastering Postgres](https://masteringpostgres.com/)
+
 ```
 
 Your application is only as fast as your slowest query regardless of what language, framework, or hosting platform you choose. Mastering Postgres is a comprehensive video course that will help you level up your applications and your career.
@@ -49,7 +50,8 @@ Your application is only as fast as your slowest query regardless of what langua
 ```
 
 `24-10-11 16:10`
-[Brewing Board Games With Elixir](https://dockyard.com/blog/2024/10/10/brewing-board-games-with-elixir?&utm_source=twitter&utm_medium=post&utm_content=blog)
+[Brewing Board Games With Elixir](https://dockyard.com/blog/2024/10/10/brewing-board-games-with-elixir?\&utm_source=twitter\&utm_medium=post\&utm_content=blog)
+
 ```
 
 
@@ -58,6 +60,7 @@ Your application is only as fast as your slowest query regardless of what langua
 
 `24-10-04 18:10`
 [React Query 및 Axios를 사용한 효율적인 새로 고침 토큰 구현 - DEV Community --- Efficient Refresh Token Implementation with React Query and Axios - DEV Community](https://dev.to/elmehdiamlou/efficient-refresh-token-implementation-with-react-query-and-axios-f8d)
+
 ```
 
 While using React Query in a given project for asynchronous state management, which makes fetching, caching, synchronizing, and updating server state more straightforward and efficient as mentioned in the documentation, and by using Axios as a data fetching library to seamlessly interact with APIs. To implement a stateless authentication flow, by handling the access token in every request's headers using a global Axios request interceptor, When it comes to adding refresh token logic, why not again use a global Axios response interceptor as well?비동기 상태 관리를 위해 주어진 프로젝트에서 React Query를 사용하는 동안 문서 에서 언급한 것처럼 서버 상태 가져오기, 캐싱, 동기화 및 업데이트를 보다 간단하고 효율적으로 만들고 Axios를 데이터 가져오기 라이브러리로 사용하여 API와 원활하게 상호 작용합니다. 전역 Axios 요청 인터셉터를 사용하여 모든 요청의 헤더에서 액세스 토큰을 처리함으로써 상태 비저장 인증 흐름을 구현하려면 새로 고침 토큰 논리를 추가할 때 전역 Axios 응답 인터셉터도 다시 사용하면 어떨까요?
@@ -66,6 +69,7 @@ While using React Query in a given project for asynchronous state management, wh
 
 `24-10-04 16:10`
 [Optimum BH - Getting Started with Ash Framework in Elixir](https://optimum.ba/blog/getting-started-with-ash-framework-in-elixir)
+
 ```
 
 Are you looking for a powerful and flexible way to build Elixir applications? Look no further than the Ash framework! In this blog post, we'll introduce you to Ash, explain why it's great for building applications, and show you how to get started.
@@ -74,6 +78,7 @@ Are you looking for a powerful and flexible way to build Elixir applications? Lo
 
 `24-10-04 16:10`
 [연재는 비밀이다 - 잭 다니엘 --- Serialization is the Secret - Zach Daniel](https://www.zachdaniel.dev/p/serialization-is-the-secret)
+
 ```
 Zach Daniel
 If a value mutates in the forest with no one to see it, does it really mutate?
@@ -81,7 +86,8 @@ If a value mutates in the forest with no one to see it, does it really mutate?
 ```
 
 `24-10-04 12:10`
-[React에서 데이터를 가져오는 방법 [2024] --- How to fetch data in React [2024]](https://www.robinwieruch.de/react-fetching-data/)
+[React에서 데이터를 가져오는 방법 \[2024\] --- How to fetch data in React \[2024\]](https://www.robinwieruch.de/react-fetching-data/)
+
 ```
 
 There are multiple ways to fetch data in React from a remote API. Here we want to explore all the options available for data fetching in React that were introduced over the years and are still in use today. While some of them are newer and recommended, others are less recommended and should be avoided in most cases. Let's jump right in.원격 API에서 React의 데이터를 가져오는 방법에는 여러 가지가 있습니다. 여기서는 수년에 걸쳐 도입되어 오늘날에도 여전히 사용되고 있는 React의 데이터 가져오기에 사용할 수 있는 모든 옵션을 살펴보고 싶습니다. 그 중 일부는 최신이고 권장되는 반면 일부는 덜 권장되므로 대부분의 경우 피해야 합니다. 바로 뛰어들어 봅시다.
@@ -90,6 +96,7 @@ There are multiple ways to fetch data in React from a remote API. Here we want t
 
 `24-10-04 12:10`
 [useAnimate | Framer for Developers](https://www.framer.com/motion/use-animate/#usage)
+
 ```
 
 Create an animate function with scoped selectors and automatic cleanup.
@@ -98,6 +105,7 @@ Create an animate function with scoped selectors and automatic cleanup.
 
 `24-10-04 12:10`
 [Next.js의 신뢰할 수 있는 날짜 형식 – Next.js를 위한 국제화(i18n) --- Reliable date formatting in Next.js – Internationalization (i18n) for Next.js](https://next-intl-docs.vercel.app/blog/date-formatting-nextjs)
+
 ```
 
 Let's take a look at the following component:다음 구성요소를 살펴보겠습니다.
@@ -106,6 +114,7 @@ Let's take a look at the following component:다음 구성요소를 살펴보겠
 
 `24-10-04 12:10`
 [로컬 저장소 읽기 및 쓰기를 위한 SSR 친화적 사용자 정의 React Hook | 니코의 블로그 --- SSR-friendly Custom React Hook for Local Storage Read and Write | Nico's Blog](https://www.nico.fyi/blog/ssr-friendly-local-storage-react-custom-hook)
+
 ```
 Nico Prananta
 I learned something new about window's storage event!
@@ -114,6 +123,7 @@ I learned something new about window's storage event!
 
 `24-10-04 11:10`
 [Patterns for Memory Efficient DOM Manipulation with Modern Vanilla JavaScript – Frontend Masters Boost](https://frontendmasters.com/blog/patterns-for-memory-efficient-dom-manipulation/)
+
 ```
 Marc Grabanski
 
@@ -125,6 +135,7 @@ Let’s continue the modern vanilla JavaScript series!
 
 `24-10-04 11:10`
 [How to Handle Errors in Next.js for Node With the App Router | AppSignal Blog](https://blog.appsignal.com/2024/08/28/how-to-handle-errors-in-nextjs-for-node-with-the-app-router.html)
+
 ```
 
 Error handling in Next.js is critical to providing a seamless experience to your users even when things go wrong.
@@ -135,6 +146,7 @@ To avoid that, you must ensure that they receive informative feedback about erro
 
 `24-10-01 18:10`
 [셀프 호스팅 Elixir 애플리케이션: 개인적인 접근 방식 · Andriel Nuernberg --- Self-Hosting Elixir Applications: A Personal Approach · Andriel Nuernberg](https://andrielfn.com/posts/self-hosting-elixir-applications-a-personal-approach/)
+
 ```
 Andriel Nuernberg
 My personal approach to self-hosting Elixir apps using Hetzner, GitHub Actions, Ansible, and Traefik.
@@ -143,6 +155,7 @@ My personal approach to self-hosting Elixir apps using Hetzner, GitHub Actions, 
 
 `24-08-21 14:08`
 [Elixir용 LiveState: 내장 가능한 웹 앱 구축 개요 및 방법 | AppSignal 블로그 --- LiveState for Elixir: An Overview and How to Build Embeddable Web Apps | AppSignal Blog](https://blog.appsignal.com/2024/08/20/livestate-for-elixir-an-overview-and-how-to-build-embeddable-web-apps.html)
+
 ```
 
 If you have programmed with Phoenix, you already know what a delight it can be to work with LiveView.
@@ -152,6 +165,7 @@ LiveView simplifies your development process by moving all state management to t
 
 `24-07-28 17:07`
 [Devbox 및 Direnv를 사용하여 프로젝트 환경 자동화 --- Automate Project Environments with Devbox and Direnv](https://www.jetify.com/blog/automated-dev-envs-with-devbox-and-direnv/)
+
 ```
 Mohsen Ansari 모센 안사리
 Learn why having an isolated environment is useful, why setting up an environment with Direnv can be tough, and walk through an example of Direnv + Devbox for a sample NodeJS application.격리된 환경을 갖는 것이 왜 유용한지, Direnv로 환경을 설정하는 것이 왜 어려운지 알아보고, 샘플 NodeJS 애플리케이션에 대한 Direnv + Devbox의 예를 살펴보세요.
@@ -160,6 +174,7 @@ Learn why having an isolated environment is useful, why setting up an environmen
 
 `24-07-28 17:07`
 [Devbox에서 Nix Flakes 사용하기 --- Using Nix Flakes with Devbox](https://www.jetify.com/blog/using-nix-flakes-with-devbox/)
+
 ```
 John Lago 존 라고
 In Devbox 0.4.7, we added support for installing packages from Nix flakes. For power users of Nix, this provides more flexibility and customization for your Devbox project. Using the power of flakes, developers can now create their own packages, modify nixpkgs, or install packages from sources outside of the Nix store.Devbox 0.4.7 에서는 Nix 플레이크에서 패키지 설치에 대한 지원을 추가했습니다. Nix의 고급 사용자에게는 Devbox 프로젝트에 더 많은 유연성과 사용자 정의가 제공됩니다. 이제 개발자는 플레이크의 강력한 기능을 사용하여 자신만의 패키지를 만들거나, nixpkg를 수정하거나, Nix 스토어 외부 소스에서 패키지를 설치할 수 있습니다.
@@ -168,6 +183,7 @@ In Devbox 0.4.7, we added support for installing packages from Nix flakes. For p
 
 `24-07-28 16:07`
 [Enhancing Your Elixir Codebase with Gleam | AppSignal Blog](https://blog.appsignal.com/2024/07/23/enhancing-your-elixir-codebase-with-gleam.html)
+
 ```
 
 Do you write Elixir but sometimes miss the benefits of type safety we have in other languages? If the answer is "yes",
@@ -178,6 +194,7 @@ it can be added as an enhancement to an Elixir codebase without you having to re
 
 `24-07-28 16:07`
 [내가 좋아하는 새로운 Gleam 기능 --- A new Gleam feature I love](https://giacomocavalieri.me/posts/a-new-gleam-feature-i-love)
+
 ```
 
 Gleam is a functional "friendly language for building
@@ -195,6 +212,7 @@ As Rob Pike puts it
 
 `24-07-26 12:07`
 [Aider + claude 3.5 소네트는 Elixir와 정말 잘 작동합니다. - 채팅 / 토론 - Elixir 프로그래밍 언어 포럼 --- Aider + claude 3.5 sonnet works really well with Elixir - Chat / Discussions - Elixir Programming Language Forum](https://elixirforum.com/t/aider-claude-3-5-sonnet-works-really-well-with-elixir/65016/5)
+
 ```
 
 I just want to tell you guys that I have started using aider 156 and since I paired it with claude 3.5 sonnet 43 it has been a game changer.제가 aider155를 사용하기 시작했고 이를 clude 3.5 sonnet43과 결합한 이후로 게임의 판도가 바뀌었다는 사실을 여러분께 말씀드리고 싶습니다.
@@ -203,6 +221,7 @@ I just want to tell you guys that I have started using aider 156 and since I pai
 
 `24-06-03 14:06`
 [How to Get a Perfect Deep Copy in JavaScript | by Zachary Lee | May, 2024 | Medium](https://medium.com/@hizacharylee/how-to-get-a-perfect-deep-copy-in-javascript-bbf6c670fb47)
+
 ```
 Written by Zachary Lee
 How to Get a Perfect Deep Copy in JavaScript
@@ -211,6 +230,7 @@ How to Get a Perfect Deep Copy in JavaScript
 
 `24-06-03 14:06`
 [변형 후 자동 쿼리 무효화 | TkDodo의 블로그 --- Automatic Query Invalidation after Mutations | TkDodo's blog](https://tkdodo.eu/blog/automatic-query-invalidation-after-mutations)
+
 ```
 
 Queries and Mutations are two sides of the same coin. A Query defines an asynchronous resource for reading, which often comes from data fetching. A Mutation on the other hand is an action to update such a resource.쿼리와 돌연변이는 동전의 양면입니다. 쿼리는 데이터 가져오기에서 발생하는 읽기용 비동기 리소스를 정의합니다. 반면에 Mutation은 이러한 리소스를 업데이트하는 작업입니다.
@@ -219,6 +239,7 @@ Queries and Mutations are two sides of the same coin. A Query defines an asynchr
 
 `24-05-03 15:05`
 [Wisp와 Lustre를 사용하여 첫 번째 Gleam 웹 앱 구축 --- Building your first Gleam web app with Wisp and Lustre](https://gleaming.dev/articles/building-your-first-gleam-web-app/)
+
 ```
 
 
@@ -227,6 +248,7 @@ Queries and Mutations are two sides of the same coin. A Query defines an asynchr
 
 `24-05-02 17:05`
 [Live-signals - 모든 신호 요구 사항에 맞는 LiveState 지원 신호(Phoenix 채널 + 신호 = LiveSignals) - 라이브러리 및 OS 멘토링 / 라이브러리 - Elixir 프로그래밍 언어 포럼 --- Live-signals - LiveState backed signals for all of your signal needs (Phoenix Channels + Signals = LiveSignals) - Your Libraries & OS Mentoring / Libraries - Elixir Programming Language Forum](https://elixirforum.com/t/live-signals-livestate-backed-signals-for-all-of-your-signal-needs-phoenix-channels-signals-livesignals/63166/9)
+
 ```
 
 Hey everybody, it seems like Signals are really catching on as a standard for reactivity in the front end space. Pretty much all the front end frameworks are adopting them, and they are also starting to make their way through the TC39 standards process. As an experiment, I decided to see how easy it would be to connect signals to a Pheonix Channel. Spoiler alert: it was really easy! I used LiveState 11 (a thing I built) to hold the state for the signal.안녕하세요 여러분, Signals가 프런트 엔드 공간에서 반응성의 표준으로 인기를 끌고 있는 것 같습니다. 거의 모든 프런트엔드 프레임워크가 이를 채택하고 있으며 TC39 표준 프로세스를 통과하기 시작했습니다. 실험적으로 신호를 Pheonix 채널에 연결하는 것이 얼마나 쉬운지 알아보기로 결정했습니다. 스포일러 경고: 정말 쉬웠어요! 나는 신호의 상태를 유지하기 위해 LiveState11(내가 만든 것)을 사용했습니다.
@@ -235,6 +257,7 @@ Hey everybody, it seems like Signals are really catching on as a standard for re
 
 `24-05-02 17:05`
 [Spawn으로 더욱 쉬워진 분산 Elixir | eigr.io --- Distributed Elixir made easy with Spawn | eigr.io](https://eigr.io/blog/distributed-elixir-made-easy-with-spawn/)
+
 ```
 Elias Dal Ben Arruda 엘리아스 달 벤 아루다eigr.io – Core Team eigr.io – 핵심 팀
 Hello Elixir enthusiasts! 🚀 As the tech landscape evolves, so should our tools and approaches to development. Today, I'm excited to introduce you to a significant advancement in Elixir development that can reshape how we build distributed systems – I present to you Spawn.엘릭서 매니아 여러분, 안녕하세요! 🚀 기술 환경이 발전함에 따라 우리의 도구와 개발 접근 방식도 발전해야 합니다. 오늘 저는 분산 시스템 구축 방법을 재구성할 수 있는 Elixir 개발의 중요한 발전을 여러분께 소개하게 되어 기쁘게 생각합니다. 바로 Spawn을 소개합니다.
@@ -242,7 +265,8 @@ Hello Elixir enthusiasts! 🚀 As the tech landscape evolves, so should our tool
 ```
 
 `24-05-02 17:05`
-[FLAME을 통한 서버리스 재고 · The Fly Blog --- Rethinking Serverless with FLAME · The Fly Blog](https://fly.io/blog/rethinking-serverless-with-flame/?utm_source=thinkingelixir&utm_medium=shownotes)
+[FLAME을 통한 서버리스 재고 · The Fly Blog --- Rethinking Serverless with FLAME · The Fly Blog](https://fly.io/blog/rethinking-serverless-with-flame/?utm_source=thinkingelixir\&utm_medium=shownotes)
+
 ```
 
 The pursuit of elastic, auto-scaling applications has taken us to silly places.탄력적이고 자동 확장되는 애플리케이션을 추구하다 보니 우리는 어리석은 처지에 놓이게 되었습니다.
@@ -251,6 +275,7 @@ The pursuit of elastic, auto-scaling applications has taken us to silly places.�
 
 `24-04-23 14:04`
 [Elixir의 아주 간단하고 검증된 구조체 - DEV Community --- Super simple validated structs in Elixir - DEV Community](https://dev.to/leggebroten/super-simple-validated-structs-in-elixir-45a9)
+
 ```
 
 In a prior article about a circle of trust, I discussed the substantial benefits of consistently using validated data structs as input parameters; Ecto.Changeset and Plug.Conn for example.신뢰의 범위에 관한 이전 기사에서 저는 검증된 데이터 구조를 입력 매개변수로 일관되게 사용하는 것의 실질적인 이점에 대해 논의했습니다. 예를 들어 Ecto.Changeset 및 Plug.Conn이 있습니다.
@@ -259,6 +284,7 @@ In a prior article about a circle of trust, I discussed the substantial benefits
 
 `24-04-19 11:04`
 [Elixir Streams |> 파이프라인 흐름을 유지하는 데 도움이 되는 2명의 도우미! 😍 --- Elixir Streams |> 2 Helpers to Keep Your Pipelines Flowing! 😎](https://www.elixirstreams.com/tips/tap-and-then-helpers)
+
 ```
 
 
@@ -267,6 +293,7 @@ In a prior article about a circle of trust, I discussed the substantial benefits
 
 `24-04-19 11:04`
 [PGroonga, Postgres 및 Elixir를 사용한 빠른 전체 텍스트 검색 --- Fast Full-text Search with PGroonga, Postgres, and Elixir](https://indiecourses.com/blog/full-text-search-with-pgroonga-and-postgres)
+
 ```
 
 We’re Indie Courses, the video course platform for indie creators. We help you sell your online courses quickly and give you the tools and knowledge to make more sales than you would elsewhere. No marketing degree needed.인디 크리에이터를 위한 동영상 강좌 플랫폼인 Indie Courses입니다. 우리는 귀하가 온라인 강좌를 신속하게 판매하도록 돕고 다른 곳보다 더 많은 판매를 할 수 있는 도구와 지식을 제공합니다. 마케팅 학위가 필요하지 않습니다.
@@ -282,19 +309,22 @@ While driving my kids to school this morning, I had an interesting thought. Is i
 [JavaScript를 사용한 클라이언트측 양식 처리 – 예제 코드로 설명 --- Client-Side Form Handling with JavaScript – Explained with Example Code](https://www.freecodecamp.org/news/form-validation-in-javascript/?ref=dailydev)
 Samyak Jain
 
-                  삼약자인
+```
+              삼약자인
+```
+
 HTML forms are essential components of most websites and web apps. They enable interaction between users and those websites, and are a key concept for web developers to understand. HTML 양식은 대부분의 웹사이트와 웹 앱의 필수 구성 요소입니다. 이는 사용자와 해당 웹 사이트 간의 상호 작용을 가능하게 하며 웹 개발자가 이해해야 하는 핵심 개념입니다.
 
 24-03-10 23:03
-[CSS의 픽셀과 (r)em을 넘어서 - 컨테이너 쿼리 길이 단위 - iO tech_hub --- Going beyond pixels and (r)ems in CSS - Container query length units - iO tech_hub](https://techhub.iodigital.com/articles/going-beyond-pixels-and-rems-in-css/container-query-length-units?ref=dailydev)
+[CSS의 픽셀과 (r)em을 넘어서 - 컨테이너 쿼리 길이 단위 - iO tech\_hub --- Going beyond pixels and (r)ems in CSS - Container query length units - iO tech\_hub](https://techhub.iodigital.com/articles/going-beyond-pixels-and-rems-in-css/container-query-length-units?ref=dailydev)
 
 As part of the containment spec, container queries are something to be reckoned with and in my personal opinion, they still aren’t used enough, but that’s a whole other discussion. What we’ll be covering today are the units that came with this awesome spec and once again, this article will be based on the list at MDN. First, we’ll get through the basics with a listing of the units, followed up with some more advanced usage.격리 사양의 일부로서 컨테이너 쿼리는 고려해야 할 사항이며 내 개인적인 의견으로는 여전히 충분히 사용되지 않지만 이는 완전히 다른 논의입니다. 오늘 우리가 다룰 내용은 이 멋진 사양과 함께 제공되는 장치이며 다시 한번 이 기사는 MDN의 목록을 기반으로 합니다. 먼저, 단위 목록을 통해 기본 사항을 살펴보고, 이어서 좀 더 고급 사용법을 살펴보겠습니다.
 
 24-03-09 19:03
 [CSS - Implementing Responsive Masonry Layouts](https://blog.openreplay.com/css--implementing-responsive-masonry-layouts/?ref=dailydev)
 Rufina Uche
-     Mar 10, 2024
-        · 6 min read
+Mar 10, 2024
+· 6 min read
 Masonry layout is a design approach that arranges elements in a staggered manner. It positions each element based on the available space, like a mason laying bricks. The result? An asymmetrical grid that breaks free from the rigid constraints of traditional layouts. This fluid arrangement resonates particularly well with modern web design aesthetics, and this article will show you how to achieve these results.
 
 24-03-07 20:03
@@ -385,7 +415,9 @@ As a Front-End Engineer: The Magic Behind “Event Emitter” in JavaScript That
 
 📅️ Published: February  3, 2024  • 🕣
 
-		17 min read
+```
+	17 min read
+```
 
 📅️ 게시됨: 2024년 2월 3일 - 🕣 17분 읽기
 
@@ -418,7 +450,7 @@ The slot global attribute assigns a slot in a shadow DOM shadow tree to an eleme
 The part global attribute contains a space-separated list of the part names of the element. Part names allows CSS to select and style specific elements in a shadow tree via the ::part pseudo-element.
 
 24-02-07 22:02
-[CSS에서 변수 이름 지정 --- Naming Variables In CSS](https://jwdallas.com/posts/namingcssvariables/?utm_campaign=tailwind-weekly-145&utm_source=Tailwind+Weekly?utm_campaign=Tailwind+Weekly+Web+Issue&utm_source=Tailwind+Weekly+Website)
+[CSS에서 변수 이름 지정 --- Naming Variables In CSS](https://jwdallas.com/posts/namingcssvariables/?utm_campaign=tailwind-weekly-145\&utm_source=Tailwind+Weekly?utm_campaign=Tailwind+Weekly+Web+Issue\&utm_source=Tailwind+Weekly+Website)
 
 “Naming things is hard” goes the software engineering axiom and CSS is no exception. Here are some collected thoughts related to naming CSS Custom Properties. I’m going to use use the terms “variable” and “custom property” interchangeably since they are effectively the same thing for the purposes of what to call them."이름을 지정하는 것은 어렵다"는 소프트웨어 엔지니어링 원칙이 적용되며 CSS도 예외는 아닙니다. 다음은 CSS 사용자 정의 속성 이름 지정과 관련하여 수집된 몇 가지 생각입니다. 나는 "변수"와 "사용자 정의 속성"이라는 용어를 서로 바꿔서 사용할 것입니다. 왜냐하면 이 두 용어는 호출 목적에 따라 사실상 동일한 것이기 때문입니다.
 
@@ -436,7 +468,7 @@ Written by Lokesh Prajapati
 
 [TypeScript: How to Require Generic Inferred Type Parameters in Functions | by Robert S (codeBelt) | JavaScript in Plain English](https://javascript.plainenglish.io/typescript-how-to-require-generic-inferred-type-parameters-in-functions-ed62bc325667)
 
-[[Forget your Microservices! The Unparalleled Benefits of Pool Architecture. | by Raphael Moutard | Medium](https://medium.com/@raphael.moutard/forget-your-microservices-the-unparalleled-benefits-of-pool-architecture-63b462989856)](https://medium.com/@navez.jerome/applying-the-onion-architecture-to-angular-projects-b37736d2c996)[Applying the Onion Architecture to Angular Projects | by Jérôme Navez | Medium](https://medium.com/@navez.jerome/applying-the-onion-architecture-to-angular-projects-b37736d2c996)
+\[[Forget your Microservices! The Unparalleled Benefits of Pool Architecture. | by Raphael Moutard | Medium](https://medium.com/@raphael.moutard/forget-your-microservices-the-unparalleled-benefits-of-pool-architecture-63b462989856)]\(https://medium.com/@navez.jerome/applying-the-onion-architecture-to-angular-projects-b37736d2c996)[Applying the Onion Architecture to Angular Projects | by Jérôme Navez | Medium](https://medium.com/@navez.jerome/applying-the-onion-architecture-to-angular-projects-b37736d2c996)
 
 [Forget your Microservices! The Unparalleled Benefits of Pool Architecture. | by Raphael Moutard | Medium](https://medium.com/@raphael.moutard/forget-your-microservices-the-unparalleled-benefits-of-pool-architecture-63b462989856)
 

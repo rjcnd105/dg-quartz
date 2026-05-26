@@ -6,18 +6,17 @@ tags:
   - dotenv
   - token
   - test
-cssclasses: ""
 ---
-
 
 `2024.07.22 20:37`
 
 안드로이드는 앱이 foreground일때 서버로부터 푸시가 수신되면 자동으로 알림창을 띄워주는 기능이 없어요. 그래서 수신을 받은 후 프로그램적으로 노티를 띄워주는데 이게 로컬 노티입니다.
 반면에 iOS는 앱이 foreground일때 알림을 띄워주는 옵션 (`FirebaseMessaging.instance .setForegroundNotificationPresentationOptions`) 이 있어서 요것만 구성해주면 되어요.
 
-***
+---
 
 로그인해서 토큰을 모노레포 루트의 .env.local에 저장
+
 ```js
 const fs = require('fs')
 const dotenv = require('dotenv')

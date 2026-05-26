@@ -40,7 +40,7 @@ Witness 시스템의 설계 원칙:
 
 - **Oath**: 사전 합의 JSON 계약. Postcondition 목록. Spec Reviewer가 느슨한 Oath를 LLM 호출 전에 reject (wiring check 無, stub check 無, Tier 0 anchor 無 등).
 - **Witness**: 3-tier 독립 검증자
-  - **Tier 0**: 27개 deterministic predicate (`FileExists`, `FileContains`, `GrepCountAtLeast`, `CommandExits` 등). **~331μs/task, $0**. Stub·fiction·unwired symbol 등 catastrophic pathology 탐지.
+  - **Tier 0**: 27개 deterministic predicate (`FileExists`, `FileContains`, `GrepCountAtLeast`, `CommandExits` 등). **~331μs/task, \$0**. Stub·fiction·unwired symbol 등 catastrophic pathology 탐지.
   - **Tier 1**: Clean-slate LLM reader. 대화 무접근. Oath와 파일만 읽고 JSON verdict.
   - **Tier 2**: **Adversarial auditor LLM**. "이 작업이 불완전하다는 가장 강한 논증"을 생성. Advisory-fail만 가능 (Tier 0 pass를 override 불가).
 - **Ledger**: SHA-256 hash-chained SQLite, append-only triggers. 별도 watchdog binary가 file-based Root Anchor를 `chmod 0400`으로 보관 → cross-process tamper detection.
@@ -52,7 +52,7 @@ Witness 시스템의 설계 원칙:
 1. Planner LLM이 Oath draft 생성 → Spec Reviewer가 accept/reject → Ledger 봉인.
 2. 에이전트 루프 정상 실행.
 3. "Done" emission 직전 `witness.verify_oath()` 실행 → Pass/Fail.
-4. Pass → 한 줄 readout 추가 ("Witness: 6/6 PASS. Cost: $0. Latency: +1ms.")
+4. Pass → 한 줄 readout 추가 ("Witness: 6/6 PASS. Cost: \$0. Latency: +1ms.")
 5. Fail → 최종 응답 재작성 ("Partial completion. 1/3 verified.")
 6. TrustEngine이 autonomy streak 갱신. 연속 pass → autonomy 상승. 한 번 fail → streak reset.
 
@@ -63,7 +63,7 @@ Witness 시스템의 설계 원칙:
 - **1,800 red-team trajectories** (10 pathology × 3 tier × 3 언어 × 20 task)
 - **Overall accuracy 90.0%**, **honest false-positive 0.0%**, **lying detection 88.9%**
 - 10 pathology 중 9가지 100% 탐지. `lying_sandbag_constant` 만 Tier 0 한계(0%), Tier 2 auditor + Oath discipline으로 보완.
-- **Latency 331μs/task, cost $0** (Tier 0 deterministic).
+- **Latency 331μs/task, cost \$0** (Tier 0 deterministic).
 - **73 real-LLM 세션**, 총 spend $0.34 (research budget $10 대비 3.43%). Gemini 3 Flash 60세션에서 clean run false-positive 0%. gpt-5.4에서 partial-completion 실시간 catch.
 
 ### 다른 에이전트에의 이식성

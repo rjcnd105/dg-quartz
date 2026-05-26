@@ -4,9 +4,7 @@ created: 2025-10-02T08:31:00Z
 modified: 2025-10-20T04:43:21Z
 tags:
   - typescript
-cssclasses: ""
 ---
-
 
 ## 과거 2023.2.6에 [작성했던 글](https://gggururu.tistory.com/107)
 
@@ -60,7 +58,7 @@ ParseResult는 Either이다.
 
 **성공했을시** 스키마 명세를 거친 최종 값을 Right<A>로 내뱉고
 
-**실패했을시** Left<NonEmptyReadonlyArray<ParseError>>를 내뱉는다.
+**실패했을시** Left\<NonEmptyReadonlyArray<ParseError>>를 내뱉는다.
 
 NonEmptyReadonlyArray이기 때문에 Left이면 첫번째 에러는 무조건 있다고 가정해도 된다.
 
@@ -74,7 +72,7 @@ type ParseError = Type | Index | Key | Missing | Unexpected | UnionMember;
 
 ParseError는 여러 유형의 에러 종류에 대한 유니온 타입이다.
 
-설명은 [https://github.com/fp-ts/schema/blob/main/src/ParseResult.ts](https://github.com/fp-ts/schema/blob/main/src/ParseResult.ts) 여기에 주석으로 굉장히 잘 설명해놓았으니 가서 읽으면 이해하기 쉽다.
+설명은 <https://github.com/fp-ts/schema/blob/main/src/ParseResult.ts> 여기에 주석으로 굉장히 잘 설명해놓았으니 가서 읽으면 이해하기 쉽다.
 
 ```typescript
 export interface Type {
@@ -91,6 +89,7 @@ export interface Key {
 
 ...
 ```
+
 여기서 우리가 선언하는 대부분의 유효성 검사 실패는 **Type**이라는 것만 알아 두자. 
 
 그리고 expected에 아래 설명할 Annotation이 포함된다.
@@ -101,7 +100,7 @@ export interface Key {
 
 이 주석은 기본적으로 선언해둔 여러가지가 있으며 각 명세가 실패하면 그 다음에 오는 주석을 적용시킨다.
 
-[https://github.com/fp-ts/schema#annotations](https://github.com/fp-ts/schema#annotations) 참고
+<https://github.com/fp-ts/schema#annotations> 참고
 
 ```typescript
 export type Custom = unknown;
@@ -194,13 +193,13 @@ const composeR =
     flow(ab, bc);
 ```
 
-나만의 꿀팁인데 주석으로 하스켈식 타입선언을 적어두면 [composeR :: (a -> b) -> (b -> c) -> a -> c] 특히 core한 함수인 경우 직관적인때가 많다.
+나만의 꿀팁인데 주석으로 하스켈식 타입선언을 적어두면 \[composeR :: (a -> b) -> (b -> c) -> a -> c] 특히 core한 함수인 경우 직관적인때가 많다.
 
 composeR은 첫번째로 a -> b 함수를 받고 두번째로 b -> c 함수를 받은 다음 a를 받아 c를 리턴하게끔 함수를 순차합성하는 함수라는 것을 알 수 있다.
 
-compose의 경우 역순차 합성이라 [compose :: (b -> c) -> (a -> c) -> a -> c] 처럼 되어있다.
+compose의 경우 역순차 합성이라 \[compose :: (b -> c) -> (a -> c) -> a -> c] 처럼 되어있다.
 
-[https://fp-ts.github.io/core/modules/Function.ts.html#compose](https://fp-ts.github.io/core/modules/Function.ts.html#compose) 
+<https://fp-ts.github.io/core/modules/Function.ts.html#compose> 
 
 이 compose의 특성을 이용해서 flow내에서 함수 합성을 하는 과정에서 아주 유용하므로 알아두는게 좋다.
 
@@ -248,7 +247,7 @@ getAnnotationX에도 Option을 사용함으로써 값이 있음과 없음이 명
 
 여기서 일반적인 케이스인 경우에 첫번째로 검출된 에러만 필요하므로 첫번째 에러만 가져와서 넘겨주는 코드를 작성했다.
 
-위에 4. ParseResult에서 정의된 것처럼 **실패했을 경우 Left<NonEmptyReadonlyArray<ParseError>>**를 리턴하기 때문에 NonEmptyReadonlyArray<ParseError>를 받아서 맨 첫번째의 ParseError만 추출하는 함수를 끼워주면 앞으로 쭉 편한할 것이다.
+위에 4. ParseResult에서 정의된 것처럼 \*\*실패했을 경우 Left\<NonEmptyReadonlyArray<ParseError>>\*\*를 리턴하기 때문에 NonEmptyReadonlyArray<ParseError>를 받아서 맨 첫번째의 ParseError만 추출하는 함수를 끼워주면 앞으로 쭉 편한할 것이다.
 
 ```typescript
 // 지정한 AnnotationX에 대한 첫번째 Error의 Annotation을 가져온다.
@@ -261,7 +260,7 @@ export const getFirstAnnotationX = flow(
 
 flow는 첫번째 함수의 인자를 받는다 **가정**하고 pipe처럼 이어준다.
 
-composeR로 함수합성을 통해서 **NonEmptyReadonlyArray<PR.ParseError> -> Option<A> 이 중간다리 역할로 적용**되어 합성되었다.
+composeR로 함수합성을 통해서 **NonEmptyReadonlyArray\<PR.ParseError> -> Option<A> 이 중간다리 역할로 적용**되어 합성되었다.
 
 원래라면 **getAnnotationX는 2차 함수의 인자로 단일 ParseError을 받으므로 flow로 잇지 못했을 것이다.**
 
@@ -281,7 +280,7 @@ export const firstErrorWithDefault = (defaultError: ErrorData<string>) =>
 
 복잡성을 덜기 위해 getFirstAnnotationX의 1차 함수의 인자로 위에서 정의했던 getError 함수를 바인딩 해 주었다.
 
-flow(getFirstAnnotationX(getError) 의 결과는 **getError함수를 바인딩 해줌으로써 1차 함수의 결과**가 나오고, **flow의 첫번째 인자로 들어감으로써 나중에 입력 받겠다는 Lazy dependency의 효과를 지니게 되어 2차 함수의 결과를 가정**하기 때문에 **Option<A>**가 리턴된다.
+flow(getFirstAnnotationX(getError) 의 결과는 **getError함수를 바인딩 해줌으로써 1차 함수의 결과**가 나오고, **flow의 첫번째 인자로 들어감으로써 나중에 입력 받겠다는 Lazy dependency의 효과를 지니게 되어 2차 함수의 결과를 가정**하기 때문에 \*\*Option<A>\*\*가 리턴된다.
 
 [ID.map](https://fp-ts.github.io/core/modules/Identity.ts.html#map)은 이럴 경우에 유용하다. 파이프의 앞쪽의 결과를 그대로(Identity) 사용할 경우 그 값에 적용할 함수를 넘겨주게 된다.
 
@@ -289,7 +288,7 @@ flow(getFirstAnnotationX(getError) 의 결과는 **getError함수를 바인딩
 
 [E.fromOption](https://fp-ts.github.io/core/modules/Either.ts.html#fromoption)의 앞의 E는 Either의 약자이다.
 
-즉 **Option을 Either로 변환하면서 Right<A>의 경우 Some<A>, None인 경우에는 defaultError가 들어있는 Left<ErrorData<string>>를 반환**한다.
+즉 **Option을 Either로 변환하면서 Right<A>의 경우 Some<A>, None인 경우에는 defaultError가 들어있는 Left\<ErrorData<string>>를 반환**한다.
 
 근데 아까 말했듯이 **Some인 경우에는 schema에 정의해둔 에러이므로** 즉
 
@@ -315,7 +314,7 @@ compose는 합성될 함수를 역순 (b -> c) -> (a -> b)로 받으므로 flow�
 
 그렇다면 **Left, Right 구분이 필요 없으므로 Either를 벗긴 값이 나온다.**
 
-즉 기존에 Either<ErrorData<string>>을 리턴하던 것에서 **ErrorData<string>을 리턴**하는 것으로 바꾼다.
+즉 기존에 Either\<ErrorData<string>>을 리턴하던 것에서 **ErrorData<string>을 리턴**하는 것으로 바꾼다.
 
 그렇게 하면 내가 설정한 에러랑 디폴트 에러랑 구분할 수 없지만 ErrorData내에 code가 있으므로 여전히 에러를 식별할 수 있기 때문이다.
 

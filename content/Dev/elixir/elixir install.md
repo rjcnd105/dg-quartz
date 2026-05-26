@@ -7,13 +7,11 @@ tags:
   - erlang
   - lexical-lsp
   - next-ls
-cssclasses: ""
 ---
-
 
 언어는 좋은데 좀.. 환경 설정이 그지같다...
 
-이것저것 다 해봤는데.. 다 문제가 조금씩 있어서 다음에는 [nix flake&direnv](https://elixirforum.com/t/flake-nix-phoenix-postgresql/52622/5)로 해봐야겠음.
+이것저것 다 해봤는데.. 다 문제가 조금씩 있어서 다음에는 [nix flake\&direnv](https://elixirforum.com/t/flake-nix-phoenix-postgresql/52622/5)로 해봐야겠음.
 -> 2025.2.10. https://github.com/rjcnd105/hj-dotfiles/tree/main/templates/phoenix 내 flake 기반 phoenix template 설정이다.
 
 전부 mac 환경 기준입니다.
@@ -47,6 +45,7 @@ asdf global elixir 1.17.2-otp-27
 ```
 
 .zshrc에 다음 내용 추가
+
 ```zsh
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
@@ -56,6 +55,7 @@ export PATH="$PATH:$HOME/.asdf/shims"
 ---
 
 brew로 asdf 업데이트하고 난 후 아래 command 실행
+
 ```zsh
 
 asdf reshim
@@ -65,11 +65,13 @@ asdf reshim
 #### asdf로 postgres 설치 (또는 업그레이드시)
 
 필요한 패키지들 설치 안되어있다면 설치
+
 ```
 brew install gcc readline zlib curl ossp-uuid icu4c pkg-config
 ```
 
 .zshrc 등에 다음 환경 변수 추가
+
 ```shell
 # brew
 export HOMEBREW_PREFIX=/opt/homebrew
@@ -77,6 +79,7 @@ export PKG_CONFIG_PATH="/opt/homebrew/bin/pkg-config:$(brew --prefix icu4c)/lib/
 ```
 
 그 다음 아래 커맨드 실행
+
 ```shell
 
 asdf reshim
@@ -90,7 +93,7 @@ asdf global postgres 17.1
 
 ### pkgx 통해 elixir 설치
 
----  24.11.15 현재로선 아직은 asdf 사용하는게 나은 것 같다.
+\---  24.11.15 현재로선 아직은 asdf 사용하는게 나은 것 같다.
 
 https://dev.to/jonlauridsen/perfect-elixir-environment-setup-1145
 위 글이 아주 좋다.
@@ -110,12 +113,14 @@ eval "$(pkgx integrate)"
 
 프로젝트 내에 pkgx.yml을 작성한다.
 pkgx.yml
+
 ```yml
 dependencies:
   erlang.org@26 elixir-lang.org@1.16
 ```
 
 그 후
+
 ```shell
 dev
 ```
@@ -126,6 +131,7 @@ pkgx기반으로 에디터가 작동하게 하려면 해당 프로젝트에서 �
 
 +etc
 install.zsh
+
 ```zsh
 #!/bin/zsh
 set +euo pipefail
@@ -140,7 +146,7 @@ echo "Setup complete."
 
 작성 후 zsh install.zsh
 
-***
+---
 
 ### LSP 설치
 

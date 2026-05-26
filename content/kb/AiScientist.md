@@ -22,7 +22,7 @@ Chen et al. (2026-04)에 따르면 장기 ML 연구 엔지니어링(논문 재�
 
 Control ≠ State. 분리하면 둘 다 확장 가능.
 
-- **Control (thin)**: Orchestrator가 stage 수준 결정만. workspace map $m\_t = \mathcal{M}(W\_t)$ — 경량 텍스트 인덱스. 결정은 $m\_t$ + concise summary 기반.
+- **Control (thin)**: Orchestrator가 stage 수준 결정만. workspace map $m_t = \mathcal{M}(W_t)$ — 경량 텍스트 인덱스. 결정은 $m_t$ + concise summary 기반.
 - **State (thick)**: paper 분석, plan, 코드, 로그, 실험 결과가 파일로 durable하게 누적. 대화 handoff에 state 실어 나르지 않음.
 
 결정 시 _progressive disclosure_: specialist는 map으로 네비게이트, 필요한 artifact만 on-demand read, 완료 시 `(summary, ΔW)` 반환.

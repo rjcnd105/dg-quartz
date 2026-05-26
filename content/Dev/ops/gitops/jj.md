@@ -4,9 +4,7 @@ created: 2025-12-03T09:27:07Z
 modified: 2026-01-29T14:28:49Z
 tags:
   - jj
-cssclasses: ""
 ---
-
 
 git 보다 더 높은 생산성과 PR 병합 시점이 내 업무에 방해가 되지 않도록.
 stacking branch 전략을 위한 여정.
@@ -19,9 +17,9 @@ stacking branch 전략을 위한 여정.
 revision 집합을 선택하기 위한 표현 방식
 
 `::`: 저장소의 모든 숨겨지지 않은 커밋
-=: `all()`, `root()::visible_heads()`
+\=: `all()`, `root()::visible_heads()`
 `..`: root를 제외한 모든 숨겨지지 않은 commit
-=: `~root()`, `root()..visible_heads()`
+\=: `~root()`, `root()..visible_heads()`
 
 `@` : 현재 작업 사본 커밋 최상위
 `@-` , `@--`, ...: `-` 가 붙을때마다 최상위에서 이 전 커밋을 의미한다.
@@ -88,7 +86,7 @@ main으로 빈 리비전 생성 - git의 checkout과 비슷한 효과
 ex: `jj new main@origin @-`
 새로운 커밋을 만드는데 main@origin, @- 를 병합한 커밋을 생성
 
-ex: `jj new 'description(substring:"Document hello.py in README.md")'
+ex: \`jj new 'description(substring:"Document hello.py in README.md")'
 위에처럼 특정 commit 설명에 일치하는 revision 위에 생성하게 할 수도 있음
 
 ### describe (desc)
@@ -165,8 +163,7 @@ describe와 new를 합친 sugar로 보면 된다.
 
 `jj commit`
 `jj commit -m "<MESSAGE>" <?FILE>
-ex: `jj commit -m "fix: readme.md"`
-ex: `jj commit -m "chore: update package" package.json`
+ex: `jj commit -m "fix: readme.md"`ex:`jj commit -m "chore: update package" package.json\`
 
 ### bookmark
 
@@ -180,7 +177,7 @@ ex: `jj bookmark create main --revision q` - id 약자도 가능
 
 `jj bookmark track <BOOKMARK> --remote=origin`
 ex: `jj bookmark track main@origin`
-	
+
 `jj bookmark move <BOOKMARK> --to <REVISION>`
 `jj bookmark move <BOOKMARK> --to @-`
 `@-` 는 작업 사본 commit의 부모를 참조하는 키워드다. 해당 commit의 id를 입력해도 동일하다.
@@ -212,6 +209,7 @@ repo: `.jj/repo/config.toml`
 workspace: `.jj/workspace-config.toml`
 
 example
+
 ```toml
 #:schema https://docs.jj-vcs.dev/latest/config-schema.json
 

@@ -4,9 +4,7 @@ created: 2025-07-28T06:32:13Z
 modified: 2025-11-07T04:10:34Z
 tags:
   - typescript
-cssclasses: ""
 ---
-
 
 ## 과거 2022.7.24에 [작성했던 글](https://gggururu.tistory.com/104)
 
@@ -93,13 +91,13 @@ declare module 'app/service/api' {
 
 위의 파일을 보면 declare module 'app/service/apl' { ... } 코드 부분이 보일 것이다.
 
-그 안의 보면 API_NAME을 키값으로 하여 타입을 선언해주는데, 이것이 **app/service/api.ts** 파일의 interface ApiFns에 merge 된다.
+그 안의 보면 API\_NAME을 키값으로 하여 타입을 선언해주는데, 이것이 **app/service/api.ts** 파일의 interface ApiFns에 merge 된다.
 
 이래서 미리 빈 객체를 선언해두고 나중에 값을 추가하는 것과 같은 방식과도 같다고 한 것이다.
 
-위에 보면 함수를 굳이 api라는 객체로 감싼 것이 보이는데, 이는 객체로부터 API_NAME으로 함수를 추출하기 위해 일부로 한번 감싼 것이다.
+위에 보면 함수를 굳이 api라는 객체로 감싼 것이 보이는데, 이는 객체로부터 API\_NAME으로 함수를 추출하기 위해 일부로 한번 감싼 것이다.
 
-이로 인해 API_NAME만 수정하면 모든 키 네임이 수정되어 훨신 수정하기 편하다.
+이로 인해 API\_NAME만 수정하면 모든 키 네임이 수정되어 훨신 수정하기 편하다.
 
 위와 같은 식으로 파일들을 만들고 나중에 타입을 추출해보면?
 
@@ -118,6 +116,7 @@ ApiFns는 분명 비어있는데 키를 추출한 ApiFnKeys의 타입을 확인�
 이렇게 추출한 타입을 활용하는 api 파일의 전체 예시를 보겠다.
 
 **app/service/api.ts**
+
 ```ts
 import type { DataFunctionArgs } from '@remix-run/node';
 import type { FetcherWithComponents, FormMethod } from '@remix-run/react';

@@ -23,7 +23,7 @@ Maheswaran et al. (2026-04)에 따르면 verifier-free evolution(RSA 등)은 두
 
 많은 test-time scaling 방법이 하나의 operator로 일반화 가능:
 
-$$\Phi\_f(\mathcal{P}) = \text{recomb}\_f \circ \text{select}\_f(\mathcal{P})$$
+$$\Phi_f(\mathcal{P}) = \text{recomb}_f \circ \text{select}_f(\mathcal{P})$$
 
 | Method | k | select | recomb | fitness | model |
 |--------|---|--------|--------|---------|-------|
@@ -79,9 +79,9 @@ $$\Phi\_f(\mathcal{P}) = \text{recomb}\_f \circ \text{select}\_f(\mathcal{P})$$
 
 **ARC-AGI-V2**:
 
-- Squeeze Evolve 97.5% at $7.74/task → **SoTA cost-capability frontier**
+- Squeeze Evolve 97.5% at \$7.74/task → **SoTA cost-capability frontier**
 - code execution 없이 Confluence Lab (97.9%, $11.77) / Imbue (95.1%, $8.71) 격파
-- Gemini 3.0 Flash 추가해 3-way routing 하면 $5.93/task로 동일 정확도
+- Gemini 3.0 Flash 추가해 3-way routing 하면 \$5.93/task로 동일 정확도
 
 **Circle Packing (verifier-free discovery)**:
 

@@ -16,7 +16,7 @@ Group Relative Policy Optimization. 한 샘플에 대해 여러 rollout을 그�
 PPO와 달리 별도의 critic/value 네트워크를 요구하지 않는다. 그룹 내 평균·표준편차로 정규화한 상대 보상을 advantage로 사용:
 
 $$
-\hat{A}\_i = \frac{R\_i - \mu\_R}{\sigma\_R + \epsilon}
+\hat{A}_i = \frac{R_i - \mu_R}{\sigma_R + \epsilon}
 $$
 
 Clipped policy ratio와 KL 정규화 항을 결합한 objective는 PPO와 유사하다. LLM agent 훈련에서 한 질문에 대해 G개 응답을 샘플링하고 각각의 품질로 서로를 랭킹하는 setting에 잘 맞는다.

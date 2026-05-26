@@ -3,23 +3,12 @@ publish: true
 created: 2025-04-01T04:50:59Z
 modified: 2025-10-16T04:47:03Z
 tags:
-  - a
-  - s
-  - h
-  - a
-  - s
-  - h
-  - _
-  - q
-  - u
-  - e
-  - r
-  - y
-cssclasses: ""
+  - ash
+  - ash_query
 ---
 
-
 상단에 Ash.Query require가 필요.
+
 ```elixir
 require Ash.Query
 ```

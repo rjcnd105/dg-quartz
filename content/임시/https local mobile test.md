@@ -1,11 +1,10 @@
 ---
 publish: true
-aliases: https local mobile test
+aliases:
+  - https local mobile test
 created: 2025-06-12T09:52:09Z
 modified: 2025-10-16T04:47:10Z
-cssclasses: ""
 ---
-
 
 proxyman 무료 버전으로도 모바일 https 로컬 테스트를 할 수가 있다
 

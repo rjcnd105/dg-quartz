@@ -7,9 +7,7 @@ tags:
   - liveview
   - form
   - code_interface
-cssclasses: ""
 ---
-
 
 room을 읽어서 :action에 해당하는 update form을 만든 후 params와 함께 submit하면 된다.
 
@@ -22,6 +20,7 @@ room을 읽어서 :action에 해당하는 update form을 만든 후 params와 �
 ```
 
 live view 내에서의 submit 처리의 경우 예시
+
 ```elixir
   def handle_event("change_room_name", %{"form" => %{"name" => name} = form_params}, socket) do
     socket.assigns.room_name_form[:name] |> IO.inspect()

@@ -5,9 +5,7 @@ modified: 2025-10-16T04:39:18Z
 tags:
   - nix
   - sh
-cssclasses: ""
 ---
-
 
 https://github.com/rjcnd105/hj-dotfiles/tree/main/files/workspace/.config/zed
 여기서 파일들을 볼 수 있습니다.
@@ -17,6 +15,7 @@ https://github.com/rjcnd105/hj-dotfiles/tree/main/files/workspace/.config/zed
 `cmd+shift+p` -> open task
 
 tasks.json
+
 ```json
 [
   {
@@ -30,13 +29,15 @@ tasks.json
 ]
 ```
 
-그 다음 custom_runfile.sh 구성
+그 다음 custom\_runfile.sh 구성
+
 ```sh
 touch ~/.config/zed/custom_runfile.sh
 zed ~/.config/zed/custom_runfile.sh
 ```
 
-custom_runfile.sh
+custom\_runfile.sh
+
 ```sh
 #!/bin/bash
 
@@ -64,6 +65,7 @@ fi
 ```
 
 키 맵으로 추가(cmd+r)
+
 ```json
 [ 
 	{
@@ -84,6 +86,7 @@ aditional
 vscode에서 위 sh 사용
 
 `cmd+shift+p` -> config user task
+
 ```json
 {
 	
@@ -112,13 +115,14 @@ vscode에서 위 sh 사용
 
 ### nix
 
-lsp설정 추가랑 language_servers랑 둘 다 명시해줘야함.
+lsp설정 추가랑 language\_servers랑 둘 다 명시해줘야함.
 
 install extention
 https://github.com/zed-extensions/nix
 
 settings.json
-``` json
+
+```json
 {
 	"lsp": {
 	    "nixd": {

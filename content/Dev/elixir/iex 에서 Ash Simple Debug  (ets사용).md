@@ -6,11 +6,10 @@ tags:
   - elixir
   - debug
   - ets
-cssclasses: ""
 ---
 
+my\_debug.ex
 
-my_debug.ex
 ```elixir
 :ets.new(:debug_values, [:named_table, :set, :public])
 
@@ -43,6 +42,7 @@ end
 ```
 
 .iex.exs
+
 ```elixir
 import MyDebug, only: [dbg_vget: 0, dbg_vget: 1, dbg_store: 1, dbg_store: 2, dbg_store: 3]
 
@@ -51,6 +51,7 @@ import MyDebug, only: [dbg_vget: 0, dbg_vget: 1, dbg_store: 1, dbg_store: 2, dbg
 사용시
 
 1. debug 값 저장 및 debug 출력
+
 ```elixir
 def mount(assigns) do
   # ...
@@ -60,6 +61,7 @@ end
 ```
 
 2. iex 내에서 값 출력
+
 ```elixir
 iex(1)> dbg_vget()
 ```
