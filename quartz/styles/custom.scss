@@ -1,3 +1,176 @@
 @use "./variables.scss" as *;
+@use "./syncer";
+@use "themes";
 
-// put your custom CSS here!
+html {
+  font-size: 14px;
+  --external-link-color: rgba(123, 151, 170, 1);
+}
+
+body {
+  iframe {
+    border: none;
+  }
+  .explorer-content ul {
+    overscroll-behavior: auto;
+  }
+  .explorer-ul.overflow {
+    overscroll-behavior: contain;
+  }
+
+  .explorer .explorer-content ul.explorer-ul li a {
+    cursor: pointer;
+  }
+  a {
+    cursor: pointer;
+  }
+
+  a.external {
+    cursor: pointer !important;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  hr {
+    border-top-width: 1px;
+    height: 0;
+  }
+  .folder-container {
+    gap: 4px;
+  }
+  .folder-container div > button span {
+    font-weight: 500;
+  }
+
+  .tag-link + .tag-link {
+    margin-left: 4px;
+  }
+
+  .language-dataview {
+    display: inline;
+    font-size: inherit;
+  }
+
+  .markdown-rendered hr {
+    border-top: 1.5px solid;
+    opacity: 0.9;
+  }
+
+  .page_tag-hidden .tags {
+    display: none !important;
+  }
+
+  a.internal {
+    color: var(--secondary);
+  }
+
+  a.internal.tag-link {
+    cursor: pointer !important;
+    color: var(--dark);
+    border: none !important;
+    outline: none !important;
+    background-color: transparent !important;
+    display: inline-flex !important;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  .clipboard-button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+    & > svg {
+      fill: var(--dark);
+    }
+  }
+  .page-title {
+    font-size: 1.6rem;
+  }
+  .search > .search-button > p {
+    font-size: 0.8rem;
+  }
+  .breadcrumb-element p {
+    font-size: 0.6rem;
+    color: var(--darkgray);
+  }
+
+  div.graph {
+    --quartz-graph-line: var(--light);
+    --quartz-graph-node: var(--gray);
+    --quartz-graph-node-attachment: var(--highlight);
+    --quartz-graph-node-focused: var(--secondary);
+    --quartz-graph-node-tag: var(--tertiary);
+    --quartz-graph-node-unresolved: var(--lightgray);
+    --quartz-graph-text: var(--dark);
+  }
+
+  .content-meta {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  pre > code {
+    padding: 0.5rem;
+  }
+}
+
+.breadcrumb-container .breadcrumb-element:last-of-type {
+  display: none;
+}
+
+body .page article p > strong > em,
+body strong > em,
+body .page article p > strong,
+body strong {
+  font-family: "Acari Sans", "Avenir Next";
+  font-weight: 600;
+  color: var(--code-keyword);
+}
+
+[data-ui="page-index"] {
+  [data-slot="tag-wrap"] {
+    display: inline-block;
+    font-size: 0.58rem;
+    color: var(--tag-color);
+    opacity: 0.85;
+
+    &:after {
+      content: ", ";
+    }
+    &:last-of-type:after {
+      content: "";
+    }
+  }
+
+  [data-slot="info"] {
+    font-size: 0.6rem;
+    opacity: 0.8;
+    vertical-align: top;
+  }
+
+  [data-slot="list-item"] {
+    margin-bottom: 0.5rem;
+  }
+
+  [data-slot="tag"] {
+    padding: 0 0 0 0.2rem !important;
+    margin-left: 0.25rem;
+    display: inline !important;
+
+    &:before {
+      color: inherit !important;
+    }
+  }
+}
+.mermaid .labelBkg,
+.mermaid-content .labelBkg .mermaid .edgeLabel,
+.mermaid-content .edgeLabel {
+  background-color: transparent !important;
+}
+
+.mermaid .edgeLabel p,
+.mermaid-content .edgeLabel p {
+  background-color: var(--light) !important;
+  padding: 0.2rem 0.4rem;
+}

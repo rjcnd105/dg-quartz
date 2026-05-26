@@ -9,5 +9,9 @@ tsconfig.tsbuildinfo
 private/
 .replit
 replit.nix
+
+.history
+.claude/
+.vscode/
 .quartz/
 quartz/cli/tui/dist/
