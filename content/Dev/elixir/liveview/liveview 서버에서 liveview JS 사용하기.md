@@ -4,13 +4,12 @@ created: 2025-04-04T08:44:43Z
 modified: 2025-10-16T04:47:09Z
 tags:
   - liveview
-cssclasses: ""
 ---
-
 
 서버측에서 클라이언트단 이벤트를 호출하여 Liveview.JS를 실행시키기
 
 컴포넌트단
+
 ```elixir
 attr(:show, :boolean, default: false)
 
@@ -43,6 +42,7 @@ end
 ```
 
 서버단
+
 ```elixir
 
 socket
@@ -55,6 +55,7 @@ socket
 ```
 
 assets의 app.ts에 아래 이벤트 추가
+
 ```typescript
 window.addEventListener("phx:js-exec", ({ detail }: any) => {
   document.querySelectorAll(detail.to).forEach((el) => {
@@ -64,4 +65,4 @@ window.addEventListener("phx:js-exec", ({ detail }: any) => {
 ```
 
 이제 js-exec로 모든 liveview JS를 실행 가능하다.
-\
+\\

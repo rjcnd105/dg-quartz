@@ -9,9 +9,7 @@ tags:
   - nix_develop
   - nix_profile
   - nix_flake
-cssclasses: ""
 ---
-
 
 ### nix profile (구 nix-env)
 
@@ -40,6 +38,7 @@ nix profile history
 #### template
 
 https://github.com/the-nix-way/dev-templates/blob/main/flake.nix#L141 의 경우에 방법은 아래와 같다. (전부 결과는 같음)
+
 ```sh
 # github에서
 nix flake new --template github:the-nix-way/dev-templates#elixir my-elixir
@@ -57,12 +56,13 @@ nix flake init --template "https://flakehub.com/f/the-nix-way/dev-templates/*#el
 `touch .envrc`
 
 **.envrc**
+
 ```
 use flake "github:the-nix-way/dev-templates?dir=elixir"
 use flake "github:the-nix-way/dev-templates?dir=gleam"
 ```
 
-``direnv allow .`
+\`\`direnv allow .\`
 
 특히 나만의 설정들을 모아놓은 스크립트들을 dvd라고 부르기도 한다.
 

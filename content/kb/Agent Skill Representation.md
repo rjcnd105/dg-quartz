@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-06T08:44:23Z
-modified: 2026-05-06T08:44:23Z
+modified: 2026-05-27T03:10:15Z
 tags:
   - kb
   - llm
@@ -41,8 +41,15 @@ SSL은 static artifact에서 추출된다. 동적으로 payload를 다운로드�
 
 따라서 실전에서는 SSL을 source document, runtime sandbox, permission manifest, review checklist와 함께 써야 한다.
 
+## Skill optimization과의 관계
+
+[[SkillOpt]]는 skill을 구조화하는 문제가 아니라, skill 문서 자체를 rollout feedback으로 훈련하는 문제를 다룬다 (출처: [[Introduction]]). SSL이 "skill을 어떻게 읽고 감사할 것인가"라면, SkillOpt는 "skill을 어떻게 제한적으로 바꾸고 검증할 것인가"에 가깝다.
+
+두 접근은 연결될 수 있다. SSL 같은 구조화 representation은 optimizer가 edit할 영역, protected instruction, tool-risk surface를 명확히 하여 uncontrolled rewrite와 [[Over-Editing]]을 줄이는 보조 interface가 될 수 있다.
+
 ## 관련 링크
 
+- [[SkillOpt]] — skill artifact를 validation-gated text-space optimization 대상으로 보는 접근
 - [[LLM Harness]] — skill을 로드하고 실행하는 주변 시스템
 - [[AI Organisation]] — skill보다 큰 단위인 agent/talent 운영 layer
 - [[Agent Task Verification]] — skill execution 후 완료 주장 검증

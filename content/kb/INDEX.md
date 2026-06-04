@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-07T07:55:00Z
-modified: 2026-05-26T07:40:22Z
+modified: 2026-05-27T03:39:50Z
 tags:
   - kb
   - index
@@ -71,6 +71,8 @@ kb/ 페이지의 카탈로그. frontmatter 기반으로 재생성 가능한 캐�
 
 ## AI / LLM
 
+- [[Memory as a Model (MeMo)]] — Memory as a Model(MeMo)는 새 지식을 vector index나 prompt context가 아니라 별도의 Memory model 파라미터에 압축하고, frozen Executive model이 이를 multi-turn query protocol로 조회하는 knowledge integration 방식이다 (출처: MeMo Memory as a Model).
+- [[SkillOpt]] — SkillOpt는 agent skill 문서를 frozen model 바깥의 trainable state로 보고, rollout feedback으로 skill text를 제한적으로 업데이트하는 text-space optimization 방법이다 (출처: Introduction).
 - [[Perceptual Decision Feedback Loops]] — Perceptual decision feedback loops는 sensory cortex가 단순 입력 처리기가 아니라, decision variable을 downstream cortical feedback과 함께 형성할 수 있다는 관점이다.
 - [[Personalized Research Automation Agents]] — Personalized research automation agents는 autonomous research pipeline이 topic만 처리하는 것이 아니라, 연구자별 resource, preference, output style, history를 장기적으로 반영해야 한다는 설계 축이다.
 - [[Faithful Uncertainty]] — Faithful uncertainty는 LLM이 외부 세계의 진실을 완벽히 맞히는 능력이 아니라, 자기 내부 불확실성을 언어적 확신도와 맞추는 metacognitive 능력이다.
@@ -102,6 +104,9 @@ kb/ 페이지의 카탈로그. frontmatter 기반으로 재생성 가능한 캐�
 
 ## Health / Science
 
+- [[Alcohol and Cognitive Aging]] — Alcohol and cognitive aging 연구에서 중요한 쟁점은 "가벼운 음주가 보호적인가"보다, abstainer bias와 건강한 사용자 bias가 관찰 연구의 J-shaped association을 만들었는지다 (출처: Light Alcohol Consumption Does Not Protect Cognitive Function A Longitudinal Prospective Study).
+- [[Functional Vitamin B12 Status]] — Functional vitamin B12 status는 total serum B12가 "정상"인지보다, 세포와 신경계가 실제로 사용할 수 있는 B12와 downstream biomarker가 충분한지를 보는 관점이다 (출처: Scientists found that the vitamin B12 levels doctors call normal are quietly damaging the aging brain).
+- [[Supplement Evidence Triage]] — Supplement evidence triage는 Reddit 같은 community stack list와 댓글을 무시하거나 곧바로 추천 목록으로 받아들이지 않고, 반복성·구체성·기전·측정 가능성·안전성 신호를 분리해 평가하는 방식이다 (출처: My Top Supplements Categorised and Ranked).
 - [[Action Symbols and Compositional Generalization]] — Action symbol은 개별 움직임이나 stroke를 낮은 수준의 근육 명령이 아니라 재조합 가능한 추상 단위로 표현하는 신경 표상이다
 - [[Bacopa monnieri]] — _Bacopa monnier&#x69;_&#xB294; bacoside 계열 triterpenoid saponin을 주요 후보 성분으로 갖는 Ayurvedic botanical이며, nootropic 논의에서는 memory, attention, neuroprotection 후보로 다뤄진다.
 - [[Brief Meditation EEG Dynamics]] — Brief meditation EEG dynamics는 명상을 rest-vs-meditation 평균 차이로만 보지 않고, 시작 후 몇 분 안에 brainwave pattern이 어떻게 이동하는지 추적하는 접근이다.
@@ -154,7 +159,7 @@ kb/ 페이지의 카탈로그. frontmatter 기반으로 재생성 가능한 캐�
 - [[Intermittent Fasting in Older Adults]] — 고령자의 간헐적 단식은 체중, 심혈관·대사 지표, 인지·정신건강 신호를 근감소증과 허약 위험과 함께 읽어야 하는 식이 개입 영역이다.
 - [[Metformin Gut Mechanism]] — Metformin gut mechanism은 metformin의 glucose-lowering effect를 liver-only model이 아니라 intestinal epithelial mitochondrial complex I inhibition으로 읽는 접근이다.
 - [[Microdosing Psychedelics]] — Psychedelic microdosing은 뚜렷한 환각 효과를 피하려는 낮은 용량의 LSD, psilocybin 등 serotonin계 psychedelic 반복 사용이다.
-- [[Nootropic Self-Experiment Reports]] — Nootropic self-experiment reports는 supplement나 drug-like compound를 개인이 순차적으로 시험하고 주관적 focus, mood, sleep, motivation을 기록한 낮은 신뢰도 자료다.
+- [[Nootropic Self-Experiment Reports]] — Nootropic self-experiment reports는 supplement나 drug-like compound를 개인이 시험하고 focus, mood, sleep, motivation 변화를 기록한 경험적 자료다
 - [[Stem Cell Mitophagy and Senescence]] — Stem cell mitophagy and senescence 연구는 oxidative/glycative stress가 mesenchymal stem cell mitochondrial quality control을 무너뜨리고, low-dose antioxidant pretreatment가 mitophagy marker와 senescence phenotype을 일부 회복할 수 있는지 보는 영역이다.
 - [[Thyroid-Serotonin Mood Axis]] — 갑상샘-serotonin 기분 축은 갑상샘 호르몬 상태가 뇌 serotonin 반응성과 정동장애 보강 치료 전략에 영향을 줄 수 있다는 관점이다.
 - [[ADHD Attention State Regulation]] — ADHD의 주의력 문제는 단순한 주의력 결핍보다, 관심·각성·수면성 slow wave가 주의 배분을 흔드는 상태 조절 문제로 읽는 편이 설명력이 높다.
@@ -226,6 +231,7 @@ kb/ 페이지의 카탈로그. frontmatter 기반으로 재생성 가능한 캐�
 
 ## Glossary
 
+- [[RAG]] — RAG(Retrieval-Augmented Generation)는 모델이 답변을 만들기 전에 외부 문서 저장소에서 관련 자료를 검색하고, 검색 결과를 컨텍스트로 넣어 생성하는 패턴이다.
 - [[Heart Rate Variability]] — HRV(Heart Rate Variability)는 연속된 심장 박동 사이 간격이 얼마나 유연하게 변하는지를 나타내는 marker다.
 - [[Aryl Hydrocarbon Receptor]] — Aryl hydrocarbon receptor(AhR)는 환경·식이·microbial small molecule에 반응하는 ligand-activated transcription factor다.
 - [[Kynurenine Pathway]] — Kynurenine pathway는 tryptophan이 IDO 또는 TDO를 거쳐 kynurenine 계열 metabolite로 분해되는 대사 경로다.
@@ -274,9 +280,9 @@ kb/ 페이지의 카탈로그. frontmatter 기반으로 재생성 가능한 캐�
 
 ## Health
 
-- 총 페이지: 234
-- 단일 출처 페이지: 168/234 (출처 없는 페이지 36 별도)
+- 총 페이지: 240
+- 단일 출처 페이지: 169/240 (출처 없는 페이지 37 별도)
 - 미해결 논쟁: 0
 - 최신 동향 만료: 0 (6개월 기준)
 - 고아 페이지: 0 (glossary 제외)
-- 마지막 rebuild-index: 2026-05-26
+- 마지막 rebuild-index: 2026-05-27

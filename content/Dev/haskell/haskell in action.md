@@ -6,15 +6,13 @@ tags:
   - ghcup
   - haskell
   - study
-cssclasses: ""
 ---
-
 
 # Install
 
 ghcup이라는 강력한 툴이 나왔다
 
-[https://www.haskell.org/ghcup/](https://www.haskell.org/ghcup/)
+<https://www.haskell.org/ghcup/>
 
 ghcup tui를 사용하면 끝임.
 
@@ -35,21 +33,24 @@ stack script ghci/bubbleSort.hs --resolver=nightly
 ### 기본 용어 사전
 
 - ghcup
-하스켈 표준화를 위해 새롭게 만든 패키지 관리 툴. 덕분에 아주 설치가 쉬워짐
-    - tui: 하스켈 관련 패키지들을 ui로 쉽게 확인하고 설치할 수 있다.
+  하스켈 표준화를 위해 새롭게 만든 패키지 관리 툴. 덕분에 아주 설치가 쉬워짐
+  - tui: 하스켈 관련 패키지들을 ui로 쉽게 확인하고 설치할 수 있다.
+
 - cabal
-빌드 툴. 패키지 의존성 문제가 있음
+  빌드 툴. 패키지 의존성 문제가 있음
+
 - stack
-cabal을 대체하기 위해 나온 신규 툴. 그러나 아직 cabal로만 할 수 있는 것들이 있다.
+  cabal을 대체하기 위해 나온 신규 툴. 그러나 아직 cabal로만 할 수 있는 것들이 있다.
 
-    stack을 이용하여 hs file 실행
+  stack을 이용하여 hs file 실행
 
-    stack runghc vocab1 ../data/texts/hamlet.txt
-    
+  stack runghc vocab1 ../data/texts/hamlet.txt
+
 - GHCi
-대화형 인터페이스
+  대화형 인터페이스
+
 - GHC
-하스켈 컴파일러
+  하스켈 컴파일러
 
 ## Introduce
 
@@ -176,7 +177,7 @@ ghci> 'a' `compare` 'b'
 
 Compare 함수는 두 Ord 클래스를 구현한 맴버를 받아서 Ordering을 내뱉는다.
 
-함수를 중위 연산자처럼 쓰려면 ``안에 함수를 넣으면 됨.
+함수를 중위 연산자처럼 쓰려면 \`\`안에 함수를 넣으면 됨.
 
 - **Show, Read**
 
@@ -203,8 +204,8 @@ read가 "8.2" + 3.8 같은 경우는 어떤 식으로 read 되어야 하는지 �
 그렇기 때문에 :: 로 유형을 지정해줘야 한다. Typescript의 as 같은 느낌이나, haskell에서는 유형이 데이터와 결부되어 있기에 실제로 값이 해당 유형으로 컴파일된다.
 
 - **Enum**
-enum의 맴버는 List에서 ..를 통해 열거할 수 있으며, succ, pred함수로 후속, 선행 작업을 정의했다.
-Types in this class: (), Bool, Char, Ordering, Int, Integer, Float and Double.
+  enum의 맴버는 List에서 ..를 통해 열거할 수 있으며, succ, pred함수로 후속, 선행 작업을 정의했다.
+  Types in this class: (), Bool, Char, Ordering, Int, Integer, Float and Double.
 
 ```haskell
 ghci> ['a'..'e']  
@@ -218,7 +219,7 @@ ghci> succ 'B'
 ```
 
 - **Bounded**
-Bounded의 맴버들은 상한과 하한이 있다.
+  Bounded의 맴버들은 상한과 하한이 있다.
 
 ```haskell
 ghci> minBound :: Int  
@@ -232,12 +233,12 @@ False
 ```
 
 - Num
-Num의 맴버들은 숫자처럼 행동한다.
-To join Num, a type must already be friends with Show and Eq.
-: Int, Integer, Float, Double
-    - Integral
+  Num의 맴버들은 숫자처럼 행동한다.
+  To join Num, a type must already be friends with Show and Eq.
+  : Int, Integer, Float, Double
+  - Integral
     정수만 포함(Int, Integer)
-    - Floating
+  - Floating
     실수만 포함(Float and Double)
 
 ```haskell
@@ -255,7 +256,7 @@ ghci> :t (*)
 (*) :: (Num a) => a -> a -> a
 ```
 
-*는 하나의 타입에만 적용이 되므로 (5 :: Int) * (6 :: Integer)은 안되고 5 * (6 :: Integer) 일땐 5가 Integer로 컴파일된다.
+\*는 하나의 타입에만 적용이 되므로 (5 :: Int) \* (6 :: Integer)은 안되고 5 \* (6 :: Integer) 일땐 5가 Integer로 컴파일된다.
 
 fromIntegral함수는 아주 유용한게 Integral를 Num으로 바꿔준다. 그러므로 Floating과도 연산이 가능해짐.
 
@@ -492,9 +493,9 @@ ghci> sum . replicate 5 . max 6.7 $ 8.9 -- 위에 코드를 이처럼 작성 가
 
 ```
 
-### $ (Function application)
+### \$ (Function application)
 
-언뜻보면 기능이 없어 보이지만.. $함수는 우선순위가 가장 낮아진다.
+언뜻보면 기능이 없어 보이지만.. \$함수는 우선순위가 가장 낮아진다.
 
 ```haskell
 ghci> head . sort $ "julie"
@@ -569,7 +570,7 @@ chain n
 
 재귀할때 [항등원](https://www.notion.so/01f55ada5f6548b3a071275a984e03a7?pvs=21)을 아는 것이 중요하다. 맨 마지막엔 항등식으로 끝나기 때문.
 
-곱의 항등원은 1, 더하기 빼기는 0, 배열은 [] ...
+곱의 항등원은 1, 더하기 빼기는 0, 배열은 \[] ...
 
 퀵정렬 구현이 이렇게 쉽다고?
 

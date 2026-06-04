@@ -5,9 +5,7 @@ modified: 2025-10-16T04:41:33Z
 tags:
   - nootropic
   - 우울증
-cssclasses: ""
 ---
-
 
 **섭취**
 하루 1mg
@@ -20,7 +18,7 @@ cssclasses: ""
 **부정**
 섭취하고나서 위염을 겪었다는 사례도 있어서 주의 필요.
 
-***
+---
 
 I decided to spend a few hours researching the seemingly endless benefits of Agmatine Sulfate. Recently [examine.com](https://examine.com/) updated their dosage with a new study showing 2-3g/ day of Agmatine being effective in treating depression in 3 people. After complaining everywhere that the 500mg/day dose was too small to be effective, I'm proud to see my initial opinion be validated by science. I've been using for 6 months and it has cured my depression.
 
@@ -74,26 +72,26 @@ Agmatine long-term safety:
 
 Agmatine and testosterone:
 
-- [https://pubmed.ncbi.nlm.nih.gov/7478229/](https://pubmed.ncbi.nlm.nih.gov/7478229/)
+- <https://pubmed.ncbi.nlm.nih.gov/7478229/>
 
 Agmatine and Serotonin function:
 
-- [https://pubmed.ncbi.nlm.nih.gov/19589348/](https://pubmed.ncbi.nlm.nih.gov/19589348/)
+- <https://pubmed.ncbi.nlm.nih.gov/19589348/>
 - [Study suggesting the antidepressant effects of Agmatine are mediated by Serotonin](https://pubmed.ncbi.nlm.nih.gov/15374751/)
 - [Proof that Serotonin is not responsible for its antidepressant effects](https://www.sciencedirect.com/science/article/pii/S0166432807006225)
 
 Agmatine and NMDA antagonism/ glutamate action:
 
-- [https://pubmed.ncbi.nlm.nih.gov/15982768/](https://pubmed.ncbi.nlm.nih.gov/15982768/)
-- [https://pubmed.ncbi.nlm.nih.gov/9918557/](https://pubmed.ncbi.nlm.nih.gov/9918557/)
+- <https://pubmed.ncbi.nlm.nih.gov/15982768/>
+- <https://pubmed.ncbi.nlm.nih.gov/9918557/>
 
 Agmatine and vasodilation (for muscle pump and, um, erections I suppose):
 
-- [https://pubmed.ncbi.nlm.nih.gov/7637544/](https://pubmed.ncbi.nlm.nih.gov/7637544/)
+- <https://pubmed.ncbi.nlm.nih.gov/7637544/>
 
 Agmatine is GABAergic and increases BDNF:
 
-- [https://www.nature.com/articles/tp2016116](https://www.nature.com/articles/tp2016116)
+- <https://www.nature.com/articles/tp2016116>
 - [Brain-derived neurotrophic factor regulates the expression of D1 dopamine receptors](https://pubmed.ncbi.nlm.nih.gov/17116228/)
 
 Agmatine Sulfate and tolerance:

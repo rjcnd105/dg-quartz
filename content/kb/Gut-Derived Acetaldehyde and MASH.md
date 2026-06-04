@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-11T05:23:57Z
-modified: 2026-05-14T20:24:32Z
+modified: 2026-05-27T03:50:00Z
 tags:
   - kb
   - health
@@ -19,6 +19,8 @@ Reddit microbiomenews 요약은 Cell Metabolism 2026 논문을 바탕으로, 높
 내부 `Link to Study`는 Cell Metabolism 논문 "Targeting microbiota-generated acetaldehyde to prevent progression of metabolic dysfunction-associated steatotic liver disease"로 확인된다. UK Biobank 출판 기록과 ScienceDirect 메타데이터는 PubMed ID 41775257, DOI 10.1016/j.cmet.2026.01.021, 2026년 3월 출판을 가리킨다.
 
 이 해석 틀의 전환점은 MASLD/MASH를 단순 열량 과잉이나 간 de novo lipogenesis만으로 보지 않고, 장내 미생물 발효 산물이 간 손상 신호로 작동할 수 있다는 점이다. Reddit 요약은 acetaldehyde를 분해하도록 설계한 _Ligilactobacillus salivarius_ HAM이 전임상 모델에서 섬유화를 막았다고 정리한다.
+
+댓글은 이 claim을 두 방향으로 보정한다. 하나는 "engineered probiotic이 있으면 sugar snack을 건강하게 만들 수 있다"는 식의 misuse risk다. 댓글 흐름에서도 acetaldehyde를 줄여도 candida/pathogenic overgrowth, calorie load, 여러 독성 대사산물 문제는 남는다는 반론이 나온다. 다른 하나는 processed sugar와 whole fruit/fructose를 구분하려는 질문이다. Fiber와 식품 매트릭스가 glycemic response와 microbial exposure를 바꾸지만, dysbiosis가 있으면 fruit도 증상을 만들 수 있다는 경험담이 섞여 있다. 따라서 이 페이지는 probiotic antidote가 아니라 gut-metabolite risk axis로 유지한다.
 
 ## 해석 경계
 

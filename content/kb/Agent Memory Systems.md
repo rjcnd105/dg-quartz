@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-17T08:00:00Z
-modified: 2026-05-18T06:34:02Z
+modified: 2026-05-27T03:07:26Z
 tags:
   - kb
   - llm
@@ -23,7 +23,7 @@ Deep Research Agent(DRA)가 multi-turn 추론+도구 호출을 반복하면서 �
 | Long-context | 전체 trace를 컨텍스트에 누적 | 기본 장문 context agent | attention dilution, 노이즈, 비용 |
 | Retrieval-augmented | 원본/trace를 인덱스하여 RAG | RAG, Mem0, A-Mem | "No Memory"보다 못한 경우 다수 관찰 |
 | Meta-guidance | trace를 high-level 규칙/경험으로 추상화 | ReasoningBank, ExpeL, Memento | 추상화 품질이 Planner 능력에 의존 |
-| Parametric | trace를 모델 가중치로 내재화 | Memory-r1, Memento(부분), MIA | 실시간 업데이트 난이도 |
+| Parametric | trace나 corpus-derived QA를 모델 가중치로 내재화 | Memory-r1, Memento(부분), MIA, [[Memory as a Model (MeMo)]] | 실시간 업데이트 난이도, provenance 약화 |
 
 ### Knowledge-oriented vs Process-oriented
 
@@ -102,6 +102,12 @@ Cross-model 전이 가능 (model-agnostic meta-knowledge) 하지만 self-generat
 
 실무적으로는 memory update가 곧 production state mutation이므로, 저장 전 evaluation과 rollback path가 필요하다. 특히 agent가 자기 memory를 수정할 수 있으면 false validation confidence나 domain-mismatched anchoring이 누적될 수 있다.
 
+## Memory as a Model
+
+[[Memory as a Model (MeMo)]]는 target corpus를 reflection QA dataset으로 바꾼 뒤 별도 Memory model을 [[SFT]]로 학습시키고, frozen Executive model이 structured multi-turn protocol로 Memory model을 조회하는 구조다 (출처: [[MeMo Memory as a Model]]). 이는 RAG처럼 reasoning model을 고정하지만, raw chunk retrieval 대신 parametric memory artifact를 사용한다.
+
+장점으로 제시되는 축은 cross-document synthesis, retrieval noise 내성, black-box Executive model compatibility, corpus size와 독립적인 inference query cost다. 반대로 Memory model training cost, corpus가 커질 때의 capacity 한계, source provenance 약화, 잘못된 corpus를 파라미터에 내재화하는 dual-use risk가 남는다.
+
 ## 관련 링크
 
 - [[Memory Intelligence Agent (MIA)]] — 위 원칙의 구체적 구현
@@ -114,3 +120,4 @@ Cross-model 전이 가능 (model-agnostic meta-knowledge) 하지만 self-generat
 - [[ReAct]] — Executor가 도구와 상호작용하는 기본 루프
 - [[File-as-Bus]] — durable artifact 기반 memory의 한 구현
 - [[Managed Agent Architecture]] — session log를 context window 밖의 durable context object로 두는 runtime pattern
+- [[Memory as a Model (MeMo)]] — corpus knowledge를 별도 Memory model 파라미터에 압축하는 방식

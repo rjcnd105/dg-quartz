@@ -5,9 +5,7 @@ description: 7 databases to explore in 2025.
 created: 2024-12-06
 tags:
   - clippings
-cssclasses: ""
 ---
-
 
 I’ve been running databases-as-a-service for a long time, and there are always new things to keep abreast of - new technologies, different ways of solving problems, not to mention all the research coming out of universities. In 2025, consider spending a week with each of these database technologies.
 저는 오랫동안 서비스형 데이터베이스를 운영해 왔으며, 대학에서 나오는 모든 연구는 말할 것도 없고 새로운 기술, 다양한 문제 해결 방법 등 항상 새로운 소식을 접할 수 있습니다. 2025년에는 이러한 데이터베이스 기술 각각에 대해 일주일을 투자해 보세요.
@@ -31,7 +29,7 @@ These aren’t the “7 Best Databases” or something similar to power a Buzzfe
 
 - [Wrap Up 마무리](https://matt.blwt.io/post/7-databases-in-7-weeks-for-2025/#wrap-up)
 
-## 1\. PostgreSQL
+## 1. PostgreSQL
 
 ### The Default Database 기본 데이터베이스
 
@@ -47,7 +45,7 @@ Postgres shines as a great “default” database for that reason, and we’re s
 Spend a week learning about whats possible with Postgres, but also some of its limitations - [MVCC](https://www.geeksforgeeks.org/multiversion-concurrency-control-mvcc-in-postgresql/) can be fickle. Implement a simple CRUD app in your favourite language. Maybe even build a Postgres extension.
 일주일 동안 Postgres의 가능성과 한계에 대해 알아보세요 - [MVCC](https://www.geeksforgeeks.org/multiversion-concurrency-control-mvcc-in-postgresql/)는 변덕스러울 수 있습니다. 원하는 언어로 간단한 CRUD 앱을 구현해 보세요. Postgres 확장 프로그램을 구축할 수도 있습니다.
 
-## 2\. SQLite
+## 2. SQLite
 
 ### The Local-First Database 로컬 우선 데이터베이스
 
@@ -63,7 +61,7 @@ SQLite는 또한 [Ruby on Rails 8.0](https://rubyonrails.org/2024/9/27/rails-8-b
 Spend a week experimenting with local-first architectures using SQLite, or even seeing if you can migrate a client-server model using Postgres to something that “just” needs SQLite instead.
 일주일 동안 SQLite를 사용하여 로컬 우선 아키텍처를 실험해 보거나 Postgres를 사용하는 클라이언트-서버 모델을 SQLite가 '단지' 필요한 다른 아키텍처로 마이그레이션할 수 있는지 알아보세요.
 
-## 3\. DuckDB
+## 3. DuckDB
 
 ### The Query-Anything Database
 
@@ -81,7 +79,7 @@ Postgres와 마찬가지로 DuckDB에도 [확장 기능이 있지만, 생태계�
 Spend a week doing some data analysis and processing with DuckDB - be it via a Python notebook or something like [Evidence](https://evidence.dev/), maybe even see how it fits in with your “local-first” approach with SQLite by offloading analytics queries of your SQLite database to DuckDB, which [can read it](https://duckdb.org/docs/guides/database_integration/sqlite.html).
 Python 노트북이나 [Evidence](https://evidence.dev/)와 같은 것을 통해 일주일 동안 DuckDB로 데이터 분석 및 처리를 해보고, SQLite 데이터베이스의 분석 쿼리를 [이것을 읽을 수 있는 DuckDB로 오프로드하여 SQLite의 "로컬 우선" 접근 방식에 어떻게 부합하는지 확인해 볼 수도 있겠죠.](https://duckdb.org/docs/guides/database_integration/sqlite.html)
 
-## 4\. ClickHouse
+## 4. ClickHouse
 
 ### The Columnar Database 컬럼 데이터베이스
 
@@ -94,18 +92,18 @@ ClickHouse는 분석 워크로드에 특화되어 있으며, [수평 확장](htt
 Where ClickHouse comes into its own is when you have analytics queries to run on a dataset too big for something like DuckDB, or you need “real-time” analytics. There is a lot of “benchmarketing” around these datasets, so I’m not going to repeat them here.
 ClickHouse의 진가를 발휘하는 곳은 DuckDB와 같이 너무 큰 데이터 세트에서 분석 쿼리를 실행해야 하거나 '실시간' 분석이 필요한 경우입니다. 이러한 데이터 세트에 대한 '벤치마킹'은 많이 있으므로 여기서는 반복하지 않겠습니다.
 
-Another reason I suggest checking out ClickHouse is that it is a *joy* to operate - deployment, scaling, backups and so on are [well documented](https://clickhouse.com/docs/en/architecture/cluster-deployment) - even down to setting [the right CPU governor](https://clickhouse.com/docs/en/operations/tips) is covered.
-ClickHouse를 추천하는 또 다른 이유는 배포, 확장, 백업 등이 [잘 문서화되어 있으며](https://clickhouse.com/docs/en/architecture/cluster-deployment) [올바른 CPU 거버너 설정까지 다루고 있어 운영이 *즐기기 때문이기도 합니다.*](https://clickhouse.com/docs/en/operations/tips)
+Another reason I suggest checking out ClickHouse is that it is a _joy_ to operate - deployment, scaling, backups and so on are [well documented](https://clickhouse.com/docs/en/architecture/cluster-deployment) - even down to setting [the right CPU governor](https://clickhouse.com/docs/en/operations/tips) is covered.
+ClickHouse를 추천하는 또 다른 이유는 배포, 확장, 백업 등이 [잘 문서화되어 있으며](https://clickhouse.com/docs/en/architecture/cluster-deployment) [올바른 CPU 거버너 설정까지 다루고 있어 운영이 _즐기기 때문이기도 합니다._](https://clickhouse.com/docs/en/operations/tips)
 
 Spend a week exploring some larger analytics datasets, or converting some of the DuckDB analytics from above into a ClickHouse deployment. ClickHouse also has an embedded version - [chDB](https://clickhouse.com/docs/en/chdb) - that can offer a more direct comparison.
 일주일 동안 좀 더 큰 분석 데이터 세트를 탐색하거나 위의 DuckDB 분석 중 일부를 ClickHouse 배포로 변환해 보세요. ClickHouse에는 보다 직접적인 비교를 제공하는 임베디드 버전인 [chDB](https://clickhouse.com/docs/en/chdb)도 있습니다.
 
-## 5\. FoundationDB
+## 5. FoundationDB
 
 ### The Layered Database 계층화된 데이터베이스
 
-We now enter the “mind expanding” section of this list, with [FoundationDB](https://www.foundationdb.org/). Arguably, FoundationDB is not a database, but quite literally the foundation for *a* database. Used in production by Apple, Snowflake and [Tigris Data](https://www.tigrisdata.com/blog/building-a-database-using-foundationdb/), FoundationDB is worth your time because it is quite unique in the world of key-value storage.
-이제 이 목록의 "마음 확장" 섹션으로 들어가서 [FoundationDB](https://www.foundationdb.org/)로 들어갑니다. 틀림없이 FoundationDB는 데이터베이스가 아니라 말 그대로 *a* 데이터베이스의 기초라고 할 수 있습니다. Apple, Snowflake 및 [Tigris Data](https://www.tigrisdata.com/blog/building-a-database-using-foundationdb/)에서 사용하는 FoundationDB는 키-값 저장소의 세계에서 매우 독특하기 때문에 시간을 투자할 가치가 있습니다.
+We now enter the “mind expanding” section of this list, with [FoundationDB](https://www.foundationdb.org/). Arguably, FoundationDB is not a database, but quite literally the foundation for _a_ database. Used in production by Apple, Snowflake and [Tigris Data](https://www.tigrisdata.com/blog/building-a-database-using-foundationdb/), FoundationDB is worth your time because it is quite unique in the world of key-value storage.
+이제 이 목록의 "마음 확장" 섹션으로 들어가서 [FoundationDB](https://www.foundationdb.org/)로 들어갑니다. 틀림없이 FoundationDB는 데이터베이스가 아니라 말 그대로 _a_ 데이터베이스의 기초라고 할 수 있습니다. Apple, Snowflake 및 [Tigris Data](https://www.tigrisdata.com/blog/building-a-database-using-foundationdb/)에서 사용하는 FoundationDB는 키-값 저장소의 세계에서 매우 독특하기 때문에 시간을 투자할 가치가 있습니다.
 
 Yes, it’s an ordered key-value store, but that isn’t what is interesting about it. At first glance, it has some curious [limitations](https://apple.github.io/foundationdb/known-limitations.html) - transactions cannot exceed 10MB of affected data and they cannot take longer than five seconds after the first read in a transaction. But, as they say, limits set us free. By having these limits, it can achieve full ACID transactions at very large scale - 100+ TiB clusters are known to be in operation.
 예, 정렬된 키-값 저장소이지만 흥미로운 것은 그 점이 아닙니다. 언뜻 보기에는 트랜잭션이 영향을 받는 데이터의 용량이 10MB를 초과할 수 없고 트랜잭션에서 처음 읽은 후 5초 이상 걸릴 수 없다는 흥미로운 [제한이 있습니다. 하지만 제한이 우리를 자유롭게 해준다는 말이 있듯이, 제한은 우리를 자유롭게 합니다. 이러한 제한이 있기 때문에 100TiB 이상의 클러스터가 운영되고 있는 것으로 알려진 매우 큰 규모의 전체 ACID 트랜잭션을 달성할 수 있습니다.](https://apple.github.io/foundationdb/known-limitations.html)
@@ -122,17 +120,17 @@ But why is it the “layered” database? This is because of the [Layers concept
 Spend a week going through the [tutorials](https://apple.github.io/foundationdb/tutorials.html) and think about how you could use FoundationDB in place of something like [RocksDB](https://rocksdb.org/). Maybe check out some of the [Design Recipes](https://apple.github.io/foundationdb/design-recipes.html) and go read the [paper](https://www.foundationdb.org/files/fdb-paper.pdf).
 일주일 동안 [튜토리얼](https://apple.github.io/foundationdb/tutorials.html)을 살펴보고 [RocksDB](https://rocksdb.org/) 같은 것 대신 FoundationDB를 어떻게 사용할 수 있을지 생각해 보세요. [디자인 레시피](https://apple.github.io/foundationdb/design-recipes.html) 중 일부를 확인하고 [논문](https://www.foundationdb.org/files/fdb-paper.pdf)을 읽어보세요.
 
-## 6\. TigerBeetle 6\. 타이거 비틀
+## 6. TigerBeetle 6. 타이거 비틀
 
 ### The Obsessively Correct Database
 
 강박적으로 정확한 데이터베이스
 
-Flowing on from the deterministic simulation testing, [TigerBeetle](https://tigerbeetle.com/) breaks the mold from our previous databases in that it is decidedly *not* a general purpose database - it is entirely dedicated to financial transactions.
+Flowing on from the deterministic simulation testing, [TigerBeetle](https://tigerbeetle.com/) breaks the mold from our previous databases in that it is decidedly _not_ a general purpose database - it is entirely dedicated to financial transactions.
 결정론적 시뮬레이션 테스트에 이어서, [TigerBeetle](https://tigerbeetle.com/)는 범용 데이터베이스가 아닌 전적으로 금융 거래 전용이라는 점에서 이전 데이터베이스의 틀을 깨고 있습니다.
 
-Why is this worth a look? Single-purpose databases are unusual, and one that is as *obsessively correct* as TigerBeetle are a true rarity, especially considering it is open source. They include everything from [NASA’s Power of Ten Rules](https://en.wikipedia.org/wiki/The_Power_of_10:_Rules_for_Developing_Safety-Critical_Code) and [Protocol-Aware Recovery](https://www.usenix.org/conference/fast18/presentation/alagappan), through to strict serialisability and Direct I/O to avoid issues with the kernel page cache. It is *seriously* impressive - just go read their [Safety doc](https://github.com/tigerbeetle/tigerbeetle/blob/a43f2205f5335cb8f56d6e8bfcc6b2d99a4fc4a4/docs/about/safety.md) and their [approach to programming they call Tiger Style](https://github.com/tigerbeetle/tigerbeetle/blob/a43f2205f5335cb8f56d6e8bfcc6b2d99a4fc4a4/docs/TIGER_STYLE.md).
-왜 주목할 만한 가치가 있을까요? 단일 목적 데이터베이스는 드물며, 특히 오픈 소스인 점을 감안하면 TigerBeetle처럼 *강박적으로 정확한 데이터베이스는 정말 드뭅니다. 여기에는 [NASA의 10가지 규칙](https://en.wikipedia.org/wiki/The_Power_of_10:_Rules_for_Developing_Safety-Critical_Code)과 [프로토콜 인식 복구](https://www.usenix.org/conference/fast18/presentation/alagappan)부터 엄격한 직렬화 가능성 및 커널 페이지 캐시 문제를 방지하기 위한 직접 I/O에 이르기까지 모든 것이 포함됩니다. *진짜로* 인상적입니다. [안전 문서](https://github.com/tigerbeetle/tigerbeetle/blob/a43f2205f5335cb8f56d6e8bfcc6b2d99a4fc4a4/docs/about/safety.md)와 [타이거 스타일이라고 부르는 프로그래밍 접근 방식](https://github.com/tigerbeetle/tigerbeetle/blob/a43f2205f5335cb8f56d6e8bfcc6b2d99a4fc4a4/docs/TIGER_STYLE.md)도 읽어보세요.*
+Why is this worth a look? Single-purpose databases are unusual, and one that is as _obsessively correct_ as TigerBeetle are a true rarity, especially considering it is open source. They include everything from [NASA’s Power of Ten Rules](https://en.wikipedia.org/wiki/The_Power_of_10:_Rules_for_Developing_Safety-Critical_Code) and [Protocol-Aware Recovery](https://www.usenix.org/conference/fast18/presentation/alagappan), through to strict serialisability and Direct I/O to avoid issues with the kernel page cache. It is _seriously_ impressive - just go read their [Safety doc](https://github.com/tigerbeetle/tigerbeetle/blob/a43f2205f5335cb8f56d6e8bfcc6b2d99a4fc4a4/docs/about/safety.md) and their [approach to programming they call Tiger Style](https://github.com/tigerbeetle/tigerbeetle/blob/a43f2205f5335cb8f56d6e8bfcc6b2d99a4fc4a4/docs/TIGER_STYLE.md).
+왜 주목할 만한 가치가 있을까요? 단일 목적 데이터베이스는 드물며, 특히 오픈 소스인 점을 감안하면 TigerBeetle처럼 _강박적으로 정확한 데이터베이스는 정말 드뭅니다. 여기에는 [NASA의 10가지 규칙](https://en.wikipedia.org/wiki/The_Power_of_10:_Rules_for_Developing_Safety-Critical_Code)과 [프로토콜 인식 복구](https://www.usenix.org/conference/fast18/presentation/alagappan)부터 엄격한 직렬화 가능성 및 커널 페이지 캐시 문제를 방지하기 위한 직접 I/O에 이르기까지 모든 것이 포함됩니다. _진짜로_ 인상적입니다. [안전 문서](https://github.com/tigerbeetle/tigerbeetle/blob/a43f2205f5335cb8f56d6e8bfcc6b2d99a4fc4a4/docs/about/safety.md)와 [타이거 스타일이라고 부르는 프로그래밍 접근 방식](https://github.com/tigerbeetle/tigerbeetle/blob/a43f2205f5335cb8f56d6e8bfcc6b2d99a4fc4a4/docs/TIGER_STYLE.md)도 읽어보세요._
 
 Another interesting point about TigerBeetle is that it’s written in [Zig](https://ziglang.org/) - a relative newcomer to the systems programming language school, but clearly has fit well with what the TigerBeetle folks are trying to accomplish.
 타이거비틀의 또 다른 흥미로운 점은 시스템 프로그래밍 언어 중에서는 비교적 새로운 언어인 [Zig](https://ziglang.org/)로 작성되었지만 타이거비틀이 추구하는 목표와 잘 맞았다는 점입니다.
@@ -140,7 +138,7 @@ Another interesting point about TigerBeetle is that it’s written in [Zig](http
 Spend a week modelling your financial accounts in a local deployment of TigerBeetle - follow the [Quick Start](https://docs.tigerbeetle.com/quick-start) and take a look at the [System Architecture](https://docs.tigerbeetle.com/coding/system-architecture) docs on how you might use it in conjunction with one of the more general-purpose databases above.
 [퀵 스타트](https://docs.tigerbeetle.com/quick-start)에 따라 일주일 동안 TigerBeetle의 로컬 배포에서 재무 계정을 모델링하고, 위의 범용 데이터베이스 중 하나와 함께 사용하는 방법에 대한 [시스템 아키텍처](https://docs.tigerbeetle.com/coding/system-architecture) 문서를 살펴보세요.
 
-## 7\. CockroachDB 7\. 바퀴벌레DB
+## 7. CockroachDB 7. 바퀴벌레DB
 
 ### The Global Database 글로벌 데이터베이스
 

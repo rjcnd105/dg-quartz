@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-18T06:06:55Z
-modified: 2026-05-18T06:06:55Z
+modified: 2026-05-27T03:50:00Z
 tags:
   - kb
   - health
@@ -15,6 +15,8 @@ _Akkermansia muciniphil&#x61;_&#xB294; intestinal mucus layer와 밀접한 mucin
 ## 핵심 내용
 
 Reddit thread는 _Akkermansi&#x61;_&#xC5D0; 대한 관심이 probiotic product, pomegranate/polyphenol, resistant starch, PHGG 같은 여러 개입으로 번지는 모습을 보여준다 (출처: [[Akkermansia muciniphila keeps coming up in gut research lately, anyone here been following it?]]). 다만 thread에는 anecdote, commercial product link, 개별 논문 링크가 섞여 있어 evidence hierarchy를 분리해야 한다.
+
+댓글을 확인하면 두 가지 보정이 중요하다. 첫째, _Akkermansi&#x61;_&#xB9CC; 보지 말고 _Faecalibacterium prausnitzii_ 같은 butyrate producer와 PHGG, pectin, inulin, resistant potato starch 같은 dietary substrate를 함께 보라는 방향이 반복된다. 둘째, product claim에 대한 구체적 비판이 있다. 어떤 댓글은 pomegranate/polyphenol 제품의 가격, CoA 부재, 실제 extract dose가 small study 용량보다 낮을 수 있다는 점, ellagitannin을 urolithin A로 전환하지 못하는 사람이 30-40% 있을 수 있다는 점을 지적했다. 이는 product endorsement가 아니라 dose/form/producer phenotype을 확인하라는 실질 보정이다.
 
 PHGG crossover RCT는 건강한 성인 33명에게 low-fiber diet 조건에서 3 g 또는 6 g PHGG를 14일 투여했고, placebo 대비 Verrucomicrobia와 _Akkermansia_ genus 증가를 보고했다 (출처: [[The Dose Response Effects of Partially Hydrolyzed Guar Gum on Gut Microbiome of Healthy Adults]]). 이는 PHGG가 낮은 용량에서도 taxonomic shift를 만들 수 있음을 보여주지만, symptom이나 hard clinical outcome 개선을 직접 입증한 것은 아니다.
 

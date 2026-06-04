@@ -9,9 +9,7 @@ tags:
   - nix_flake
   - age
   - gitops
-cssclasses: ""
 ---
-
 
 저장소
 https://github.com/Mic92/sops-nix
@@ -21,6 +19,7 @@ https://michael.stapelberg.ch/posts/2025-08-24-secret-management-with-sops-nix/
 
 위 글을 기반으로 설정하면서
 mac이라면 nix-darwin을 사용해서 저장소에 있는 darwin guide를 따르면 된다.
+
 ```nix
 {
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
@@ -41,6 +40,7 @@ mac이라면 nix-darwin을 사용해서 저장소에 있는 darwin guide를 따�
 ```
 
 home manager라면
+
 ```nix
 {
 	home-manager = {

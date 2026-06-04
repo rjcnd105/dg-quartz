@@ -5,9 +5,7 @@ modified: 2025-10-20T04:43:11Z
 tags:
   - nix
   - nix_flake
-cssclasses: ""
 ---
-
 
 > 언제까지 프로젝트를 시작할때 마다 매번 같은 환경 세팅을 하고, 누군가는 되는데 os가 다르다고 설치 과정에서 문제가 생기고, 각자 다른 시스템 환경 때문에 고생을 할 것인가.
 
@@ -20,6 +18,7 @@ cssclasses: ""
 
 https://zero-to-nix.com/start/install
 여기서 제공되는 방법으로 설치하는 것이 초기 설정에 좋다. 공식홈페이지의 nix 초기 설치 설정은 커뮤니티에서의 활용과 조금 동떨어져 있다.
+
 ```
 curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
 ```
@@ -33,6 +32,7 @@ mkdir -p ~/.config/nix && touch ~/.config/nix/nix.conf && zed ~/.config/nix/nix.
 ```
 
 nix.conf 내부 내용을 아래처럼 변경해서 저장
+
 ```dotenv
 experimental-features = nix-command flakes
 ```
@@ -50,6 +50,7 @@ cowsay Hello, Nix! | lolcat
 ```
 
 터미널에 위와 같이 입력하면 아래와 같이 에러가 뜰 것이다.
+
 ```shell
 zsh: command not found: lolcat
 zsh: command not found: cowsay
@@ -57,6 +58,7 @@ zsh: command not found: cowsay
 
 nix-shell을 사용하여 특정 패키지를 사용한다고 명시하고 쉘에 진입할 수 있다.
 그리고 control+D로 쉘에서 나갈 수 있다.
+
 ```shell
 nix-shell -p cowsay lolcat
 
@@ -74,6 +76,7 @@ nix-shell -p cowsay lolcat
 나간 이후에는 nix shell로 진입하기 전처럼 해당 패키지를 사용할 수 없다.
 
 어떤 프로그램이든 즉시 실행시킬 수 있다.
+
 ```shell
 nix-shell -p cowsay --run "cowsay Nix"
  _____
@@ -92,6 +95,7 @@ https://search.nixos.org/packages
 nix-shell의 -p는 packages의 약자이다.
 
 which로 어디에 위치하는지 봐보자.
+
 ```shell
 [nix-shell:~]$ which cowsay
 /nix/store/isxbnwiiw7n661gmw2q1fx92z3aw079a-cowsay-3.8.3/bin/cowsay
@@ -101,6 +105,7 @@ which로 어디에 위치하는지 봐보자.
 ```
 
 nix-shell안에서 추가하고 싶으면 앞서 사용한대로 또 사용하면 된다.
+
 ```shell
 nix-shell -p cowsay lolcat
 
@@ -115,13 +120,16 @@ aaa
 
 재현성(reproducibility)이란 언제 어디서나 동일한 결과를 얻기를 원한다는 것이다.
 패키지 버전을 지정해야 한다.
+
 ```shell
 nix-shell -p git --run "git --version" --pure -I nixpkgs=https://github.com/NixOS/nixpkgs/tarball/2a601aafdc5605a5133a2ca506a34a3a73377247
 ```
- --pure: 기존 시스템의 환경 변수로부터 격리 실행
- --I: 패키지의 소스 지정
+
+\--pure: 기존 시스템의 환경 변수로부터 격리 실행
+\--I: 패키지의 소스 지정
 
 nixpkgs-releases.sh
+
 ```shell
 #!/usr/bin/env nix-shell
 #! nix-shell -i bash --pure
@@ -176,4 +184,4 @@ https://channels.nixos.org/
 
 #### zed, vscode에서 nix 파일 실행
 
-[[Editor/zed config]]
+[[zed config]]

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2024-11-08T08:43:51Z
-modified: 2026-05-25T09:41:55Z
+modified: 2026-05-27T03:30:23Z
 tags:
   - erlang
   - elixir
@@ -468,12 +468,11 @@ OTP 28.4+에는 `:persistent_term.put_new/2`가 있다. boot-time registry나 �
 ### 저장소 모듈
 
 :ets - 메모리 기반 저장소
-:dets - 디스크 기반 저장소, ets와 1:1 호환 가능함
-
-### ETS OTP 27+ traversal / update
+:dets - 디스크 기반 저장소, ets와 1:1 호환 가능함. ets 테이블을 BEAM 재시작시에도 유지해야할때 사용.
 
 https://www.erlang.org/doc/apps/stdlib/ets.html
 
+**ETS OTP 27+ traversal / update**
 큰 table을 순회할 때 `first/next` 후 `lookup`을 직접 붙이지 말고 OTP 27+ lookup traversal API를 먼저 본다.
 
 ```elixir
@@ -502,6 +501,19 @@ tab = :ets.new(:counts, [:set])
 ```
 
 counter만 올리는 경우는 기존처럼 `:ets.update_counter/4`가 더 잘 맞는다.
+
+```elixir
+
+{:ok, my_dets_table} = :dets.open_file(~c"my_deps_table.dets", type: :bag) {
+
+:ok
+
+,
+
+~c"my_deps_table.dets"
+
+}
+```
 
 ### 암호화 모듈
 

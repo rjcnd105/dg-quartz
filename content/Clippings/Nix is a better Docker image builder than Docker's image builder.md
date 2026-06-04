@@ -5,9 +5,7 @@ description: Xe Iaso's personal website.
 created: 2025-01-24
 tags:
   - clippings
-cssclasses: ""
 ---
-
 
 Fri Mar 15 2024   2024년 3월 15일 금요일
 
@@ -29,7 +27,7 @@ Video: **Coming to YouTube Soon!**
 
 Want to watch this in your video player of choice? Take this:
 선택한 비디오 플레이어에서 이것을 보고 싶으십니까? 이것을 받아라:
-[https://cdn.xeiaso.net/file/christine-static/video/2024/nixcon-na/index.m3u8](https://cdn.xeiaso.net/file/christine-static/video/2024/nixcon-na/index.m3u8)
+<https://cdn.xeiaso.net/file/christine-static/video/2024/nixcon-na/index.m3u8>
 
 ## The Talk  토크
 
@@ -126,7 +124,7 @@ SRE Shouting Pager의 전 윌터로 말하면서, 지난 0.01%의 문제가 오�
 
 ![Cadey is coffee](https://stickers.xeiaso.net/sticker/cadey/coffee)
 
-<[**Cadey**](https://xeiaso.net/characters#cadey)\>
+<[**Cadey**](https://xeiaso.net/characters#cadey)>
 
 Ask me how I know.
 
@@ -145,7 +143,7 @@ Even more fun, adding packages to a docker image the naïve way means that you g
 
 ![Aoi is wut](https://stickers.xeiaso.net/sticker/aoi/wut)
 
-<[**Aoi**](https://xeiaso.net/characters#aoi)\>
+<[**Aoi**](https://xeiaso.net/characters#aoi)>
 
 What if we had the ability to know all of the dependencies that are needed ahead of time and then just use those? What if your builds didn't need an internet connection at all?
 
@@ -231,7 +229,7 @@ Except Nix! A layered image means that every package is in its own layer, so gli
 
 ![Cadey is coffee](https://stickers.xeiaso.net/sticker/cadey/coffee)
 
-<[**Cadey**](https://xeiaso.net/characters#cadey)\>
+<[**Cadey**](https://xeiaso.net/characters#cadey)>
 
 ...until we find yet another trivial memory safety vulnerability in glibc that's been ignored for my entire time on this planet and need to have a fire day rebuilding everything to cope.
 
@@ -394,17 +392,17 @@ Not to mention never having to ever wait for my custom variant of Iosevka to bui
 In conclusion:  결론적으로:
 
 - Nix is a better docker image builder than docker's image builder.
-Nix는 도커 이미지 빌더보다 더 나은 도커 이미지 빌더입니다.
+  Nix는 도커 이미지 빌더보다 더 나은 도커 이미지 빌더입니다.
 - Nix makes you specify the results, not the steps you take to get there.
-Nix를 사용하면 목표에 도달하기 위해 취하는 단계가 아닌 결과를 지정할 수 있습니다.
+  Nix를 사용하면 목표에 도달하기 위해 취하는 단계가 아닌 결과를 지정할 수 있습니다.
 - Building Docker images with Nix makes adopting Nix easy if you already use Docker.
-이미 Docker를 사용하고 있다면 Nix로 Docker 이미지를 구축하면 Nix를 쉽게 채택할 수 있습니다.
+  이미 Docker를 사용하고 있다면 Nix로 Docker 이미지를 구축하면 Nix를 쉽게 채택할 수 있습니다.
 - Nix makes docker images that share layers between parts of your monorepo.
-Nix는 모노레포 부분 간에 레이어를 공유하는 도커 이미지를 만듭니다.
+  Nix는 모노레포 부분 간에 레이어를 공유하는 도커 이미지를 만듭니다.
 - Nix lets you avoid building code that was built in the past thanks to binary caches.
-Nix를 사용하면 바이너리 캐시 덕분에 과거에 빌드된 코드를 작성하지 않아도 됩니다.
+  Nix를 사용하면 바이너리 캐시 덕분에 과거에 빌드된 코드를 작성하지 않아도 됩니다.
 - And you end up with normal, ordinary container images that you can deploy anywhere. Even platforms like AWS, Google Cloud, or Fly.io.
-그러면 어디에서나 배포할 수 있는 평범하고 일반적인 컨테이너 이미지가 생성됩니다. AWS, Google Cloud 또는 Fly.io와 같은 플랫폼도 가능합니다.
+  그러면 어디에서나 배포할 수 있는 평범하고 일반적인 컨테이너 이미지가 생성됩니다. AWS, Google Cloud 또는 Fly.io와 같은 플랫폼도 가능합니다.
 
 ![A slide listing everyone I have to thank for the talk.](https://cdn.xeiaso.net/file/christine-static/talks/2024/nix-docker-builder/068.jpg)
 

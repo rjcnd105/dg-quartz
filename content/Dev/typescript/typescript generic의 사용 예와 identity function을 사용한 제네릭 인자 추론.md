@@ -4,9 +4,7 @@ created: 2025-10-02T08:50:05Z
 modified: 2025-10-16T03:09:48Z
 tags:
   - typescript
-cssclasses: ""
 ---
-
 
 ## 과거 2022.5.15에 [작성했던 글](https://gggururu.tistory.com/101)
 
@@ -35,4 +33,4 @@ type _MakeTuple<T> = <T>(v: T) => [T, T]
 
 위에서 나온 타입클래스가 무엇인지에 대한 내용은 여기에 잘 설명되어 있다. (type이나 class가 아닙니다)
 
-[https://paulgray.net/typeclasses-in-typescript/](https://paulgray.net/typeclasses-in-typescript/)​
+<https://paulgray.net/typeclasses-in-typescript/>​

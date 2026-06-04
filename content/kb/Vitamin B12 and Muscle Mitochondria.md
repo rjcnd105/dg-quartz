@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-14T15:37:30Z
-modified: 2026-05-14T20:24:32Z
+modified: 2026-05-27T03:10:15Z
 tags:
   - kb
   - health
@@ -19,6 +19,8 @@ SciTechDaily가 다룬 Journal of Nutrition 논문에 따르면, Cornell 연구�
 
 이 결과는 B12 상태가 근육량이나 근력과 연결될 수 있다는 가설을 강화하지만, 현재 단계는 마우스·세포 기전 중심이다.
 
+뇌 노화 쪽에서는 UCSF BrANCH study를 다룬 2025 Annals of Neurology 논문이 total B12가 정상 범위인 고령자 안에서도 lower active B12가 processing speed 저하, visual processing delay, white matter lesion volume과 연결됐다고 보고했다 (출처: [[Scientists found that the vitamin B12 levels doctors call normal are quietly damaging the aging brain]]). 이 결과는 B12를 anemia marker만이 아니라 CNS biomarker와 함께 보는 [[Functional Vitamin B12 Status]] 문제로 확장한다.
+
 ## 실전 해석
 
 B12는 vegan/vegetarian 식단, 고령, 흡수장애, metformin/PPI 사용, autoimmune gastritis 같은 맥락에서 먼저 결핍 여부를 봐야 한다. 혈청 B12만으로 애매하면 MMA(Methylmalonic Acid), homocysteine, CBC 같은 지표가 같이 쓰인다.
@@ -30,6 +32,7 @@ B12는 vegan/vegetarian 식단, 고령, 흡수장애, metformin/PPI 사용, auto
 ## 관련 링크
 
 - [[B-complex]]
+- [[Functional Vitamin B12 Status]]
 - [[NMN and NAD+ Precursors]]
 - [[Mitophagy]]
 - [[Stem Cell Mitophagy and Senescence]]

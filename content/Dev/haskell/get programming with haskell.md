@@ -5,17 +5,15 @@ modified: 2025-10-20T04:42:59Z
 tags:
   - haskell
   - study
-cssclasses: ""
 ---
 
-
 source
-[Get Programming with Haskell](https://www.manning.com/books/get-programming-with-haskell?ar=true&lpse=A)
+[Get Programming with Haskell](https://www.manning.com/books/get-programming-with-haskell?ar=true\&lpse=A)
 
 기존 학습 내역
-[[Dev/haskell/haskell in action]]
+[[haskell in action]]
 
-***
+---
 
 ### chapter 2
 
@@ -25,7 +23,7 @@ source
 - 모든 함수는 값을 반환해야 합니다.
 - 함수가 동일한 인수로 호출될 때마다 동일한 값을 반환해야 합니다.
 
-[https://livebook.manning.com/book/get-programming-with-haskell/chapter-2/1](https://livebook.manning.com/book/get-programming-with-haskell/chapter-2/1)
+<https://livebook.manning.com/book/get-programming-with-haskell/chapter-2/1>
 
 ```haskell
 -- Q2.2
@@ -338,15 +336,15 @@ myTail [] = error "No Tail for empty list"
 Recursion
 
 1. Identify the end goal(s).
-최종 목표 식별
+   최종 목표 식별
 2. Determine what happens when a goal is reached.
-목표에 도달하면 어떻게 할지. 즉 밑에 myLength의 경우에 `myLength [] = 0`
+   목표에 도달하면 어떻게 할지. 즉 밑에 myLength의 경우에 `myLength [] = 0`
 3. List all alternate possibilities.
-모든 대체 가능성 나열. case, if
+   모든 대체 가능성 나열. case, if
 4. Determine your “rinse and repeat” process.
-rule 3을 통한 재귀 반복
+   rule 3을 통한 재귀 반복
 5. Ensure that each alternative moves you toward the goal.
-각 대안이 1에서 정한 목표를 향해 나아가도록 설정
+   각 대안이 1에서 정한 목표를 향해 나아가도록 설정
 
 ```haskell
 myLength [] = 0
@@ -588,6 +586,7 @@ afterManySips = foldl drink myCup [1,1,1,1,1]
 getOz afterManySips
 -> 5
 ```
+
 ![[env/첨부파일/Untitled 2.png|600]]
 
 로봇 예제
@@ -786,8 +785,8 @@ f2 :: a -> b
 
 ### chapter 12
 
-**유형 동의어(*type synonym)**
-→* [Char] 을 String처럼 부르는 것을 말한다. (타입스크립트에서 type aliase)
+__유형 동의어(_type synonym)__
+→_ \[Char] 을 String처럼 부르는 것을 말한다. (타입스크립트에서 type aliase)
 
 ```haskell
 -- **type synonym**
@@ -1260,5 +1259,4 @@ instance Dice FiveDice where
 문자 회전시키는 예제 작성하기
 
 ```tsx
-
 ```

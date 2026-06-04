@@ -2,9 +2,7 @@
 publish: true
 created: 2025-11-27T06:39:55Z
 modified: 2026-01-09T07:54:42Z
-cssclasses: ""
 ---
-
 
 사내 가이드로 작성
 nextjs 14 버전 기준으로 작성되었습니다.
@@ -13,7 +11,7 @@ nextjs 14 버전 기준으로 작성되었습니다.
 
 nextjs는 기본적으로 vercel에 최적화된 모습을 보인다. 그래서 다른 배포 플랫폼에서는 nextjs의 이점을 많이 못살리는 경우가 많은데 최대한 vercel 에서 돌아가는 nextjs처럼 최적화된 형태를 제공하려는 오픈소스 OpenNext가 있다. openNext를 사용하면 AWS에서도 최적화된 nextjs 배포를 할 수 있습니다.
 
-[https://opennext.js.org/](https://opennext.js.org/)
+<https://opennext.js.org/>
 
 ## 렌더링 최적화
 
@@ -25,39 +23,39 @@ nextjs는 기본적으로 vercel에 최적화된 모습을 보인다. 그래서 
 
 1. ssr이 false인 dynamic(lazy) 컴포넌트
 
-    ```tsx
-    import dynamic from "next/dynamic"
-    import { lazy } from "react"
-    
-    const DynamicClientComponent = dynamic(() => import("./ClientComponent"), {
-      ssr: false,
-    });
-    // or
-    const LazyClientComponent = lazy(() => import("./ClientComponent"));
-    ```
+   ```tsx
+   import dynamic from "next/dynamic"
+   import { lazy } from "react"
 
-    두 방식의 차이는 dynamic은 ssr를 선택할 수 있으며 제 경험에서 dynamic인 경우 내부적으로 nextjs측에서 캐싱하는 것 같은데, 그로 인한 버그가 발생하는 경우에는 react의 lazy를 사용했습니다.
-    
+   const DynamicClientComponent = dynamic(() => import("./ClientComponent"), {
+     ssr: false,
+   });
+   // or
+   const LazyClientComponent = lazy(() => import("./ClientComponent"));
+   ```
+
+   두 방식의 차이는 dynamic은 ssr를 선택할 수 있으며 제 경험에서 dynamic인 경우 내부적으로 nextjs측에서 캐싱하는 것 같은데, 그로 인한 버그가 발생하는 경우에는 react의 lazy를 사용했습니다.
+
 2. 오직 클라이언트에서만 알 수 있는 정보에 의존하여 렌더링되는 하위 컴포넌트 - (예제의 ChildComponent, 가급적 피해야 합니다!)
    이 경우 위에 dynamic이랑 실질적으로는 같으면서 import는 초기에 합니다.
 
-    ```tsx
-    import ChildComponent from "./ChildComponent"
-    
-    function ParentComponent() {
-    	const searchParams = useSearchParams()
-    	const [currentScrollY, setCurrentScrollY] = useState(0)
-    	// ... window.scrollY를 set하는 로직
-    	
-    	
-    	return (
-    		// 여기서 parent 부분은 서버측에서 미리 렌더링 됩니다.
-    		<div className="parent">
-    			{currentScrollY > 300 && <ChildComponent />}
-    		</div>
-    	)
-    }
-    ```
+   ```tsx
+   import ChildComponent from "./ChildComponent"
+
+   function ParentComponent() {
+   	const searchParams = useSearchParams()
+   	const [currentScrollY, setCurrentScrollY] = useState(0)
+   	// ... window.scrollY를 set하는 로직
+   	
+   	
+   	return (
+   		// 여기서 parent 부분은 서버측에서 미리 렌더링 됩니다.
+   		<div className="parent">
+   			{currentScrollY > 300 && <ChildComponent />}
+   		</div>
+   	)
+   }
+   ```
 
 dynamic, lazy 로드시 추가적인 http 요청이 발생하므로 용량이 큰 컴포넌트(e.g 큰 Modal Content)에 사용하는 것이 좋습니다.
 그 외의 컴포넌트들에서는 초기에 server, hybrid 렌더링이 최대한 되게끔 하는 것이 페이지 속도나 사용성 측면으로 좋습니다. **클라이언트 측에서만 알 수 있는 미디어 쿼리, 스크롤, 상태 값에 블로킹 되지 않고요!**
@@ -165,6 +163,7 @@ cache옵션을 force-cache로 설정하면 가능해요.
 nextjs에서 searchParams를 변경하는 작업을 할때 아래 방법들이 각각의 문제가 있어서 가급적 [nuqs](https://nuqs.47ng.com/)를 쓰는게 좋습니다.
 
 nextjs의 useRouter와 useSearchParams로 searchParams를 조작하면서 겪은 문제들이에요.
+
 1. router.replace로 searchParams를 변경하면 스크롤이 맨 위로 튕기고 컴포넌트들 재렌더링 되면서 useEffect가 다시 실행되는 문제
 2. 렌더링 이슈를 피하기 위해 window.history.replaceState로 변경하면 페이지 이동 전까지는 nextjs의 searchParams와 sync가 되지 않고 searchParams를 읽을때의 타이밍 이슈
 

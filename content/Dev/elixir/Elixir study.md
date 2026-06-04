@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2024-11-08T08:26:25Z
-modified: 2026-05-25T09:17:05Z
+modified: 2026-05-26T03:36:56Z
 ---
 
 # Elixir in action - part1
@@ -127,6 +127,8 @@ end
 [dialyzer](https://github.com/jeremyjh/dialyxir)와 같은 도구 사용시 정적 타입 체크를 할 수 있다. 복잡한 프로젝트라면 타입을 작성하기를 매우 추천한다.
 
 [Typespecs 공식 문서 참고](https://hexdocs.pm/elixir/typespecs.html)
+
+OTP 26부터 Dialyzer에는 incremental mode가 들어왔다. 큰 프로젝트에서 전체 PLT/analysis를 매번 돌리는 비용이 크면 `dialyzer --incremental` 또는 `dialyxir`의 incremental 설정을 확인한다. 다만 Elixir 1.17+ compiler type warning과 Dialyzer는 역할이 다르다. compiler warning은 빠른 feedback이고, Dialyzer는 `@spec`, callback, cross-module success typing을 보는 별도 gate로 둔다.
 
 Elixir 1.17부터 compiler 자체가 gradual set-theoretic type warning을 내기 시작했다. 1.17은 같은 함수 안의 pattern 기반 map/struct/atom/binary 문제를 잡고, 1.18은 함수 호출과 return path를 더 검사하며, 1.19는 protocol dispatch/implementation까지 검사한다. 1.20 계열은 guard, 함수 body, clause 간 type inference, map key/domain tracking까지 확장된다.
 
@@ -319,7 +321,9 @@ Elixir 1.18부터 `List.zip/1`는 deprecated이고 `Enum.zip/1`을 쓴다. Elixi
 
 OTP 26 이후 map은 record-like data와 dictionary에서 더 공격적으로 최적화됐다. record-like map은 key가 compile-time에 정해져 있고 32개 이하일 때 가장 좋다. 새 인스턴스는 같은 constructor 함수에서 모든 key를 넣어 만들고, 이미 존재해야 하는 key는 `%{map | key: value}` update를 쓴다.
 
-OTP 26부터 `:maps.merge/2`는 small map의 key tuple sharing을 더 잘 활용한다. default가 많은 map을 여러 번 `Map.get(map, key, default)`로 읽는 것보다 default map을 한 번 `Map.merge(defaults, input)` 하는 쪽이 나을 수 있다. OTP 28부터는 compiler가 `maps:put/3` 계열을 map syntax로 rewrite할 수 있고, OTP 29에서는 map을 순회하는 여러 API의 iteration order가 같은 map에 대해 일관되게 정리됐다. 그래도 map order 자체는 business rule로 삼지 않는다. 출력 순서가 중요하면 `Enum.sort/1`를 명시한다.
+OTP 26에서 특히 볼 것은 small map 최적화다. `:maps.merge/2`는 small map의 key tuple sharing을 더 잘 활용하고, literal key로 small map을 만드는 코드도 더 잘 최적화된다. default가 많은 map을 여러 번 `Map.get(map, key, default)`로 읽는 것보다 default map을 한 번 `Map.merge(defaults, input)` 하는 쪽이 나을 수 있다.
+
+OTP 26에서는 small map의 atom key ordering도 바뀌었다. map 출력이나 `Map.to_list/1` 결과를 test fixture처럼 믿는 코드는 취약하다. 순서가 의미 있으면 항상 `Enum.sort/1`를 명시한다. OTP 28부터는 compiler가 `maps:put/3` 계열을 map syntax로 rewrite할 수 있고, OTP 29에서는 map을 순회하는 여러 API의 iteration order가 같은 map에 대해 일관되게 정리됐다. 그래도 map order 자체는 business rule로 삼지 않는다.
 
 Elixir 1.20 계열 type checker는 `Map.put/3`, `Map.delete/2`, `Map.fetch!/2`, `Map.update!/3` 같은 연산으로 key가 추가/삭제/필수화되는 흐름까지 추적한다. 그래서 map shape가 domain contract라면 `Map.fetch/2`와 pattern matching을 더 적극적으로 쓰는 편이 warning 품질이 좋다.
 
@@ -716,13 +720,15 @@ Mix 프로젝트를 시작하는 방법에 관계없이 ebin 폴더(.beam 파일
 
 버전 기준:
 
-- Elixir 1.16: OTP 26 시대의 diagnostics, docs, compiler warning 품질 개선이 핵심이다.
+- Elixir 1.16 + OTP 26: diagnostics, docs, compiler warning 품질 개선이 핵심이다. OTP 26 자체에서는 map 최적화, compiler/JIT 개선, Dialyzer incremental mode를 먼저 본다.
 - Elixir 1.17: OTP 27 지원, `Duration`, `Date.shift/2`, `to_timeout/1`, 초기 set-theoretic type warning.
 - Elixir 1.18: built-in `JSON`, type checking of function calls, `mix format --migrate`, `unless` soft deprecation.
 - Elixir 1.19: OTP 28.1+ 지원, protocol type checking, `mix help Mod.fun/arity`, struct update 관련 warning 강화.
 - Elixir 1.20 계열: OTP 27+ 필요, OTP 29 호환, guard/body/clause/map operation type inference 강화.
 
 OTP 26까지 지원해야 하는 프로젝트는 Elixir 1.20으로 올릴 수 없다. OTP 26 runtime boundary가 남아있으면 Elixir 1.19 이하를 유지하고, OTP 27+로 올린 뒤 1.20 type checker 이점을 쓴다.
+
+OTP 26 운영 관점에서는 `argparse`와 SSL safer defaults도 확인한다. Elixir CLI는 보통 `OptionParser`를 쓰지만 Erlang `escript`나 Erlang module interop를 다루면 OTP 26의 `:argparse`가 선택지가 된다. TLS/SSL 설정은 OTP minor upgrade에서 default가 바뀔 수 있으니 release note와 runtime config를 같이 본다.
 
 ```shell
 # 새 프로젝트 시작

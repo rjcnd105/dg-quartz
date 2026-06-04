@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-26T07:05:13Z
-modified: 2026-05-26T07:05:13Z
+modified: 2026-05-27T03:50:00Z
 tags:
   - kb
   - health
@@ -23,6 +23,10 @@ Butyrate producer로는 _Faecalibacterium_, _Roseburia_, _Eubacteriu&#x6D;_&#xC7
 - Legumes: lentils, chickpeas, black beans, adzuki beans, kidney beans, pinto beans, mung beans, navy beans, split peas.
 - Tubers/root vegetables: cooked-and-cooled sweet potato, white potato, yam, cassava, taro, green plantain, parsnip.
 - Cooking/cooling: starch retrogradation으로 RS3가 늘 수 있으며, 냉장 12-24시간 뒤 재가열해도 일부 resistant starch가 유지된다는 실전 팁이 제시된다.
+
+댓글 확인 결과, 이 글의 community signal은 "beans/tubers가 좋다"보다 on-ramp와 예외 조건에 있다. 반복 댓글은 lentils를 gateway food로 쓰기, canned beans를 헹구기, kombu/pressure cooking/soaking/Beano로 gas를 낮추기, 2-3주 gas adaptation을 예상하기, cooked-and-cooled potato/rice부터 시작하기 같은 운영 지식을 제공한다. 또 SIBO에서는 GOS가 small intestine에서 잘못 발효될 수 있고, IBS-D는 tablespoon 단위로 시작하거나 PHGG/psyllium 같은 더 부드러운 soluble fiber를 먼저 쓰는 접근이 제시됐다.
+
+Diabetes/CGM 댓글은 tuber 조리법도 결과를 바꿀 수 있음을 보여준다. 한 사용자는 roasted sweet potato가 boiled/microwaved보다 glucose spike가 컸다고 보고했고, 다른 댓글은 legumes가 낮은 GI·fiber·protein·resistant starch 때문에 더 나은 carb일 수 있지만 CGM 또는 식후 산책 같은 측정/행동과 함께 보라고 했다. 이 댓글들은 controlled evidence는 아니지만, fiber advice를 개인 조건별 protocol로 바꾸는 데 유용하다.
 
 ## 해석 경계
 

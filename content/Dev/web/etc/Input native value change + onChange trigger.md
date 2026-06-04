@@ -2,9 +2,7 @@
 publish: true
 created: 2025-10-02T08:41:03Z
 modified: 2025-10-16T04:38:49Z
-cssclasses: ""
 ---
-
 
 ### [2021.5.11 작성](https://gggururu.tistory.com/77)
 

@@ -77,7 +77,7 @@ Cycle 0에 codebase profiling 투입. Self-Evolved ABC에서 **68% 토큰이 초
 - 전체 QoR **8.3% 개선** (baseline 1.000 → 0.917, lower better)
 - Worst negative slack 8-9% 개선
 - AIG node count 3-8% 감소, post-mapping depth 4-6% 감소
-- 총 비용 ~**$2,400** (profiling $1,400 포함)
+- 총 비용 ~\*\*$2,400** (profiling $1,400 포함)
 - 사이클 당 2-3시간 (87-node AMD EPYC cluster, 8 flows 병렬)
 
 ### 한계: 증폭 >> 발명

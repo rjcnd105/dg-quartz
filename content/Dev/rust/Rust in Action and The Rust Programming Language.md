@@ -6,9 +6,7 @@ tags:
   - rust
   - book
   - study
-cssclasses: ""
 ---
-
 
 ![[env/첨부파일/rust.png]]
 
@@ -95,36 +93,36 @@ String과 str은 비슷해보이지만 별개의 유형이다.
 
 ### String
 
-*String*은 합치거나 추가, 공백 제거와 같은 다양한 기능들이 있다.
+_Strin&#x67;_&#xC740; 합치거나 추가, 공백 제거와 같은 다양한 기능들이 있다.
 String은 awned(소유) type이다.
 
 소유자는 데이터를 변경할 수 있으며 범위를 벗어날 때 소유한 값을 삭제할 책임이 있다.
 
 ### str (string slice)
 
-*str*은 기능이 적지만 고성능 유형이다.
+_st&#x72;_&#xC740; 기능이 적지만 고성능 유형이다.
 한번 생성된 str은 확장할 수 없다.
 
 마치 원시 메모리(c언어에서의 배열과 같은) 유사하지만 Rust는 UTF-8 문자를 보장한다.
-str은 일반적으로 &str처럼 표시된다.
+str은 일반적으로 \&str처럼 표시된다.
 string slice라고 부른다.
 
 str유형에 변수를 할당하면 실패한다. str 값은 임의의 길이일 수 있으므로 참조에 의해 지역 변수로만 저장할 수 있다.
 
-&str은 borrowed(빌린) type이다.
+\&str은 borrowed(빌린) type이다.
 
-실용적인 측면에서 이것은 &str이 읽기 전용 데이터로 간주될 수 있는 반면 String은 읽기-쓰기로 간주될 수 있음을 의미한다.
+실용적인 측면에서 이것은 \&str이 읽기 전용 데이터로 간주될 수 있는 반면 String은 읽기-쓰기로 간주될 수 있음을 의미한다.
 
 ### String vs str
 
 String은 동적 메모리 할당을 사용하여 표시하는 텍스트를 저장한다.
-&str 값을 생성하면 메모리 할당을 피할 수 있다.
+\&str 값을 생성하면 메모리 할당을 피할 수 있다.
 
-String은 Vec\<u8\>에 대한 것이고 str은 [u8]에 대한 것이다.
+String은 Vec\<u8>에 대한 것이고 str은 \[u8]에 대한 것이다.
 
 ### String literals
 
-"hello world" 같은 String literals는 &`static str 이다.
+"hello world" 같은 String literals는 &\`static str 이다.
 
 ### char
 
@@ -134,14 +132,14 @@ String은 Vec\<u8\>에 대한 것이고 str은 [u8]에 대한 것이다.
 ### Number
 
 - **i
-Signed integers, 부호 있는 정수**
-i8, i16, i32, i64
+  Signed integers, 부호 있는 정수**
+  i8, i16, i32, i64
 - **u
-Unsigned integers, 부호 없는 정수**
-u8, u16, u32, u64
+  Unsigned integers, 부호 없는 정수**
+  u8, u16, u32, u64
 - **f
-Floating-point types, 부동 소수점**
-f32, f64
+  Floating-point types, 부동 소수점**
+  f32, f64
 
 isize, usize: 32bit 컴퓨터의 경우 32, 64bit 컴퓨터의 경우 64,
 
@@ -439,14 +437,14 @@ fn lifetime() {
 ## List
 
 - **Array**
-배열 내의 데이터는 수정할 수 있지만, 크기는 조정 불가능. [T, n]
+  배열 내의 데이터는 수정할 수 있지만, 크기는 조정 불가능. \[T, n]
 - **Slice**
-Array like object인데 크기가 동적임. 그렇기 때문에 동적 타이핑이 됨. [T]
-Slice는 slice에 대한 trait을 더 구현하기 쉬움
-읽기 권한을 빠르게 얻어올 수 있으므로 Array나 다른 slice에 대한 view 역할을 기능을 하기도 함.
-크기가 동적이므로 일반적으로 &[T]로 참조 접근해서 사용함.
+  Array like object인데 크기가 동적임. 그렇기 때문에 동적 타이핑이 됨. \[T]
+  Slice는 slice에 대한 trait을 더 구현하기 쉬움
+  읽기 권한을 빠르게 얻어올 수 있으므로 Array나 다른 slice에 대한 view 역할을 기능을 하기도 함.
+  크기가 동적이므로 일반적으로 &\[T]로 참조 접근해서 사용함.
 - **Vector**
-확장 가능한 목록. 크기가 자유롭게 변경될 수 있기에 성능적 런타임 패널티가 발생.
+  확장 가능한 목록. 크기가 자유롭게 변경될 수 있기에 성능적 런타임 패널티가 발생.
 
 ```rust
 pub fn defining_arrays_and_iterating_over_their_elements() {
@@ -528,7 +526,7 @@ println!("base_3: {:?}", base_3);
 
 crate는 패키지라 볼 수 있음.
 
-[https://crates.io/](https://crates.io/) 에서 전체 crate들을 볼 수 있다.
+<https://crates.io/> 에서 전체 crate들을 볼 수 있다.
 
 Cargo.toml에 아래와 같이 crate를 dependencies에 추가하고 cargo build를 하면 된다.
 
@@ -548,28 +546,28 @@ rust 설치를 관리
 
 러스트 소스코드 컴파일을 관리
 
-- rustrc \<file\>: main이 있는 rust파일을 컴파일. 간단한 파일에 사용됨.
+- rustrc \<file>: main이 있는 rust파일을 컴파일. 간단한 파일에 사용됨.
 
 ### cargo
 
 패키지 관리
 
-- **cargo new \<name\>:** 새 cargo 패키지 생성.
-    - cargo new \<name\> —lib: 실행 가능하지 않은 라이브러리 패키지 생성
+- **cargo new \<name>:** 새 cargo 패키지 생성.
+  - cargo new \<name> —lib: 실행 가능하지 않은 라이브러리 패키지 생성
 - **cargo run:** cargo build 하고 내부의 main() 실행
-    - cargo run --release 하면 debug 라인들이 없음.
-    - cargo run -q --release 하면 출력을 더 줄일 수 있음.
+  - cargo run --release 하면 debug 라인들이 없음.
+  - cargo run -q --release 하면 출력을 더 줄일 수 있음.
 - **cargo build:** 종속성을 다운로드하고 컴파일
 - cargo test: test 실행
 - **cargo init:** 기존 패키지에 새 cargo package 생성
 - **cargo doc:** 현재 프로젝트의 모든 종속성에 대한 HTML 문서를 빌드합니다.
-- cargo add \<name\>: 패키지 종속성 파일인 cargo.toml를 생성해줌.
+- cargo add \<name>: 패키지 종속성 파일인 cargo.toml를 생성해줌.
 
 ## 참고
 
 - 예제 파일들
 
-    [https://github.com/rust-in-action/code](https://github.com/rust-in-action/code)
+  <https://github.com/rust-in-action/code>
 
 ## 문자열
 
@@ -577,22 +575,20 @@ String과 str은 비슷해보이지만 별개의 유형이다.
 
 ### String
 
-*String*은 합치거나 추가, 공백 제거와 같은 다양한 기능들이 있다.
+_Strin&#x67;_&#xC740; 합치거나 추가, 공백 제거와 같은 다양한 기능들이 있다.
 String은 awned(소유) type이다. 소유자는 데이터를 변경할 수 있으며 범위를 벗어날 때 소유한 값을 삭제할 책임이 있습니다.
-String::from(&str)로 &str -> String 변환 가능
+String::from(\&str)로 \&str -> String 변환 가능
 
 ###str
-*str*은 기능이 적지만 고성능 유형이다. 한번 생성된 str은 확장할 수 없다. 마치 원시 메모리(c언어에서의 배열과 같은) 유사하지만 Rust는 UTF-8 문자를 보장한다.
-str은 일반적으로 &str처럼 표시된다.
-string slice라고 부른다.
-<br/>
-str유형에 변수를 할당하면 실패한다. str 값은 임의의 길이일 수 있으므로 참조에 의해 지역 변수로만 저장할 수 있습니다.
-<br/>
-&str은 borrowed(빌린) type이다. 실용적인 측면에서 이것은 &str이 읽기 전용 데이터로 간주될 수 있는 반면 String은 읽기-쓰기로 간주될 수 있음을 의미합니다.
+_st&#x72;_&#xC740; 기능이 적지만 고성능 유형이다. 한번 생성된 str은 확장할 수 없다. 마치 원시 메모리(c언어에서의 배열과 같은) 유사하지만 Rust는 UTF-8 문자를 보장한다.
+str은 일반적으로 \&str처럼 표시된다.
+string slice라고 부른다. <br/>
+str유형에 변수를 할당하면 실패한다. str 값은 임의의 길이일 수 있으므로 참조에 의해 지역 변수로만 저장할 수 있습니다. <br/>
+\&str은 borrowed(빌린) type이다. 실용적인 측면에서 이것은 \&str이 읽기 전용 데이터로 간주될 수 있는 반면 String은 읽기-쓰기로 간주될 수 있음을 의미합니다.
 
 ### String literals
 
-"hello world" 같은 String literals는 &`static str
+"hello world" 같은 String literals는 &\`static str
 처럼
 
 ### char
@@ -600,6 +596,6 @@ str유형에 변수를 할당하면 실패한다. str 값은 임의의 길이일
 4바이트로 된 단일 문자.
 1~4바이트로 이루어져있는 UTF-8에 비해 컴파일러가 추론하기 쉽다.
 
-String은 동적 메모리 할당을 사용하여 표시하는 텍스트를 저장합니다. &str 값을 생성하면 메모리 할당을 피할 수 있다.
+String은 동적 메모리 할당을 사용하여 표시하는 텍스트를 저장합니다. \&str 값을 생성하면 메모리 할당을 피할 수 있다.
 
-Vec\<u8\> - 일반적으로 [u8] 데이터를 사용할 때 생성되는 원시 바이트 벡터입니다. String은 Vec\<u8\>에 대한 것이고 str은 [u8]에 대한 것입니다.
+Vec\<u8> - 일반적으로 \[u8] 데이터를 사용할 때 생성되는 원시 바이트 벡터입니다. String은 Vec\<u8>에 대한 것이고 str은 \[u8]에 대한 것입니다.

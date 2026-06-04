@@ -2,9 +2,7 @@
 publish: true
 created: 2025-10-29T04:54:07Z
 modified: 2025-12-15T01:38:12Z
-cssclasses: ""
 ---
-
 
 ### 리스트
 
@@ -33,9 +31,11 @@ NixOS의 [services.kubernets](https://nixos.wiki/wiki/Kubernetes)
 #### telemetry
 
 소
+
 1. netdata, local journald
 
 중대
+
 1. Grafana/Prometheus
 
 #### CD
@@ -72,6 +72,7 @@ default yaml
 1. Helm
 
 alpha
+
 1. [yoke](https://yokecd.github.io/docs/concepts/cluster-access/)
 
 #### Data Layer
@@ -91,21 +92,22 @@ ngnix 포지션
 #### Messaging System
 
 1. NATS(with Jetstream)
-2. 
+2.
 
 #### data storage
 
 small
-~~1. minio block storage~~ - [유지 관리 모드가 됨](https://news.ycombinator.com/item?id=46136023)
+\~~1. minio block storage~~ - [유지 관리 모드가 됨](https://news.ycombinator.com/item?id=46136023)
+
 1. [Garage](https://garagehq.deuxfleurs.fr/)
-2. 
+2.
 
 #### else
 
 [cloudenative-PG](https://github.com/cloudnative-pg/cloudnative-pg): 쿠버 PostgreSQL 솔루션
 [Terragrunt](https://github.com/gruntwork-io/terragrunt): terraform에서의 추상 framework 같은 것
 
-#####  alpha
+##### alpha
 
 https://github.com/kubernetes-sigs/kro
 

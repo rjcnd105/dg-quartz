@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-22T00:00:00Z
-modified: 2026-04-22T00:00:00Z
+modified: 2026-05-27T03:55:00Z
 tags:
   - kb
   - nootropic
@@ -64,7 +64,7 @@ Reddit r/NooTopics 종합(2026-04, [[Some facts about Bromantane]])에 따르면
 | 뇌 반감기 | ~7h |
 | 주 대사체 | 6β-hydroxybromantane (자극 약화, 항콜린 잔존) |
 
-비강 점적 0.5%도 러시아 제형 존재 (1차 통과 대사 우회).
+원문은 비강 점적 0.5% 제형을 언급하지만, 원문 댓글에는 "러시아에 nasal drops formulation은 없고 pills도 2015년경 중단되었다"는 보정이 있다. 이 댓글 단독으로 현행 규제·유통 상태를 확정할 수는 없지만, 제형·availability claim은 별도 공식 확인 전까지 dosing guidance로 쓰지 않는다.
 
 **임상 투여**: 50–100 mg/day (50 mg morning + early afternoon), **2–4주 코스** + drug holiday. 장기 무제한 사용 연구 없음.
 
@@ -80,6 +80,12 @@ Reddit r/NooTopics 종합(2026-04, [[Some facts about Bromantane]])에 따르면
 ### 주의 / 부작용
 
 Siuniakov et al. 2006: 일부 환자에서 자율신경 교란·불안 강화·수면 장애 관찰 → 과다 정신자극 효과 반영. Sympathomimetic·노르아드레날린 활성화 성분 추정.
+
+원문 댓글의 실질 보정:
+
+- 제형·유통: 본문 claim과 달리 러시아 nasal drops 부재와 정제 중단을 지적한 댓글이 있어, 현재 availability는 낮은 확실성으로 둔다.
+- 운동 맥락: 한 사용자는 마라톤 훈련 중 hard training day에는 고강도 심박 노력을 더 차분하게 지속하는 느낌을 보고했지만, race day에는 jitters, shakiness, overstimulation을 겪었다고 했다. 이는 formal evidence가 아니라 단일 self-experiment signal이지만, bromantane의 "stim + anxiolytic" 프로필이 상황·baseline arousal에 따라 양면적으로 나타날 수 있다는 adverse-effect candidate로 보존한다.
+- 나머지 댓글은 seller availability 의문, TLDR, 이해 난이도 언급으로 효능 근거가 아니다.
 
 > 의학 조언 아님. 다른 약물과 병용 금지. 러시아 외 임상 데이터 희소.
 

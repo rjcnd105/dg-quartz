@@ -3,22 +3,18 @@ publish: true
 created: 2024-05-21T06:31:53Z
 modified: 2025-10-20T04:43:31Z
 tags:
-  - c
-  - s
-  - s
-cssclasses: ""
+  - css
 ---
-
 
 #### 자동 grid
 
-grid-cols-[repeat(auto-fill,minmax(102px,1fr))]
+grid-cols-\[repeat(auto-fill,minmax(102px,1fr))]
 
 #### 아코디언
 
 grid를 이용하면 height auto에 해당하는 애니메이션을 쉽게 줄 수 있다.
 
-li > div[inert] { grid-template-rows: 0fr; }
+li > div\[inert] { grid-template-rows: 0fr; }
 li > div { grid-template-rows: 1fr; transition: grid-template-rows .3s; }
 
 #### 완벽한 중앙 배치를 위한 텍스트 사이즈 컴팩트하게 잡기

@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-08T08:30:39Z
-modified: 2026-05-18T06:06:55Z
+modified: 2026-05-27T03:50:00Z
 tags:
   - kb
   - health
@@ -23,6 +23,10 @@ Science News가 소개한 hypercuriosity 논의는 ADHD의 impulsivity와 curios
 ## 실전 해석
 
 강점 기반 해석과 slow-wave 해석은 서로 모순되지 않는다. ADHD는 관심이 맞을 때 hyperfocus와 발산적 사고가 강해질 수 있지만, 지루한 지속 과제에서는 국소 수면 유사 상태나 의도하지 않은 mind wandering이 주의를 끊을 수 있다. 따라서 개입은 "더 노력"보다 과제 흥미, 수면 질, 각성제·카페인 시간, 업무 분절, 피드백 빈도를 함께 봐야 한다.
+
+Reddit 댓글은 이 균형을 더 잘 보여준다. 많은 댓글은 hyperfocus, 창의성, 관심 기반 problem solving을 실제 강점으로 받아들이지만, 동시에 "관심이 맞을 때만" 작동하고 지루한 생활 과제·행정·청소·약속 기억에는 크게 약해진다고 말한다. 또 "ADHD는 broken이 아니라 다른 operating system"이라는 긍정 프레임과, "장점이 있어도 매일의 deficit을 지워주지는 않는다"는 반론이 함께 반복된다. 따라서 community signal은 ADHD를 장점으로 미화하는 근거가 아니라, 관심 정렬·환경 설계·보조 장치가 성과 차이를 크게 만든다는 실전 단서로 읽는다.
+
+댓글에는 직장·학교 accommodation disclosure에 대한 경험도 많다. 이는 의학적 효능 근거가 아니라 social risk signal이다. ADHD 지원에서는 강점 활용과 함께, disclosure, stigma, accommodation access, medication이 listening/working memory를 개선했다는 개인 보고 같은 운영 맥락을 분리해 기록해야 한다.
 
 ## 해석 경계
 

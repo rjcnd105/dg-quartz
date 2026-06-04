@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-08T08:30:39Z
-modified: 2026-05-26T07:05:13Z
+modified: 2026-05-27T03:10:15Z
 tags:
   - kb
   - health
@@ -26,6 +26,8 @@ UCL 연구를 다룬 Irish Star 보도는 독서, 음악 감상, 박물관·갤�
 
 전임상 쪽에서는 [[Hypothalamic Menin and D-serine Aging Pathway]]가 hypothalamus의 Menin 감소, D-serine synthesis, hippocampal cognition, systemic aging phenotype을 연결하는 mouse model을 제시한다. 이는 뇌가 aging process 일부를 조절할 수 있다는 강한 기전 후보지만, 사람에서 D-serine 보충이나 Menin 조작으로 확장하려면 별도 검증이 필요하다.
 
+생활습관 risk 쪽에서는 [[Alcohol and Cognitive Aging]]이 "light/moderate drinking이 cognitive function을 보호한다"는 통념을 abstainer bias 관점에서 재검토한다 (출처: [[Light Alcohol Consumption Does Not Protect Cognitive Function A Longitudinal Prospective Study]]). 이 자료는 alcohol을 cognitive health intervention으로 보지 말고, 고령자의 episodic memory, 수면, 낙상, 약물 상호작용, 암 위험까지 함께 보는 exposure로 다뤄야 함을 시사한다.
+
 ## 해석 경계
 
 이 연구는 공중보건 관점과 독점적·디지털 개입이 섞인 영역이다. "인지 저하는 피할 수 없다"를 반박하는 문구는 동기부여식 제목보다, 특정 지표에서 장기 개선이 관찰됐다는 좁은 의미로 읽어야 한다. 치매 예방이나 질병 치료 평가 지표로 바로 해석하지 않는다.
@@ -44,3 +46,4 @@ UCL 연구를 다룬 Irish Star 보도는 독서, 음악 감상, 박물관·갤�
 - [[Hypothalamic Menin and D-serine Aging Pathway]]
 - [[Prefrontal Dopamine D1 and General Cognitive Ability]]
 - [[Action Symbols and Compositional Generalization]]
+- [[Alcohol and Cognitive Aging]]

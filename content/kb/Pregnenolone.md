@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-26T07:05:13Z
-modified: 2026-05-26T07:05:13Z
+modified: 2026-05-27T03:50:00Z
 tags:
   - kb
   - health
@@ -17,6 +17,8 @@ Pregnenolone은 여러 steroid hormone과 neurosteroid의 전구체로, nootropi
 r/NooTopics의 2026년 사례 보고는 아침 5 mg pregnenolone을 5일 사용한 뒤 공부·독서 중 느끼던 신체적 긴장과 피로가 줄고 차분한 집중감이 생겼다고 설명한다 (출처: [[5mg pregnenolone seems to do wonders for my focus 5mg 프레그네놀론은 제 집중력에 놀라운 효과를 주는 것 같습니다]]). 작성자는 이 효과를 allopregnanolone과 pregnenolone sulfate 증가로 추정했다.
 
 이 자료에서 쓸 수 있는 지식은 효능 확정이 아니라 가설 지도다. Allopregnanolone은 GABA-A receptor 양성 알로스테릭 조절과 연결되고, pregnenolone sulfate는 NMDA receptor 조절과 연결되는 neurosteroid로 논의된다. 따라서 개인이 보고한 "긴장 감소 + 집중 유지"는 GABAergic anxiolysis, glutamatergic/NMDA modulation, caffeine 필요량 감소 같은 축으로 분해해서 추적할 수 있다.
+
+댓글은 이 사례를 단순한 "focus supplement"가 아니라 neurosteroid self-experiment로 보게 만든다. 한 댓글은 allopregnanolone의 GABA-A PAM, pregnenolone sulfate의 NMDA PAM 가능성을 설명하면서 caffeine과 함께 쓰면 glutamate/NMDA overstimulation 가능성을 주의하라고 했다. 다른 댓글 흐름에서는 finasteride/5-alpha-reductase inhibitor 후 인지 부작용 경험, hormone/peptide 시도, 제품 출처와 용량 질문이 이어진다. 따라서 이 댓글 신호는 효능 확정이 아니라 post-finasteride-like symptom, caffeine interaction, hormone-axis risk를 추적할 가설로 보존한다.
 
 ## 해석 경계
 
@@ -36,7 +38,7 @@ Pregnenolone 자료를 읽을 때는 효과 이름보다 다음 변수를 기록
 
 ## 관련 링크
 
-- [[Nootropic Self-Experiment Reports]] — 낮은 신뢰도 개인 실험 자료를 효능 근거가 아니라 가설·위험 신호로 읽는 방식
+- [[Nootropic Self-Experiment Reports]] — 개인 실험 자료를 효능 확정이 아니라 가설·위험 신호로 읽는 방식
 - [[Supplement Stack Failure Modes]]
 - [[GABA and Task Performance]]
 - [[Caffeine and Sleep Restriction]]

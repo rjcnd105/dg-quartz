@@ -2,11 +2,10 @@
 publish: true
 created: 2025-02-09T01:58:44Z
 modified: 2025-10-16T03:14:24Z
-cssclasses: ""
 ---
 
-
 테이블을 수정하고 싶다면 공통적으로 다음과 같은 절차가 필요하다.
+
 1. ecto.migration 생성
 2. ecto.migration에 수정 사항 작성
 3. (optional) 스키마 제약 사항 추가
@@ -16,6 +15,7 @@ cssclasses: ""
 
 1. `mix ecto.gen.migration create_unique_index_on_room_name`
 2. 추가된 priv/repo/migrations 내에 해당 파일을 아래와 같이 수정
+
 ```elixir
 defmodule Dutchpay.Repo.Migrations.CreateUniqueIndexOnRoomName do
   use Ecto.Migration
@@ -59,7 +59,7 @@ end
 
 ```
 
-4. `mix ecto.migrate
+4. \`mix ecto.migrate
 
 ### notnull 추가
 
@@ -93,8 +93,8 @@ end
 
 ### timestamp() 매크로로 넣은 날짜 형식 변경
 
-처음부터 timestamp(type: :utc_datetime)로 했어야하는걸 나중에 수정할때 예시
-매크로가 inserted_at, updated_at 두 컬럼을 생성한다.
+처음부터 timestamp(type: :utc\_datetime)로 했어야하는걸 나중에 수정할때 예시
+매크로가 inserted\_at, updated\_at 두 컬럼을 생성한다.
 수정시에는 직접 바꿔줘야한다.
 
 ```elixir
