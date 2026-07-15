@@ -2,7 +2,7 @@
 publish: true
 title: 김회준 · Frontend Engineer
 created: 2024-02-03T21:41:12Z
-modified: 2026-07-15T10:17:44Z
+modified: 2026-07-15T10:18:10Z
 tags:
   - 이력서
   - frontend
@@ -93,7 +93,6 @@ Next.js 14, TypeScript, React, TanStack Query, Tailwind CSS, Naver Maps API, Str
 - GPS 기반 장소 검색 및 위시리스트 기능을 개발 했습니다.
 - 여러 화면에서 현재 작업을 유지한 채 장소 상세를 확인할 수 있는 nextjs parallel routes(with iframe) 바텀시트를 개발했습니다. 브라우저 히스토리와 직접 진입·뒤로가기 동작, 중첩 모달, iOS WebView의 레이아웃·스크롤 예외를 함께 해결했습니다.
 
-![[env/첨부파일/my-jeju-plan1 1.mp4]]
 [[my-jeju-plan1.mp4|여행 플랜 운영 환경 사용 영상]]
 
 ---
