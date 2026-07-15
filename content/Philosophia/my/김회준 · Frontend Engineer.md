@@ -2,7 +2,7 @@
 publish: true
 title: 김회준 · Frontend Engineer
 created: 2024-02-03T21:41:12Z
-modified: 2026-07-15T08:36:42Z
+modified: 2026-07-15T08:37:55Z
 tags:
   - 이력서
   - frontend
@@ -124,8 +124,6 @@ https://www.tel-co.net/
 서비스 레이어단에서는 Facade 패턴을 사용하여 각 비즈니스 로직간의 상호 의존성을 줄였습니다.
 
 컴포넌트는 style을 따로 inject 받으며 기본적으로 추상화된 headless component가 design system에 존재합니다. style에 대해 inject를 함으로써 각각의 프로젝트에서 테마(style set)를 적용하여 파생(derived) 컴포넌트를 사용하게 됩니다. 컴포넌트의 구성 요소 규모에 따라 headless [compound component](https://www.patterns.dev/posts/compound-pattern) 으로 작성될 수 있습니다.
-
-[react-router의 DataApi를 활용](https://reactrouter.com/en/main/guides/deferred)하여 기존의 직렬적인 네트워크 요청을 병렬, 또는 선 fetch 후 바로 그리는 형태로 CLS를 최적화 할 수 있는 구성을 합니다. 이로 인해 비약적인 성능 개선을 할 수 있습니다.
 
 참고한 내용들) 여러 article, framework, library, programming language principle partial DDD series, Feature Sliced, All together(DDD, Hexagonal, Onion, Clean, CQRS …)
 
