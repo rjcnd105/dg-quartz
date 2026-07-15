@@ -2,7 +2,7 @@
 publish: true
 title: 김회준 · Frontend Engineer
 created: 2024-02-03T21:41:12Z
-modified: 2026-07-15T03:40:06Z
+modified: 2026-07-15T06:30:50Z
 tags:
   - 이력서
   - frontend
@@ -21,20 +21,20 @@ Frontend Engineer
 
 ## 소개
 
-7년 차 프론트엔드 엔지니어로서 늘 팀 내에 기술 선도적인 역할을 담당하여 여러 프로젝트의 아키텍처를 설계하고, 팀 내 컨벤션을 정의하고 핵심 로직들을 개발하는 일을 맡아왔습니다.
+7년 차 프론트엔드 엔지니어로서 늘 팀의 기술 선도적인 역할을 담당하였습니다. 프로젝트의 아키텍처를 설계하고, 팀 내 컨벤션을 정의하고 공통 컴포넌트 및 핵심 비즈니스 로직들을 개발하는 일을 맡아왔습니다.
 제품 규모, 도메인 복잡도와 팀의 작업 방식을 기준으로 적합한 설계 원칙과 구조를 선택해 적용합니다. 제품이 커진 뒤에도 팀이 구조를 이해하고 기능을 계속 바꿀 수 있도록 도메인과 레이어의 경계를 잡는 일이 제 강점입니다.
 DX를 개선해 팀 전체의 업무 효율을 높이는 데 큰 성취감을 느낍니다.
 
 ## 기술
 
 - 주력: TypeScript, React, Next.js, CSS, HTML
-- 라이브러리: TanStack Query, React Hook Form, Tailwind CSS, Emotion, Storybook, tRPC, Prisma, D3
+- 라이브러리: TanStack Query, React Hook Form, Tailwind CSS, Emotion, Storybook, tRPC, Prisma, D3.js(visx)
 - 업무에서 다룬 도구: AWS 환경, Docker, Sentry, Lokalise, Git, Lefthook
 - 개인 개발 환경: Nix, NixOS, Nix Flakes, Mise, SOPS, Jujutsu, TanStack Router, Elixir, Phoenix, Ash Framework, PostgreSQL
 
 ## 설계와 프로젝트 운영
 
-- 프로젝트의 거시적 설계 원칙은 [Ash Framework의 Resource-oriented, Declarative Design](https://hexdocs.pm/ash/design-principles.html)을 지향합니다. 리소스와 가능한 행위, 제약을 코드에 명시해 사람과 AI 에이전트가 같은 구조를 읽도록 하며, 에이전트에게는 `Code is the spec.`처럼 작동합니다.
+- 프로젝트의 거시적 설계 원칙은 [Ash Framework의 Resource-oriented, Declarative Design](https://hexdocs.pm/ash/design-principles.html)을 지향합니다. 리소스와 가능한 행위, 제약을 코드에 명시해 사람과 AI 에이전트가 같은 구조를 읽도록 하며, 에이전트에게는 `Code is the spec` 처럼 동작합니다.
 - 스키마와 명세를 단순한 타입 보조가 아니라 도메인 규칙을 소유하는 코드로 사용합니다. API 데이터, 애플리케이션 상태와 폼이 같은 용어와 제약을 공유하도록 구성합니다.
 - Hexagonal Architecture와 FSD를 비롯한 여러 설계 방법론을 정해진 형태 그대로 적용하지 않습니다. 제품의 도메인 개념을 팀의 공통 언어로 삼아 구조를 이해하고 작업 맥락을 이어가는 부담을 줄입니다. 제품 규모와 팀의 실제 업무 흐름을 계속 살피며 적용할 원칙과 경계를 조정합니다.
 - 초기 구축 뒤에도 패키지 업데이트, 성능 문제, 운영 이슈, 리팩터링과 문서화까지 이어서 맡습니다. 아키텍처를 한 번 정하고 끝나는 결과물이 아니라 책임감을 가지고 지속적으로 관리해야 하는 프로젝트의 상태로 봅니다.
@@ -80,7 +80,7 @@ DX를 개선해 팀 전체의 업무 효율을 높이는 데 큰 성취감을 �
 
 #### PS Admin (Product Service Admin)
 
-- 프론트엔드 설계와 구축을 혼자 90% 이상 담당했습니다.
+- 프론트엔드 설계부터 전체 구축을 90% 담당했습니다.
 - Google AI 스마트 글래스 AS를 포함한 제품 서비스 운영 시스템으로, 삼성 임직원들과 각 매장 담당자, CS 관리자가 사용합니다.
 
 ---
