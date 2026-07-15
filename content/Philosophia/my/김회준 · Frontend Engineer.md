@@ -2,7 +2,7 @@
 publish: true
 title: 김회준 · Frontend Engineer
 created: 2024-02-03T21:41:12Z
-modified: 2026-07-15T07:10:45Z
+modified: 2026-07-15T07:12:53Z
 tags:
   - 이력서
   - frontend
@@ -27,10 +27,9 @@ DX를 개선해 팀 전체의 업무 효율을 높이는 데 큰 성취감을 �
 
 ## 기술
 
-- 주력: TypeScript, React, Next.js, CSS, HTML
-- 라이브러리: TanStack Query, React Hook Form, Tailwind CSS, Emotion, Storybook, tRPC, Prisma, D3.js(visx)
-- 업무에서 다룬 도구: AWS 환경, Docker, Sentry, Lokalise, Git, Lefthook
-- 개인 개발 환경: Nix, NixOS, Nix Flakes, Mise, SOPS, Jujutsu, TanStack Router, Elixir, Phoenix, Ash Framework, PostgreSQL
+- **주력**: TypeScript, React, Next.js, CSS, HTML
+- **라이브러리**: TanStack Query, React Hook Form, Tailwind CSS, Emotion, Storybook, tRPC, Prisma, D3.js(visx), Sentry
+- **개인 개발 환경**: Nix, NixOS, Nix Flakes, Mise, SOPS, Jujutsu, TanStack Router, Elixir, Phoenix, Ash Framework, PostgreSQL
 
 ## 설계와 프로젝트 운영
 
