@@ -2,7 +2,7 @@
 publish: true
 title: 김회준 · Frontend Engineer
 created: 2024-02-03T21:41:12Z
-modified: 2026-07-15T06:37:09Z
+modified: 2026-07-15T06:38:05Z
 tags:
   - 이력서
   - frontend
@@ -81,8 +81,9 @@ DX를 개선해 팀 전체의 업무 효율을 높이는 데 큰 성취감을 �
 
 #### PS Admin (Product Service Admin)
 
-- 프론트엔드 설계부터 전체 구축을 90% 담당했습니다.
-- Google AI 스마트 글래스 AS를 포함한 제품 서비스 운영 시스템으로, 삼성 임직원들과 각 매장 담당자, CS 관리자가 사용합니다.
+Google AI 스마트 글래스 AS를 포함한 제품 서비스 운영 시스템으로, 삼성 임직원들과 각 매장 담당자, CS 관리자가 사용합니다.
+
+프론트엔드 설계부터 전체 구축을 90% 담당했습니다.
 
 ---
 
