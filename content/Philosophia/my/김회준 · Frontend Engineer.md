@@ -2,7 +2,7 @@
 publish: true
 title: 김회준 · Frontend Engineer
 created: 2024-02-03T21:41:12Z
-modified: 2026-07-15T10:02:49Z
+modified: 2026-07-15T10:03:51Z
 tags:
   - 이력서
   - frontend
