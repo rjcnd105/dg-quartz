@@ -2,7 +2,7 @@
 publish: true
 title: 김회준 · Frontend Engineer
 created: 2024-02-03T21:41:12Z
-modified: 2026-07-15T06:38:05Z
+modified: 2026-07-15T07:51:55Z
 tags:
   - 이력서
   - frontend
@@ -13,24 +13,19 @@ tags:
   - developer-experience
 ---
 
-# 김회준
-
-Frontend Engineer
-
-[GitHub](https://github.com/rjcnd105) · [Tech Blog](https://rjcnd105.github.io/dg-quartz/) · [Email](mailto:rjcnd123@gmail.com)
-
 ## 소개
 
 7년 차 프론트엔드 엔지니어로서 늘 팀의 기술 선도적인 역할을 담당하였습니다. 프로젝트의 아키텍처를 설계하고, 팀 내 컨벤션을 정의하고 공통 컴포넌트 및 핵심 비즈니스 로직들을 개발하는 일을 맡아왔습니다.
 제품 규모, 도메인 복잡도와 팀의 작업 방식을 기준으로 적합한 설계 원칙과 구조를 선택해 적용합니다. 제품이 커진 뒤에도 팀이 구조를 이해하고 기능을 계속 바꿀 수 있도록 도메인과 레이어의 경계를 잡는 일이 제 강점입니다.
 DX를 개선해 팀 전체의 업무 효율을 높이는 데 큰 성취감을 느낍니다.
 
+[GitHub](https://github.com/rjcnd105) · [Blog](https://rjcnd105.github.io/dg-quartz/) · [Email](mailto:rjcnd123@gmail.com)
+
 ## 기술
 
-- 주력: TypeScript, React, Next.js, CSS, HTML
-- 라이브러리: TanStack Query, React Hook Form, Tailwind CSS, Emotion, Storybook, tRPC, Prisma, D3.js(visx)
-- 업무에서 다룬 도구: AWS 환경, Docker, Sentry, Lokalise, Git, Lefthook
-- 개인 개발 환경: Nix, NixOS, Nix Flakes, Mise, SOPS, Jujutsu, TanStack Router, Elixir, Phoenix, Ash Framework, PostgreSQL
+- **주력**: TypeScript, React, Next.js, CSS, HTML
+- **라이브러리**: TanStack Query, React Hook Form, Tailwind CSS, Emotion, Storybook, tRPC, Prisma, D3.js(visx), Sentry
+- **개인 개발 환경**: Nix, NixOS, Nix Flakes, Mise, SOPS, Jujutsu, TanStack Router, Elixir, Phoenix, Ash Framework, PostgreSQL
 
 ## 설계와 프로젝트 운영
 
@@ -40,12 +35,15 @@ DX를 개선해 팀 전체의 업무 효율을 높이는 데 큰 성취감을 �
 - Hexagonal Architecture와 FSD를 비롯한 여러 설계 방법론을 정해진 형태 그대로 적용하지 않습니다. 제품의 도메인 개념을 팀의 공통 언어로 삼아 구조를 이해하고 작업 맥락을 이어가는 부담을 줄입니다. 제품 규모와 팀의 실제 업무 흐름을 계속 살피며 적용할 원칙과 경계를 조정합니다.
 - 초기 구축 뒤에도 LLM Context 세팅, 패키지 업데이트, 성능 문제, 운영 이슈, 리팩터링과 문서화까지 이어서 맡습니다. 아키텍처를 한 번 정하고 끝나는 결과물이 아니라 책임감을 가지고 지속적으로 관리해야 하는 프로젝트의 상태로 봅니다.
 
-## 프론트엔드 실무
+## 업무 히스토리
 
-- OAuth 2.0, MFA(2단계 인증), SSO 기반의 로그인과 계정 흐름을 구현했습니다. 토큰·세션 만료, 안전한 리다이렉트와 브라우저 노출 정보를 프론트엔드 보안의 경계로 다룹니다.
+- 프론트엔드 팀 내부 문화인 KPT, 회고, 팀 업무 관리, 오프라인 코드리뷰, 스터디 등을 구성하고 주도한 경험이 있습니다.
+- OAuth 2.0, MFA(2단계 인증), SSO 기반의 인증을 구현했습니다. 토큰·세션 만료, 안전한 리다이렉트와 브라우저 노출 정보에 대한 프론트엔드에서의 보안적인 책임도 수행했습니다.
 - 여러 국가와 법인 오픈 과정에서 국제화, locale routing과 번역 데이터 흐름을 다뤘습니다.
-- Headless·Compound Component 패턴을 활용해 재사용 가능한 공용 컴포넌트를 만들고, 디자인 시스템과 토큰을 공통 스타일의 기준으로 관리했습니다.
+- Headless·Compound Component 패턴을 활용해 재사용 가능한 공용 컴포넌트를 만들고, 디자인 시스템을 개발하고 공통 스타일의 기준으로 관리했습니다.
 - 페이지의 데이터 갱신 주기, SEO와 캐시 조건에 따라 SSR, ISR과 클라이언트 렌더링을 선택합니다. 인증·보안, 렌더링 최적화와 컴포넌트 설계 기준을 팀 가이드로 작성해 왔습니다.
+- OpenApi spec을 기반한 type generate를 하여 사용하고, node 기반 서버의 경우 tRPC로 end to end typesafe 처리를 하였습니다.
+- monorepo 기반으로 프로젝트 레이어의 책임과 경계를 명확히 하여 구성하였습니다.
 
 ## 경력 사항
 
@@ -57,13 +55,12 @@ DX를 개선해 팀 전체의 업무 효율을 높이는 데 큰 성취감을 �
 
 [젠틀몬스터 사이트](https://www.gentlemonster.com/kr/ko), 젠틀몬스터 Admin 운영 사이트 해외 법인 오픈(미국, 중국, 호주, 싱가포르, 대만, 일본), 성능 최적화, 운영 대응, 버그 수정
 
-컴포넌트 렌더링 최적화 가이드 작성
+컴포넌트 타입 별(SSR ISR CSR) 렌더링 최적화 가이드 작성, 보안 가이드 작성
 
 **최적화**
 
 - 메인 페이지 CSR 되던 것 전체 SSR로 변경 및 렌더링 최적화(LCP 2초대 -> 0.2~0.4초대)
-- 제품 리스트 렌더링 최적화
-- 메인, 제품리스트 CLS 최적화
+- 제품리스트 CLS, 렌더링 최적화
 - 사이트 전역에 영향을 미치는 이슈들 수정하여 성능 최적화
 - nextjs 서버 메모리 최적화
 - google map, baidu map에 표시되는 스토어 최적화
@@ -71,13 +68,9 @@ DX를 개선해 팀 전체의 업무 효율을 높이는 데 큰 성취감을 �
 **리펙토링**
 메인, 제품 리스트, 스토어, 헤더 리펙토링을 했습니다.
 
-**국제화**
-
-- 중국(wechat 계정)
-- 일본
-- 호주
-- 싱가포르
-- 대만
+**국제화(법인 오픈)**
+언어 및 통화 국제화, 법인별 비즈니르 로직을 개발했습니다.
+중국(wechat), 일본(line), 호주, 싱가포르, 대만
 
 #### PS Admin (Product Service Admin)
 
@@ -414,24 +407,24 @@ UX팀의 Scripter 프로젝트에 스크립트 로직, 사용자 인터렉션에
 
 ---
 
-## 개인 프로젝트 및 DX 실험
+## 개인 프로젝트 및 학습
 
 ### 선언적 개발 환경과 홈랩
 
 주요 기술: Nix, NixOS, Nix Flakes, SOPS, Comin, Hindsight, llama.cpp
 
 - 2024년부터 Mac 개발 환경을 [Nix Flake 기반 dotfiles](https://github.com/rjcnd105/hj-dotfiles)로 관리하고 있습니다. 같은 방식을 NixOS 미니 PC에 적용하고 Comin으로 Git 변경을 배포하는 GitOps 흐름을 구성했습니다.
-- Hindsight를 홈랩에 운영하고 로컬 llama.cpp 임베딩·리랭킹 모델을 연결해, 코딩 에이전트가 세션 밖의 프로젝트 맥락을 다시 찾을 수 있는 메모리 환경을 만들었습니다.
+- 2026년부터 NixOs 기반의 홈랩에 Hindsight를 운영하고 로컬 llama.cpp 임베딩·리랭킹 모델을 연결해, 코딩 에이전트가 세션 밖의 프로젝트 맥락을 다시 찾을 수 있는 메모리 환경을 만들었습니다.
 - Codex와 Claude Code가 저장소 규칙을 따르도록 프로젝트 지침, 스킬, MCP 도구와 검증 명령을 함께 관리합니다. AI가 코드를 많이 만드는 것보다 정확한 맥락과 짧은 피드백 루프를 갖는 데 초점을 둡니다.
-
-## 공부와 적용
+- [comin](https://github.com/nlewo/comin)을 통해 git 을 통해서 두 시스템(mac, nixos homlab)을 선언적으로 관리합니다.
 
 ### Effect, 함수형 프로그래밍과 도메인 모델링
 
 - 여러 작업이 동시에 진행되는 비동기 로직에서 실패가 예외로 숨지 않도록 성공, 실패, 취소와 재시도 경로를 값과 타입으로 드러내는 방법을 공부했습니다. Effect 개념을 중심으로 Scala의 Cats와 Cats Effect, Haskell, Rust의 처리 방식을 비교했습니다.
-- 범주론과 모나드(Monad)를 공부하며 연산을 합성하는 원리를 이해했습니다. 실무에서는 이 용어를 전면에 내세우기보다 순차 처리와 실패 전파를 작은 함수와 명시적인 타입으로 풀어 팀이 읽을 수 있게 적용합니다.
+- 범주론(Category theory)를 공부하며 모나드(Monad)의 원리를 이해하고 직접 구현할 수 있습니다. 실무에서는 이 개념을 전면에 내세우기보다 Railway 프로그래밍적인 형식으로 실패 전파를 작은 함수와 명시적인 타입으로 풀어 팀이 읽을 수 있게 적용합니다. (ex: Result, Option)
 - Scala의 Cats에서 배운 타입 중심 모델링과 Effect-TS Schema, fp-ts/schema의 인코딩·디코딩 방식을 참고해 Zod 스키마를 입력 검증 파일이 아니라 도메인의 상태와 변환 규칙을 담는 명세로 작성합니다.
 - 도메인, 스키마, 비동기 흐름과 실패 조건을 명시해 두면 AI 에이전트가 추측해야 할 부분도 줄어듭니다. 실제 프로젝트에서 에이전트가 기존 구조를 더 잘 따라가고 수정 범위를 정확히 잡는 것을 경험했습니다.
+- 함수형 프로그래밍적인 흐름과 도메인 개념을 결합하여 사람과 에이전트 양쪽에 친화적이면서 선언적인 프로그래밍으로 구성합니다. [참고](https://www.youtube.com/watch?v=2JB1_e5wZmU)
 
 ## 학력
 
@@ -439,12 +432,25 @@ UX팀의 Scripter 프로젝트에 스크립트 로직, 사용자 인터렉션에
 
 2011.03 ~ 2016.02 · 학점 4.04/4.5
 
-- 2015 삼성전자 SCSC-C 창의공학 경진대회 최우수상: 원격 조종·웹 영상 공유 라즈베리파이 CCTV의 웹 파트 개발
-- 2015 동양미래대학교 스마트 SW 개발 경진대회 최우수상: GPS 기반 SNS와 Google Maps를 결합한 스토리맵 개발, 팀장
+#### 수상 내역
 
-## 자격
+**2015 삼성전자 SCSC-C 창의공학 경진대회 최우수상**
 
-- 정보처리기사 · 2020
+- 원격 조종·웹 영상 공유 라즈베리파이 CCTV의 웹 파트 개발 - 팀원
+
+**2015 동양미래대학교 스마트 SW 개발 경진대회 최우수상**
+
+- GPS 기반 SNS와 Google Maps를 결합한 스토리맵 개발 - 팀장
+
+### 자격증·교육
+
+#### 자격증
+
+정보처기사(2020), 정보기기운용기능사(2012), 그래픽스운용기능사(2012)
+
+#### 교육
+
+패스트파이브 React 과정(2019), 그린컴퓨터아카데미 프론트엔드 과정(2016)
 
 ## 링크
 
