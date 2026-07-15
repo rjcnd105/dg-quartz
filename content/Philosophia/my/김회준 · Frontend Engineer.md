@@ -2,7 +2,7 @@
 publish: true
 title: 김회준 · Frontend Engineer
 created: 2024-02-03T21:41:12Z
-modified: 2026-07-15T07:51:55Z
+modified: 2026-07-15T08:36:15Z
 tags:
   - 이력서
   - frontend
@@ -117,7 +117,7 @@ https://www.tel-co.net/
 
 비즈니스 도메인을 기반으로 한 통합 Hexagonal, Onion, Clean, Feature Sliced(front단) 에 프로젝트에 맞게 partial하게 적용하고 적합한 구조로 변형했습니다.
 
-도메인은 전부 스키마 기반으로 작성됩니다. <https://github.com/Effect-TS/schema> 인/디코딩을 통해 따로 추상화된 어댑터 레이어를 두지 않고서도 Port에만 의존적으로 사용할 수 있으며 그로 인해 엔지니어링 복잡도를 줄이고 러닝커브를 줄일 수 있습니다.
+도메인은 전부 스키마 기반으로 작성됩니다. 인/디코딩을 통해 따로 추상화된 어댑터 레이어를 두지 않고서도 Port에만 의존적으로 사용할 수 있으며 그로 인해 엔지니어링 복잡도를 줄이고 러닝커브를 줄일 수 있습니다.
 
 특성 기반의 패턴을 두어 아키텍쳐 마일스톤 1에서는 [Rust의 Trait](https://doc.rust-lang.org/book/ch10-02-traits.html), [Struct](https://doc.rust-lang.org/book/ch05-01-defining-structs.html)의 개념을 활용합니다. 이는 비즈니스 도메인 스키마와 별도로 어플리케이션 서비스에서 주로 활용되어 집니다. 여러 도메인에서 동일 trait에 대한 비즈니스 로직을 특성 단위로 분리함으로서 작업 공수가 크게 줄어듭니다. 하위 레이어단에서 도메인 비즈니스 로직에 의존되는게 아닌 trait에 의존되는 형태로 구성할 수 있어서 융통성 있는 구성이 가능합니다.
 
