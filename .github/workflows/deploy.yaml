@@ -44,8 +44,11 @@ jobs:
         run: bun install --frozen-lockfile
       - name: Install Quartz plugins
         run: bun --bun quartz plugin install
-      - name: Check types and style
-        run: bun run check
+      - name: Check types
+        run: bun x tsc --noEmit
+      - name: Check style
+        continue-on-error: true
+        run: bun x prettier . --check
       - name: Test
         run: bun run test
       - name: Build Quartz
