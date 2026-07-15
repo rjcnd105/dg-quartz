@@ -1,4 +1,6 @@
 FROM oven/bun:1.3.14-slim AS builder
+# install git to install plugins
+RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
 WORKDIR /usr/src/app
 COPY package.json .
 COPY bun.lock .
