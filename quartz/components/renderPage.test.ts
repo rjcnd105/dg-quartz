@@ -1,10 +1,10 @@
 import test, { describe } from "node:test"
 import assert from "node:assert"
-import { renderTranscludes, pageResources } from "./renderPage"
+import { renderPage, renderTranscludes, pageResources } from "./renderPage"
 import { Root, Element } from "hast"
 import { FullSlug } from "../util/path"
 import { GlobalConfiguration } from "../cfg"
-import { QuartzComponentProps } from "./types"
+import { QuartzComponent, QuartzComponentProps } from "./types"
 import { StaticResources } from "../util/resources"
 
 function makeTranscludeBlockquote(targetSlug: string, block?: string): Element {
@@ -323,5 +323,43 @@ describe("pageResources", () => {
       !inlineJsServe.script.includes("/quartz/static/contentIndex.json"),
       `expected contentIndex fetch without /quartz/ prefix in serve mode, got: ${inlineJsServe.script}`,
     )
+  })
+})
+
+describe("renderPage", () => {
+  test("preserves the serve baseDir in data-basepath", () => {
+    const renderCfg = {
+      locale: "en-US",
+      baseUrl: "example.com/dg-quartz",
+    } as GlobalConfiguration
+    const componentData = {
+      ctx: { argv: { serve: true, baseDir: "/dg-quartz" } },
+      cfg: renderCfg,
+      fileData: { slug: "index", frontmatter: {} },
+      tree: { type: "root", children: [] },
+      allFiles: [],
+      children: [],
+      externalResources: { css: [], js: [], additionalHead: [] },
+    } as unknown as QuartzComponentProps
+    const EmptyComponent = (() => null) as unknown as QuartzComponent
+
+    const html = renderPage(
+      renderCfg,
+      "index" as FullSlug,
+      componentData,
+      {
+        head: EmptyComponent,
+        header: [],
+        beforeBody: [],
+        pageBody: EmptyComponent,
+        afterBody: [],
+        left: [],
+        right: [],
+        footer: EmptyComponent,
+      },
+      { css: [], js: [], additionalHead: [] },
+    )
+
+    assert.ok(html.includes('data-basepath="/dg-quartz"'), html)
   })
 })

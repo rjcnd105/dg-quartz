@@ -337,12 +337,13 @@ export function renderPage(
 
   const lang = componentData.fileData.frontmatter?.lang ?? cfg.locale?.split("-")[0] ?? "en"
   const direction = i18n(cfg.locale).direction ?? "ltr"
-  // During local dev (--serve), the dev server serves from root without the
-  // baseUrl subpath, so basePath must be empty to avoid broken links.
-  const basePath =
-    componentData.ctx.argv.serve || !cfg.baseUrl
-      ? ""
-      : new URL(`https://${cfg.baseUrl}`).pathname.replace(/\/$/, "")
+  // The server strips baseDir before file lookup, but client-side slug resolution
+  // still needs the mount prefix from the browser URL.
+  const basePath = componentData.ctx.argv.serve
+    ? componentData.ctx.argv.baseDir.replace(/\/+$/, "")
+    : cfg.baseUrl
+      ? new URL(`https://${cfg.baseUrl}`).pathname.replace(/\/$/, "")
+      : ""
   const doc = (
     <html lang={lang} dir={direction}>
       <Head {...componentData} />

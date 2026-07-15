@@ -8,6 +8,7 @@ export interface Argv {
   verbose: boolean
   output: string
   serve: boolean
+  baseDir: string
   watch: boolean
   port: number
   wsPort: number
