@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-04-07T07:55:00Z
-modified: 2026-05-27T03:39:50Z
+modified: 2026-06-10T04:46:28Z
 tags:
   - kb
   - index
@@ -231,6 +231,9 @@ kb/ 페이지의 카탈로그. frontmatter 기반으로 재생성 가능한 캐�
 
 ## Glossary
 
+- [[25-hydroxyvitamin D]] — 25-hydroxyvitamin D\[25(OH)D]는 vitamin D status를 평가할 때 주로 쓰는 혈중 대사산물이다.
+- [[Interferon]] — Interferon은 세포가 바이러스 감염 같은 위협을 감지했을 때 주변 세포와 면역계에 경보를 보내는 cytokine 계열 신호다.
+- [[Transcriptome]] — Transcriptome은 특정 세포나 조직에서 어떤 RNA가 얼마나 발현되고 있는지를 나타내는 전체 유전자 발현 상태다.
 - [[RAG]] — RAG(Retrieval-Augmented Generation)는 모델이 답변을 만들기 전에 외부 문서 저장소에서 관련 자료를 검색하고, 검색 결과를 컨텍스트로 넣어 생성하는 패턴이다.
 - [[Heart Rate Variability]] — HRV(Heart Rate Variability)는 연속된 심장 박동 사이 간격이 얼마나 유연하게 변하는지를 나타내는 marker다.
 - [[Aryl Hydrocarbon Receptor]] — Aryl hydrocarbon receptor(AhR)는 환경·식이·microbial small molecule에 반응하는 ligand-activated transcription factor다.
@@ -280,9 +283,9 @@ kb/ 페이지의 카탈로그. frontmatter 기반으로 재생성 가능한 캐�
 
 ## Health
 
-- 총 페이지: 240
-- 단일 출처 페이지: 169/240 (출처 없는 페이지 37 별도)
+- 총 페이지: 243
+- 단일 출처 페이지: 168/243 (출처 없는 페이지 40 별도)
 - 미해결 논쟁: 0
 - 최신 동향 만료: 0 (6개월 기준)
 - 고아 페이지: 0 (glossary 제외)
-- 마지막 rebuild-index: 2026-05-27
+- 마지막 rebuild-index: 2026-06-10
