@@ -1,0 +1,62 @@
+filters:
+  and:
+    - 'file.ext == "md"'
+    - not:
+        - 'file.inFolder("kb")'
+
+formulas:
+  created_short: 'file.ctime.format("YY.MM.DD")'
+  modified_at: 'file.mtime.format("YYYY.MM.DD HH:mm")'
+  created_at: 'file.ctime.format("YYYY.MM.DD HH:mm")'
+
+views:
+  - type: list
+    name: "Pinned"
+    filters:
+      and:
+        - 'file.hasProperty("pinOrder")'
+        - 'note.pinOrder >= 0'
+    order:
+      - file.name
+      - formula.created_short
+    sort:
+      - property: note.pinOrder
+        direction: ASC
+    markers: none
+    separator: " | "
+
+  - type: list
+    name: "최근 업데이트순 (modified date)"
+    filters:
+      and:
+        - 'note.publish == true'
+        - 'file.path != this.file.path'
+    order:
+      - file.name
+      - file.tags
+      - file.folder
+      - formula.modified_at
+    sort:
+      - property: file.mtime
+        direction: DESC
+    limit: 30
+    markers: none
+    separator: " | "
+
+  - type: list
+    name: "최신 생성 글 (created date)"
+    filters:
+      and:
+        - 'note.publish == true'
+        - 'file.path != this.file.path'
+    order:
+      - file.name
+      - file.tags
+      - file.folder
+      - formula.created_at
+    sort:
+      - property: file.ctime
+        direction: DESC
+    limit: 30
+    markers: none
+    separator: " | "

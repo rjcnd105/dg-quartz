@@ -23,7 +23,7 @@ Maheswaran et al. (2026-04)에 따르면 verifier-free evolution(RSA 등)은 두
 
 많은 test-time scaling 방법이 하나의 operator로 일반화 가능:
 
-$$\Phi_f(\mathcal{P}) = \text{recomb}_f \circ \text{select}_f(\mathcal{P})$$
+$\Phi_f(\mathcal{P}) = \text{recomb}_f \circ \text{select}_f(\mathcal{P})$
 
 | Method | k | select | recomb | fitness | model |
 |--------|---|--------|--------|---------|-------|
