@@ -163,6 +163,70 @@ body strong {
     }
   }
 }
+
+// Embedded base list views, styled like the old page-index:
+// "title #tag, #tag" then "`folder` | date" on the next line
+.bases-inline [data-view-type="list"] {
+  .bases-view-meta,
+  .list-bullet,
+  .bases-list-separator {
+    display: none;
+  }
+
+  .bases-list-item {
+    padding: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .bases-list-item-properties {
+    column-gap: 0.25rem;
+
+    // Break the line before folder/date unless the item is just "title date" (Pinned)
+    &:has(> :nth-child(4))::before {
+      content: "";
+      flex-basis: 100%;
+      order: 1;
+    }
+  }
+
+  // Folder and date
+  .bases-list-property:not(:has(.list-bullet), :has(.bases-list)) {
+    order: 2;
+    font-size: 0.6rem;
+    opacity: 0.8;
+
+    &:not(:last-child) .bases-text {
+      font-family: var(--codeFont);
+      border-radius: 4px;
+      padding: 0.1rem 0.2rem;
+      color: var(--code-normal);
+      background: var(--code-background);
+    }
+
+    &:last-child:not(:nth-child(3))::before {
+      content: "|";
+    }
+  }
+
+  // Tags
+  .bases-list {
+    display: inline;
+    font-size: 0.58rem;
+    color: var(--tag-color);
+    opacity: 0.85;
+
+    .bases-text::before {
+      content: "#";
+    }
+
+    // Empty tags extracted from inline "#"
+    .bases-text:empty,
+    .bases-separator:has(+ .bases-text:empty) {
+      display: none;
+    }
+  }
+}
+
 .mermaid .labelBkg,
 .mermaid-content .labelBkg .mermaid .edgeLabel,
 .mermaid-content .edgeLabel {
