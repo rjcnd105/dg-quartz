@@ -26,7 +26,7 @@ views:
     separator: " | "
 
   - type: list
-    name: "최근 업데이트순 (modified date)"
+    name: "최근 업데이트순"
     filters:
       and:
         - 'note.publish == true'
@@ -37,14 +37,14 @@ views:
       - file.folder
       - formula.modified_at
     sort:
-      - property: file.mtime
+      - property: formula.modified_at
         direction: DESC
     limit: 30
     markers: none
     separator: " | "
 
   - type: list
-    name: "최신 생성 글 (created date)"
+    name: "최신 생성 글"
     filters:
       and:
         - 'note.publish == true'
@@ -55,7 +55,7 @@ views:
       - file.folder
       - formula.created_at
     sort:
-      - property: file.ctime
+      - property: formula.created_at
         direction: DESC
     limit: 30
     markers: none

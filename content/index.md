@@ -16,10 +16,10 @@ hiddenTags: true
 
 ## 최근 업데이트순 (modified date)
 
-![[index.base#최근 업데이트순 (modified date)]]
+![[index.base#최근 업데이트순]]
 
 ---
 
 ## 최신 생성 글 (created date)
 
-![[index.base#최신 생성 글 (created date)]]
+![[index.base#최신 생성 글]]

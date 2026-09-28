@@ -22,7 +22,7 @@
     "bases-page": {
       "source": "github:quartz-community/bases-page",
       "resolved": "https://github.com/quartz-community/bases-page.git",
-      "commit": "f8fc7da3515a4d4bbe0bd4be0fd9188823866a01",
+      "commit": "5c729d1c6be7d89b05ad35fbf28f0b660ce17968",
       "installedAt": "2026-06-03T13:32:35.344Z"
     },
     "breadcrumbs": {
