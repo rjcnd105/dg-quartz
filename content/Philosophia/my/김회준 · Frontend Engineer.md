@@ -268,12 +268,6 @@ UX팀의 Scripter 프로젝트에 스크립트 로직, 사용자 인터렉션에
 - 2024년부터 Mac 개발 환경을 [Nix Flake 기반 dotfiles](https://github.com/rjcnd105/hj-dotfiles)로 관리하고 있습니다. 같은 방식을 NixOS 미니 PC에 적용하고 Comin으로 Git 변경을 배포하는 GitOps 흐름을 구성했습니다.
 - [comin](https://github.com/nlewo/comin)을 통해 git 을 통해서 두 시스템(mac, nixos homlab)을 선언적으로 관리합니다.
 
-### 함수형 객체지향 프로그래밍, Effect
-
-- 여러 작업이 동시에 진행되는 비동기 로직에서 실패가 예외로 숨지 않도록 성공, 실패, 취소와 재시도 경로를 값과 타입으로 드러내는 방법을 공부했습니다. Effect 개념을 중심으로 Scala의 Cats와 Cats Effect, Haskell, 에서의 처리 방식을 학습했습니다.
-- 범주론(Category theory)를 공부하며 모나드(Monad)의 원리를 이해하고 직접 구현할 수 있습니다.
-- DDD, Hexagonal, Facade, Statecharts 같은 패턴들을 공부하고 제품에 최소 단위로 효과적으로 적용해왔습니다. 기술적인 적용이 아닌 개념적인 구조의 적용은 추상화도 늘리지 않으면서 간단 명료함을 더 극대화 할 수 있습니다. ([Ash design principles 참고](https://ash.hexdocs.pm/design-principles.html))
-
 <div style="page-break-after: always;"></div>
 
 ## 학력
