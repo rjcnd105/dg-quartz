@@ -263,10 +263,9 @@ UX팀의 Scripter 프로젝트에 스크립트 로직, 사용자 인터렉션에
 
 ### 선언적 개발 환경과 홈랩
 
-주요 기술: Nix, NixOS, Nix Flakes, SOPS, Comin, Hindsight, llama.cpp
+주요 기술: Nix, NixOS, Nix Flakes, SOPS, Comin, llama.cpp
 
 - 2024년부터 Mac 개발 환경을 [Nix Flake 기반 dotfiles](https://github.com/rjcnd105/hj-dotfiles)로 관리하고 있습니다. 같은 방식을 NixOS 미니 PC에 적용하고 Comin으로 Git 변경을 배포하는 GitOps 흐름을 구성했습니다.
-- 2026년부터 NixOs 기반의 홈랩에 Hindsight를 운영하고 로컬 llama.cpp 임베딩·리랭킹 모델을 연결해, 코딩 에이전트가 세션 밖의 프로젝트 맥락을 다시 찾을 수 있는 메모리 환경을 만들었습니다.
 - [comin](https://github.com/nlewo/comin)을 통해 git 을 통해서 두 시스템(mac, nixos homlab)을 선언적으로 관리합니다.
 
 ### 함수형 객체지향 프로그래밍, Effect
