@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://rjcnd105.github.io/dg-quartz/sitemap.xml
