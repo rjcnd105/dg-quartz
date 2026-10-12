@@ -6,7 +6,7 @@ hiddenTags: true
 ---
 
 제 소개는 여기서 볼 수 있습니다.
-[[김회준 · Frontend Engineer]]
+[[김회준 · Frontend Engineer origin]]
 
 ## Pinned
 
