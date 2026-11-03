@@ -2,7 +2,7 @@
 publish: true
 title: 김회준 · Frontend Engineer - 검토본
 created: 2026-09-09
-modified: 2026-10-19T06:36:42Z
+modified: 2026-11-03T03:02:36Z
 tags:
   - 이력서
   - frontend
@@ -21,11 +21,11 @@ tags:
 
 - **주력**: TypeScript, React, Next.js, CSS, HTML
 - **라이브러리**: TanStack Query, React Hook Form, Tailwind CSS, Emotion, Storybook, tRPC, Prisma, D3.js(visx), Sentry
-- **에이전트**: [pi](https://github.com/earendil-works/pi)(GPT, OpenRouter), Claude(pi-intercom을 통한 pi advisor)
+- **에이전트**: [herdr](https://herdr.dev/), [pi](https://github.com/earendil-works/pi)(GPT, OpenRouter), Claude(pi-intercom을 통한 pi advisor)
 
 **개발 철학**
 
-- 리소스와 가능한 행위, 제약을 코드에 명시해 사람과 AI 에이전트가 같은 구조를 읽고 작업 맥락을 이어가도록 하며, 에이전트에게는 `Code is the spec`처럼 동작합니다. 사람의 검토는 비동기로 진행해 병목이 되지 않게 하고, 여러 에이전트(MoA)와 하네스를 조정하며 workflow를 계속 다듬고 있습니다.
+- 리소스와 가능한 행위, 제약을 코드에 명시해 사람과 AI 에이전트가 같은 구조를 읽고 작업 맥락을 이어가도록 하며, 에이전트에게는 `Code is the spec`처럼 동작합니다. 사람의 검토는 비동기로 진행해 병목이 되지 않게 하고, 다중 에이전트 협업(MoA)과 하네스를 조정하며 workflow를 계속 다듬고 있습니다.
 - 유저와 직접 맞닿는다는 책임이 늘 있습니다. Frontend enginer로서 UI·UX·Interaction 까지 고민하고 개선합니다.
 - DX 개선에 관심이 많아 팀 전체의 업무 효율을 높이는 데 큰 성취감을 느낍니다.
 
@@ -63,13 +63,17 @@ tags:
 
 ### 덮집회의 · [app.deopjib.cc](https://app.deopjib.cc/room/create)
 
-**Teck Stack**: Elixir, Typescript, Phoenix Framework, Ash Framework, Oban, PostgreSQL, Ollama, React 19,  TanStack Router·Query
+**Teck Stack**: Elixir, Typescript, Phoenix Framework, Ash Framework, Oban, PostgreSQL, Ollama, React 19,  TanStack Router·Query, HyperFrames, Cloudflare R2
 
-공동으로 복잡한 결제 내역을 적으면 최적화된 알고리즘(Greedy Debt Simplification) 을 통해 최소한의 송금을 할 수 있게끔 할 수 있는 앱입니다.
+공동으로 복잡한 결제 내역을 적으면 최적화된 알고리즘을 통해 최소한의 송금을 할 수 있게끔 할 수 있는 앱입니다.
 백엔드·프론트엔드·배포를 직접 개발해 위 홈랩에서 운영합니다.
+전체 개발을 혼자서 담당했습니다.
+
+[소개 영상 보기](https://media.deopjib.cc/deopjib/intro-v1.mp4)
 
 - Ash Framework로 리소스 기반으로 action·validation·제약을 먼저 선언하고, Ash TypeScript RPC를 통해 Type, Zod 스키마를 파생하여 Generate되는 에이전트 친화적인 명세 기반 구성입니다.
-- **결제 내역 이미지 인식**: 홈랩에 띄운 PaddleOCR-VL(OCR)과 Spark(구조화) 모델로 은행·카드 앱 스크린샷의 결제 내역을 자동으로 채웁니다. 스크린샷을 libvips로 한 줄씩 잘라 OCR한 뒤 JSON schema로 결제 항목을 뽑고, 작은 모델이 자주 틀리는 입금·취소 구분과 날짜는 코드 규칙으로 보정합니다.
+- **결제 내역 이미지 인식**: 홈랩에 띄운 [PaddleOCR-VL(OCR)](https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6-GGUF)과 [Spark(구조화)](https://huggingface.co/XHToken/Spark-X2.6-4B-GGUF) 모델로 은행·카드 앱 스크린샷의 결제 내역을 자동으로 채웁니다. 스크린샷을 libvips로 한 줄씩 잘라 OCR한 뒤 JSON schema로 결제 항목을 뽑고, 작은 모델이 자주 틀리는 입금·취소 구분과 날짜는 코드 규칙으로 보정합니다.
+- **Hyperframe로 소개 영상 제작** · [영상](https://media.deopjib.cc/deopjib/intro-v1.mp4): 에이전트를 통해 [HyperFrames](https://hyperframes.heygen.com) 를 사용해서 48초짜리 가이드·프로모 영상을 만들었습니다. 에이전트로 실제 앱 화면을 캡쳐해서 제작했으며 시안 두 개를 만들고 레퍼런스와 비교 검수한 뒤, 제 피드백을 장면 단위로 반영했습니다.
 
 ---
 
@@ -105,7 +109,7 @@ Frontend Engineer · 계약 | 2025.04–2025.05, 2025.06-현재 (1년 8개월)
 
 Frontend Engineer |  2019. 8 ~ 2022. 2, 2023.8 ~ 2023.12 (총 3년)
 
-개발 팀 전체 4명이던 시절부터 합류한 초창기 멤버로서, 회사가 커져감에 따라 프론트엔드(6명) 팀에 여러 문화(코드리뷰, 회고, KPT, 개발 발표회, 퇴근 후 스터디, Personal Review, 핵심 기능 개발 완료 후 리뷰 등)를 주도하에 만들고 지속적인 디벨롭하며 이끌었습니다.
+개발 팀 전체가 4명이던 시절부터 합류한 초창기 멤버로서, 회사가 커져감에 따라 프론트엔드(6명) 팀에 여러 문화(코드리뷰, 회고, KPT, 개발 발표회, 퇴근 후 스터디, Personal Review, 핵심 기능 개발 완료 후 리뷰 등)를 주도하에 만들고 지속적인 디벨롭하며 이끌었습니다.
 
 네이티브 앱만 있을때 입사해서 웹 버전을 개발하고 알토스 시리즈A 투자를 받았으며 현재의 매쓰플랫2, 학생 앱(웹앱으로 앱 대체)까지 개발 완료 했습니다.
 
@@ -347,4 +351,3 @@ UX팀의 Scripter 프로젝트에 스크립트 로직, 사용자 인터렉션에
 ## 링크
 
 - [프리윌린 직무 인터뷰](https://www.jobplanet.co.kr/companies/325950/feeds/3409?_rs_act=landing&_rs_con=companies&_rs_element=feed)
-- [이전 인터랙션 포트폴리오](https://hoejun.s3.ap-northeast-2.amazonaws.com/portfolio/index.html)
