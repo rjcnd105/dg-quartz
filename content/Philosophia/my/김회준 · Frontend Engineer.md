@@ -1,6 +1,6 @@
 ---
 publish: true
-title: 김회준 · Frontend Engineer - 검토본
+title: 김회준 · Frontend Engineer
 created: 2026-09-09
 modified: 2026-11-03T03:02:36Z
 tags:
